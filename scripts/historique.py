@@ -61,8 +61,13 @@ def mettre_a_jour(chemin: Path, feux: list[dict], horodatage: str) -> dict:
         etat[identifiant] = {"surface_ha": surface, "image": p.get("image_apres", ""),
                              "vu_le": horodatage}
 
-    journal["evenements"] = (nouveaux + journal.get("evenements", []))[:MAX_EVENEMENTS]
-    journal["etat"] = etat
+    # Purge des feux disparus : une exécution antérieure a pu publier des foyers depuis
+    # écartés (hors de France, sol nu, doublons). Garder leurs événements afficherait un
+    # historique qui ne correspond à rien de consultable.
+    vivants = {f["properties"]["id"] for f in feux}
+    anciens = [e for e in journal.get("evenements", []) if e.get("id") in vivants]
+    journal["evenements"] = (nouveaux + anciens)[:MAX_EVENEMENTS]
+    journal["etat"] = {k: v for k, v in etat.items() if k in vivants}
     journal["derniere_execution"] = horodatage
 
     chemin.parent.mkdir(parents=True, exist_ok=True)

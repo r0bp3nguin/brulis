@@ -39,7 +39,8 @@ from pystac_client import Client
 from shapely.geometry import box
 
 import firms
-from dnbr import COLLECTION, CRS_METRIQUE, SEUILS, STAC, nbr, polygoniser
+from dnbr import (COLLECTION, CRS_METRIQUE, SCL_INVALIDE, SEUILS, STAC, lire, nbr,
+                  polygoniser)
 
 SEUIL_DEFAUT = 0.15        # optimum mesuré sur pinède landaise (docs/phase0-resultats.md)
 SURFACE_MIN_HA = 1.0
@@ -62,6 +63,16 @@ DISTANCE_RATTACHEMENT = 3000  # un polygone au-delà n'est pas rattaché à ce f
 # On publie donc un ordre de grandeur explicitement incertain, jamais un chiffre net.
 DEMI_PIXEL_VIIRS = 187
 INCERTITUDE_ESTIMEE = 0.35  # ±35 %, enveloppe des deux écarts observés
+
+# Couvert végétal avant feu, mesuré par le NBR de l'image « avant » sur la zone détectée.
+# Une forêt ou une lande dense se situe vers 0,3–0,5 ; un champ moissonné, un sol nu ou une
+# zone industrielle vers 0,0–0,15. C'est ce qui sépare un feu de végétation d'un brûlage de
+# chaume ou d'une torchère — nombreux en plaine fin juillet, en pleine moisson.
+#
+# Ce test ne coûte aucune lecture supplémentaire : le NBR avant est déjà calculé pour le
+# dNBR. Il remplace le filtre par occupation du sol (Corine Land Cover), dont le service
+# interrogeable de la Géoplateforme renvoie « LayerNotDefined » au 25/07/2026.
+NBR_VEGETATION_MIN = 0.20
 
 
 def nommer(lat: float, lon: float) -> dict:
@@ -89,19 +100,41 @@ def epsg_de(it) -> int:
     return int(str(it.properties["proj:code"]).split(":")[-1])
 
 
-def couverture(it, zone_m, marge=MARGE_M) -> tuple[float, object]:
-    """Part de pixels exploitables sur la zone, et données lues (évite un double accès)."""
+def _emprise(it, zone_m, marge=MARGE_M):
     crs = rasterio.crs.CRS.from_epsg(epsg_de(it))
     bounds = gpd.GeoSeries([zone_m], crs=CRS_METRIQUE).to_crs(crs).buffer(marge).total_bounds
-    valeurs, valide, transform, _ = nbr(it, bounds)
-    if valide.size == 0:
-        return 0.0, None
+    return crs, bounds
+
+
+def couverture(it, zone_m, marge=MARGE_M) -> float:
+    """Part de pixels exploitables sur la zone, d'après la seule classification de scène.
+
+    Le tri des images candidates ne demande pas les valeurs spectrales : SCL suffit à
+    savoir si la zone est dégagée. Ne lire qu'une bande au lieu de trois divise par trois
+    le trafic réseau de l'étape la plus coûteuse — jusqu'à 14 candidats sont examinés par
+    foyer, contre 2 finalement retenus.
+    """
+    crs, bounds = _emprise(it, zone_m, marge)
+    scl, transform, _ = lire(it, bounds, "scl")
+    if scl.size == 0:
+        return 0.0
+    exploitable = ~np.isin(scl, list(SCL_INVALIDE))
     zone_locale = gpd.GeoSeries([zone_m], crs=CRS_METRIQUE).to_crs(crs).iloc[0]
     dans = rasterio.features.geometry_mask(
-        [zone_locale], out_shape=valide.shape, transform=transform, invert=True)
+        [zone_locale], out_shape=scl.shape, transform=transform, invert=True)
     if dans.sum() == 0:
-        return 0.0, None
-    return float((valide & dans).sum() / dans.sum()), (valeurs, valide, transform, crs)
+        return 0.0
+    return float((exploitable & dans).sum() / dans.sum())
+
+
+def lire_nbr(it, zone_m, marge=MARGE_M):
+    """Lecture complète (B8A, B12, SCL) : réservée aux deux images retenues."""
+    crs, bounds = _emprise(it, zone_m, marge)
+    valeurs, valide, transform, _ = nbr(it, bounds)
+    return valeurs, valide, transform, crs
+
+
+_CACHE_PASSAGES: dict[tuple, str | None] = {}
 
 
 def prochain_passage(client: Client, bbox) -> str | None:
@@ -111,11 +144,14 @@ def prochain_passage(client: Client, bbox) -> str | None:
     Le rythme dépend du lieu (recouvrement des orbites) : on le mesure au lieu de
     supposer les 5 jours théoriques.
     """
-    from datetime import date
+    cle = tuple(round(v, 1) for v in bbox)  # ~10 km : les foyers voisins partagent le rythme
+    if cle in _CACHE_PASSAGES:
+        return _CACHE_PASSAGES[cle]
     passes = sorted({i.datetime.date() for i in client.search(
         collections=[COLLECTION], bbox=list(bbox),
         datetime="2026-06-01/2026-12-31").item_collection()})
     if len(passes) < 3:
+        _CACHE_PASSAGES[cle] = None
         return None
     ecarts = [(passes[k + 1] - passes[k]).days for k in range(len(passes) - 1)]
     typique = min(e for e in ecarts if e > 0) if any(e > 0 for e in ecarts) else 5
@@ -123,7 +159,8 @@ def prochain_passage(client: Client, bbox) -> str | None:
     aujourd = datetime.now(timezone.utc).date()
     while prevu < aujourd:
         prevu += timedelta(days=typique)
-    return prevu.isoformat()
+    _CACHE_PASSAGES[cle] = prevu.isoformat()
+    return _CACHE_PASSAGES[cle]
 
 
 def emprise_points_chauds(foyer, points: gpd.GeoDataFrame | None):
@@ -146,8 +183,19 @@ def traiter(foyer, client: Client, seuil: float, sortie: Path,
 
     centre = gpd.GeoSeries([zone_m], crs=CRS_METRIQUE).to_crs(4326).iloc[0].centroid
     lieu = nommer(centre.y, centre.x)
-    etiquette = (f"{lieu['commune']} ({lieu['departement']})" if lieu["commune"]
-                 else f"foyer {foyer['foyer']}")
+    # L'emprise FIRMS est un rectangle : il déborde sur l'Espagne, l'Italie, l'Allemagne,
+    # la Belgique, la Suisse et le Luxembourg. Sans ce test, des feux étrangers sont
+    # publiés comme français — 28 cas sur 68 lors de la campagne du 25/07/2026.
+    # L'absence de commune dans le référentiel officiel vaut « hors de France ».
+    if not lieu["commune"]:
+        print(f"  foyer {foyer['foyer']} ({centre.y:.2f},{centre.x:.2f}) — hors de France, ignoré")
+        return None
+    # Suffixe géographique : sans lui, deux foyers distincts d'une même commune au même
+    # jour produisent le même identifiant et s'écrasent en silence sur le disque — 23
+    # fiches sur 68 perdues lors de la campagne du 25/07/2026. Arrondi à ~1 km pour
+    # rester stable d'une exécution à l'autre.
+    reperage = f"{abs(centre.y):.2f}{abs(centre.x):.2f}".replace(".", "")
+    etiquette = f"{lieu['commune']} ({lieu['departement']})"
     print(f"\n  {etiquette} — {foyer['n_points']} points chauds, "
           f"{foyer['date_debut']} → {foyer['date_fin']}")
 
@@ -158,8 +206,14 @@ def traiter(foyer, client: Client, seuil: float, sortie: Path,
         estimee = geom.area / 1e4
         attendu = prochain_passage(client, bbox)
         identifiant = (f"{debut:%Y%m%d}-{lieu['departement'] or '00'}-"
-                       f"{(lieu['commune'] or 'foyer').lower().replace(' ', '-')[:24]}")
+                       f"{(lieu['commune'] or 'foyer').lower().replace(' ', '-')[:24]}"
+                       f"-{reperage}")
         dossier = sortie / identifiant
+        # Une mesure ne doit jamais être remplacée par une simple estimation : si un
+        # périmètre existe déjà pour ce feu, on le conserve.
+        if (dossier / "perimetre.geojson").exists():
+            print("     déjà mesuré précédemment — estimation non écrite")
+            return None
         dossier.mkdir(parents=True, exist_ok=True)
         info = {
             "id": identifiant, "feu": etiquette, "statut": "en_attente",
@@ -194,7 +248,7 @@ def traiter(foyer, client: Client, seuil: float, sortie: Path,
 
     # On teste les plus récentes d'abord et on s'arrête à la première exploitable.
     for it_post in candidats[:6]:
-        part, lu = couverture(it_post, zone_m)
+        part = couverture(it_post, zone_m)
         marque = "retenue" if part >= COUVERTURE_MIN else "écartée"
         print(f"     après  {it_post.datetime:%Y-%m-%d} {tuile_de(it_post)} "
               f"exploitable {part:.0%} — {marque}")
@@ -203,7 +257,7 @@ def traiter(foyer, client: Client, seuil: float, sortie: Path,
     else:
         return en_attente("images trop couvertes par les nuages ou la fumée")
 
-    nbr_post, val_post, transform, crs = lu
+    nbr_post, val_post, transform, crs = lire_nbr(it_post, zone_m)
     tuile = tuile_de(it_post)
 
     # Image avant : même tuile obligatoire, la plus récente qui soit claire sur la zone.
@@ -214,7 +268,7 @@ def traiter(foyer, client: Client, seuil: float, sortie: Path,
         key=lambda i: i.datetime, reverse=True) if tuile_de(i) == tuile]
 
     for it_pre in avant[:8]:
-        part, lu_pre = couverture(it_pre, zone_m)
+        part = couverture(it_pre, zone_m)
         marque = "retenue" if part >= COUVERTURE_MIN else "écartée"
         print(f"     avant  {it_pre.datetime:%Y-%m-%d} exploitable {part:.0%} — {marque}")
         if part >= COUVERTURE_MIN:
@@ -222,7 +276,7 @@ def traiter(foyer, client: Client, seuil: float, sortie: Path,
     else:
         return en_attente("aucune image avant-feu exploitable pour la comparaison")
 
-    nbr_pre, val_pre, transform_pre, _ = lu_pre
+    nbr_pre, val_pre, transform_pre, _ = lire_nbr(it_pre, zone_m)
     if nbr_pre.shape != nbr_post.shape:
         print("     fenêtres de lecture incohérentes — foyer ignoré")
         return None
@@ -241,6 +295,16 @@ def traiter(foyer, client: Client, seuil: float, sortie: Path,
         print("     polygones trouvés mais aucun près des points chauds")
         return None
 
+    # Le couvert se juge sur la zone détectée, pas sur toute la fenêtre lue.
+    dans_detection = rasterio.features.geometry_mask(
+        proches.to_crs(crs).geometry, out_shape=dnbr.shape, transform=transform, invert=True)
+    echantillon = nbr_pre[dans_detection & exploitable]
+    nbr_avant = float(np.median(echantillon)) if echantillon.size else 0.0
+    if nbr_avant < NBR_VEGETATION_MIN:
+        print(f"     écarté : NBR avant feu {nbr_avant:.2f} < {NBR_VEGETATION_MIN} "
+              "— sol nu ou culture, pas un feu de végétation")
+        return None
+
     surface = float(proches.area.sum() / 1e4)
     dans_zone = rasterio.features.geometry_mask(
         [gpd.GeoSeries([zone_m], crs=CRS_METRIQUE).to_crs(crs).iloc[0]],
@@ -248,9 +312,12 @@ def traiter(foyer, client: Client, seuil: float, sortie: Path,
     part_masquee = float(1 - (exploitable & dans_zone).sum() / max(dans_zone.sum(), 1))
 
     identifiant = (f"{debut:%Y%m%d}-{lieu['departement'] or '00'}-"
-                   f"{(lieu['commune'] or 'foyer').lower().replace(' ', '-')[:24]}")
+                   f"{(lieu['commune'] or 'foyer').lower().replace(' ', '-')[:24]}"
+                   f"-{reperage}")
     dossier = sortie / identifiant
     dossier.mkdir(parents=True, exist_ok=True)
+    # Une mesure remplace une estimation antérieure du même feu.
+    (dossier / "emprise.geojson").unlink(missing_ok=True)
 
     info = {
         "id": identifiant,
@@ -272,6 +339,7 @@ def traiter(foyer, client: Client, seuil: float, sortie: Path,
                         "nuages_pct": it_post.properties.get("eo:cloud_cover")},
         "tuile": tuile,
         "seuil_dnbr": seuil,
+        "nbr_avant_median": round(nbr_avant, 3),
         "part_masquee": round(part_masquee, 3),
         "latence_jours": (it_post.datetime.date() - debut.date()).days,
         "calcule_le": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),

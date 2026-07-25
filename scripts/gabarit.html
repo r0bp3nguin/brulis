@@ -56,9 +56,12 @@ a{color:#8fc4ff}
   border-radius:10px;padding:8px 10px 7px;
 }
 .chiffre b{
-  display:block;font-size:21px;font-weight:700;line-height:1.1;color:var(--braise);
+  display:block;font-size:19px;font-weight:700;line-height:1.1;color:var(--braise);
 }
+.chiffre.attente b{color:var(--paille);font-size:16px}
 .chiffre .eyebrow{margin-top:2px}
+.sous-chiffre{font-size:10.5px;color:var(--cendre-pale);margin-top:2px;
+              font-variant-numeric:tabular-nums}
 
 /* ---------- onglets ---------- */
 .onglets{display:flex;gap:2px;padding:10px 14px 0;border-bottom:1px solid var(--arete)}
@@ -238,9 +241,12 @@ details ul{padding-left:15px;margin:5px 0}
         <p>zones brûlées de France</p>
       </div>
       <div class="chiffres">
-        <div class="chiffre"><b class="nombre" id="cHa">—</b><div class="eyebrow">hectares</div></div>
-        <div class="chiffre"><b class="nombre" id="cFeux">—</b><div class="eyebrow">feux</div></div>
-        <div class="chiffre"><b class="nombre" id="cAttente">—</b><div class="eyebrow">en attente</div></div>
+        <div class="chiffre"><b class="nombre" id="cFeux">—</b>
+          <div class="eyebrow">feux suivis</div></div>
+        <div class="chiffre"><b class="nombre" id="cHa">—</b>
+          <div class="eyebrow">ha mesurés</div><div class="sous-chiffre" id="cHaN"></div></div>
+        <div class="chiffre attente"><b class="nombre" id="cEst">—</b>
+          <div class="eyebrow">ha estimés</div><div class="sous-chiffre" id="cEstN"></div></div>
       </div>
     </header>
 
@@ -684,14 +690,24 @@ surBouton("bChauds", function(){
 });
 
 /* ---------- amorçage ---------- */
-// Le total d'hectares ne compte que les feux réellement mesurés : additionner des
-// ordres de grandeur à des mesures donnerait un chiffre que rien ne soutient.
+// Deux totaux distincts, jamais additionnés : les surfaces mesurées d'un côté, les
+// ordres de grandeur de l'autre. N'afficher que le premier laisserait croire que la
+// France a vu brûler 3 000 ha quand les feux en attente d'image en représentent dix fois
+// plus — c'est le chiffre que le public retient, il doit être complet.
 const mesures = FEUX.features.filter(f => f.properties.statut !== "en_attente");
+const attentes = FEUX.features.filter(f => f.properties.statut === "en_attente");
 const total = mesures.reduce((s,f) => s + f.properties.surface_ha, 0);
+const estMin = attentes.reduce((s,f) => s + (f.properties.surface_min_ha || 0), 0);
+const estMax = attentes.reduce((s,f) => s + (f.properties.surface_max_ha || 0), 0);
+
+document.getElementById("cFeux").textContent = FEUX.features.length;
 document.getElementById("cHa").textContent = fmt(total);
-document.getElementById("cFeux").textContent = mesures.length;
-document.getElementById("cAttente").textContent =
-  FEUX.features.length - mesures.length;
+document.getElementById("cHaN").textContent =
+  `${mesures.length} feu${mesures.length > 1 ? "x" : ""}`;
+document.getElementById("cEst").textContent = attentes.length
+  ? `${fmt(estMin)}–${fmt(estMax)}` : "—";
+document.getElementById("cEstN").textContent = attentes.length
+  ? `${attentes.length} en attente d'image` : "";
 document.getElementById("nFeux").textContent = FEUX.features.length;
 document.getElementById("nMaj").textContent = (JOURNAL.evenements || []).length;
 document.getElementById("maj").textContent = depuis(GENERE);
