@@ -1,5 +1,5 @@
-feu,surface_ha,image_avant,image_apres,seuil_dnbr,part_masquee,ems_surface_ha,ems_date,recouvrement_iou,ecart_surface_pct
-Landiras (juillet),6906.0,2022-07-12,2022-07-17,0.15,0.0,6720.5,17/07/2022,0.915,2.9
-Landiras (août),6030.4,2022-08-06,2022-08-11,0.1,0.14,7123.6,12/08/2022,0.768,-14.1
-La Teste-de-Buch,3330.2,2022-07-12,2022-07-17,0.15,0.0,3535.5,17/07/2022,0.894,-5.1
-Saumos,2974.0,2022-09-05,2022-09-20,0.15,0.002,3245.2,17/09/2022,0.746,10.0
+id,feu,commune,departement,surface_ha,debut,fin,n_points_chauds,image_avant,image_apres,latence_jours,seuil_dnbr,part_masquee,calcule_le
+20260723-83-correns,Correns (83),Correns,83,399.1,2026-07-23,2026-07-25,175,2026-07-22,2026-07-24,1,0.15,0.029,2026-07-25T13:05:01Z
+20260723-2B-corte,Corte (2B),Corte,2B,298.2,2026-07-23,2026-07-25,211,2026-07-21,2026-07-24,1,0.15,0.271,2026-07-25T13:05:31Z
+20260723-05-l'argentière-la-bessée,L'Argentière-la-Bessée (05),L'Argentière-la-Bessée,05,127.6,2026-07-23,2026-07-24,184,2026-07-22,2026-07-24,1,0.15,0.016,2026-07-25T13:05:50Z
+20260723-13-fos-sur-mer,Fos-sur-Mer (13),Fos-sur-Mer,13,7.5,2026-07-23,2026-07-25,69,2026-07-22,2026-07-24,1,0.15,0.139,2026-07-25T13:06:34Z

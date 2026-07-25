@@ -166,6 +166,9 @@ def main() -> int:
     p.add_argument("--min-points", type=int, default=2,
                    help="foyers d'au moins N points chauds (défaut 2 : écarte les isolés)")
     p.add_argument("--out", type=Path, default=Path("data/work/foyers.geojson"))
+    p.add_argument("--out-points", type=Path,
+                   default=Path("data/work/foyers_points.geojson"),
+                   help="points chauds bruts des foyers retenus (couche de la carte)")
     args = p.parse_args()
 
     q = quota()
@@ -190,7 +193,16 @@ def main() -> int:
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     retenus.to_crs(4326).to_file(args.out, driver="GeoJSON")
+
+    # Points chauds des seuls foyers retenus : c'est la couche « ça brûle ici » de la
+    # carte. Les points isolés sont écartés — trop de torchères et de faux positifs.
+    dans = gpd.sjoin(gdf.to_crs(CRS_METRIQUE), retenus[["geometry"]],
+                     predicate="within").drop(columns=["index_right"])
+    colonnes = [c for c in ("acq_date", "acq_time", "frp", "capteur", "confidence")
+                if c in dans.columns]
+    dans[colonnes + ["geometry"]].to_crs(4326).to_file(args.out_points, driver="GeoJSON")
     print(f"\n  → {args.out}")
+    print(f"  → {args.out_points}  ({len(dans)} points chauds des foyers retenus)")
     return 0
 
 

@@ -141,7 +141,9 @@ def controler(audit: Audit) -> None:
             audit.erreur(".env n'est PAS ignoré par Git — corriger .gitignore d'abord")
         else:
             print("  .env présent et correctement ignoré par Git")
-        if ".env" in git("ls-files"):
+        # Comparaison ligne à ligne : une recherche de sous-chaîne matcherait
+        # « .env.example », qui a justement vocation à être suivi.
+        if ".env" in git("ls-files").split():
             audit.erreur(".env est suivi par Git")
     else:
         audit.alerte(".env absent : la détection FIRMS ne fonctionnera pas")
