@@ -1,6 +1,7 @@
-# Données : jamais dans le dépôt (volumineuses, retéléchargeables par les scripts)
-data/
-!data/**/.gitkeep
+# Données de travail : hors dépôt (volumineuses, retéléchargeables par les scripts).
+# La barre initiale limite la règle à la racine — sans elle, `site/data/` serait exclu
+# lui aussi, et le site publié partirait sans ses données.
+/data/
 
 # Python
 .venv/

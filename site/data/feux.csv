@@ -1,0 +1,5 @@
+feu,surface_ha,image_avant,image_apres,seuil_dnbr,part_masquee,ems_surface_ha,ems_date,recouvrement_iou,ecart_surface_pct
+Landiras (juillet),6906.0,2022-07-12,2022-07-17,0.15,0.0,6720.5,17/07/2022,0.915,2.9
+Landiras (août),6030.4,2022-08-06,2022-08-11,0.1,0.14,7123.6,12/08/2022,0.768,-14.1
+La Teste-de-Buch,3330.2,2022-07-12,2022-07-17,0.15,0.0,3535.5,17/07/2022,0.894,-5.1
+Saumos,2974.0,2022-09-05,2022-09-20,0.15,0.002,3245.2,17/09/2022,0.746,10.0
