@@ -41,16 +41,76 @@ méthode, pas l'écart de date.
 
 IoU maximal atteint, et valeur au seuil commun 0,15 :
 
-| Feu | Vérité (ha) | IoU max | seuil | écart surface | IoU @0,15 |
-|---|---:|---:|---:|---:|---:|
-| Landiras (juillet) | 6 720,5 | **0,910** | 0,15 | +3,5 % | 0,910 |
-| La Teste-de-Buch | 3 535,5 | **0,803** | 0,15 | +6,6 % | 0,803 |
-| Landiras (août) *hors cicatrice* | 7 123,6 | **0,781** | 0,10 | −12,7 % | 0,771 |
-| Saumos | 3 245,2 | **0,748** | 0,15 | +10,2 % | 0,748 |
-| Landiras (août) *brut* | 8 276,9 | 0,677 | 0,10 | −24,9 % | 0,665 |
+| Feu | Vérité (ha) | IoU max | seuil | écart surface | IoU @0,15 | précision @0,15 |
+|---|---:|---:|---:|---:|---:|---:|
+| Landiras (juillet) | 6 720,5 | **0,915** | 0,15 | +2,9 % | 0,915 | 0,942 |
+| La Teste-de-Buch | 3 535,5 | **0,904** | 0,10 | +2,8 % | 0,894 | 0,969 |
+| Landiras (août) *hors cicatrice* | 7 123,6 | **0,768** | 0,10 | −14,1 % | 0,757 | 0,976 |
+| Saumos | 3 245,2 | **0,746** | 0,15 | +10,0 % | 0,746 | 0,816 |
 
 **Le critère G0 « IoU ≳ 0,7 sur les grands feux » est atteint sur les quatre cas**, avec
 un seuil unique (0,15) et sans réglage par feu.
+
+> Ces chiffres sont ceux obtenus **après** correction du masquage de l'eau (voir « Ce que
+> la vérification visuelle a corrigé »). Avant correction : La Teste-de-Buch plafonnait à
+> 0,803 et Landiras (juillet) à 0,910.
+
+## Ce que la vérification visuelle a corrigé
+
+Les métriques seules ne suffisent pas : `scripts/apercu.py` produit, pour chaque cas, une
+planche à deux panneaux (couleur naturelle après feu / dNBR) avec vérité et détections en
+surimpression. Le regard a immédiatement révélé un défaut que l'IoU masquait.
+
+### L'eau produisait des centaines d'hectares de faux positifs
+
+Sur La Teste-de-Buch, une large tache de détection couvrait le **lac de Cazaux**. La
+cause : l'eau avait été délibérément conservée au masquage, sur le raisonnement « NBR bas
+aux deux dates, donc dNBR ≈ 0 ». **Ce raisonnement est faux.** En eau, B8A et B12 valent
+quelques dizaines de DN ; le rapport (a−b)/(a+b) y est numériquement instable et bascule
+d'une date à l'autre sur du simple bruit capteur.
+
+Deux corrections dans `dnbr.py` :
+- exclusion de la classe SCL 6 (eau) ;
+- garde-fou général `REFLECTANCE_MIN = 0,05` sur la somme des réflectances, qui rattrape
+  ce que le SCL manque (eaux peu profondes, ombres denses, zones humides).
+
+Effet sur La Teste-de-Buch : précision 0,863 → **0,969**, IoU 0,803 → **0,904**, écart de
+surface +6,6 % → +2,8 %. Coût : un léger recul sur Landiras (août) — Sen2Cor classe en
+« eau » une partie du brûlé sous fumée dense. Le bilan reste nettement positif.
+
+**Aucun chiffre d'IoU n'aurait signalé cette erreur** : elle se lisait comme une précision
+un peu faible, pas comme un artefact. C'est l'argument pour garder une étape de contrôle
+visuel dans le processus, y compris en Phase 1.
+
+### Les faux positifs restants sont des parcelles, pas du bruit
+
+`scripts/faux_positifs.py` sépare les polygones détectés selon qu'ils touchent ou non le
+périmètre EMS, et mesure leur compacité (Polsby-Popper) :
+
+| Feu | seuil | n hors feu | ha hors feu | % du détecté | ha médian |
+|---|---:|---:|---:|---:|---:|
+| Landiras (juillet) | 0,15 | 18 | 47,2 | 0,7 % | 1,50 |
+| La Teste-de-Buch | 0,15 | 16 | 49,6 | 1,5 % | 2,32 |
+| Landiras (août) | 0,10 | 36 | 207,4 | 3,4 % | 2,38 |
+| **Saumos** | 0,15 | **60** | **614,4** | **17,2 %** | 4,02 |
+
+Saumos est un cas à part : son rappel est bon (0,897, le feu lui-même est bien capté), mais
+**17 % de la surface détectée est hors du feu**. Sur la planche, ces polygones sont
+rectangulaires et alignés sur le parcellaire — signature de coupes forestières et de
+travaux agricoles, pas d'incendie. C'est exactement le risque « confusion agricole » du
+la feuille de route, et il explique à lui seul l'IoU le plus bas de la série.
+
+Hypothèse examinée : Saumos a le plus long intervalle avant/après (15 jours contre 5 pour
+les autres), ce qui laisse plus de temps aux travaux forestiers. **Non confirmée** : la
+seule image intermédiaire (10/09) est nuageuse à 82 % sur l'AOI (17,6 % de pixels
+exploitables), le test est impossible. L'intervalle long n'était donc pas un choix mais une
+contrainte de couverture nuageuse — ce qui est en soi une limite opérationnelle à retenir
+pour la Phase 1.
+
+Piste de filtrage pour la Phase 1, par ordre de robustesse : exiger la proximité d'un point
+chaud VIIRS (déjà prévu au plan), croiser avec un masque forestier (BD Forêt), et n'utiliser
+la compacité qu'en dernier recours — elle ne discrimine pas assez ici (0,18–0,22 hors feu
+contre 0,12–0,24 sur le feu).
 
 ## Ce que ces chiffres apprennent
 
@@ -108,6 +168,8 @@ est un bon résultat, pas un résultat dégradé.
   `earthsearch:boa_offset_applied = true` ; le ré-appliquer biaiserait le NBR.
 - **Les classes SCL 2 (pixels sombres) et 5 (sol nu) doivent être conservées** : une zone
   fraîchement brûlée y tombe presque toujours. Les masquer reviendrait à masquer la cible.
+- **La classe SCL 6 (eau) doit au contraire être exclue**, avec en plus un plancher de
+  réflectance : le NBR n'a pas de sens sur les surfaces très sombres (cf. ci-dessus).
 - Les paires d'images sont prises sur une même tuile MGRS, donc sur la même grille : aucun
   rééchantillonnage avant la différence. `dnbr.py` refuse explicitement les paires
   inter-tuiles.
@@ -182,5 +244,20 @@ uv run python scripts/dnbr.py --produit EMSR633_AOI01_DEL_MONIT01_r1_VECTORS_v1 
     --pre S2B_30TXQ_20220905_0_L2A --post S2A_30TXQ_20220920_0_L2A
 uv run python scripts/dnbr.py --produit EMSR619_AOI01_DEL_MONIT01_r1_RTP01_v1 \
     --pre S2B_30TXQ_20220806_0_L2A --post S2A_30TXQ_20220811_0_L2A \
-    --exclure-produit EMSR592_AOI01_GRA_PRODUCT_r1_RTP01_v1
+    --exclure-produit EMSR592_AOI01_GRA_PRODUCT_r1_RTP01_v1 --seuil-retenu 0.10
+
+uv run python scripts/apercu.py         # planches de vérification (PNG par cas)
+uv run python scripts/faux_positifs.py  # détections hors périmètre de référence
+uv run python scripts/projet_qgis.py    # projet QGIS pour l'inspection fine
 ```
+
+## Vérifier visuellement
+
+- **Planches PNG** : `data/work/<cas>/apercu.png`. Deux panneaux — couleur naturelle après
+  feu (10 m) et dNBR — avec périmètre EMS en rouge et détections en bleu, contours seuls.
+  C'est sur le panneau couleur naturelle qu'on reconnaît une parcelle agricole, une coupe
+  forestière ou une ombre de nuage.
+- **Projet QGIS** : `data/work/brulis.qgs`, 10 couches pré-stylées, chemins relatifs,
+  rasters dNBR décochés par défaut. ⚠️ Généré mais **non ouvert pour vérification** : QGIS
+  n'est pas installé sur la machine de développement. À défaut, les `.geojson` et `.tif` se
+  chargent un par un par glisser-déposer.

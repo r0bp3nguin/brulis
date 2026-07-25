@@ -39,10 +39,22 @@ COLLECTION = "sentinel-2-l2a"
 CRS_METRIQUE = 2154
 
 # Classification de scène (SCL) Sen2Cor. On écarte le sans-donnée, la saturation,
-# l'ombre de nuage, les nuages et la neige. On GARDE 2 (pixels sombres) et 5 (sol nu) :
-# une zone fraîchement brûlée y tombe presque toujours — les exclure reviendrait à
-# masquer ce qu'on cherche.
-SCL_INVALIDE = {0, 1, 3, 8, 9, 10, 11}
+# l'ombre de nuage, les nuages, la neige — et l'eau (6).
+# On GARDE 2 (pixels sombres) et 5 (sol nu) : une zone fraîchement brûlée y tombe presque
+# toujours — les exclure reviendrait à masquer ce qu'on cherche.
+#
+# L'eau a d'abord été conservée (raisonnement : NBR bas aux deux dates, donc dNBR ~ 0).
+# C'était faux, et la vérification visuelle l'a montré : sur le lac de Cazaux, plusieurs
+# centaines d'hectares étaient détectés comme brûlés. En eau, B8A et B12 valent quelques
+# dizaines de DN ; le rapport (a-b)/(a+b) y est numériquement instable et bascule d'une
+# date à l'autre sur du bruit. Voir REFLECTANCE_MIN pour le garde-fou général.
+SCL_INVALIDE = {0, 1, 3, 6, 8, 9, 10, 11}
+
+# Garde-fou de stabilité du rapport, indépendant du SCL (qui rate les eaux peu profondes,
+# les ombres denses et les zones humides). En dessous de cette somme de réflectances,
+# le NBR n'a pas de sens physique exploitable : quelques DN de bruit suffisent à le faire
+# varier de plusieurs dixièmes. Végétation ~0,30, brûlé ~0,35, eau ~0,009.
+REFLECTANCE_MIN = 0.05
 
 # Seuils UN-SPIDER : 0,10 = limite brûlé/non brûlé, 0,27 = sévérité faible,
 # 0,44 = modérée-basse, 0,66 = modérée-haute.
@@ -80,7 +92,7 @@ def nbr(it, bounds):
         ~np.isin(scl, list(SCL_INVALIDE))
         & (b8a > 0)
         & (b12 > 0)
-        & (somme > 1e-6)
+        & (somme >= REFLECTANCE_MIN)
     )
     out = np.full(a.shape, np.nan, dtype="float32")
     np.divide(a - b, somme, out=out, where=valide)
@@ -116,6 +128,10 @@ def main() -> int:
                         help="périmètre de référence à retirer de la zone de comparaison "
                              "(cicatrice antérieure : un sur-brûlage y est invisible au dNBR). "
                              "Répétable.")
+    parser.add_argument("--seuil-retenu", type=float, default=0.15,
+                        help="seuil dont les polygones sont exportés (défaut 0,15 : optimum "
+                             "d'IoU mesuré en Phase 0 ; 0,20 pour la fidélité de surface). "
+                             "Doit figurer dans la liste balayée.")
     parser.add_argument("--surface-min-ha", type=float, default=1.0,
                         help="surface minimale d'un polygone retenu (défaut 1 ha)")
     parser.add_argument("--marge-m", type=float, default=2000,
@@ -124,6 +140,12 @@ def main() -> int:
     args = parser.parse_args()
 
     os.environ.setdefault("AWS_NO_SIGN_REQUEST", "YES")
+
+    if not any(abs(s - args.seuil_retenu) < 1e-9 for s in SEUILS):
+        raise SystemExit(
+            f"--seuil-retenu {args.seuil_retenu} absent des seuils balayés {SEUILS} : "
+            "aucun polygone ne serait exporté."
+        )
 
     ref = gpd.read_file(args.ref)
     verite = ref[ref["produit"] == args.produit]
@@ -264,8 +286,10 @@ def main() -> int:
             "ecart_surface_pct": round(100 * (aire_det - aire_verite) / aire_verite, 1)
             if aire_verite else None,
         })
-        if detecte is not None and seuil == 0.27:
-            polys.to_file(dossier / "polygones_seuil027.geojson", driver="GeoJSON")
+        if detecte is not None and abs(seuil - args.seuil_retenu) < 1e-9:
+            polys["seuil"] = seuil
+            polys["surface_ha"] = (polys.area / 1e4).round(2)
+            polys.to_file(dossier / "polygones.geojson", driver="GeoJSON")
 
     meilleur = max(resultats, key=lambda r: r["iou"])
 
@@ -289,6 +313,7 @@ def main() -> int:
         "image_apres": {"id": it_post.id, "date": f"{it_post.datetime:%Y-%m-%d}",
                         "nuages_pct": it_post.properties["eo:cloud_cover"]},
         "surface_min_ha": args.surface_min_ha,
+        "seuil_retenu": args.seuil_retenu,
         "produits_exclus": args.exclure_produit,
         "surface_verite_ha": round(aire_verite, 1),
         "part_aoi_couverte_par_tuile": round(float(part_couverte), 4),
