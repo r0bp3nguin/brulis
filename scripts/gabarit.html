@@ -1,0 +1,694 @@
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Brûlis — zones brûlées de France</title>
+<meta name="description" content="Périmètres et surfaces des feux de forêt en France,
+calculés depuis Sentinel-2 et les points chauds VIIRS. Open data.">
+<link href="vendor/maplibre-gl.css" rel="stylesheet">
+<style>
+/* Palette tirée de la rampe dNBR elle-même (l'instrument du projet) : du noir froid des
+   sols nus au jaune des brûlis sévères. La couleur n'est pas décorative, c'est l'échelle
+   de mesure du produit. */
+:root{
+  --nuit:#0c0e13; --roche:#141821; --arete:#232935; --arete-vive:#39424f;
+  --clair:#eef1f6; --cendre:#8d97a6; --cendre-pale:#68717f;
+  --braise:#f2600c;      /* périmètre brûlé */
+  --chaleur:#ff2f5e;     /* point chaud, thermique */
+  --paille:#ffc861;      /* détection isolée, incertitude */
+  --pas:180ms cubic-bezier(.2,.7,.3,1);
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;overflow:hidden}
+body{
+  font:15px/1.55 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:var(--nuit); color:var(--clair);
+  -webkit-font-smoothing:antialiased;
+}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+a{color:#8fc4ff}
+
+/* Micro-étiquettes : large interlettrage, petite casse. Le contraste d'échelle avec les
+   grands nombres tabulaires donne le registre « lecture d'instrument ». */
+.eyebrow{
+  font-size:10.5px; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--cendre-pale); font-weight:600;
+}
+.nombre{font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+
+/* ---------- ossature ---------- */
+#app{display:grid;grid-template-columns:392px 1fr;height:100%}
+#carte{position:relative;height:100%}
+.volet{
+  display:flex;flex-direction:column;min-height:0;
+  background:var(--roche);border-right:1px solid var(--arete);
+}
+
+/* ---------- en-tête ---------- */
+.entete{padding:16px 20px 13px;border-bottom:1px solid var(--arete)}
+.titre{display:flex;align-items:baseline;gap:9px}
+.titre h1{
+  margin:0;font-size:19px;font-weight:700;letter-spacing:-.02em;
+}
+.titre h1 span{color:var(--braise)}
+.titre p{margin:0;font-size:12px;color:var(--cendre-pale)}
+
+.chiffres{display:flex;gap:8px;margin-top:13px}
+.chiffre{
+  flex:1;background:var(--nuit);border:1px solid var(--arete);
+  border-radius:10px;padding:8px 10px 7px;
+}
+.chiffre b{
+  display:block;font-size:21px;font-weight:700;line-height:1.1;color:var(--braise);
+}
+.chiffre .eyebrow{margin-top:2px}
+
+/* ---------- onglets ---------- */
+.onglets{display:flex;gap:2px;padding:10px 14px 0;border-bottom:1px solid var(--arete)}
+.onglet{
+  padding:8px 13px 10px;font-size:13.5px;font-weight:600;color:var(--cendre);
+  border-bottom:2px solid transparent;margin-bottom:-1px;transition:color var(--pas);
+}
+.onglet:hover{color:var(--clair)}
+.onglet[aria-selected="true"]{color:var(--clair);border-bottom-color:var(--braise)}
+.onglet .compte{
+  font-size:11px;color:var(--cendre-pale);margin-left:5px;font-variant-numeric:tabular-nums;
+}
+
+/* ---------- filtres ---------- */
+.filtres{display:flex;gap:8px;padding:12px 14px 10px}
+.recherche{position:relative;flex:1}
+.recherche input{
+  width:100%;background:var(--nuit);border:1px solid var(--arete);border-radius:9px;
+  padding:8px 11px 8px 31px;color:var(--clair);font-size:13.5px;transition:border-color var(--pas);
+}
+.recherche input:focus{outline:none;border-color:var(--arete-vive)}
+.recherche input::placeholder{color:var(--cendre-pale)}
+.recherche svg{position:absolute;left:10px;top:9px;color:var(--cendre-pale)}
+select{
+  background:var(--nuit);border:1px solid var(--arete);border-radius:9px;
+  padding:8px 9px;font-size:13px;color:var(--cendre);cursor:pointer;
+}
+select:focus{outline:none;border-color:var(--arete-vive)}
+
+/* ---------- listes ---------- */
+.corps{flex:1;overflow-y:auto;overscroll-behavior:contain;padding:0 14px 22px}
+.vide{padding:26px 6px;color:var(--cendre-pale);font-size:13.5px;text-align:center}
+
+.carte-feu{
+  display:block;width:100%;text-align:left;position:relative;
+  padding:11px 12px 11px 14px;margin-bottom:7px;
+  background:var(--nuit);border:1px solid var(--arete);border-radius:11px;
+  transition:border-color var(--pas),background var(--pas);
+}
+.carte-feu::before{
+  content:"";position:absolute;left:0;top:11px;bottom:11px;width:3px;
+  border-radius:0 3px 3px 0;background:var(--braise);opacity:.55;transition:opacity var(--pas);
+}
+.carte-feu:hover{border-color:var(--arete-vive);background:#171c25}
+.carte-feu:focus-visible{outline:2px solid var(--braise);outline-offset:2px}
+.carte-feu[aria-current="true"]{border-color:var(--braise);background:#1e1912}
+.carte-feu[aria-current="true"]::before{opacity:1}
+
+.ligne1{display:flex;align-items:baseline;gap:8px}
+.nom{font-weight:650;letter-spacing:-.01em;flex:1;min-width:0;
+     overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.surface{font-size:15px;font-weight:700;color:var(--braise);flex-shrink:0}
+.surface small{font-size:11px;font-weight:600;color:var(--cendre-pale);margin-left:2px}
+.ligne2{display:flex;align-items:center;gap:7px;margin-top:4px;
+        font-size:12px;color:var(--cendre-pale)}
+.sep{opacity:.4}
+
+.etat{display:inline-flex;align-items:center;gap:5px;font-weight:600}
+.point{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+.etat.actif{color:var(--chaleur)}
+.etat.actif .point{background:var(--chaleur);animation:battement 2s ease-in-out infinite}
+.etat.attente{color:var(--paille)}
+.etat.attente .point{background:var(--paille)}
+.carte-feu.attente::before{background:var(--paille)}
+.plage{font-size:15px;font-weight:700;color:var(--paille);flex-shrink:0}
+.plage small{font-size:11px;font-weight:600;color:var(--cendre-pale);margin-left:2px}
+.encart{margin:16px 0;padding:11px 12px;background:#231a10;border:1px solid #4a3418;
+        border-radius:10px}
+.encart .eyebrow{color:var(--paille)}
+.encart p{margin:6px 0 0;font-size:12.5px;color:#e6c89a;line-height:1.5}
+.etat.froid{color:var(--cendre-pale)}
+.etat.froid .point{background:var(--cendre-pale);opacity:.6}
+@keyframes battement{0%,100%{opacity:1;box-shadow:0 0 0 0 #ff2f5e66}
+                     50%{opacity:.55;box-shadow:0 0 0 4px #ff2f5e00}}
+
+/* ---------- fiche détaillée ---------- */
+.retour{display:flex;align-items:center;gap:6px;padding:4px 0 12px;
+        font-size:13px;color:var(--cendre);font-weight:600}
+.retour:hover{color:var(--clair)}
+.fiche h2{margin:0 0 2px;font-size:20px;font-weight:700;letter-spacing:-.02em}
+.fiche .lieu{margin:0 0 16px;font-size:13px;color:var(--cendre-pale)}
+
+.mesure{display:flex;align-items:baseline;gap:9px;margin-bottom:4px}
+.mesure b{font-size:38px;font-weight:700;line-height:1;color:var(--braise)}
+.mesure span{font-size:14px;color:var(--cendre)}
+
+/* Élément signature : la piste de latence. Elle rend visible la contrainte physique du
+   produit — la chaleur est vue en heures, le contour en jours. C'est la seule chose que
+   ce site raconte et qu'aucune autre source ne montre. */
+.piste{margin:20px 0 4px}
+.piste-rail{position:relative;height:2px;background:var(--arete);margin:22px 8px 0}
+.piste-part{position:absolute;top:0;height:2px;background:var(--braise);opacity:.45}
+.jalon{position:absolute;top:-4px;transform:translateX(-50%)}
+.jalon i{display:block;width:10px;height:10px;border-radius:50%;
+         border:2px solid var(--roche);background:var(--cendre)}
+.jalon.chaud i{background:var(--chaleur)}
+.jalon.image i{background:var(--braise)}
+.jalon b{position:absolute;left:50%;transform:translateX(-50%);top:-19px;
+         font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+         color:var(--cendre-pale);font-weight:600;white-space:nowrap}
+.jalon em{position:absolute;left:50%;transform:translateX(-50%);top:15px;
+          font-size:11.5px;font-style:normal;color:var(--cendre);white-space:nowrap;
+          font-variant-numeric:tabular-nums}
+.piste-note{margin:44px 0 0;font-size:12px;color:var(--cendre-pale)}
+
+.donnees{margin:20px 0 0;display:grid;grid-template-columns:auto 1fr;gap:7px 14px;
+         font-size:13px;border-top:1px solid var(--arete);padding-top:15px}
+.donnees dt{color:var(--cendre-pale)}
+.donnees dd{margin:0;font-variant-numeric:tabular-nums}
+
+.reserves{margin-top:16px;padding:11px 12px;background:#231a10;
+          border:1px solid #4a3418;border-radius:10px}
+.reserves .eyebrow{color:var(--paille)}
+.reserves ul{margin:6px 0 0;padding-left:16px;font-size:12.5px;color:#e6c89a}
+.reserves li{margin:3px 0}
+
+/* ---------- mises à jour ---------- */
+.jour{margin:16px 0 8px;position:sticky;top:0;background:var(--roche);padding:4px 0;z-index:1}
+.evt{display:flex;gap:11px;padding:9px 0;border-bottom:1px solid var(--arete);
+     width:100%;text-align:left;transition:background var(--pas)}
+.evt:hover{background:#171c25}
+.evt:focus-visible{outline:2px solid var(--braise);outline-offset:-2px}
+.evt-marque{width:7px;height:7px;border-radius:50%;margin-top:7px;flex-shrink:0}
+.evt-nouveau .evt-marque{background:var(--braise)}
+.evt-agrandi .evt-marque{background:var(--chaleur)}
+.evt-revise .evt-marque{background:var(--cendre-pale)}
+.evt-corps{flex:1;min-width:0}
+.evt-titre{font-size:13.5px;font-weight:600}
+.evt-detail{font-size:12px;color:var(--cendre-pale);margin-top:1px}
+.evt-heure{font-size:11.5px;color:var(--cendre-pale);flex-shrink:0;
+           font-variant-numeric:tabular-nums}
+
+/* ---------- pied ---------- */
+.pied{padding:14px;border-top:1px solid var(--arete);font-size:12px;color:var(--cendre-pale)}
+.pied-liens{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:8px}
+details summary{cursor:pointer;color:var(--cendre);font-weight:600;font-size:12.5px}
+details[open] summary{margin-bottom:7px}
+details p,details li{font-size:12px;line-height:1.6;margin:6px 0}
+details ul{padding-left:15px;margin:5px 0}
+
+/* ---------- carte ---------- */
+.outils{position:absolute;top:12px;right:12px;z-index:3;display:flex;gap:5px}
+.outils button{
+  background:#141821e6;border:1px solid var(--arete);border-radius:8px;
+  padding:7px 11px;font-size:12.5px;font-weight:600;color:var(--cendre);
+  backdrop-filter:blur(8px);transition:all var(--pas);
+}
+.outils button:hover{color:var(--clair);border-color:var(--arete-vive)}
+.outils button[aria-pressed="true"]{color:var(--clair);border-color:var(--arete-vive);
+  background:#1e2431e6}
+.sans-carte{display:flex;flex-direction:column;justify-content:center;height:100%;
+  padding:0 12%;color:var(--cendre);background:var(--nuit)}
+.sans-carte b{color:var(--clair);font-size:16px}
+.sans-carte p{font-size:13.5px;max-width:34ch}
+.maplibregl-popup-content{background:var(--roche);color:var(--clair);
+  border:1px solid var(--arete);border-radius:9px;font-size:13px;padding:9px 11px}
+.maplibregl-popup-tip{border-top-color:var(--arete)!important}
+.maplibregl-ctrl-attrib{font-size:10px}
+
+@media (max-width:820px){
+  html,body{overflow:auto}
+  #app{grid-template-columns:1fr;height:auto}
+  .volet{height:auto;border-right:0;border-bottom:1px solid var(--arete)}
+  #carte{height:62vh;position:sticky;top:0}
+  .corps{max-height:none;overflow:visible}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+}
+</style>
+
+<div id="app">
+  <div class="volet">
+    <header class="entete">
+      <div class="titre">
+        <h1>Brû<span>lis</span></h1>
+        <p>zones brûlées de France</p>
+      </div>
+      <div class="chiffres">
+        <div class="chiffre"><b class="nombre" id="cHa">—</b><div class="eyebrow">hectares</div></div>
+        <div class="chiffre"><b class="nombre" id="cFeux">—</b><div class="eyebrow">feux</div></div>
+        <div class="chiffre"><b class="nombre" id="cAttente">—</b><div class="eyebrow">en attente</div></div>
+      </div>
+    </header>
+
+    <div class="onglets" role="tablist">
+      <button class="onglet" role="tab" aria-selected="true" data-vue="feux">
+        Feux<span class="compte" id="nFeux"></span></button>
+      <button class="onglet" role="tab" aria-selected="false" data-vue="maj">
+        Mises à jour<span class="compte" id="nMaj"></span></button>
+    </div>
+
+    <div class="filtres" id="filtres">
+      <label class="recherche">
+        <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+             stroke-width="1.8" aria-hidden="true">
+          <circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+        <input id="q" type="search" placeholder="Commune ou département…"
+               aria-label="Rechercher un feu">
+      </label>
+      <select id="tri" aria-label="Trier">
+        <option value="date">Plus récents</option>
+        <option value="surface">Plus grands</option>
+        <option value="nom">A → Z</option>
+      </select>
+    </div>
+
+    <div class="corps" id="corps"></div>
+
+    <footer class="pied">
+      <div class="pied-liens">
+        <a href="data/feux.geojson" download>GeoJSON</a>
+        <a href="data/feux.csv" download>CSV</a>
+        <a href="data/points_chauds.geojson" download>Points chauds</a>
+      </div>
+      <details>
+        <summary>Méthode et limites</summary>
+        <p>Les <b>points chauds</b> viennent de NASA FIRMS (VIIRS, pixels de 375 m),
+        environ 3 h après le passage du satellite. Ils disent « ça chauffe ici », pas
+        « voilà le contour ».</p>
+        <p>Le <b>périmètre</b> est calculé sur deux images Sentinel-2, avant et après :
+        un indice de brûlure (NBR) est construit depuis le proche et le moyen infrarouge
+        (B8A et B12, 20 m), et leur différence fait ressortir la végétation détruite.</p>
+        <p><b>Fiabilité mesurée</b> contre les périmètres officiels Copernicus EMS sur les
+        grands feux de Gironde de 2022, tracés à la main sur des images à 0,5–1,5 m :
+        recouvrement de 0,75 à 0,92 avec un réglage unique.</p>
+        <p><b>Ce que la méthode rate :</b></p>
+        <ul>
+          <li>nuages et fumée masquent des zones entières — la part masquée est indiquée
+          feu par feu ;</li>
+          <li>un feu qui rebrûle une zone brûlée récemment est invisible : plus de
+          contraste à mesurer ;</li>
+          <li>les coupes forestières ressemblent à des brûlis, d'où la couche
+          « détections isolées » publiée à part ;</li>
+          <li>un feu encore actif donne un périmètre partiel, qui grandira au prochain
+          passage.</li>
+        </ul>
+        <p>Données sous Licence Ouverte 2.0. Fond IGN Géoplateforme, images Copernicus
+        Sentinel-2, points chauds NASA FIRMS.</p>
+      </details>
+      <p style="margin:9px 0 0">Mise à jour <span id="maj"></span></p>
+    </footer>
+  </div>
+
+  <div id="carte">
+    <div class="outils">
+      <button id="bPlan" aria-pressed="true">Plan</button>
+      <button id="bOrtho" aria-pressed="false">Photo</button>
+      <button id="bChauds" aria-pressed="true">Points chauds</button>
+    </div>
+  </div>
+</div>
+
+<script src="vendor/maplibre-gl.js"></script>
+<script>
+const FEUX = __FEUX__, ISOLEES = __ISOLEES__, CHAUDS = __CHAUDS__,
+      JOURNAL = __JOURNAL__, GENERE = "__GENERE__";
+
+/* Un feu est « en cours » si de la chaleur a été vue dans les 48 h précédant le calcul :
+   au-delà, VIIRS ne détecte plus rien et le périmètre ne bougera plus. */
+const ACTIF_HEURES = 48;
+const jours = (a, b) => (new Date(b) - new Date(a)) / 864e5;
+
+const estActif = p => jours(p.fin, GENERE) * 24 <= ACTIF_HEURES;
+const fmt = n => n.toLocaleString("fr-FR", {maximumFractionDigits: n < 10 ? 1 : 0});
+const dateCourte = d => new Date(d).toLocaleDateString("fr-FR",
+  {day:"numeric", month:"short"});
+
+function depuis(iso){
+  const h = (Date.now() - new Date(iso)) / 36e5;
+  if (h < 1) return "à l'instant";
+  if (h < 24) return `il y a ${Math.round(h)} h`;
+  const j = Math.round(h / 24);
+  return j === 1 ? "hier" : `il y a ${j} jours`;
+}
+
+/* ---------- carte ---------- */
+const ign = (couche, fmt_) => "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0" +
+  "&REQUEST=GetTile&LAYER=" + couche + "&STYLE=normal&TILEMATRIXSET=PM" +
+  "&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=" + fmt_;
+
+/* La carte exige WebGL. S'il manque (matériel ancien, accélération désactivée, navigateur
+   durci), MapLibre lève à la construction — et sans garde, l'exception emporte tout le
+   script : plus de liste, plus de chiffres, page morte. Les données doivent rester
+   consultables sans carte. */
+let carte = null;
+try {
+  carte = new maplibregl.Map({
+    container:"carte",
+    style:{version:8, sources:{
+      plan:{type:"raster", tiles:[ign("GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2","image/png")],
+            tileSize:256, attribution:"IGN Géoplateforme"},
+      ortho:{type:"raster", tiles:[ign("ORTHOIMAGERY.ORTHOPHOTOS","image/jpeg")],
+             tileSize:256, attribution:"IGN Géoplateforme"}},
+     layers:[{id:"plan",type:"raster",source:"plan"},
+             {id:"ortho",type:"raster",source:"ortho",layout:{visibility:"none"}}]},
+    center:[2.4,46.6], zoom:5
+  });
+  carte.addControl(new maplibregl.NavigationControl({showCompass:false}), "bottom-right");
+  carte.addControl(new maplibregl.ScaleControl(), "bottom-left");
+} catch (err) {
+  // Les outils sont enfants de #carte : les masquer avant d'en réécrire le contenu,
+  // sinon la référence est déjà détruite.
+  const outils = document.querySelector(".outils");
+  if (outils) outils.remove();
+  document.getElementById("carte").innerHTML =
+    `<div class="sans-carte"><b>Carte indisponible</b>
+     <p>Votre navigateur n'expose pas WebGL. La liste des feux et les téléchargements
+     restent utilisables.</p></div>`;
+}
+
+if (carte) carte.on("load", () => {
+  carte.addSource("chauds", {type:"geojson", data:CHAUDS});
+  carte.addLayer({id:"chauds-pt", type:"circle", source:"chauds",
+    paint:{"circle-radius":["interpolate",["linear"],["zoom"],5,1.7,10,4,13,6.5],
+           "circle-color":"#ff2f5e","circle-opacity":0.5}});
+
+  carte.addSource("isolees", {type:"geojson", data:ISOLEES});
+  carte.addLayer({id:"isolees-fond", type:"fill", source:"isolees",
+    paint:{"fill-color":"#ffc861","fill-opacity":0.2}});
+  carte.addLayer({id:"isolees-trait", type:"line", source:"isolees",
+    paint:{"line-color":"#ffc861","line-width":1,"line-opacity":.75}});
+
+  carte.addSource("feux", {type:"geojson", data:FEUX});
+  // Les emprises en attente sont hachurées d'une couleur distincte : elles ne doivent
+  // jamais se lire comme un périmètre mesuré.
+  carte.addLayer({id:"feux-attente", type:"line", source:"feux",
+    filter:["==",["get","statut"],"en_attente"],
+    paint:{"line-color":"#ffc861","line-width":2,"line-dasharray":[2,1.6]}});
+  carte.addLayer({id:"feux-attente-fond", type:"fill", source:"feux",
+    filter:["==",["get","statut"],"en_attente"],
+    paint:{"fill-color":"#ffc861","fill-opacity":0.14}});
+  carte.addLayer({id:"feux-fond", type:"fill", source:"feux",
+    filter:["!=",["get","statut"],"en_attente"],
+    paint:{"fill-color":"#f2600c",
+           "fill-opacity":["case",["boolean",["feature-state","actif"],false],.5,.32]}});
+  carte.addLayer({id:"feux-trait", type:"line", source:"feux",
+    filter:["!=",["get","statut"],"en_attente"],
+    paint:{"line-color":"#f2600c",
+           "line-width":["case",["boolean",["feature-state","actif"],false],3,1.6]}});
+
+  if (FEUX.features.length) cadrer(FEUX.features);
+
+  for (const c of ["feux-fond","feux-attente-fond","isolees-fond"]){
+    carte.on("mouseenter", c, () => carte.getCanvas().style.cursor = "pointer");
+    carte.on("mouseleave", c, () => carte.getCanvas().style.cursor = "");
+  }
+  carte.on("click", "feux-fond", e => ouvrir(e.features[0].properties.id));
+  carte.on("click", "feux-attente-fond", e => ouvrir(e.features[0].properties.id));
+  carte.on("click", "isolees-fond", e => new maplibregl.Popup({closeButton:false})
+    .setLngLat(e.lngLat)
+    .setHTML(`<b>Détection isolée</b> — ${e.features[0].properties.surface_ha} ha<br>
+      <span style="color:#8d97a6">hors périmètre principal, souvent une coupe
+      forestière</span>`).addTo(carte));
+
+  appliquerHash();
+});
+if (!carte) appliquerHash();
+
+function cadrer(features){
+  if (!carte || !features.length) return;
+  const b = new maplibregl.LngLatBounds();
+  const p = c => typeof c[0] === "number" ? b.extend(c) : c.forEach(p);
+  features.forEach(f => p(f.geometry.coordinates));
+  const gauche = window.innerWidth > 820 ? 40 : 20;
+  carte.fitBounds(b, {padding:{top:60,bottom:60,left:gauche,right:60},
+                      maxZoom:13, duration:600});
+}
+
+let surligne = null;
+function surligner(id){
+  if (!carte) return;
+  if (surligne !== null)
+    carte.setFeatureState({source:"feux", id:surligne}, {actif:false});
+  surligne = FEUX.features.findIndex(f => f.properties.id === id);
+  if (surligne >= 0) carte.setFeatureState({source:"feux", id:surligne}, {actif:true});
+  else surligne = null;
+}
+
+/* ---------- état ---------- */
+const etat = {vue:"feux", q:"", tri:"date", ouvert:null};
+const corps = document.getElementById("corps");
+const filtres = document.getElementById("filtres");
+
+function filtrer(){
+  const q = etat.q.trim().toLowerCase();
+  let out = FEUX.features.filter(f => !q ||
+    (f.properties.feu + " " + f.properties.departement).toLowerCase().includes(q));
+  const cle = {
+    date:(a,b) => new Date(b.properties.fin) - new Date(a.properties.fin),
+    surface:(a,b) => b.properties.surface_ha - a.properties.surface_ha,
+    nom:(a,b) => a.properties.feu.localeCompare(b.properties.feu, "fr"),
+  }[etat.tri];
+  return out.sort(cle);
+}
+
+function rendre(){
+  document.querySelectorAll(".onglet").forEach(o =>
+    o.setAttribute("aria-selected", String(o.dataset.vue === etat.vue)));
+  filtres.style.display = (etat.vue === "feux" && !etat.ouvert) ? "flex" : "none";
+
+  if (etat.ouvert) return rendreFiche(etat.ouvert);
+  corps.innerHTML = etat.vue === "feux" ? listeFeux() : listeMaj();
+}
+
+function listeFeux(){
+  const l = filtrer();
+  if (!l.length) return `<p class="vide">Aucun feu ne correspond à « ${etat.q} ».</p>`;
+  return l.map(f => {
+    const p = f.properties, actif = estActif(p), attente = p.statut === "en_attente";
+    const mesure = attente
+      ? `<span class="plage nombre">${fmt(p.surface_min_ha)}–${fmt(p.surface_max_ha)}<small>ha</small></span>`
+      : `<span class="surface nombre">${fmt(p.surface_ha)}<small>ha</small></span>`;
+    const etatTexte = attente ? "en attente d'image" : (actif ? "en cours" : "refroidi");
+    const etatClasse = attente ? "attente" : (actif ? "actif" : "froid");
+    const seconde = attente
+      ? `<span>${p.n_points_chauds} points chauds</span>`
+      : `<span>image ${dateCourte(p.image_apres)}</span>`;
+    return `<button class="carte-feu ${attente ? "attente" : ""}" data-id="${p.id}"
+      aria-current="${etat.ouvert === p.id}">
+      <div class="ligne1"><span class="nom">${p.feu}</span>${mesure}</div>
+      <div class="ligne2">
+        <span class="etat ${etatClasse}"><i class="point"></i>${etatTexte}</span>
+        <span class="sep">·</span><span>départ ${dateCourte(p.debut)}</span>
+        <span class="sep">·</span>${seconde}
+      </div></button>`;
+  }).join("");
+}
+
+function listeMaj(){
+  const e = JOURNAL.evenements || [];
+  if (!e.length) return `<p class="vide">Aucune mise à jour enregistrée.<br>
+    Elles apparaîtront au prochain calcul.</p>`;
+  let html = "", jourCourant = "";
+  for (const v of e){
+    const j = new Date(v.date).toLocaleDateString("fr-FR",
+      {weekday:"long", day:"numeric", month:"long"});
+    if (j !== jourCourant){ jourCourant = j; html += `<div class="jour eyebrow">${j}</div>`; }
+    const libelle = {
+      nouveau:"Nouveau feu détecté",
+      agrandi:"Périmètre agrandi",
+      revise:"Périmètre révisé",
+    }[v.type] || v.type;
+    const detail = v.surface_precedente
+      ? `${fmt(v.surface_precedente)} → ${fmt(v.surface_ha)} ha`
+      : `${fmt(v.surface_ha)} ha`;
+    html += `<button class="evt evt-${v.type}" data-id="${v.id}">
+      <span class="evt-marque"></span>
+      <span class="evt-corps">
+        <span class="evt-titre">${v.feu}</span>
+        <span class="evt-detail">${libelle} · ${detail}</span>
+      </span>
+      <span class="evt-heure">${new Date(v.date).toLocaleTimeString("fr-FR",
+        {hour:"2-digit", minute:"2-digit"})}</span></button>`;
+  }
+  return html;
+}
+
+function rendreFiche(id){
+  const f = FEUX.features.find(x => x.properties.id === id);
+  if (!f) { etat.ouvert = null; return rendre(); }
+  const p = f.properties, actif = estActif(p), attente = p.statut === "en_attente";
+
+  if (attente) return rendreAttente(p);
+
+  // Piste de latence : chaleur vue en heures, contour en jours. Les jalons sont placés
+  // proportionnellement au temps réellement écoulé, pas à intervalle fixe.
+  const t0 = new Date(p.debut), t1 = new Date(p.fin), t2 = new Date(p.image_apres);
+  const total = Math.max(jours(p.debut, p.image_apres), 0.5);
+  const pos = d => 4 + 92 * Math.min(Math.max(jours(p.debut, d) / total, 0), 1);
+
+  corps.innerHTML = `
+    <button class="retour" id="retour">
+      <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+           stroke-width="2" aria-hidden="true"><path d="M10 3 5 8l5 5"/></svg>
+      Tous les feux</button>
+    <div class="fiche">
+      <h2>${p.feu}</h2>
+      <p class="lieu">${p.commune ? p.commune + " · " : ""}département ${p.departement}</p>
+
+      <div class="mesure"><b class="nombre">${fmt(p.surface_ha)}</b><span>hectares brûlés</span></div>
+      <div class="eyebrow">
+        <span class="etat ${actif ? "actif" : "froid"}">
+          <i class="point"></i>${actif ? "feu en cours" : "plus de chaleur détectée"}</span>
+      </div>
+
+      <div class="piste">
+        <div class="eyebrow">Ce que l'on sait, et quand</div>
+        <div class="piste-rail">
+          <div class="piste-part" style="left:${pos(p.debut)}%;width:${pos(p.image_apres)-pos(p.debut)}%"></div>
+          <div class="jalon chaud" style="left:${pos(p.debut)}%">
+            <b>départ</b><i></i><em>${dateCourte(p.debut)}</em></div>
+          ${jours(p.debut, p.fin) > 0.4 ? `<div class="jalon chaud" style="left:${pos(p.fin)}%">
+            <i></i><em>${dateCourte(p.fin)}</em></div>` : ""}
+          <div class="jalon image" style="left:${pos(p.image_apres)}%">
+            <b>image</b><i></i><em>${dateCourte(p.image_apres)}</em></div>
+        </div>
+        <p class="piste-note">Chaleur détectée par VIIRS en ~3 h ; le contour attend le
+        passage de Sentinel-2, soit <b>${p.latence_jours} jour${p.latence_jours > 1 ? "s" : ""}</b> ici.</p>
+      </div>
+
+      <dl class="donnees">
+        <dt>Points chauds</dt><dd>${p.n_points_chauds}</dd>
+        <dt>Image avant</dt><dd>${p.image_avant}</dd>
+        <dt>Image après</dt><dd>${p.image_apres}</dd>
+        <dt>Zone masquée</dt><dd>${Math.round((p.part_masquee || 0) * 100)} %</dd>
+        <dt>Seuil dNBR</dt><dd>${p.seuil_dnbr}</dd>
+        <dt>Calculé</dt><dd>${depuis(p.calcule_le)}</dd>
+      </dl>
+
+      ${p.reserves && p.reserves.length ? `<div class="reserves">
+        <div class="eyebrow">À savoir sur ce périmètre</div>
+        <ul>${p.reserves.map(r => `<li>${r}</li>`).join("")}</ul></div>` : ""}
+    </div>`;
+  document.getElementById("retour").onclick = () => ouvrir(null);
+}
+
+/* Un feu sans image exploitable : on montre ce que l'on sait (chaleur observée, ordre de
+   grandeur, date du prochain passage) plutôt qu'une page vide ou, pire, un chiffre net
+   qui laisserait croire à une mesure. */
+function rendreAttente(p){
+  corps.innerHTML = `
+    <button class="retour" id="retour">
+      <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+           stroke-width="2" aria-hidden="true"><path d="M10 3 5 8l5 5"/></svg>
+      Tous les feux</button>
+    <div class="fiche">
+      <h2>${p.feu}</h2>
+      <p class="lieu">${p.commune ? p.commune + " · " : ""}département ${p.departement}</p>
+
+      <div class="mesure">
+        <b class="nombre" style="color:var(--paille);font-size:30px">${fmt(p.surface_min_ha)}–${fmt(p.surface_max_ha)}</b>
+        <span>hectares, ordre de grandeur</span></div>
+      <div class="eyebrow">
+        <span class="etat attente"><i class="point"></i>périmètre pas encore mesurable</span>
+      </div>
+
+      <div class="encart">
+        <div class="eyebrow">Pourquoi pas de contour précis</div>
+        <p>${p.motif_attente}. Ce chiffre vient de l'étendue vue comme chaude par le
+        satellite thermique, ce n'est <b>pas</b> un périmètre brûlé : il peut sous-estimer
+        (ce qui a brûlé puis refroidi entre deux passages n'est pas vu) comme surestimer.
+        ${p.prochain_passage ? `Prochain passage Sentinel-2 attendu vers le
+        <b>${new Date(p.prochain_passage).toLocaleDateString("fr-FR",
+          {day:"numeric", month:"long"})}</b>.` : ""}</p>
+      </div>
+
+      <dl class="donnees">
+        <dt>Points chauds</dt><dd>${p.n_points_chauds}</dd>
+        <dt>Première chaleur</dt><dd>${dateCourte(p.debut)}</dd>
+        <dt>Dernière chaleur</dt><dd>${dateCourte(p.fin)}</dd>
+        <dt>Calculé</dt><dd>${depuis(p.calcule_le)}</dd>
+      </dl>
+    </div>`;
+  document.getElementById("retour").onclick = () => ouvrir(null);
+}
+
+function ouvrir(id){
+  etat.ouvert = id;
+  surligner(id);
+  if (id){
+    const f = FEUX.features.find(x => x.properties.id === id);
+    if (f) cadrer([f]);
+    history.replaceState(null, "", "#feu=" + encodeURIComponent(id));
+  } else {
+    cadrer(filtrer());
+    history.replaceState(null, "", location.pathname);
+  }
+  rendre();
+  corps.scrollTop = 0;
+}
+
+function appliquerHash(){
+  const m = location.hash.match(/feu=([^&]+)/);
+  if (m) ouvrir(decodeURIComponent(m[1]));
+}
+
+/* ---------- interactions ---------- */
+corps.addEventListener("click", e => {
+  const c = e.target.closest("[data-id]");
+  if (!c) return;
+  if (c.classList.contains("evt")) { etat.vue = "feux"; }
+  ouvrir(c.dataset.id);
+});
+
+document.querySelectorAll(".onglet").forEach(o => o.onclick = () => {
+  etat.vue = o.dataset.vue; etat.ouvert = null; surligner(null); rendre();
+});
+
+document.getElementById("q").addEventListener("input", e => {
+  etat.q = e.target.value; rendre();
+});
+document.getElementById("tri").addEventListener("change", e => {
+  etat.tri = e.target.value; rendre();
+});
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape" && etat.ouvert) ouvrir(null);
+  if (e.key === "/" && e.target.tagName !== "INPUT"){
+    e.preventDefault(); document.getElementById("q").focus();
+  }
+});
+
+function basculerFond(quel){
+  if (!carte) return;
+  for (const c of ["plan","ortho"])
+    carte.setLayoutProperty(c, "visibility", c === quel ? "visible" : "none");
+  document.getElementById("bPlan").setAttribute("aria-pressed", String(quel === "plan"));
+  document.getElementById("bOrtho").setAttribute("aria-pressed", String(quel === "ortho"));
+}
+// Ces boutons vivent dans .outils, retiré quand la carte est indisponible.
+const surBouton = (id, fn) => { const b = document.getElementById(id); if (b) b.onclick = fn; };
+surBouton("bPlan", () => basculerFond("plan"));
+surBouton("bOrtho", () => basculerFond("ortho"));
+surBouton("bChauds", function(){
+  const on = this.getAttribute("aria-pressed") !== "true";
+  this.setAttribute("aria-pressed", String(on));
+  if (carte) carte.setLayoutProperty("chauds-pt", "visibility", on ? "visible" : "none");
+});
+
+/* ---------- amorçage ---------- */
+// Le total d'hectares ne compte que les feux réellement mesurés : additionner des
+// ordres de grandeur à des mesures donnerait un chiffre que rien ne soutient.
+const mesures = FEUX.features.filter(f => f.properties.statut !== "en_attente");
+const total = mesures.reduce((s,f) => s + f.properties.surface_ha, 0);
+document.getElementById("cHa").textContent = fmt(total);
+document.getElementById("cFeux").textContent = mesures.length;
+document.getElementById("cAttente").textContent =
+  FEUX.features.length - mesures.length;
+document.getElementById("nFeux").textContent = FEUX.features.length;
+document.getElementById("nMaj").textContent = (JOURNAL.evenements || []).length;
+document.getElementById("maj").textContent = depuis(GENERE);
+rendre();
+</script>

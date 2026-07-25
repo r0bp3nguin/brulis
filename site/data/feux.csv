@@ -1,5 +1,8 @@
-id,feu,commune,departement,surface_ha,debut,fin,n_points_chauds,image_avant,image_apres,latence_jours,seuil_dnbr,part_masquee,calcule_le
-20260723-83-correns,Correns (83),Correns,83,399.1,2026-07-23,2026-07-25,175,2026-07-22,2026-07-24,1,0.15,0.029,2026-07-25T13:05:01Z
-20260723-2B-corte,Corte (2B),Corte,2B,298.2,2026-07-23,2026-07-25,211,2026-07-21,2026-07-24,1,0.15,0.271,2026-07-25T13:05:31Z
-20260723-05-l'argentière-la-bessée,L'Argentière-la-Bessée (05),L'Argentière-la-Bessée,05,127.6,2026-07-23,2026-07-24,184,2026-07-22,2026-07-24,1,0.15,0.016,2026-07-25T13:05:50Z
-20260723-13-fos-sur-mer,Fos-sur-Mer (13),Fos-sur-Mer,13,7.5,2026-07-23,2026-07-25,69,2026-07-22,2026-07-24,1,0.15,0.139,2026-07-25T13:06:34Z
+id,feu,statut,commune,departement,surface_ha,surface_min_ha,surface_max_ha,debut,fin,n_points_chauds,image_avant,image_apres,latence_jours,seuil_dnbr,part_masquee,prochain_passage,calcule_le
+20260722-33-le-porge,Le Porge (33),en_attente,Le Porge,33,20281.5,13183.0,27380.0,2026-07-22,2026-07-25,4853,,,,,,2026-07-25,2026-07-25T13:28:20Z
+20260723-40-biscarrosse,Biscarrosse (40),en_attente,Biscarrosse,40,4355.7,2831.0,5880.0,2026-07-23,2026-07-25,1084,,,,,,2026-07-25,2026-07-25T13:28:22Z
+20260721-00-foyer,foyer 195,en_attente,,,313.1,203.0,423.0,2026-07-21,2026-07-25,163,,,,,,2026-07-25,2026-07-25T13:30:31Z
+20260721-83-pontevès,Pontevès (83),mesure,Pontevès,83,3162.4,,,2026-07-21,2026-07-25,697,2026-07-17,2026-07-24,3,0.15,0.0,,2026-07-25T13:28:40Z
+20260721-2B-corte,Corte (2B),mesure,Corte,2B,596.5,,,2026-07-21,2026-07-25,610,2026-07-21,2026-07-24,3,0.15,0.265,,2026-07-25T13:29:55Z
+20260721-05-l'argentière-la-bessée,L'Argentière-la-Bessée (05),mesure,L'Argentière-la-Bessée,05,469.2,,,2026-07-21,2026-07-24,504,2026-07-17,2026-07-24,3,0.15,0.159,,2026-07-25T13:29:27Z
+20260723-13-fos-sur-mer,Fos-sur-Mer (13),mesure,Fos-sur-Mer,13,12.5,,,2026-07-21,2026-07-25,233,2026-07-22,2026-07-24,1,0.15,0.139,,2026-07-25T13:06:34Z

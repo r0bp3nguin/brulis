@@ -48,6 +48,21 @@ JOURS_AVANT = 60           # fenêtre de recherche de l'image avant-feu
 COUVERTURE_MIN = 0.55      # part minimale de pixels exploitables sur la zone
 DISTANCE_RATTACHEMENT = 3000  # un polygone au-delà n'est pas rattaché à ce foyer
 
+# Demi-côté d'un pixel VIIRS (375 m au nadir). Tamponner les points chauds de cette
+# distance approche l'emprise vue comme chaude au moment des passages.
+#
+# Ce n'est PAS un périmètre brûlé, et ce n'est PAS une borne. Confronté aux deux seuls
+# cas où une surface de référence existait le jour même (25/07/2026) :
+#   Biscarrosse   4 356 ha estimés contre  3 500 ha rapportés  -> +24 %
+#   Gironde      20 282 ha estimés contre 30 000 ha rapportés  -> -32 %
+# La sous-estimation vient du principe même de la mesure : VIIRS ne voit que les fronts
+# actifs à l'instant du passage ; ce qui a brûlé puis refroidi entre deux passages
+# n'apparaît pas. Sur un feu très rapide, la perte domine.
+#
+# On publie donc un ordre de grandeur explicitement incertain, jamais un chiffre net.
+DEMI_PIXEL_VIIRS = 187
+INCERTITUDE_ESTIMEE = 0.35  # ±35 %, enveloppe des deux écarts observés
+
 
 def nommer(lat: float, lon: float) -> dict:
     """Commune la plus proche (geo.api.gouv.fr, libre et sans clé)."""
@@ -89,7 +104,37 @@ def couverture(it, zone_m, marge=MARGE_M) -> tuple[float, object]:
     return float((valide & dans).sum() / dans.sum()), (valeurs, valide, transform, crs)
 
 
-def traiter(foyer, client: Client, seuil: float, sortie: Path) -> dict | None:
+def prochain_passage(client: Client, bbox) -> str | None:
+    """Date du prochain passage Sentinel-2 attendu, d'après le rythme observé.
+
+    Sans cette information, un feu sans image ne dit rien de ce qu'il faut attendre.
+    Le rythme dépend du lieu (recouvrement des orbites) : on le mesure au lieu de
+    supposer les 5 jours théoriques.
+    """
+    from datetime import date
+    passes = sorted({i.datetime.date() for i in client.search(
+        collections=[COLLECTION], bbox=list(bbox),
+        datetime="2026-06-01/2026-12-31").item_collection()})
+    if len(passes) < 3:
+        return None
+    ecarts = [(passes[k + 1] - passes[k]).days for k in range(len(passes) - 1)]
+    typique = min(e for e in ecarts if e > 0) if any(e > 0 for e in ecarts) else 5
+    prevu = passes[-1] + timedelta(days=typique)
+    aujourd = datetime.now(timezone.utc).date()
+    while prevu < aujourd:
+        prevu += timedelta(days=typique)
+    return prevu.isoformat()
+
+
+def emprise_points_chauds(foyer, points: gpd.GeoDataFrame | None):
+    """Emprise chaude observée : borne haute en attendant une image exploitable."""
+    if points is not None and len(points):
+        return points.to_crs(CRS_METRIQUE).buffer(DEMI_PIXEL_VIIRS).union_all()
+    return foyer.geometry
+
+
+def traiter(foyer, client: Client, seuil: float, sortie: Path,
+            points: gpd.GeoDataFrame | None = None) -> dict | None:
     zone_m = foyer.geometry
     # Tampon en mètres puis reprojection : bufferiser en degrés déforme selon la latitude.
     bbox = (gpd.GeoSeries([zone_m], crs=CRS_METRIQUE)
@@ -106,14 +151,46 @@ def traiter(foyer, client: Client, seuil: float, sortie: Path) -> dict | None:
     print(f"\n  {etiquette} — {foyer['n_points']} points chauds, "
           f"{foyer['date_debut']} → {foyer['date_fin']}")
 
+    def en_attente(motif: str) -> dict:
+        """Publier ce que l'on sait déjà plutôt que rien : un grand feu sans image
+        satellite doit apparaître, avec une estimation clairement majorante."""
+        geom = emprise_points_chauds(foyer, points)
+        estimee = geom.area / 1e4
+        attendu = prochain_passage(client, bbox)
+        identifiant = (f"{debut:%Y%m%d}-{lieu['departement'] or '00'}-"
+                       f"{(lieu['commune'] or 'foyer').lower().replace(' ', '-')[:24]}")
+        dossier = sortie / identifiant
+        dossier.mkdir(parents=True, exist_ok=True)
+        info = {
+            "id": identifiant, "feu": etiquette, "statut": "en_attente",
+            "motif_attente": motif,
+            "commune": lieu["commune"], "departement": lieu["departement"],
+            "surface_estimee_ha": round(estimee, 1),
+            "surface_min_ha": round(estimee * (1 - INCERTITUDE_ESTIMEE), 0),
+            "surface_max_ha": round(estimee * (1 + INCERTITUDE_ESTIMEE), 0),
+            "premier_point_chaud": str(foyer["date_debut"])[:10],
+            "dernier_point_chaud": str(foyer["date_fin"])[:10],
+            "n_points_chauds": int(foyer["n_points"]),
+            "frp_total": float(foyer["frp_total"]) if foyer.get("frp_total") is not None else None,
+            "prochain_passage": attendu,
+            "calcule_le": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        }
+        (dossier / "info.json").write_text(
+            json.dumps(info, indent=2, ensure_ascii=False), encoding="utf-8")
+        gpd.GeoDataFrame({"geometry": [geom]}, geometry="geometry", crs=CRS_METRIQUE) \
+            .to_crs(4326).to_file(dossier / "emprise.geojson", driver="GeoJSON")
+        print(f"     → EN ATTENTE ({motif}) : {estimee * (1 - INCERTITUDE_ESTIMEE):.0f}"
+              f"–{estimee * (1 + INCERTITUDE_ESTIMEE):.0f} ha d'emprise chaude, "
+              f"prochain passage {attendu or 'inconnu'}")
+        return info
+
     apres_max = datetime.now(timezone.utc) + timedelta(days=1)
     candidats = sorted(
         client.search(collections=[COLLECTION], bbox=list(bbox),
                       datetime=f"{debut:%Y-%m-%d}/{apres_max:%Y-%m-%d}").item_collection(),
         key=lambda i: i.datetime, reverse=True)
     if not candidats:
-        print("     aucune image après le départ de feu")
-        return None
+        return en_attente("aucune image satellite depuis le départ du feu")
 
     # On teste les plus récentes d'abord et on s'arrête à la première exploitable.
     for it_post in candidats[:6]:
@@ -124,8 +201,7 @@ def traiter(foyer, client: Client, seuil: float, sortie: Path) -> dict | None:
         if part >= COUVERTURE_MIN:
             break
     else:
-        print("     aucune image après-feu suffisamment dégagée")
-        return None
+        return en_attente("images trop couvertes par les nuages ou la fumée")
 
     nbr_post, val_post, transform, crs = lu
     tuile = tuile_de(it_post)
@@ -144,8 +220,7 @@ def traiter(foyer, client: Client, seuil: float, sortie: Path) -> dict | None:
         if part >= COUVERTURE_MIN:
             break
     else:
-        print("     aucune image avant-feu exploitable sur la même tuile")
-        return None
+        return en_attente("aucune image avant-feu exploitable pour la comparaison")
 
     nbr_pre, val_pre, transform_pre, _ = lu_pre
     if nbr_pre.shape != nbr_post.shape:
@@ -180,6 +255,7 @@ def traiter(foyer, client: Client, seuil: float, sortie: Path) -> dict | None:
     info = {
         "id": identifiant,
         "feu": etiquette,
+        "statut": "mesure",
         "commune": lieu["commune"],
         "departement": lieu["departement"],
         "surface_ha": round(surface, 1),
@@ -229,9 +305,13 @@ def main() -> int:
     if not any(abs(s - args.seuil) < 1e-9 for s in SEUILS):
         print(f"  (seuil {args.seuil} hors de la grille de référence {SEUILS})")
 
+    pts = None
     if args.foyers and args.foyers.exists():
         f = gpd.read_file(args.foyers).to_crs(CRS_METRIQUE)
         print(f"  {len(f)} foyers relus depuis {args.foyers}")
+        chemin_pts = args.foyers.with_name("foyers_points.geojson")
+        if chemin_pts.exists():
+            pts = gpd.read_file(chemin_pts).to_crs(CRS_METRIQUE)
     else:
         pts = firms.points_chauds(jours=args.jours)
         print(f"  {len(pts)} points chauds sur {args.jours} j")
@@ -245,17 +325,26 @@ def main() -> int:
     resultats = []
     for _, foyer in f.iterrows():
         try:
-            info = traiter(foyer, client, args.seuil, args.out)
+            proches = None
+            if pts is not None:
+                proches = pts[pts.geometry.within(foyer.geometry)]
+            info = traiter(foyer, client, args.seuil, args.out, proches)
         except Exception as exc:  # un foyer qui échoue ne doit pas arrêter la chaîne
             print(f"     ÉCHEC : {type(exc).__name__} — {exc}")
             continue
         if info:
             resultats.append(info)
 
-    print(f"\n  {len(resultats)} périmètres produits sur {len(f)} foyers")
-    for r in sorted(resultats, key=lambda x: -x["surface_ha"]):
+    mesures = [r for r in resultats if r.get("statut") == "mesure"]
+    attentes = [r for r in resultats if r.get("statut") == "en_attente"]
+    print(f"\n  {len(mesures)} périmètres mesurés, {len(attentes)} feux en attente d'image "
+          f"sur {len(f)} foyers")
+    for r in sorted(mesures, key=lambda x: -x["surface_ha"]):
         print(f"    {r['feu'][:34]:36s} {r['surface_ha']:>9.1f} ha  "
               f"(image {r['image_apres']['date']}, latence {r['latence_jours']} j)")
+    for r in sorted(attentes, key=lambda x: -x["surface_estimee_ha"]):
+        print(f"    {r['feu'][:34]:36s} ~{r['surface_estimee_ha']:>8.0f} ha estimés  "
+              f"(en attente, prochain passage {r.get('prochain_passage') or '?'})")
     if resultats:
         print(f"\n  → {args.out}/   puis : uv run python scripts/site.py")
     return 0
