@@ -1,0 +1,24 @@
+# En-têtes Cloudflare Pages. Site 100 % statique, sans formulaire ni cookie :
+# on peut donc verrouiller très fort sans rien casser.
+
+/*
+  # La CSP est la protection principale : même si un contenu malveillant se glissait
+  # dans les données, il ne pourrait ni s'exécuter ni téléphoner à l'extérieur.
+  # 'unsafe-inline' reste nécessaire pour le script et les styles de la page (le site
+  # est un fichier unique sans build) ; connect-src et img-src ne laissent passer que
+  # les tuiles IGN.
+  Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-inline' blob:; worker-src 'self' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://data.geopf.fr; connect-src 'self' https://data.geopf.fr; font-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  Cross-Origin-Opener-Policy: same-origin
+  Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=(), usb=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+# Données ouvertes : réutilisables depuis n'importe quel site, c'est le but.
+/data/*
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=600, must-revalidate
+
+# Bibliothèque figée et versionnée : cache long.
+/vendor/*
+  Cache-Control: public, max-age=31536000, immutable

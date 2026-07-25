@@ -3,6 +3,15 @@
 # lui aussi, et le site publié partirait sans ses données.
 /data/
 
+# Documents de travail internes : hors du dépôt public.
+/interne/
+
+# Secrets : le dépôt est public, aucune clé ne doit y entrer.
+# Le modèle sans valeurs est dans .env.example.
+.env
+.env.*
+!.env.example
+
 # Python
 .venv/
 __pycache__/

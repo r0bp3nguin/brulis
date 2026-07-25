@@ -100,7 +100,7 @@ GABARIT = """<!doctype html>
 <title>Brûlis — zones brûlées de France en open data</title>
 <meta name="description" content="Périmètres et surfaces des feux de forêt en France,
 calculés depuis Sentinel-2, en open data.">
-<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<link href="vendor/maplibre-gl.css" rel="stylesheet">
 <style>
   :root { --fond:#12141a; --panneau:#1a1d24; --bord:#2c313b; --texte:#e9ecf1;
           --doux:#9aa3b0; --feu:#ff6b35; --isole:#ffd166; --ems:#4da3ff; }
@@ -201,7 +201,7 @@ calculés depuis Sentinel-2, en open data.">
 </div>
 <div id="carte"></div>
 
-<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="vendor/maplibre-gl.js"></script>
 <script>
 const FEUX = __FEUX__, ISOLEES = __ISOLEES__, EMS = __EMS__;
 const ign = (couche, fmt) => "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0" +
