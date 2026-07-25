@@ -249,6 +249,7 @@ uv run python scripts/dnbr.py --produit EMSR619_AOI01_DEL_MONIT01_r1_RTP01_v1 \
 uv run python scripts/apercu.py         # planches de vérification (PNG par cas)
 uv run python scripts/faux_positifs.py  # détections hors périmètre de référence
 uv run python scripts/projet_qgis.py    # projet QGIS pour l'inspection fine
+uv run python scripts/visionneuse.py    # visionneuse HTML autonome (zoom, calques)
 ```
 
 ## Vérifier visuellement
@@ -257,7 +258,20 @@ uv run python scripts/projet_qgis.py    # projet QGIS pour l'inspection fine
   feu (10 m) et dNBR — avec périmètre EMS en rouge et détections en bleu, contours seuls.
   C'est sur le panneau couleur naturelle qu'on reconnaît une parcelle agricole, une coupe
   forestière ou une ombre de nuage.
+- **Visionneuse HTML** : `data/work/visionneuse.html` (`scripts/visionneuse.py`). Un seul
+  fichier de ~9 Mo, ouvert par double-clic, **sans build ni dépendance JS** — le rendu est
+  un canvas d'une centaine de lignes. Zoom, déplacement, bascule des calques
+  (Sentinel-2 / dNBR / vérité EMS / détections), clic sur un polygone pour sa surface et
+  son statut (sur le feu / hors périmètre, ces derniers en jaune).
+
+  Tout est embarqué en data URI : en `file://`, un `fetch()` d'un GeoJSON voisin serait
+  bloqué. La géométrie est projetée côté Python dans le repère pixel de chaque image, donc
+  le JavaScript ne fait aucun calcul de projection.
+
+  C'est un **outil de contrôle Phase 0, jetable par construction** — pas une préfiguration
+  du site public, qui sera statique (MapLibre + PMTiles) et ne viendra qu'après G0 et G1.
+
 - **Projet QGIS** : `data/work/brulis.qgs`, 10 couches pré-stylées, chemins relatifs,
-  rasters dNBR décochés par défaut. ⚠️ Généré mais **non ouvert pour vérification** : QGIS
-  n'est pas installé sur la machine de développement. À défaut, les `.geojson` et `.tif` se
-  chargent un par un par glisser-déposer.
+  rasters dNBR décochés par défaut. Pour l'inspection fine (mesures, fonds tiers).
+  ⚠️ Généré mais **non ouvert pour vérification** : QGIS n'est pas installé sur la machine
+  de développement. À défaut, les `.geojson` et `.tif` se chargent par glisser-déposer.
