@@ -119,11 +119,11 @@ Le critère G0 comporte trois conditions. Une seule est tranchée.
 | Condition G0 | État |
 |---|---|
 | IoU ≳ 0,7 sur les grands feux | **atteint** (0,748 à 0,910) |
-| Feu < 30 ha détecté, surface à ±30 % | **non testé** — bloqué sur l'accès BDIFF |
-| Feu des Monts d'Arrée (sans vérité EMS) | **non testé** — bloqué sur l'accès BDIFF |
+| Feu < 30 ha détecté, surface à ±30 % | **cas sélectionné, calcul à faire** |
+| Feu des Monts d'Arrée (sans vérité EMS) | **cas identifié, calcul à faire** |
 | Au moins un utilisateur dit « oui » | **non fait** — entretien à mener |
 
-### Blocage BDIFF
+### Accès BDIFF : anomalie TLS contournée proprement
 
 `bdiff.agriculture.gouv.fr` sert une chaîne TLS incohérente : le certificat serveur est
 émis par `GEANT TLS RSA 1` (Hellenic Academic and Research Institutions CA) mais le
@@ -131,13 +131,41 @@ serveur présente `GEANT OV RSA CA 4` comme intermédiaire. Aucun client ne peut
 la chaîne — curl et Python/certifi échouent tous deux (`unable to get local issuer
 certificate`). C'est une erreur de configuration côté serveur, pas un problème local.
 
-La vérification TLS n'a **pas** été désactivée. Pistes, par ordre de préférence :
-1. récupérer le véritable intermédiaire `GEANT TLS RSA 1` depuis l'extension AIA du
-   certificat et l'ajouter à un magasin local du projet — la validation reste complète
-   jusqu'à une racine de confiance ;
-2. chercher un miroir de la BDIFF sur data.gouv.fr (l'entrée actuelle ne pointe que vers
-   le portail) ;
-3. signaler l'anomalie à l'exploitant.
+**Résolu sans désactiver la vérification TLS.** `scripts/ca_bundle.py` récupère le
+véritable intermédiaire à l'URL publiée par l'extension AIA du certificat lui-même
+(`http://crt.harica.gr/HARICA-GEANT-TLS-R1.cer`), **vérifie qu'il chaîne vers une racine
+déjà présente dans certifi** (`HARICA TLS RSA Root CA 2021` — `openssl verify` : OK), et
+seulement alors l'ajoute à une copie locale du magasin. La validation reste complète
+jusqu'à une racine de confiance ; on ne fait que fournir le maillon que le serveur omet.
+
+Il resterait utile de signaler l'anomalie à l'exploitant.
+
+### Cas d'étude restants, sélectionnés dans la BDIFF
+
+`scripts/fetch_bdiff.py` rejoue le formulaire GET du portail (la BDIFF n'a pas d'API).
+
+- **Monts d'Arrée** : Brasparts (29016), alerte **24/07/2022 23:28**, **1 917,00 ha**
+  déclarés (intégralement en « Forêt »), nature inconnue. Aucune activation EMS —
+  la vérité est une **surface**, pas une forme : la comparaison portera sur la
+  détectabilité et l'écart de surface, pas sur un IoU.
+- **Feu < 30 ha** — candidats en Gironde 2022 (même contexte landais que les cas validés) :
+
+  | Commune | Alerte | Surface déclarée |
+  |---|---|---:|
+  | Queyrac | 06/08/2022 19:00 | 19,40 ha |
+  | Soulac-sur-Mer | 06/08/2022 09:23 | 18,80 ha |
+  | Captieux | 07/06/2022 16:12 | 13,60 ha |
+  | Val-de-Livenne | 28/07/2022 15:20 | 11,70 ha |
+  | Auros | 11/05/2022 17:13 | 10,50 ha |
+
+  Queyrac et Soulac-sur-Mer sont les plus proches du seuil des 30 ha et tombent sur la
+  même fenêtre d'acquisition ; Captieux est en pinède landaise, donc le plus comparable
+  aux cas déjà validés.
+
+**Limite à garder en tête** : la BDIFF est déclarative et communale, sans géométrie. Elle
+ne permet pas de calculer un IoU, seulement un écart de surface — et sa propre surface
+déclarée porte une incertitude non documentée. Un écart de 20 % peut venir de la BDIFF
+autant que de nous.
 
 ## Reproduire
 

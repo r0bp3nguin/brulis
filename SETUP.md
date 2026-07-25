@@ -36,10 +36,11 @@ n'est téléchargée. Prévoir ~250 Mo pour les paquets EMS et les sorties de tr
   produits vectoriels téléchargeables sur mapping.emergency.copernicus.eu (vérité terrain principale).
 - **BDIFF** (bdiff.agriculture.gouv.fr + data.gouv.fr) : surfaces déclarées 2022, pour le feu des
   Monts d'Arrée et le petit feu témoin (< 30 ha) à choisir dedans.
-  ⚠️ **Accès bloqué au 2026-07-25** : le serveur présente un intermédiaire TLS qui n'est pas
-  l'émetteur de son certificat (leaf émis par `GEANT TLS RSA 1`, intermédiaire servi
-  `GEANT OV RSA CA 4`) ; aucune chaîne valide ne peut être construite. Ne pas désactiver la
-  vérification TLS — voir `docs/phase0-resultats.md` pour le diagnostic et les pistes.
+  ⚠️ Le serveur présente un intermédiaire TLS qui n'est pas l'émetteur de son certificat
+  (leaf émis par `GEANT TLS RSA 1`, intermédiaire servi `GEANT OV RSA CA 4`) : la chaîne est
+  incomplète. `scripts/ca_bundle.py` fournit le maillon manquant après avoir vérifié qu'il
+  chaîne vers une racine de certifi. **Ne jamais désactiver la vérification TLS.**
+  Interrogation : `uv run python scripts/fetch_bdiff.py --annee 2022 --departement 29 --surface-min 100`.
 - **Masque végétation** : BD Forêt (IGN, ouverte) ou Corine Land Cover / OSM landuse.
 
 ## Méthode (référence)
