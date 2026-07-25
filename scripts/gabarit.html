@@ -416,7 +416,6 @@ if (carte) carte.on("load", () => {
 
   appliquerHash();
 });
-if (!carte) appliquerHash();
 
 function cadrer(features){
   if (!carte || !features.length) return;
@@ -526,9 +525,15 @@ function rendreFiche(id){
 
   // Piste de latence : chaleur vue en heures, contour en jours. Les jalons sont placés
   // proportionnellement au temps réellement écoulé, pas à intervalle fixe.
-  const t0 = new Date(p.debut), t1 = new Date(p.fin), t2 = new Date(p.image_apres);
-  const total = Math.max(jours(p.debut, p.image_apres), 0.5);
+  // La chaleur peut durer au-delà de l'image (feu encore actif) : la piste va donc
+  // jusqu'au plus tardif des deux, sinon les deux jalons s'écrasent sur la butée droite
+  // et leurs libellés deviennent illisibles.
+  const finPiste = jours(p.image_apres, p.fin) > 0 ? p.fin : p.image_apres;
+  const total = Math.max(jours(p.debut, finPiste), 0.5);
   const pos = d => 4 + 92 * Math.min(Math.max(jours(p.debut, d) / total, 0), 1);
+  const posFin = pos(p.fin), posImg = pos(p.image_apres);
+  // Jalon intermédiaire seulement s'il est lisible sans recouvrir ses voisins.
+  const montrerFin = posFin - pos(p.debut) > 12 && Math.abs(posFin - posImg) > 12;
 
   corps.innerHTML = `
     <button class="retour" id="retour">
@@ -548,12 +553,12 @@ function rendreFiche(id){
       <div class="piste">
         <div class="eyebrow">Ce que l'on sait, et quand</div>
         <div class="piste-rail">
-          <div class="piste-part" style="left:${pos(p.debut)}%;width:${pos(p.image_apres)-pos(p.debut)}%"></div>
+          <div class="piste-part" style="left:${pos(p.debut)}%;width:${Math.max(posImg,posFin)-pos(p.debut)}%"></div>
           <div class="jalon chaud" style="left:${pos(p.debut)}%">
             <b>départ</b><i></i><em>${dateCourte(p.debut)}</em></div>
-          ${jours(p.debut, p.fin) > 0.4 ? `<div class="jalon chaud" style="left:${pos(p.fin)}%">
-            <i></i><em>${dateCourte(p.fin)}</em></div>` : ""}
-          <div class="jalon image" style="left:${pos(p.image_apres)}%">
+          ${montrerFin ? `<div class="jalon chaud" style="left:${posFin}%">
+            <b>chaleur</b><i></i><em>${dateCourte(p.fin)}</em></div>` : ""}
+          <div class="jalon image" style="left:${posImg}%">
             <b>image</b><i></i><em>${dateCourte(p.image_apres)}</em></div>
         </div>
         <p class="piste-note">Chaleur détectée par VIIRS en ~3 h ; le contour attend le
@@ -691,4 +696,8 @@ document.getElementById("nFeux").textContent = FEUX.features.length;
 document.getElementById("nMaj").textContent = (JOURNAL.evenements || []).length;
 document.getElementById("maj").textContent = depuis(GENERE);
 rendre();
+// Sans carte, aucun événement « load » ne viendra : on applique le lien profond ici.
+// Surtout pas plus haut dans le script — `etat` et `corps` n'y sont pas encore initialisés
+// (zone morte temporelle des `const`), ce qui vidait la page sur une URL #feu=.
+if (!carte) appliquerHash();
 </script>
