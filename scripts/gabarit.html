@@ -34,15 +34,16 @@ a{color:#8fc4ff}
 .nombre{font-variant-numeric:tabular-nums;letter-spacing:-.02em}
 
 /* ---------- ossature ---------- */
-#app{display:grid;grid-template-columns:392px 1fr;height:100%}
+#app{display:grid;grid-template-columns:minmax(0,392px) minmax(0,1fr);
+     height:100%;max-width:100%}
 #carte{position:relative;height:100%}
 .volet{
-  display:flex;flex-direction:column;min-height:0;
+  display:flex;flex-direction:column;min-height:0;min-width:0;
   background:var(--roche);border-right:1px solid var(--arete);
 }
 
 /* ---------- en-tête ---------- */
-.entete{padding:16px 20px 13px;border-bottom:1px solid var(--arete)}
+.entete{padding:16px 20px 13px;border-bottom:1px solid var(--arete);min-width:0}
 .titre{display:flex;align-items:baseline;gap:9px}
 .titre h1{
   margin:0;font-size:19px;font-weight:700;letter-spacing:-.02em;
@@ -50,18 +51,19 @@ a{color:#8fc4ff}
 .titre h1 span{color:var(--braise)}
 .titre p{margin:0;font-size:12px;color:var(--cendre-pale)}
 
-.chiffres{display:flex;gap:8px;margin-top:13px}
+.chiffres{display:flex;gap:8px;margin-top:13px;flex-wrap:wrap}
 .chiffre{
-  flex:1;background:var(--nuit);border:1px solid var(--arete);
+  flex:1 1 30%;min-width:0;background:var(--nuit);border:1px solid var(--arete);
   border-radius:10px;padding:8px 10px 7px;
 }
 .chiffre b{
   display:block;font-size:19px;font-weight:700;line-height:1.1;color:var(--braise);
+  overflow-wrap:anywhere;
 }
 .chiffre.attente b{color:var(--paille);font-size:16px}
 .chiffre .eyebrow{margin-top:2px}
 .sous-chiffre{font-size:10.5px;color:var(--cendre-pale);margin-top:2px;
-              font-variant-numeric:tabular-nums}
+              font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
 
 /* ---------- onglets ---------- */
 .onglets{display:flex;gap:2px;padding:10px 14px 0;border-bottom:1px solid var(--arete)}
@@ -77,7 +79,7 @@ a{color:#8fc4ff}
 
 /* ---------- filtres ---------- */
 .filtres{display:flex;gap:8px;padding:12px 14px 10px}
-.recherche{position:relative;flex:1}
+.recherche{position:relative;flex:1;min-width:0}
 .recherche input{
   width:100%;background:var(--nuit);border:1px solid var(--arete);border-radius:9px;
   padding:8px 11px 8px 31px;color:var(--clair);font-size:13.5px;transition:border-color var(--pas);
@@ -92,7 +94,7 @@ select{
 select:focus{outline:none;border-color:var(--arete-vive)}
 
 /* ---------- listes ---------- */
-.corps{flex:1;overflow-y:auto;overscroll-behavior:contain;padding:0 14px 22px}
+.corps{flex:1;min-width:0;overflow-y:auto;overscroll-behavior:contain;padding:0 14px 22px}
 .vide{padding:26px 6px;color:var(--cendre-pale);font-size:13.5px;text-align:center}
 
 .carte-feu{
@@ -110,12 +112,12 @@ select:focus{outline:none;border-color:var(--arete-vive)}
 .carte-feu[aria-current="true"]{border-color:var(--braise);background:#1e1912}
 .carte-feu[aria-current="true"]::before{opacity:1}
 
-.ligne1{display:flex;align-items:baseline;gap:8px}
+.ligne1{display:flex;align-items:baseline;gap:8px;min-width:0}
 .nom{font-weight:650;letter-spacing:-.01em;flex:1;min-width:0;
      overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .surface{font-size:15px;font-weight:700;color:var(--braise);flex-shrink:0}
 .surface small{font-size:11px;font-weight:600;color:var(--cendre-pale);margin-left:2px}
-.ligne2{display:flex;align-items:center;gap:7px;margin-top:4px;
+.ligne2{display:flex;align-items:center;gap:7px;margin-top:4px;flex-wrap:wrap;
         font-size:12px;color:var(--cendre-pale)}
 .sep{opacity:.4}
 
@@ -221,9 +223,15 @@ details ul{padding-left:15px;margin:5px 0}
 .maplibregl-popup-tip{border-top-color:var(--arete)!important}
 .maplibregl-ctrl-attrib{font-size:10px}
 
+@media (max-width:480px){
+  .ligne1{flex-wrap:wrap}
+  .surface,.plage{font-size:14px}
+  .chiffre b{font-size:17px}
+  .chiffre.attente b{font-size:14px}
+}
 @media (max-width:820px){
   html,body{overflow:auto}
-  #app{grid-template-columns:1fr;height:auto}
+  #app{grid-template-columns:minmax(0,1fr);height:auto}
   .volet{height:auto;border-right:0;border-bottom:1px solid var(--arete)}
   #carte{height:62vh;position:sticky;top:0}
   .corps{max-height:none;overflow:visible}
@@ -474,8 +482,10 @@ function listeFeux(){
   if (!l.length) return `<p class="vide">Aucun feu ne correspond à « ${etat.q} ».</p>`;
   return l.map(f => {
     const p = f.properties, actif = estActif(p), attente = p.statut === "en_attente";
+    // Dans la liste, une valeur approchée : la fourchette complète déborde sur mobile
+    // et se lit mal. Elle reste visible en entier sur la fiche.
     const mesure = attente
-      ? `<span class="plage nombre">${fmt(p.surface_min_ha)}–${fmt(p.surface_max_ha)}<small>ha</small></span>`
+      ? `<span class="plage nombre">≈ ${fmt(p.surface_ha)}<small>ha</small></span>`
       : `<span class="surface nombre">${fmt(p.surface_ha)}<small>ha</small></span>`;
     const etatTexte = attente ? "en attente d'image" : (actif ? "en cours" : "refroidi");
     const etatClasse = attente ? "attente" : (actif ? "actif" : "froid");
@@ -612,7 +622,7 @@ function rendreAttente(p){
         <p>${p.motif_attente}. Ce chiffre vient de l'étendue vue comme chaude par le
         satellite thermique, ce n'est <b>pas</b> un périmètre brûlé : il peut sous-estimer
         (ce qui a brûlé puis refroidi entre deux passages n'est pas vu) comme surestimer.
-        ${p.prochain_passage ? `Prochain passage Sentinel-2 attendu vers le
+        ${p.prochain_passage ? `Prochain passage Sentinel-2 attendu d'ici le
         <b>${new Date(p.prochain_passage).toLocaleDateString("fr-FR",
           {day:"numeric", month:"long"})}</b>.` : ""}</p>
       </div>
@@ -704,10 +714,10 @@ document.getElementById("cFeux").textContent = FEUX.features.length;
 document.getElementById("cHa").textContent = fmt(total);
 document.getElementById("cHaN").textContent =
   `${mesures.length} feu${mesures.length > 1 ? "x" : ""}`;
-document.getElementById("cEst").textContent = attentes.length
-  ? `${fmt(estMin)}–${fmt(estMax)}` : "—";
+const estMoy = attentes.reduce((s,f) => s + f.properties.surface_ha, 0);
+document.getElementById("cEst").textContent = attentes.length ? `≈ ${fmt(estMoy)}` : "—";
 document.getElementById("cEstN").textContent = attentes.length
-  ? `${attentes.length} en attente d'image` : "";
+  ? `${fmt(estMin)}–${fmt(estMax)} · ${attentes.length} en attente` : "";
 document.getElementById("nFeux").textContent = FEUX.features.length;
 document.getElementById("nMaj").textContent = (JOURNAL.evenements || []).length;
 document.getElementById("maj").textContent = depuis(GENERE);

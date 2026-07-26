@@ -26,6 +26,7 @@ from pathlib import Path
 import env_geo  # noqa: F401
 import geopandas as gpd
 import pandas as pd
+from shapely.geometry import shape
 
 import historique
 
@@ -181,6 +182,25 @@ def main() -> int:
         trait, isol = en_feature(info)
         feux.append(trait)
         isolees.extend(isol)
+
+    # Deux zones distinctes d'une même commune portent le même nom : sans distinction,
+    # la liste affiche deux fois « Saint-Égrève (38) » sans que rien ne les sépare.
+    # On les repère par leur position relative, ce qui parle à qui connaît le terrain.
+    par_nom: dict[str, list] = {}
+    for f in feux:
+        par_nom.setdefault(f["properties"]["feu"], []).append(f)
+    for nom, groupe in par_nom.items():
+        if len(groupe) < 2:
+            continue
+        centres = [gpd.GeoSeries([shape(f["geometry"])], crs=4326).to_crs(CRS_METRIQUE)
+                   .iloc[0].centroid for f in groupe]
+        cy = sum(c.y for c in centres) / len(centres)
+        cx = sum(c.x for c in centres) / len(centres)
+        for f, c in zip(groupe, centres):
+            dy, dx = c.y - cy, c.x - cx
+            cote = ("nord" if dy > 0 else "sud") if abs(dy) >= abs(dx) else \
+                   ("est" if dx > 0 else "ouest")
+            f["properties"]["feu"] = f"{nom} — {cote}"
 
     feux.sort(key=lambda f: (f["properties"]["statut"] != "en_attente",
                              -f["properties"]["surface_ha"]))

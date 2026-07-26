@@ -153,8 +153,13 @@ def prochain_passage(client: Client, bbox) -> str | None:
     if len(passes) < 3:
         _CACHE_PASSAGES[cle] = None
         return None
-    ecarts = [(passes[k + 1] - passes[k]).days for k in range(len(passes) - 1)]
-    typique = min(e for e in ecarts if e > 0) if any(e > 0 for e in ecarts) else 5
+    # Intervalle le plus long récemment observé, pas le plus court : les passages
+    # rapprochés viennent d'orbites adjacentes qui n'effleurent parfois que le bord de la
+    # zone. Retenir le minimum annonçait une image « pour le 25 » qui n'est jamais venue —
+    # une promesse ratée coûte plus cher qu'une estimation prudente.
+    ecarts = [e for e in ((passes[k + 1] - passes[k]).days
+                          for k in range(len(passes) - 1)) if e > 0]
+    typique = max(ecarts[-6:]) if ecarts else 5
     prevu = passes[-1] + timedelta(days=typique)
     aujourd = datetime.now(timezone.utc).date()
     while prevu < aujourd:
@@ -194,6 +199,8 @@ def traiter(foyer, client: Client, seuil: float, sortie: Path,
     # jour produisent le même identifiant et s'écrasent en silence sur le disque — 23
     # fiches sur 68 perdues lors de la campagne du 25/07/2026. Arrondi à ~1 km pour
     # rester stable d'une exécution à l'autre.
+    # Repérage au centième de degré (~1 km) : distingue deux foyers d'une même commune
+    # sans dépendre d'une précision que le centroïde n'a pas quand le feu grandit.
     reperage = f"{abs(centre.y):.2f}{abs(centre.x):.2f}".replace(".", "")
     etiquette = f"{lieu['commune']} ({lieu['departement']})"
     print(f"\n  {etiquette} — {foyer['n_points']} points chauds, "
@@ -206,8 +213,7 @@ def traiter(foyer, client: Client, seuil: float, sortie: Path,
         estimee = geom.area / 1e4
         attendu = prochain_passage(client, bbox)
         identifiant = (f"{debut:%Y%m%d}-{lieu['departement'] or '00'}-"
-                       f"{(lieu['commune'] or 'foyer').lower().replace(' ', '-')[:24]}"
-                       f"-{reperage}")
+                       f"{lieu['commune'].lower().replace(' ', '-')[:24]}-{reperage}")
         dossier = sortie / identifiant
         # Une mesure ne doit jamais être remplacée par une simple estimation : si un
         # périmètre existe déjà pour ce feu, on le conserve.
@@ -312,8 +318,7 @@ def traiter(foyer, client: Client, seuil: float, sortie: Path,
     part_masquee = float(1 - (exploitable & dans_zone).sum() / max(dans_zone.sum(), 1))
 
     identifiant = (f"{debut:%Y%m%d}-{lieu['departement'] or '00'}-"
-                   f"{(lieu['commune'] or 'foyer').lower().replace(' ', '-')[:24]}"
-                   f"-{reperage}")
+                   f"{lieu['commune'].lower().replace(' ', '-')[:24]}-{reperage}")
     dossier = sortie / identifiant
     dossier.mkdir(parents=True, exist_ok=True)
     # Une mesure remplace une estimation antérieure du même feu.
