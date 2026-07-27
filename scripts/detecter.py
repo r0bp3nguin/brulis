@@ -179,9 +179,10 @@ SIMPLIFICATION_PERIMETRE = 8  # m, contre 20 m de pixel Sentinel-2
 def emprise_points_chauds(foyer, points: gpd.GeoDataFrame | None):
     """Emprise chaude observée : ordre de grandeur en attendant une image exploitable."""
     if points is not None and len(points):
-        # quad_segs bas : un disque de 187 m n'a pas besoin de 64 segments quand la
-        # donnée sous-jacente est un pixel de 375 m.
-        return (points.to_crs(CRS_METRIQUE).buffer(DEMI_PIXEL_VIIRS, quad_segs=4)
+        # Résolution basse : un disque de 187 m n'a pas besoin de 64 segments quand la
+        # donnée sous-jacente est un pixel de 375 m. Le paramètre de GeoSeries.buffer
+        # s'appelle `resolution` — `quad_segs` est celui de shapely et lève ici.
+        return (points.to_crs(CRS_METRIQUE).buffer(DEMI_PIXEL_VIIRS, resolution=4)
                 .union_all().simplify(SIMPLIFICATION_EMPRISE))
     return foyer.geometry
 
