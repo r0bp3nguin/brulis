@@ -2,8 +2,8 @@
 
 Objectif : pouvoir *regarder* une détection, pas seulement lire son IoU. Un IoU élevé
 peut cohabiter avec des artefacts — une parcelle agricole récoltée entre les deux dates
-produit la même signature spectrale qu'un brûlis. Le la feuille de route demande explicitement de
-relever ces faux positifs ; cela demande des yeux.
+produit la même signature spectrale qu'un brûlis. Relever ces faux positifs demande
+des yeux, pas seulement des métriques.
 
 Deux panneaux côte à côte, même emprise :
   - couleur naturelle après feu (bande `visual` à 10 m) : c'est là qu'on reconnaît une

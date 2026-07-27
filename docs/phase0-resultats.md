@@ -98,7 +98,7 @@ Saumos est un cas à part : son rappel est bon (0,897, le feu lui-même est bien
 **17 % de la surface détectée est hors du feu**. Sur la planche, ces polygones sont
 rectangulaires et alignés sur le parcellaire — signature de coupes forestières et de
 travaux agricoles, pas d'incendie. C'est exactement le risque « confusion agricole » du
-la feuille de route, et il explique à lui seul l'IoU le plus bas de la série.
+confusion agricole, et il explique à lui seul l'IoU le plus bas de la série.
 
 Hypothèse examinée : Saumos a le plus long intervalle avant/après (15 jours contre 5 pour
 les autres), ce qui laisse plus de temps aux travaux forestiers. **Non confirmée** : la

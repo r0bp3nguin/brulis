@@ -18,7 +18,7 @@ from pathlib import Path
 
 BASE = "https://cems-mapping-website.s3.eu-west-1.amazonaws.com/static/activations"
 
-# Activations retenues pour mesurer la fiabilité de la méthode. Un paquet = un produit vecteur.
+# Activations retenues pour mesurer la fiabilité de la méthode. Un paquet = un produit.
 # DEL = delineation (périmètre de l'événement), GRA = grading (sévérité),
 # FEP = first estimate. Pour la vérité terrain « surface brûlée » on utilise le DEL
 # le plus tardif (MONIT le plus élevé), les autres servent de comparaison.
