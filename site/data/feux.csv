@@ -1,5 +1,5 @@
 id,feu,statut,commune,departement,surface_ha,surface_min_ha,surface_max_ha,debut,fin,n_points_chauds,image_avant,image_apres,latence_jours,seuil_dnbr,part_masquee,prochain_passage,calcule_le
-20260723-33-le-temple-4485104,Le Temple (33),en_attente,Le Temple,33,45959.4,18447.0,38313.0,2026-07-22,2026-07-26,11434,,,,,,2026-07-26,2026-07-26T07:52:38Z
+20260723-33-le-temple-4485104,Le Temple (33) — sud,en_attente,Le Temple,33,45959.4,18447.0,38313.0,2026-07-22,2026-07-26,11434,,,,,,2026-07-26,2026-07-26T07:52:38Z
 20260723-40-biscarrosse-4440112,Biscarrosse (40),en_attente,Biscarrosse,40,4339.2,2895.0,6013.0,2026-07-23,2026-07-26,1137,,,,,,2026-07-26,2026-07-26T07:52:39Z
 20260721-59-grande-synthe-5104229,Grande-Synthe (59),en_attente,Grande-Synthe,59,881.4,316.0,655.0,2026-07-21,2026-07-26,360,,,,,,2026-07-25,2026-07-25T16:09:00Z
 20260724-34-poussan-4349365,Poussan (34),en_attente,Poussan,34,163.0,122.0,253.0,2026-07-24,2026-07-24,24,,,,,,2026-07-30,2026-07-26T07:57:22Z
@@ -9,7 +9,7 @@ id,feu,statut,commune,departement,surface_ha,surface_min_ha,surface_max_ha,debut
 20260725-66-nyer-4249226,Nyer (66),en_attente,Nyer,66,119.3,83.0,173.0,2026-07-25,2026-07-26,22,,,,,,2026-07-28,2026-07-26T07:58:06Z
 20260721-76-port-jérôme-sur-seine-4948054,Port-Jérôme-sur-Seine (76),en_attente,Port-Jérôme-sur-Seine,76,111.9,53.0,110.0,2026-07-21,2026-07-25,32,,,,,,2026-07-25,2026-07-25T16:22:42Z
 20260723-59-trith-saint-léger-5034349,Trith-Saint-Léger (59),en_attente,Trith-Saint-Léger,59,105.6,48.0,99.0,2026-07-23,2026-07-26,35,,,,,,2026-07-28,2026-07-26T08:00:01Z
-20260723-86-chouppes-4681016,Chouppes (86),en_attente,Chouppes,86,89.7,63.0,130.0,2026-07-23,2026-07-26,37,,,,,,2026-07-26,2026-07-26T07:58:16Z
+20260723-86-chouppes-4681016,Chouppes (86) — sud,en_attente,Chouppes,86,89.7,63.0,130.0,2026-07-23,2026-07-26,37,,,,,,2026-07-26,2026-07-26T07:58:16Z
 20260723-78-porcheville-4898176,Porcheville (78),en_attente,Porcheville,78,65.2,44.0,92.0,2026-07-23,2026-07-26,28,,,,,,2026-07-26,2026-07-26T07:59:20Z
 20260723-43-saint-julien-des-chazes-4504359,Saint-Julien-des-Chazes (43),en_attente,Saint-Julien-des-Chazes,43,64.8,50.0,104.0,2026-07-23,2026-07-24,11,,,,,,2026-07-30,2026-07-26T07:58:44Z
 20260724-33-naujan-et-postiac-4478019,Naujan-et-Postiac (33),en_attente,Naujan-et-Postiac,33,59.6,48.0,99.0,2026-07-24,2026-07-24,10,,,,,,2026-07-26,2026-07-26T07:58:46Z
@@ -18,7 +18,6 @@ id,feu,statut,commune,departement,surface_ha,surface_min_ha,surface_max_ha,debut
 20260725-02-audigny-4987362,Audigny (02),en_attente,Audigny,02,54.8,41.0,86.0,2026-07-25,2026-07-25,11,,,,,,2026-07-28,2026-07-26T07:58:56Z
 20260722-45-greneville-en-beauce-4819212,Greneville-en-Beauce (45),en_attente,Greneville-en-Beauce,45,54.7,39.0,80.0,2026-07-22,2026-07-22,8,,,,,,2026-07-25,2026-07-25T16:23:34Z
 20260724-18-baugy-4708275,Baugy (18),en_attente,Baugy,18,54.2,39.0,81.0,2026-07-24,2026-07-24,10,,,,,,2026-07-28,2026-07-26T07:59:03Z
-20260725-33-sainte-hélène-4496092,Sainte-Hélène (33),en_attente,Sainte-Hélène,33,53.7,50.0,103.0,2026-07-25,2026-07-25,7,,,,,,2026-07-26,2026-07-26T07:59:56Z
 20260722-62-lumbres-5070211,Lumbres (62),en_attente,Lumbres,62,53.2,20.0,43.0,2026-07-22,2026-07-26,12,,,,,,2026-07-25,2026-07-25T16:39:33Z
 20260726-2B-oletta-4263940,Oletta (2B),en_attente,Oletta,2B,51.7,40.0,84.0,2026-07-26,2026-07-26,8,,,,,,2026-07-27,2026-07-26T08:00:19Z
 20260722-64-banca-4306135,Banca (64),en_attente,Banca,64,50.4,24.0,51.0,2026-07-22,2026-07-23,14,,,,,,2026-07-25,2026-07-25T16:22:44Z
@@ -31,12 +30,14 @@ id,feu,statut,commune,departement,surface_ha,surface_min_ha,surface_max_ha,debut
 20260723-35-la-couyère-4790149,La Couyère (35),en_attente,La Couyère,35,31.4,26.0,55.0,2026-07-23,2026-07-23,7,,,,,,2026-07-27,2026-07-26T07:59:54Z
 20260724-79-airvault-4681014,Airvault (79),en_attente,Airvault,79,26.4,19.0,40.0,2026-07-24,2026-07-26,6,,,,,,2026-07-26,2026-07-26T08:05:48Z
 20260724-02-origny-en-thiérache-4988399,Origny-en-Thiérache (02),en_attente,Origny-en-Thiérache,02,22.5,18.0,37.0,2026-07-24,2026-07-24,5,,,,,,2026-07-28,2026-07-26T08:05:32Z
+20260724-33-le-temple-4485103,Le Temple (33) — nord,mesure,Le Temple,33,22174.9,,,2026-07-24,2026-07-27,5788,2026-07-21,2026-07-26,2,0.15,0.358,,2026-07-27T11:27:51Z
 20260721-83-pontevès-4353610,Pontevès (83),mesure,Pontevès,83,3280.3,,,2026-07-21,2026-07-26,762,2026-07-17,2026-07-24,3,0.15,0.0,,2026-07-25T16:06:52Z
 20260721-2B-corte-4227907,Corte (2B),mesure,Corte,2B,596.5,,,2026-07-21,2026-07-25,619,2026-07-21,2026-07-24,3,0.15,0.265,,2026-07-25T16:08:02Z
 20260721-05-l'argentière-la-bessée-4476656,L'Argentière-la-Bessée (05),mesure,L'Argentière-la-Bessée,05,469.2,,,2026-07-21,2026-07-24,504,2026-07-17,2026-07-24,3,0.15,0.159,,2026-07-25T16:07:37Z
-20260721-57-serémange-erzange-4932610,Serémange-Erzange (57),mesure,Serémange-Erzange,57,52.6,,,2026-07-21,2026-07-26,21,2026-07-20,2026-07-25,4,0.15,0.297,,2026-07-25T16:31:02Z
+20260724-86-chouppes-4681016,Chouppes (86) — nord,mesure,Chouppes,86,204.1,,,2026-07-24,2026-07-26,25,2026-07-21,2026-07-26,2,0.15,0.044,,2026-07-27T11:28:37Z
+20260723-38-saint-égrève-4523567,Saint-Égrève (38) — ouest,mesure,Saint-Égrève,38,70.3,,,2026-07-23,2026-07-24,15,2026-07-22,2026-07-25,2,0.15,0.151,,2026-07-26T08:05:17Z
+20260724-57-serémange-erzange-4932610,Serémange-Erzange (57),mesure,Serémange-Erzange,57,52.6,,,2026-07-21,2026-07-26,21,2026-07-20,2026-07-25,1,0.15,0.283,,2026-07-27T11:29:48Z
 20260721-51-couvrot-4877456,Couvrot (51),mesure,Couvrot,51,51.8,,,2026-07-21,2026-07-25,12,2026-07-20,2026-07-25,4,0.15,0.002,,2026-07-25T16:29:48Z
-20260723-38-saint-égrève-4523567,Saint-Égrève (38) — ouest,mesure,Saint-Égrève,38,34.9,,,2026-07-23,2026-07-24,9,2026-07-22,2026-07-25,2,0.15,0.151,,2026-07-26T08:05:17Z
 20260722-2B-patrimonio-4270935,Patrimonio (2B),mesure,Patrimonio,2B,15.5,,,2026-07-22,2026-07-22,7,2026-07-21,2026-07-24,2,0.15,0.0,,2026-07-25T16:19:28Z
 20260722-30-fontarèches-4412441,Fontarèches (30),mesure,Fontarèches,30,11.3,,,2026-07-22,2026-07-22,19,2026-07-20,2026-07-24,2,0.15,0.0,,2026-07-25T16:14:22Z
 20260721-87-saint-hilaire-les-places-4562114,Saint-Hilaire-les-Places (87),mesure,Saint-Hilaire-les-Places,87,5.6,,,2026-07-21,2026-07-21,5,2026-07-21,2026-07-23,2,0.15,0.065,,2026-07-25T16:38:07Z
