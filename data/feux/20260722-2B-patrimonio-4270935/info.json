@@ -1,0 +1,29 @@
+{
+  "id": "20260722-2B-patrimonio-4270935",
+  "feu": "Patrimonio (2B)",
+  "statut": "mesure",
+  "commune": "Patrimonio",
+  "departement": "2B",
+  "surface_ha": 16.9,
+  "n_polygones": 3,
+  "premier_point_chaud": "2026-07-22",
+  "dernier_point_chaud": "2026-07-22",
+  "n_points_chauds": 7,
+  "frp_total": 67.01,
+  "image_avant": {
+    "id": "S2A_32TNN_20260721_1_L2A",
+    "date": "2026-07-21",
+    "nuages_pct": 26.77066
+  },
+  "image_apres": {
+    "id": "S2B_32TNN_20260724_0_L2A",
+    "date": "2026-07-24",
+    "nuages_pct": 0.434086
+  },
+  "tuile": "MGRS-32TNN",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.267,
+  "part_masquee": 0.0,
+  "latence_jours": 2,
+  "calcule_le": "2026-07-25T16:19:28Z"
+}

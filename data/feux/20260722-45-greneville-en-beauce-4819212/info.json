@@ -1,0 +1,17 @@
+{
+  "id": "20260722-45-greneville-en-beauce-4819212",
+  "feu": "Greneville-en-Beauce (45)",
+  "statut": "en_attente",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "commune": "Greneville-en-Beauce",
+  "departement": "45",
+  "surface_estimee_ha": 59.6,
+  "surface_min_ha": 39.0,
+  "surface_max_ha": 80.0,
+  "premier_point_chaud": "2026-07-22",
+  "dernier_point_chaud": "2026-07-22",
+  "n_points_chauds": 8,
+  "frp_total": 25.58,
+  "prochain_passage": "2026-07-25",
+  "calcule_le": "2026-07-25T16:23:34Z"
+}

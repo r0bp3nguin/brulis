@@ -1,0 +1,29 @@
+{
+  "id": "20260721-87-saint-hilaire-les-places-4562114",
+  "feu": "Saint-Hilaire-les-Places (87)",
+  "statut": "mesure",
+  "commune": "Saint-Hilaire-les-Places",
+  "departement": "87",
+  "surface_ha": 8.9,
+  "n_polygones": 3,
+  "premier_point_chaud": "2026-07-21",
+  "dernier_point_chaud": "2026-07-21",
+  "n_points_chauds": 5,
+  "frp_total": 6.51,
+  "image_avant": {
+    "id": "S2C_31TCL_20260721_0_L2A",
+    "date": "2026-07-21",
+    "nuages_pct": 0.002005
+  },
+  "image_apres": {
+    "id": "S2B_31TCL_20260723_0_L2A",
+    "date": "2026-07-23",
+    "nuages_pct": 0.425702
+  },
+  "tuile": "MGRS-31TCL",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.711,
+  "part_masquee": 0.065,
+  "latence_jours": 2,
+  "calcule_le": "2026-07-25T16:38:07Z"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "20260725-81-valdurenque-4355232",
+  "feu": "Valdurenque (81)",
+  "statut": "en_attente",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "commune": "Valdurenque",
+  "departement": "81",
+  "surface_estimee_ha": 159.6,
+  "surface_min_ha": 104.0,
+  "surface_max_ha": 215.0,
+  "premier_point_chaud": "2026-07-25",
+  "dernier_point_chaud": "2026-07-25",
+  "n_points_chauds": 25,
+  "frp_total": 45.44,
+  "prochain_passage": "2026-07-28",
+  "calcule_le": "2026-07-26T07:59:10Z"
+}

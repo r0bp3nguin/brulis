@@ -1,0 +1,17 @@
+{
+  "id": "20260721-60-acy-en-multien-4910295",
+  "feu": "Acy-en-Multien (60)",
+  "statut": "en_attente",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "commune": "Acy-en-Multien",
+  "departement": "60",
+  "surface_estimee_ha": 101.9,
+  "surface_min_ha": 66.0,
+  "surface_max_ha": 138.0,
+  "premier_point_chaud": "2026-07-21",
+  "dernier_point_chaud": "2026-07-24",
+  "n_points_chauds": 50,
+  "frp_total": 262.09,
+  "prochain_passage": "2026-07-25",
+  "calcule_le": "2026-07-25T16:13:40Z"
+}

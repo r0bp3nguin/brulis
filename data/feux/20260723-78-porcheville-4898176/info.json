@@ -1,0 +1,17 @@
+{
+  "id": "20260723-78-porcheville-4898176",
+  "feu": "Porcheville (78)",
+  "statut": "en_attente",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "commune": "Porcheville",
+  "departement": "78",
+  "surface_estimee_ha": 68.0,
+  "surface_min_ha": 44.0,
+  "surface_max_ha": 92.0,
+  "premier_point_chaud": "2026-07-23",
+  "dernier_point_chaud": "2026-07-26",
+  "n_points_chauds": 28,
+  "frp_total": 44.36,
+  "prochain_passage": "2026-07-26",
+  "calcule_le": "2026-07-26T07:59:20Z"
+}

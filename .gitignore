@@ -1,7 +1,12 @@
 # Données de travail : hors dépôt (volumineuses, retéléchargeables par les scripts).
 # La barre initiale limite la règle à la racine — sans elle, `site/data/` serait exclu
 # lui aussi, et le site publié partirait sans ses données.
-/data/
+/data/*
+
+# Exception : les périmètres détectés sont versionnés. C'est l'archive du produit — sans
+# elle, chaque exécution repartirait de zéro et les feux sortis de la fenêtre FIRMS
+# disparaîtraient du site. Léger : quelques centaines de Ko de GeoJSON simplifiés.
+!/data/feux/
 
 # Documents de travail internes : hors du dépôt public.
 /interne/

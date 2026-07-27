@@ -1,0 +1,29 @@
+{
+  "id": "20260721-31-martres-tolosane-4319099",
+  "feu": "Martres-Tolosane (31)",
+  "statut": "mesure",
+  "commune": "Martres-Tolosane",
+  "departement": "31",
+  "surface_ha": 5.4,
+  "n_polygones": 3,
+  "premier_point_chaud": "2026-07-21",
+  "dernier_point_chaud": "2026-07-25",
+  "n_points_chauds": 7,
+  "frp_total": 5.42,
+  "image_avant": {
+    "id": "S2A_31TCH_20260720_0_L2A",
+    "date": "2026-07-20",
+    "nuages_pct": 0.673641
+  },
+  "image_apres": {
+    "id": "S2B_31TCH_20260723_0_L2A",
+    "date": "2026-07-23",
+    "nuages_pct": 0.335092
+  },
+  "tuile": "MGRS-31TCH",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.326,
+  "part_masquee": 0.11,
+  "latence_jours": 2,
+  "calcule_le": "2026-07-25T16:38:54Z"
+}

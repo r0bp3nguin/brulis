@@ -168,10 +168,21 @@ def prochain_passage(client: Client, bbox) -> str | None:
     return _CACHE_PASSAGES[cle]
 
 
+# Tolérances de simplification, choisies sous la résolution de la donnée source : on ne
+# jette aucune information réelle, seulement des sommets que rien ne justifie. Sans cela,
+# l'union de milliers de disques VIIRS produit des géométries de dizaines de milliers de
+# sommets, recommitées deux fois par jour.
+SIMPLIFICATION_EMPRISE = 60   # m, contre 375 m de pixel VIIRS
+SIMPLIFICATION_PERIMETRE = 8  # m, contre 20 m de pixel Sentinel-2
+
+
 def emprise_points_chauds(foyer, points: gpd.GeoDataFrame | None):
-    """Emprise chaude observée : borne haute en attendant une image exploitable."""
+    """Emprise chaude observée : ordre de grandeur en attendant une image exploitable."""
     if points is not None and len(points):
-        return points.to_crs(CRS_METRIQUE).buffer(DEMI_PIXEL_VIIRS).union_all()
+        # quad_segs bas : un disque de 187 m n'a pas besoin de 64 segments quand la
+        # donnée sous-jacente est un pixel de 375 m.
+        return (points.to_crs(CRS_METRIQUE).buffer(DEMI_PIXEL_VIIRS, quad_segs=4)
+                .union_all().simplify(SIMPLIFICATION_EMPRISE))
     return foyer.geometry
 
 
@@ -354,6 +365,8 @@ def traiter(foyer, client: Client, seuil: float, sortie: Path,
 
     sortie_polys = proches.copy()
     sortie_polys["surface_ha"] = (sortie_polys.area / 1e4).round(2)
+    sortie_polys = sortie_polys.set_geometry(
+        sortie_polys.simplify(SIMPLIFICATION_PERIMETRE))
     sortie_polys.to_crs(4326).to_file(dossier / "perimetre.geojson", driver="GeoJSON")
 
     print(f"     → {surface:.1f} ha, {len(proches)} polygones, "

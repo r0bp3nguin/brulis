@@ -1,0 +1,17 @@
+{
+  "id": "20260726-13-vitrolles-4343525",
+  "feu": "Vitrolles (13)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Vitrolles",
+  "departement": "13",
+  "surface_estimee_ha": 50.1,
+  "surface_min_ha": 33.0,
+  "surface_max_ha": 68.0,
+  "premier_point_chaud": "2026-07-26",
+  "dernier_point_chaud": "2026-07-26",
+  "n_points_chauds": 7,
+  "frp_total": 43.8,
+  "prochain_passage": "2026-07-28",
+  "calcule_le": "2026-07-26T07:59:23Z"
+}

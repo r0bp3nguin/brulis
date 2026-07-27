@@ -1,0 +1,97 @@
+name: Mise à jour des feux
+
+# Deux passages par jour : les satellites VIIRS survolent la France plusieurs fois
+# quotidiennement, et une image Sentinel-2 publiée le matin doit être exploitée le jour
+# même. Déclenchement manuel possible depuis l'onglet Actions.
+on:
+  schedule:
+    - cron: "15 6 * * *"
+    - cron: "15 16 * * *"
+  workflow_dispatch:
+    inputs:
+      jours:
+        description: "Fenêtre FIRMS en jours"
+        default: "4"
+      min_points:
+        description: "Points chauds minimum par foyer"
+        default: "5"
+
+concurrency:
+  group: mise-a-jour
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  detecter:
+    runs-on: ubuntu-latest
+    # La détection lit des images satellite à distance ; un foyer lent ne doit pas
+    # bloquer la journée entière.
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Installer uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Installer les dépendances
+        run: uv sync --frozen
+
+      - name: Points chauds VIIRS
+        env:
+          FIRMS_MAP_KEY: ${{ secrets.FIRMS_MAP_KEY }}
+        run: |
+          test -n "$FIRMS_MAP_KEY" || { echo "::error::secret FIRMS_MAP_KEY absent"; exit 1; }
+          PYTHONPATH=scripts uv run python scripts/firms.py \
+            --jours "${{ github.event.inputs.jours || '4' }}"
+
+      - name: Détection des périmètres
+        env:
+          FIRMS_MAP_KEY: ${{ secrets.FIRMS_MAP_KEY }}
+          AWS_NO_SIGN_REQUEST: "YES"
+        run: |
+          PYTHONPATH=scripts uv run python -u scripts/detecter.py \
+            --foyers data/work/foyers.geojson \
+            --min-points "${{ github.event.inputs.min_points || '5' }}" \
+            --max-foyers 150
+
+      - name: Construire le site
+        run: PYTHONPATH=scripts uv run python scripts/site.py
+
+      - name: Audit avant publication
+        run: PYTHONPATH=scripts uv run python scripts/verifier_publication.py
+
+      # Le site et son historique sont versionnés : c'est ce qui permet de dire
+      # « nouveau » ou « agrandi » d'une exécution à l'autre, et de garder une trace
+      # publique de ce qui a été affiché et quand.
+      - name: Enregistrer les données publiées
+        run: |
+          git config user.name "brulis-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/
+          if git diff --cached --quiet; then
+            echo "aucun changement"
+          else
+            git commit -m "Mise à jour automatique des feux ($(date -u '+%Y-%m-%d %H:%M UTC'))"
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  publier:
+    needs: detecter
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploiement.outputs.page_url }}
+    steps:
+      - id: deploiement
+        uses: actions/deploy-pages@v4

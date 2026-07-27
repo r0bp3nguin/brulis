@@ -1,0 +1,17 @@
+{
+  "id": "20260725-33-sainte-hélène-4496092",
+  "feu": "Sainte-Hélène (33)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Sainte-Hélène",
+  "departement": "33",
+  "surface_estimee_ha": 76.5,
+  "surface_min_ha": 50.0,
+  "surface_max_ha": 103.0,
+  "premier_point_chaud": "2026-07-25",
+  "dernier_point_chaud": "2026-07-25",
+  "n_points_chauds": 7,
+  "frp_total": 23.98,
+  "prochain_passage": "2026-07-26",
+  "calcule_le": "2026-07-26T07:59:56Z"
+}

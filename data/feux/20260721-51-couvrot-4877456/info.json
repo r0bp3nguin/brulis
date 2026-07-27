@@ -1,0 +1,29 @@
+{
+  "id": "20260721-51-couvrot-4877456",
+  "feu": "Couvrot (51)",
+  "statut": "mesure",
+  "commune": "Couvrot",
+  "departement": "51",
+  "surface_ha": 116.7,
+  "n_polygones": 23,
+  "premier_point_chaud": "2026-07-21",
+  "dernier_point_chaud": "2026-07-25",
+  "n_points_chauds": 12,
+  "frp_total": 11.71,
+  "image_avant": {
+    "id": "S2A_31UFQ_20260720_0_L2A",
+    "date": "2026-07-20",
+    "nuages_pct": 44.503194
+  },
+  "image_apres": {
+    "id": "S2C_31UFQ_20260725_0_L2A",
+    "date": "2026-07-25",
+    "nuages_pct": 9.399896
+  },
+  "tuile": "MGRS-31UFQ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.234,
+  "part_masquee": 0.002,
+  "latence_jours": 4,
+  "calcule_le": "2026-07-25T16:29:48Z"
+}

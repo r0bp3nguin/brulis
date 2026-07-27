@@ -1,0 +1,17 @@
+{
+  "id": "20260722-33-le-porge-4487107",
+  "feu": "Le Porge (33)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Le Porge",
+  "departement": "33",
+  "surface_estimee_ha": 20281.5,
+  "surface_min_ha": 13183.0,
+  "surface_max_ha": 27380.0,
+  "premier_point_chaud": "2026-07-22",
+  "dernier_point_chaud": "2026-07-25",
+  "n_points_chauds": 4853,
+  "frp_total": 182547.73,
+  "prochain_passage": "2026-07-25",
+  "calcule_le": "2026-07-25T16:06:29Z"
+}

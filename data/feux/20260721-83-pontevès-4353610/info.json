@@ -1,0 +1,29 @@
+{
+  "id": "20260721-83-pontevès-4353610",
+  "feu": "Pontevès (83)",
+  "statut": "mesure",
+  "commune": "Pontevès",
+  "departement": "83",
+  "surface_ha": 2398.0,
+  "n_polygones": 20,
+  "premier_point_chaud": "2026-07-21",
+  "dernier_point_chaud": "2026-07-25",
+  "n_points_chauds": 522,
+  "frp_total": 12660.76,
+  "image_avant": {
+    "id": "S2B_31TGJ_20260717_0_L2A",
+    "date": "2026-07-17",
+    "nuages_pct": 2.566183
+  },
+  "image_apres": {
+    "id": "S2A_31TGJ_20260724_1_L2A",
+    "date": "2026-07-24",
+    "nuages_pct": 2.634842
+  },
+  "tuile": "MGRS-31TGJ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.425,
+  "part_masquee": 0.0,
+  "latence_jours": 3,
+  "calcule_le": "2026-07-25T16:06:52Z"
+}

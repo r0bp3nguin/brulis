@@ -1,0 +1,17 @@
+{
+  "id": "20260723-77-grandpuits-bailly-carroi-4859294",
+  "feu": "Grandpuits-Bailly-Carrois (77)",
+  "statut": "en_attente",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "commune": "Grandpuits-Bailly-Carrois",
+  "departement": "77",
+  "surface_estimee_ha": 33.4,
+  "surface_min_ha": 22.0,
+  "surface_max_ha": 45.0,
+  "premier_point_chaud": "2026-07-23",
+  "dernier_point_chaud": "2026-07-25",
+  "n_points_chauds": 6,
+  "frp_total": 5.17,
+  "prochain_passage": "2026-07-28",
+  "calcule_le": "2026-07-26T08:05:25Z"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "20260726-2B-oletta-4263940",
+  "feu": "Oletta (2B)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Oletta",
+  "departement": "2B",
+  "surface_estimee_ha": 61.9,
+  "surface_min_ha": 40.0,
+  "surface_max_ha": 84.0,
+  "premier_point_chaud": "2026-07-26",
+  "dernier_point_chaud": "2026-07-26",
+  "n_points_chauds": 8,
+  "frp_total": 17.59,
+  "prochain_passage": "2026-07-27",
+  "calcule_le": "2026-07-26T08:00:19Z"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "20260722-62-lumbres-5070211",
+  "feu": "Lumbres (62)",
+  "statut": "en_attente",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "commune": "Lumbres",
+  "departement": "62",
+  "surface_estimee_ha": 31.5,
+  "surface_min_ha": 20.0,
+  "surface_max_ha": 43.0,
+  "premier_point_chaud": "2026-07-22",
+  "dernier_point_chaud": "2026-07-24",
+  "n_points_chauds": 5,
+  "frp_total": 4.08,
+  "prochain_passage": "2026-07-25",
+  "calcule_le": "2026-07-25T16:39:33Z"
+}
