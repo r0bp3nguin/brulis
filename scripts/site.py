@@ -69,13 +69,32 @@ def fusionner(feux: list[dict]) -> list[dict]:
     for f in feux:
         geom = f["_polys"].union_all()
         for garde in retenus:
-            # Défaut explicite : les fiches écrites avant l'ajout du champ n'en ont pas,
-            # et sans normalisation elles ne fusionneraient jamais avec les récentes.
-            if (garde.get("statut") or "mesure") != (f.get("statut") or "mesure"):
-                continue  # un périmètre mesuré et une emprise chaude ne se fusionnent pas
             g = garde["_polys"].union_all()
             inter = geom.intersection(g).area
             if inter > RECOUVREMENT_DOUBLON * min(geom.area, g.area):
+                st_garde = garde.get("statut") or "mesure"
+                st_f = f.get("statut") or "mesure"
+                # Un même incendie peut produire à la fois un périmètre mesuré et une
+                # emprise chaude estimée. Ce sont deux vues du même feu, pas deux feux :
+                # les publier séparément le comptait deux fois (Gironde, 27/07/2026 —
+                # 22 175 ha mesurés et 45 959 ha estimés, 14 119 ha d'intersection).
+                # La mesure prime ; l'estimation est absorbée et sert de signal.
+                if st_garde != st_f:
+                    mesure, estime = ((garde, f) if st_garde == "mesure" else (f, garde))
+                    ha_est = estime["_polys"].union_all().area / 1e4
+                    ha_mes = mesure["_polys"].union_all().area / 1e4
+                    if ha_est > 1.3 * ha_mes:
+                        # L'emprise chaude déborde nettement du périmètre mesuré :
+                        # l'image ne couvre probablement pas tout le feu.
+                        mesure.setdefault("_alertes", []).append(
+                            f"chaleur détectée sur ~{ha_est:.0f} ha, au-delà du périmètre "
+                            f"mesuré — le feu déborde probablement de l'image")
+                    if mesure is f:
+                        retenus[retenus.index(garde)] = f
+                        garde = f
+                    print(f"  « {estime['feu']} » : estimation absorbée par le périmètre "
+                          f"mesuré du même feu")
+                    break
                 # Concaténer, pas unir : fondre le tout en un seul polygone effacerait
                 # la distinction entre le foyer et les détections isolées autour, que
                 # `separer` doit encore pouvoir faire.
@@ -116,6 +135,7 @@ def en_feature(info: dict) -> tuple[dict, list]:
         reserves.append(f"{len(isoles)} détections isolées écartées du périmètre")
     if info.get("_fusionnes"):
         reserves.append("détection fusionnée avec : " + ", ".join(info["_fusionnes"]))
+    reserves.extend(info.get("_alertes", []))
 
     props = {
         "id": info["id"],

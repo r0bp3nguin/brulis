@@ -73,7 +73,9 @@ jobs:
         run: |
           git config user.name "brulis-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add site/
+          # data/feux/ est l'archive des périmètres : sans elle, chaque exécution
+          # repart de zéro et les feux mesurés disparaissent au passage suivant.
+          git add site/ data/feux/
           if git diff --cached --quiet; then
             echo "aucun changement"
           else

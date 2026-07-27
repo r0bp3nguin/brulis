@@ -600,6 +600,20 @@ function rendreFiche(id){
 /* Un feu sans image exploitable : on montre ce que l'on sait (chaleur observée, ordre de
    grandeur, date du prochain passage) plutôt qu'une page vide ou, pire, un chiffre net
    qui laisserait croire à une mesure. */
+/* Une date de passage déjà écoulée ne doit jamais être présentée comme à venir : le
+   satellite est passé sans qu'une image exploitable en sorte, ou elle n'est pas encore
+   publiée. Le dire plutôt que d'afficher une promesse périmée. */
+function passageTexte(p){
+  if (!p.prochain_passage) return "";
+  const d = new Date(p.prochain_passage + "T12:00:00Z");
+  const jour = d.toLocaleDateString("fr-FR", {day:"numeric", month:"long"});
+  const passe = d < new Date(new Date().toDateString());
+  return passe
+    ? `Un passage Sentinel-2 était attendu vers le <b>${jour}</b> : soit aucune image
+       exploitable n'en est sortie, soit elle n'est pas encore publiée.`
+    : `Prochain passage Sentinel-2 attendu d'ici le <b>${jour}</b>.`;
+}
+
 function rendreAttente(p){
   corps.innerHTML = `
     <button class="retour" id="retour">
@@ -622,9 +636,7 @@ function rendreAttente(p){
         <p>${p.motif_attente}. Ce chiffre vient de l'étendue vue comme chaude par le
         satellite thermique, ce n'est <b>pas</b> un périmètre brûlé : il peut sous-estimer
         (ce qui a brûlé puis refroidi entre deux passages n'est pas vu) comme surestimer.
-        ${p.prochain_passage ? `Prochain passage Sentinel-2 attendu d'ici le
-        <b>${new Date(p.prochain_passage).toLocaleDateString("fr-FR",
-          {day:"numeric", month:"long"})}</b>.` : ""}</p>
+        ${passageTexte(p)}</p>
       </div>
 
       <dl class="donnees">
