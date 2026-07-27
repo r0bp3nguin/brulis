@@ -1,0 +1,29 @@
+{
+  "id": "20260724-33-le-temple-4485103",
+  "feu": "Le Temple (33)",
+  "statut": "mesure",
+  "commune": "Le Temple",
+  "departement": "33",
+  "surface_ha": 22281.6,
+  "n_polygones": 264,
+  "premier_point_chaud": "2026-07-24",
+  "dernier_point_chaud": "2026-07-27",
+  "n_points_chauds": 5781,
+  "frp_total": 165711.07,
+  "image_avant": {
+    "id": "S2C_30TXQ_20260721_0_L2A",
+    "date": "2026-07-21",
+    "nuages_pct": 0.336283
+  },
+  "image_apres": {
+    "id": "S2B_30TXQ_20260726_0_L2A",
+    "date": "2026-07-26",
+    "nuages_pct": 30.932769
+  },
+  "tuile": "MGRS-30TXQ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.55,
+  "part_masquee": 0.358,
+  "latence_jours": 2,
+  "calcule_le": "2026-07-27T12:42:41Z"
+}

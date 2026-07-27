@@ -5,13 +5,13 @@
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Meyrueis",
   "departement": "48",
-  "surface_estimee_ha": 174.1,
-  "surface_min_ha": 113.0,
-  "surface_max_ha": 235.0,
+  "surface_estimee_ha": 144.0,
+  "surface_min_ha": 94.0,
+  "surface_max_ha": 194.0,
   "premier_point_chaud": "2026-07-25",
   "dernier_point_chaud": "2026-07-25",
   "n_points_chauds": 24,
   "frp_total": 80.59,
   "prochain_passage": "2026-07-30",
-  "calcule_le": "2026-07-26T07:58:51Z"
+  "calcule_le": "2026-07-27T12:44:18Z"
 }

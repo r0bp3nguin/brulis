@@ -5,13 +5,13 @@
   "motif_attente": "aucune image satellite depuis le départ du feu",
   "commune": "Audigny",
   "departement": "02",
-  "surface_estimee_ha": 63.7,
-  "surface_min_ha": 41.0,
-  "surface_max_ha": 86.0,
+  "surface_estimee_ha": 56.2,
+  "surface_min_ha": 37.0,
+  "surface_max_ha": 76.0,
   "premier_point_chaud": "2026-07-25",
   "dernier_point_chaud": "2026-07-25",
   "n_points_chauds": 11,
   "frp_total": 51.64,
   "prochain_passage": "2026-07-28",
-  "calcule_le": "2026-07-26T07:58:56Z"
+  "calcule_le": "2026-07-27T12:44:19Z"
 }

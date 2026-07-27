@@ -1,0 +1,17 @@
+{
+  "id": "20260724-31-martres-tolosane-4319099",
+  "feu": "Martres-Tolosane (31)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Martres-Tolosane",
+  "departement": "31",
+  "surface_estimee_ha": 21.4,
+  "surface_min_ha": 14.0,
+  "surface_max_ha": 29.0,
+  "premier_point_chaud": "2026-07-24",
+  "dernier_point_chaud": "2026-07-27",
+  "n_points_chauds": 5,
+  "frp_total": 4.36,
+  "prochain_passage": "2026-07-28",
+  "calcule_le": "2026-07-27T12:46:21Z"
+}

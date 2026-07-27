@@ -5,13 +5,13 @@
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Nyer",
   "departement": "66",
-  "surface_estimee_ha": 128.3,
-  "surface_min_ha": 83.0,
-  "surface_max_ha": 173.0,
+  "surface_estimee_ha": 133.0,
+  "surface_min_ha": 86.0,
+  "surface_max_ha": 180.0,
   "premier_point_chaud": "2026-07-25",
-  "dernier_point_chaud": "2026-07-26",
-  "n_points_chauds": 22,
-  "frp_total": 292.29,
+  "dernier_point_chaud": "2026-07-27",
+  "n_points_chauds": 26,
+  "frp_total": 299.25,
   "prochain_passage": "2026-07-28",
-  "calcule_le": "2026-07-26T07:58:06Z"
+  "calcule_le": "2026-07-27T12:43:41Z"
 }
