@@ -4,26 +4,26 @@
   "statut": "mesure",
   "commune": "Nyer",
   "departement": "66",
-  "surface_ha": 36.3,
+  "surface_ha": 49.4,
   "n_polygones": 1,
   "premier_point_chaud": "2026-07-25",
   "dernier_point_chaud": "2026-07-28",
-  "n_points_chauds": 34,
-  "frp_total": 343.04,
+  "n_points_chauds": 39,
+  "frp_total": 401.63,
   "image_avant": {
     "id": "S2B_31TDH_20260723_0_L2A",
     "date": "2026-07-23",
     "nuages_pct": 0.395025
   },
   "image_apres": {
-    "id": "S2A_31TDH_20260727_0_L2A",
-    "date": "2026-07-27",
-    "nuages_pct": 13.151865
+    "id": "S2C_31TDH_20260728_0_L2A",
+    "date": "2026-07-28",
+    "nuages_pct": 0.432224
   },
   "tuile": "MGRS-31TDH",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.408,
+  "nbr_avant_median": 0.424,
   "part_masquee": 0.0,
-  "latence_jours": 2,
-  "calcule_le": "2026-07-28T09:07:33Z"
+  "latence_jours": 3,
+  "calcule_le": "2026-07-28T17:45:47Z"
 }

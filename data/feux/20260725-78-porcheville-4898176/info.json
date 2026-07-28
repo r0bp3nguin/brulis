@@ -1,17 +1,29 @@
 {
   "id": "20260725-78-porcheville-4898176",
   "feu": "Porcheville (78)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Porcheville",
   "departement": "78",
-  "surface_estimee_ha": 66.4,
-  "surface_min_ha": 43.0,
-  "surface_max_ha": 90.0,
+  "surface_ha": 1.3,
+  "n_polygones": 1,
   "premier_point_chaud": "2026-07-25",
   "dernier_point_chaud": "2026-07-27",
   "n_points_chauds": 21,
   "frp_total": 31.05,
-  "prochain_passage": "2026-07-29",
-  "calcule_le": "2026-07-28T09:08:41Z"
+  "image_avant": {
+    "id": "S2C_31UCQ_20260721_0_L2A",
+    "date": "2026-07-21",
+    "nuages_pct": 5.922651
+  },
+  "image_apres": {
+    "id": "S2C_31UCQ_20260728_0_L2A",
+    "date": "2026-07-28",
+    "nuages_pct": 0.003725
+  },
+  "tuile": "MGRS-31UCQ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.247,
+  "part_masquee": 0.02,
+  "latence_jours": 3,
+  "calcule_le": "2026-07-28T17:46:44Z"
 }

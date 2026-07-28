@@ -4,12 +4,12 @@
   "statut": "mesure",
   "commune": "Le Temple",
   "departement": "33",
-  "surface_ha": 22249.3,
-  "n_polygones": 252,
+  "surface_ha": 22276.2,
+  "n_polygones": 255,
   "premier_point_chaud": "2026-07-25",
   "dernier_point_chaud": "2026-07-28",
-  "n_points_chauds": 3219,
-  "frp_total": 35299.56,
+  "n_points_chauds": 3337,
+  "frp_total": 39884.1,
   "image_avant": {
     "id": "S2C_30TXQ_20260721_0_L2A",
     "date": "2026-07-21",
@@ -23,7 +23,7 @@
   "tuile": "MGRS-30TXQ",
   "seuil_dnbr": 0.15,
   "nbr_avant_median": 0.55,
-  "part_masquee": 0.374,
+  "part_masquee": 0.376,
   "latence_jours": 1,
-  "calcule_le": "2026-07-28T09:06:40Z"
+  "calcule_le": "2026-07-28T17:45:24Z"
 }

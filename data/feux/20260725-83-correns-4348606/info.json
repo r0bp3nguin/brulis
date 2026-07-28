@@ -1,15 +1,15 @@
 {
-  "id": "20260725-83-correns-4350610",
+  "id": "20260725-83-correns-4348606",
   "feu": "Correns (83)",
   "statut": "mesure",
   "commune": "Correns",
   "departement": "83",
-  "surface_ha": 351.9,
-  "n_polygones": 20,
+  "surface_ha": 584.3,
+  "n_polygones": 12,
   "premier_point_chaud": "2026-07-25",
-  "dernier_point_chaud": "2026-07-25",
-  "n_points_chauds": 10,
-  "frp_total": 23.89,
+  "dernier_point_chaud": "2026-07-28",
+  "n_points_chauds": 28,
+  "frp_total": 228.78,
   "image_avant": {
     "id": "S2A_31TGJ_20260724_1_L2A",
     "date": "2026-07-24",
@@ -22,8 +22,8 @@
   },
   "tuile": "MGRS-31TGJ",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.407,
+  "nbr_avant_median": 0.431,
   "part_masquee": 0.0,
   "latence_jours": 2,
-  "calcule_le": "2026-07-28T17:46:49Z"
+  "calcule_le": "2026-07-28T17:45:59Z"
 }

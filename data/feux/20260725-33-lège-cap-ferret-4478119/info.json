@@ -8,8 +8,8 @@
   "n_polygones": 36,
   "premier_point_chaud": "2026-07-25",
   "dernier_point_chaud": "2026-07-28",
-  "n_points_chauds": 71,
-  "frp_total": 195.55,
+  "n_points_chauds": 74,
+  "frp_total": 213.1,
   "image_avant": {
     "id": "S2C_30TXQ_20260721_0_L2A",
     "date": "2026-07-21",
@@ -23,7 +23,7 @@
   "tuile": "MGRS-30TXQ",
   "seuil_dnbr": 0.15,
   "nbr_avant_median": 0.596,
-  "part_masquee": 0.153,
+  "part_masquee": 0.152,
   "latence_jours": 1,
-  "calcule_le": "2026-07-28T09:07:52Z"
+  "calcule_le": "2026-07-28T17:46:01Z"
 }
