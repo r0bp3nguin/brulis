@@ -1,17 +1,29 @@
 {
   "id": "20260725-66-nyer-4249226",
   "feu": "Nyer (66)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Nyer",
   "departement": "66",
-  "surface_estimee_ha": 133.0,
-  "surface_min_ha": 86.0,
-  "surface_max_ha": 180.0,
+  "surface_ha": 36.3,
+  "n_polygones": 1,
   "premier_point_chaud": "2026-07-25",
-  "dernier_point_chaud": "2026-07-27",
-  "n_points_chauds": 26,
-  "frp_total": 299.25,
-  "prochain_passage": "2026-07-28",
-  "calcule_le": "2026-07-27T12:43:41Z"
+  "dernier_point_chaud": "2026-07-28",
+  "n_points_chauds": 34,
+  "frp_total": 343.04,
+  "image_avant": {
+    "id": "S2B_31TDH_20260723_0_L2A",
+    "date": "2026-07-23",
+    "nuages_pct": 0.395025
+  },
+  "image_apres": {
+    "id": "S2A_31TDH_20260727_0_L2A",
+    "date": "2026-07-27",
+    "nuages_pct": 13.151865
+  },
+  "tuile": "MGRS-31TDH",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.408,
+  "part_masquee": 0.0,
+  "latence_jours": 2,
+  "calcule_le": "2026-07-28T09:07:33Z"
 }

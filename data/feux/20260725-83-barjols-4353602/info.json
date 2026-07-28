@@ -1,15 +1,15 @@
 {
-  "id": "20260725-83-correns-4348605",
-  "feu": "Correns (83)",
+  "id": "20260725-83-barjols-4353602",
+  "feu": "Barjols (83)",
   "statut": "mesure",
-  "commune": "Correns",
+  "commune": "Barjols",
   "departement": "83",
-  "surface_ha": 584.3,
-  "n_polygones": 12,
+  "surface_ha": 1010.5,
+  "n_polygones": 26,
   "premier_point_chaud": "2026-07-25",
-  "dernier_point_chaud": "2026-07-28",
-  "n_points_chauds": 26,
-  "frp_total": 212.18,
+  "dernier_point_chaud": "2026-07-27",
+  "n_points_chauds": 84,
+  "frp_total": 1525.99,
   "image_avant": {
     "id": "S2A_31TGJ_20260724_1_L2A",
     "date": "2026-07-24",
@@ -22,8 +22,8 @@
   },
   "tuile": "MGRS-31TGJ",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.431,
+  "nbr_avant_median": 0.446,
   "part_masquee": 0.0,
   "latence_jours": 2,
-  "calcule_le": "2026-07-28T09:07:49Z"
+  "calcule_le": "2026-07-28T09:06:50Z"
 }

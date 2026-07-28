@@ -1,0 +1,17 @@
+{
+  "id": "20260725-77-montereau-fault-yonne-4839298",
+  "feu": "Montereau-Fault-Yonne (77)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Montereau-Fault-Yonne",
+  "departement": "77",
+  "surface_estimee_ha": 42.0,
+  "surface_min_ha": 27.0,
+  "surface_max_ha": 57.0,
+  "premier_point_chaud": "2026-07-25",
+  "dernier_point_chaud": "2026-07-27",
+  "n_points_chauds": 14,
+  "frp_total": 17.24,
+  "prochain_passage": "2026-07-28",
+  "calcule_le": "2026-07-28T09:08:50Z"
+}

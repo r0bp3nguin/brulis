@@ -1,0 +1,29 @@
+{
+  "id": "20260726-13-gardanne-4345546",
+  "feu": "Gardanne (13)",
+  "statut": "mesure",
+  "commune": "Gardanne",
+  "departement": "13",
+  "surface_ha": 3.6,
+  "n_polygones": 1,
+  "premier_point_chaud": "2026-07-26",
+  "dernier_point_chaud": "2026-07-28",
+  "n_points_chauds": 5,
+  "frp_total": 2.83,
+  "image_avant": {
+    "id": "S2A_31TFJ_20260724_0_L2A",
+    "date": "2026-07-24",
+    "nuages_pct": 0.009275
+  },
+  "image_apres": {
+    "id": "S2B_31TFJ_20260727_0_L2A",
+    "date": "2026-07-27",
+    "nuages_pct": 0.254763
+  },
+  "tuile": "MGRS-31TFJ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.22,
+  "part_masquee": 0.0,
+  "latence_jours": 1,
+  "calcule_le": "2026-07-28T09:10:25Z"
+}

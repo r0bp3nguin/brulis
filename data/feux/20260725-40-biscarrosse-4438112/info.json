@@ -1,0 +1,17 @@
+{
+  "id": "20260725-40-biscarrosse-4438112",
+  "feu": "Biscarrosse (40)",
+  "statut": "en_attente",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "commune": "Biscarrosse",
+  "departement": "40",
+  "surface_estimee_ha": 890.5,
+  "surface_min_ha": 579.0,
+  "surface_max_ha": 1202.0,
+  "premier_point_chaud": "2026-07-25",
+  "dernier_point_chaud": "2026-07-28",
+  "n_points_chauds": 163,
+  "frp_total": 1168.97,
+  "prochain_passage": "2026-07-31",
+  "calcule_le": "2026-07-28T09:06:52Z"
+}

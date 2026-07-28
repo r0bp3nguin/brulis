@@ -1,0 +1,17 @@
+{
+  "id": "20260725-44-donges-4732205",
+  "feu": "Donges (44)",
+  "statut": "en_attente",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "commune": "Donges",
+  "departement": "44",
+  "surface_estimee_ha": 43.9,
+  "surface_min_ha": 29.0,
+  "surface_max_ha": 59.0,
+  "premier_point_chaud": "2026-07-25",
+  "dernier_point_chaud": "2026-07-28",
+  "n_points_chauds": 7,
+  "frp_total": 10.19,
+  "prochain_passage": "2026-07-29",
+  "calcule_le": "2026-07-28T09:09:23Z"
+}
