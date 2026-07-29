@@ -1,0 +1,17 @@
+{
+  "id": "20260726-33-lanton-4476092",
+  "feu": "Lanton (33)",
+  "statut": "en_attente",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "commune": "Lanton",
+  "departement": "33",
+  "surface_estimee_ha": 5766.9,
+  "surface_min_ha": 3749.0,
+  "surface_max_ha": 7785.0,
+  "premier_point_chaud": "2026-07-26",
+  "dernier_point_chaud": "2026-07-29",
+  "n_points_chauds": 1306,
+  "frp_total": 17945.18,
+  "prochain_passage": "2026-07-31",
+  "calcule_le": "2026-07-29T09:11:14Z"
+}

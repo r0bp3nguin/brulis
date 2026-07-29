@@ -1,0 +1,29 @@
+{
+  "id": "20260726-83-barjols-4353601",
+  "feu": "Barjols (83)",
+  "statut": "mesure",
+  "commune": "Barjols",
+  "departement": "83",
+  "surface_ha": 841.2,
+  "n_polygones": 17,
+  "premier_point_chaud": "2026-07-26",
+  "dernier_point_chaud": "2026-07-27",
+  "n_points_chauds": 42,
+  "frp_total": 392.63,
+  "image_avant": {
+    "id": "S2A_31TGJ_20260724_1_L2A",
+    "date": "2026-07-24",
+    "nuages_pct": 2.634842
+  },
+  "image_apres": {
+    "id": "S2B_31TGJ_20260727_0_L2A",
+    "date": "2026-07-27",
+    "nuages_pct": 1.091977
+  },
+  "tuile": "MGRS-31TGJ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.462,
+  "part_masquee": 0.0,
+  "latence_jours": 1,
+  "calcule_le": "2026-07-29T09:12:00Z"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "20260726-2B-corte-4226908",
+  "feu": "Corte (2B)",
+  "statut": "mesure",
+  "commune": "Corte",
+  "departement": "2B",
+  "surface_ha": 28.0,
+  "n_polygones": 9,
+  "premier_point_chaud": "2026-07-26",
+  "dernier_point_chaud": "2026-07-27",
+  "n_points_chauds": 21,
+  "frp_total": 133.97,
+  "image_avant": {
+    "id": "S2C_32TMM_20260726_0_L2A",
+    "date": "2026-07-26",
+    "nuages_pct": 8.131363
+  },
+  "image_apres": {
+    "id": "S2A_32TMM_20260728_0_L2A",
+    "date": "2026-07-28",
+    "nuages_pct": 3.56839
+  },
+  "tuile": "MGRS-32TMM",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.399,
+  "part_masquee": 0.0,
+  "latence_jours": 2,
+  "calcule_le": "2026-07-29T09:12:41Z"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "20260726-59-grande-synthe-5104229",
+  "feu": "Grande-Synthe (59)",
+  "statut": "en_attente",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "commune": "Grande-Synthe",
+  "departement": "59",
+  "surface_estimee_ha": 401.8,
+  "surface_min_ha": 261.0,
+  "surface_max_ha": 542.0,
+  "premier_point_chaud": "2026-07-26",
+  "dernier_point_chaud": "2026-07-29",
+  "n_points_chauds": 125,
+  "frp_total": 349.76,
+  "prochain_passage": "2026-07-31",
+  "calcule_le": "2026-07-29T09:12:05Z"
+}

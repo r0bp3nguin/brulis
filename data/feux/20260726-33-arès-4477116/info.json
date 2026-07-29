@@ -1,0 +1,17 @@
+{
+  "id": "20260726-33-arès-4477116",
+  "feu": "Arès (33)",
+  "statut": "en_attente",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "commune": "Arès",
+  "departement": "33",
+  "surface_estimee_ha": 38.6,
+  "surface_min_ha": 25.0,
+  "surface_max_ha": 52.0,
+  "premier_point_chaud": "2026-07-26",
+  "dernier_point_chaud": "2026-07-26",
+  "n_points_chauds": 5,
+  "frp_total": 7.04,
+  "prochain_passage": "2026-07-31",
+  "calcule_le": "2026-07-29T09:14:31Z"
+}
