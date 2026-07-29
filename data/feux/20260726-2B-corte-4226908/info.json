@@ -4,8 +4,8 @@
   "statut": "mesure",
   "commune": "Corte",
   "departement": "2B",
-  "surface_ha": 28.0,
-  "n_polygones": 9,
+  "surface_ha": 20.8,
+  "n_polygones": 6,
   "premier_point_chaud": "2026-07-26",
   "dernier_point_chaud": "2026-07-27",
   "n_points_chauds": 21,
@@ -16,14 +16,14 @@
     "nuages_pct": 8.131363
   },
   "image_apres": {
-    "id": "S2A_32TMM_20260728_0_L2A",
-    "date": "2026-07-28",
-    "nuages_pct": 3.56839
+    "id": "S2C_32TMM_20260729_0_L2A",
+    "date": "2026-07-29",
+    "nuages_pct": 1.801371
   },
   "tuile": "MGRS-32TMM",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.399,
+  "nbr_avant_median": 0.337,
   "part_masquee": 0.0,
-  "latence_jours": 2,
-  "calcule_le": "2026-07-29T09:12:41Z"
+  "latence_jours": 3,
+  "calcule_le": "2026-07-29T17:39:52Z"
 }

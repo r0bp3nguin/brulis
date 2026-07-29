@@ -1,17 +1,29 @@
 {
   "id": "20260728-35-les-portes-du-coglais-4843130",
   "feu": "Les Portes du Coglais (35)",
-  "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Les Portes du Coglais",
   "departement": "35",
-  "surface_estimee_ha": 44.9,
-  "surface_min_ha": 29.0,
-  "surface_max_ha": 61.0,
+  "surface_ha": 144.8,
+  "n_polygones": 63,
   "premier_point_chaud": "2026-07-28",
   "dernier_point_chaud": "2026-07-28",
   "n_points_chauds": 8,
   "frp_total": 9.35,
-  "prochain_passage": "2026-07-29",
-  "calcule_le": "2026-07-29T09:14:27Z"
+  "image_avant": {
+    "id": "S2C_30UXU_20260724_0_L2A",
+    "date": "2026-07-24",
+    "nuages_pct": 27.215731
+  },
+  "image_apres": {
+    "id": "S2B_30UXU_20260729_0_L2A",
+    "date": "2026-07-29",
+    "nuages_pct": 0.000783
+  },
+  "tuile": "MGRS-30UXU",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.468,
+  "part_masquee": 0.0,
+  "latence_jours": 1,
+  "calcule_le": "2026-07-29T17:41:42Z"
 }

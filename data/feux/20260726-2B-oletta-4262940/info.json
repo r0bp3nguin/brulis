@@ -4,8 +4,8 @@
   "statut": "mesure",
   "commune": "Oletta",
   "departement": "2B",
-  "surface_ha": 135.6,
-  "n_polygones": 14,
+  "surface_ha": 135.5,
+  "n_polygones": 15,
   "premier_point_chaud": "2026-07-26",
   "dernier_point_chaud": "2026-07-26",
   "n_points_chauds": 32,
@@ -16,14 +16,14 @@
     "nuages_pct": 16.578412
   },
   "image_apres": {
-    "id": "S2A_32TNN_20260728_0_L2A",
-    "date": "2026-07-28",
-    "nuages_pct": 0.579116
+    "id": "S2C_32TNN_20260729_0_L2A",
+    "date": "2026-07-29",
+    "nuages_pct": 1.368895
   },
   "tuile": "MGRS-32TNN",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.405,
-  "part_masquee": 0.105,
-  "latence_jours": 2,
-  "calcule_le": "2026-07-29T09:11:42Z"
+  "nbr_avant_median": 0.426,
+  "part_masquee": 0.133,
+  "latence_jours": 3,
+  "calcule_le": "2026-07-29T17:38:45Z"
 }

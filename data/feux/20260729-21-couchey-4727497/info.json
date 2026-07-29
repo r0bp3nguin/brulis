@@ -1,0 +1,17 @@
+{
+  "id": "20260729-21-couchey-4727497",
+  "feu": "Couchey (21)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Couchey",
+  "departement": "21",
+  "surface_estimee_ha": 50.5,
+  "surface_min_ha": 33.0,
+  "surface_max_ha": 68.0,
+  "premier_point_chaud": "2026-07-29",
+  "dernier_point_chaud": "2026-07-29",
+  "n_points_chauds": 7,
+  "frp_total": 610.38,
+  "prochain_passage": "2026-08-01",
+  "calcule_le": "2026-07-29T17:38:47Z"
+}
