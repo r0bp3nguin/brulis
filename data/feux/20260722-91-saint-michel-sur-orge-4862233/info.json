@@ -1,17 +1,29 @@
 {
   "id": "20260722-91-saint-michel-sur-orge-4862233",
-  "feu": "Saint-Michel-sur-Orge (91)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
-  "commune": "Saint-Michel-sur-Orge",
+  "feu": "Brétigny-sur-Orge (91)",
+  "statut": "mesure",
+  "commune": "Brétigny-sur-Orge",
   "departement": "91",
-  "surface_estimee_ha": 53.0,
-  "surface_min_ha": 34.0,
-  "surface_max_ha": 72.0,
+  "surface_ha": 11.9,
+  "n_polygones": 5,
   "premier_point_chaud": "2026-07-22",
   "dernier_point_chaud": "2026-07-22",
   "n_points_chauds": 6,
   "frp_total": 41.34,
-  "prochain_passage": "2026-07-25",
-  "calcule_le": "2026-07-25T16:21:24Z"
+  "image_avant": {
+    "id": "S2C_31UDP_20260721_0_L2A",
+    "date": "2026-07-21",
+    "nuages_pct": 0.682983
+  },
+  "image_apres": {
+    "id": "S2C_31UDP_20260728_0_L2A",
+    "date": "2026-07-28",
+    "nuages_pct": 0.001327
+  },
+  "tuile": "MGRS-31UDP",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.253,
+  "part_masquee": 0.0,
+  "latence_jours": 6,
+  "calcule_le": "2026-07-30T09:33:05Z"
 }

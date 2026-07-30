@@ -1,17 +1,17 @@
 {
   "id": "20260724-18-baugy-4708275",
   "feu": "Baugy (18)",
-  "statut": "en_attente",
+  "statut": "ecarte",
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Baugy",
   "departement": "18",
-  "surface_estimee_ha": 107.4,
-  "surface_min_ha": 70.0,
-  "surface_max_ha": 145.0,
+  "surface_estimee_ha": 94.4,
+  "surface_min_ha": 61.0,
+  "surface_max_ha": 127.0,
   "premier_point_chaud": "2026-07-24",
-  "dernier_point_chaud": "2026-07-27",
-  "n_points_chauds": 24,
-  "frp_total": 117.73,
-  "prochain_passage": "2026-07-28",
-  "calcule_le": "2026-07-27T12:44:01Z"
+  "dernier_point_chaud": "2026-07-28",
+  "n_points_chauds": 27,
+  "frp_total": 108.49,
+  "calcule_le": "2026-07-30T09:31:29Z",
+  "motif_ecarte": "couvert végétal insuffisant avant le feu (NBR 0.17) — chaume, sol nu ou site industriel, pas un feu de végétation"
 }

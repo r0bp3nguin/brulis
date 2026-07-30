@@ -4,16 +4,16 @@
   "statut": "mesure",
   "commune": "L'Argentière-la-Bessée",
   "departement": "05",
-  "surface_ha": 308.5,
-  "n_polygones": 11,
+  "surface_ha": 168.3,
+  "n_polygones": 13,
   "premier_point_chaud": "2026-07-21",
   "dernier_point_chaud": "2026-07-24",
-  "n_points_chauds": 320,
-  "frp_total": 4348.76,
+  "n_points_chauds": 184,
+  "frp_total": 1635.57,
   "image_avant": {
-    "id": "S2B_31TGK_20260717_0_L2A",
-    "date": "2026-07-17",
-    "nuages_pct": 8.250975
+    "id": "S2C_31TGK_20260722_0_L2A",
+    "date": "2026-07-22",
+    "nuages_pct": 0.07427
   },
   "image_apres": {
     "id": "S2A_31TGK_20260724_0_L2A",
@@ -22,8 +22,8 @@
   },
   "tuile": "MGRS-31TGK",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.432,
-  "part_masquee": 0.159,
+  "nbr_avant_median": 0.413,
+  "part_masquee": 0.016,
   "latence_jours": 3,
-  "calcule_le": "2026-07-25T16:07:37Z"
+  "calcule_le": "2026-07-26T07:57:17Z"
 }

@@ -1,17 +1,29 @@
 {
   "id": "20260722-62-lumbres-5070211",
   "feu": "Lumbres (62)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Lumbres",
   "departement": "62",
-  "surface_estimee_ha": 31.5,
-  "surface_min_ha": 20.0,
-  "surface_max_ha": 43.0,
+  "surface_ha": 50.1,
+  "n_polygones": 18,
   "premier_point_chaud": "2026-07-22",
-  "dernier_point_chaud": "2026-07-24",
-  "n_points_chauds": 5,
-  "frp_total": 4.08,
-  "prochain_passage": "2026-07-25",
-  "calcule_le": "2026-07-25T16:39:33Z"
+  "dernier_point_chaud": "2026-07-29",
+  "n_points_chauds": 8,
+  "frp_total": 6.11,
+  "image_avant": {
+    "id": "S2B_31UDS_20260716_0_L2A",
+    "date": "2026-07-16",
+    "nuages_pct": 17.728461
+  },
+  "image_apres": {
+    "id": "S2C_31UDS_20260728_0_L2A",
+    "date": "2026-07-28",
+    "nuages_pct": 7.044575
+  },
+  "tuile": "MGRS-31UDS",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.378,
+  "part_masquee": 0.317,
+  "latence_jours": 6,
+  "calcule_le": "2026-07-29T17:42:16Z"
 }

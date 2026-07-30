@@ -1,9 +1,9 @@
 {
   "id": "20260726-33-lanton-4476092",
-  "feu": "Lanton (33)",
+  "feu": "Audenge (33)",
   "statut": "en_attente",
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
-  "commune": "Lanton",
+  "commune": "Audenge",
   "departement": "33",
   "surface_estimee_ha": 5823.5,
   "surface_min_ha": 3785.0,
@@ -13,5 +13,5 @@
   "n_points_chauds": 1342,
   "frp_total": 18328.46,
   "prochain_passage": "2026-07-31",
-  "calcule_le": "2026-07-29T17:38:20Z"
+  "calcule_le": "2026-07-30T09:30:26Z"
 }

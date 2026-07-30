@@ -51,6 +51,12 @@ def charger(dossier: Path) -> dict | None:
     if not info_path.exists():
         return None
     info = json.loads(info_path.read_text(encoding="utf-8"))
+    # Une fiche écartée a été examinée sur une image exploitable, puis disqualifiée : pas
+    # de feu de végétation, ou aucune trace de brûlé. Elle reste dans l'archive avec son
+    # motif, mais quitte la publication — la laisser en attente promettrait une mesure qui
+    # ne viendra jamais.
+    if info.get("statut") == "ecarte":
+        return None
     # Un feu mesuré a un périmètre ; un feu en attente n'a que l'emprise de ses points
     # chauds. Les deux sont publiés, mais jamais présentés de la même façon.
     geo_path = dossier / ("perimetre.geojson" if info.get("statut") != "en_attente"
@@ -115,6 +121,11 @@ def fusionner(feux: list[dict]) -> list[dict]:
     return retenus
 
 
+def _jour(iso: str) -> str:
+    """« 2026-07-28 » → « 28/07 » : lisible dans une phrase, sans passer par le gabarit."""
+    return f"{iso[8:10]}/{iso[5:7]}" if len(iso) >= 10 else iso
+
+
 def en_feature(info: dict) -> tuple[dict, list]:
     en_attente = info.get("statut") == "en_attente"
     if en_attente:
@@ -122,7 +133,13 @@ def en_feature(info: dict) -> tuple[dict, list]:
         feu, isoles = info["_polys"], info["_polys"].iloc[0:0]
     else:
         feu, isoles = separer(info["_polys"])
-    surface = float(feu.area.sum() / 1e4)
+    # Surface de l'union, pas somme des surfaces. `fusionner` concatène les détections d'un
+    # même incendie sans les fondre — il le faut pour que `separer` distingue encore le
+    # foyer de ce qui l'entoure — mais leurs polygones se recouvrent largement, puisqu'ils
+    # décrivent le même feu. Les additionner comptait donc deux fois le terrain commun :
+    # le complexe landais ressortait à 92 423 ha, quatre fois sa surface réelle. C'est
+    # aussi la seule façon d'être cohérent avec la carte, qui affiche déjà cette union.
+    surface = float(feu.union_all().area / 1e4)
 
     reserves = []
     if en_attente:
@@ -131,6 +148,17 @@ def en_feature(info: dict) -> tuple[dict, list]:
     if info.get("part_masquee", 0) > 0.05:
         reserves.append(
             f"{info['part_masquee']:.0%} de la zone masquée par les nuages ou la fumée")
+    # Le feu a continué de chauffer après l'image : le périmètre s'arrête à ce qu'elle
+    # montre. Sans ce rappel, une mesure datée se lit comme un bilan définitif. Le cas
+    # n'était pas visible tant qu'un même incendie s'éparpillait sur plusieurs fiches —
+    # la mesure du 25 et les points chauds du 28 vivaient chacun dans la leur.
+    image_apres = (info.get("image_apres") or {}).get("date", "")
+    dernier = str(info.get("dernier_point_chaud") or "")
+    if image_apres and dernier > image_apres:
+        reserves.append(
+            f"chaleur encore détectée le {_jour(dernier)}, après l'image du "
+            f"{_jour(image_apres)} — le périmètre s'arrête à cette image et sous-estime "
+            "probablement la surface finale")
     if len(isoles):
         reserves.append(f"{len(isoles)} détections isolées écartées du périmètre")
     if info.get("_fusionnes"):

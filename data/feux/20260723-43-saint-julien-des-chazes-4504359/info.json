@@ -5,13 +5,13 @@
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Saint-Julien-des-Chazes",
   "departement": "43",
-  "surface_estimee_ha": 76.7,
-  "surface_min_ha": 50.0,
-  "surface_max_ha": 104.0,
+  "surface_estimee_ha": 64.8,
+  "surface_min_ha": 42.0,
+  "surface_max_ha": 87.0,
   "premier_point_chaud": "2026-07-23",
   "dernier_point_chaud": "2026-07-24",
   "n_points_chauds": 11,
   "frp_total": 129.19,
-  "prochain_passage": "2026-07-30",
-  "calcule_le": "2026-07-26T07:58:44Z"
+  "prochain_passage": "2026-08-01",
+  "calcule_le": "2026-07-30T09:31:09Z"
 }

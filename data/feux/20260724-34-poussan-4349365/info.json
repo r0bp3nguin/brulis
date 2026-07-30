@@ -1,17 +1,29 @@
 {
   "id": "20260724-34-poussan-4349365",
   "feu": "Poussan (34)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Poussan",
   "departement": "34",
-  "surface_estimee_ha": 162.7,
-  "surface_min_ha": 106.0,
-  "surface_max_ha": 220.0,
+  "surface_ha": 144.8,
+  "n_polygones": 2,
   "premier_point_chaud": "2026-07-24",
   "dernier_point_chaud": "2026-07-24",
   "n_points_chauds": 24,
   "frp_total": 1502.0,
-  "prochain_passage": "2026-07-30",
-  "calcule_le": "2026-07-27T12:42:55Z"
+  "image_avant": {
+    "id": "S2B_31TEJ_20260720_1_L2A",
+    "date": "2026-07-20",
+    "nuages_pct": 15.991025
+  },
+  "image_apres": {
+    "id": "S2A_31TEJ_20260727_1_L2A",
+    "date": "2026-07-27",
+    "nuages_pct": 15.085387
+  },
+  "tuile": "MGRS-31TEJ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.425,
+  "part_masquee": 0.072,
+  "latence_jours": 3,
+  "calcule_le": "2026-07-30T09:30:44Z"
 }

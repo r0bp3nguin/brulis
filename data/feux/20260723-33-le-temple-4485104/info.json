@@ -1,17 +1,29 @@
 {
   "id": "20260723-33-le-temple-4485104",
-  "feu": "Le Temple (33)",
-  "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
-  "commune": "Le Temple",
+  "feu": "Le Porge (33)",
+  "statut": "mesure",
+  "commune": "Le Porge",
   "departement": "33",
-  "surface_estimee_ha": 28380.3,
-  "surface_min_ha": 18447.0,
-  "surface_max_ha": 38313.0,
+  "surface_ha": 22105.9,
+  "n_polygones": 219,
   "premier_point_chaud": "2026-07-23",
   "dernier_point_chaud": "2026-07-26",
   "n_points_chauds": 6540,
   "frp_total": 191758.9,
-  "prochain_passage": "2026-07-26",
-  "calcule_le": "2026-07-26T07:52:38Z"
+  "image_avant": {
+    "id": "S2C_30TXQ_20260721_0_L2A",
+    "date": "2026-07-21",
+    "nuages_pct": 0.336283
+  },
+  "image_apres": {
+    "id": "S2B_30TXQ_20260726_0_L2A",
+    "date": "2026-07-26",
+    "nuages_pct": 30.932769
+  },
+  "tuile": "MGRS-30TXQ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.549,
+  "part_masquee": 0.322,
+  "latence_jours": 3,
+  "calcule_le": "2026-07-30T09:30:11Z"
 }

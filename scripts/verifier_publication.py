@@ -25,7 +25,18 @@ ENV = Path(".env")
 
 # Domaines tiers admis dans les pages publiées. Tout autre appel sortant est signalé :
 # une dépendance CDN, c'est un tiers qui voit les visiteurs et peut altérer le code.
+# GoatCounter n'y figure pas volontairement : count.js est rapatrié dans vendor/, et si
+# quelqu'un le rebranchait un jour sur gc.zgo.at, l'audit doit le refuser.
 DOMAINES_AUTORISES = {"data.geopf.fr"}
+
+# Ce que le navigateur va chercher tout seul — `src`, et `href` sur un `<link>`
+# (feuille de style, préchargement). Un `<a href>` en est absent à dessein : c'est une
+# navigation que le visiteur déclenche, pas un chargement. Les confondre faisait échouer
+# la publication sur le moindre lien sortant (IGN, Copernicus, tableau de bord public).
+CHARGEMENTS = [
+    re.compile(r"\bsrc=[\"'](https?://([A-Za-z0-9.-]+)[^\"']*)"),
+    re.compile(r"<link\b[^>]*?\bhref=[\"'](https?://([A-Za-z0-9.-]+)[^\"']*)", re.I),
+]
 
 MOTIFS_SECRET = [
     (re.compile(r"\b[A-Za-z0-9_-]*(?:api[_-]?key|apikey|map_key|secret|passwd|password)"
@@ -158,11 +169,12 @@ def controler(audit: Audit) -> None:
     for f in publies:
         if f.suffix.lower() != ".html":
             continue
-        for m in re.finditer(r"(?:src|href)=[\"'](https?://([A-Za-z0-9.-]+)[^\"']*)",
-                             lire(f)):
-            if m.group(2) not in DOMAINES_AUTORISES:
-                audit.erreur(f"ressource chargée depuis un tiers : {m.group(1)[:70]} "
-                             f"({f}) — rapatrier en local")
+        contenu = lire(f)
+        for motif in CHARGEMENTS:
+            for m in motif.finditer(contenu):
+                if m.group(2) not in DOMAINES_AUTORISES:
+                    audit.erreur(f"ressource chargée depuis un tiers : {m.group(1)[:70]} "
+                                 f"({f}) — rapatrier en local")
     if inattendus:
         audit.alerte(f"domaines cités (liens, non chargés) : {', '.join(sorted(inattendus))}")
     print(f"  domaines chargés : {', '.join(sorted(DOMAINES_AUTORISES & domaines)) or 'aucun'}")

@@ -84,6 +84,16 @@ l'origine :
 Le code est sous licence **MIT**. Détail des licences et des sources amont dans
 `LICENCE-DONNEES.md`.
 
+## Fréquentation
+
+Les statistiques de visite sont **publiques** : <https://brulis.goatcounter.com>. Un projet
+qui publie ses données et ses limites n'a pas de raison de garder son audience pour lui.
+
+La mesure est faite par [GoatCounter](https://www.goatcounter.com), sans cookie ni donnée
+personnelle — il n'y a donc pas de bandeau de consentement à cliquer. Le script est servi
+depuis `site/vendor/`, pas depuis un CDN : aucun tiers ne peut exécuter de code sur la page,
+seul le décompte sort. Les visites depuis `localhost` ne sont pas comptées.
+
 ## Faire tourner le projet
 
 La chaîne complète est automatisée par le workflow `.github/workflows/mise-a-jour.yml`, relancé

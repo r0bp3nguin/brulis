@@ -8,8 +8,8 @@
   "n_polygones": 40,
   "premier_point_chaud": "2026-07-21",
   "dernier_point_chaud": "2026-07-25",
-  "n_points_chauds": 399,
-  "frp_total": 3653.71,
+  "n_points_chauds": 220,
+  "frp_total": 1931.85,
   "image_avant": {
     "id": "S2B_32TMM_20260721_0_L2A",
     "date": "2026-07-21",
@@ -23,7 +23,7 @@
   "tuile": "MGRS-32TMM",
   "seuil_dnbr": 0.15,
   "nbr_avant_median": 0.218,
-  "part_masquee": 0.265,
+  "part_masquee": 0.27,
   "latence_jours": 3,
-  "calcule_le": "2026-07-25T16:08:02Z"
+  "calcule_le": "2026-07-26T07:56:57Z"
 }

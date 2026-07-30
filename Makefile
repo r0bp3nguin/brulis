@@ -19,7 +19,7 @@ MAX     := 10
 MIN_PTS := 5
 
 .DEFAULT_GOAL := aide
-.PHONY: aide install reference dnbr detecter site apercu qgis visionneuse \
+.PHONY: aide install reference dnbr detecter site consolider apercu qgis visionneuse \
         verifier servir deploy propre tout
 
 aide:
@@ -37,6 +37,7 @@ aide:
 	@echo "  make apercu       planches PNG de vérification"
 	@echo "  make visionneuse  visionneuse HTML autonome"
 	@echo "  make qgis         projet QGIS pré-stylé"
+	@echo "  make consolider   vérifie qu'un incendie n'a bien qu'une fiche"
 	@echo "  make propre       efface les sorties régénérables"
 	@echo
 	@echo "Variables : JOURS=$(JOURS) MAX=$(MAX) MIN_PTS=$(MIN_PTS) PROJET=$(PROJET)"
@@ -76,6 +77,11 @@ detecter:
 
 site:
 	$(SCRIPTS) scripts/site.py
+
+# Entretien de l'archive. `detecter` garde désormais une fiche par incendie, mais celles
+# qu'il a laissées en double avant cette règle se rattrapent ici.
+consolider:
+	$(SCRIPTS) scripts/consolider.py --verifier
 
 servir: site
 	@echo "http://localhost:8000  (Ctrl-C pour arrêter)"

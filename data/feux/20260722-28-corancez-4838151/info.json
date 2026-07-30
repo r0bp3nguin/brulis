@@ -1,17 +1,29 @@
 {
   "id": "20260722-28-corancez-4838151",
   "feu": "Corancez (28)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Corancez",
   "departement": "28",
-  "surface_estimee_ha": 41.7,
-  "surface_min_ha": 27.0,
-  "surface_max_ha": 56.0,
+  "surface_ha": 169.7,
+  "n_polygones": 18,
   "premier_point_chaud": "2026-07-22",
   "dernier_point_chaud": "2026-07-22",
   "n_points_chauds": 7,
   "frp_total": 9.97,
-  "prochain_passage": "2026-07-25",
-  "calcule_le": "2026-07-25T16:33:31Z"
+  "image_avant": {
+    "id": "S2C_31UCP_20260721_0_L2A",
+    "date": "2026-07-21",
+    "nuages_pct": 0.005723
+  },
+  "image_apres": {
+    "id": "S2C_31UCP_20260728_0_L2A",
+    "date": "2026-07-28",
+    "nuages_pct": 0.001009
+  },
+  "tuile": "MGRS-31UCP",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.238,
+  "part_masquee": 0.0,
+  "latence_jours": 6,
+  "calcule_le": "2026-07-30T09:35:24Z"
 }

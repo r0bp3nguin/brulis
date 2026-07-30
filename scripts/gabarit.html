@@ -287,6 +287,9 @@ details ul{padding-left:15px;margin:5px 0}
         <a href="data/feux.geojson" download>GeoJSON</a>
         <a href="data/feux.csv" download>CSV</a>
         <a href="data/points_chauds.geojson" download>Points chauds</a>
+        <!-- Tableau de bord ouvert : la fréquentation du site est une donnée du projet
+             au même titre que les périmètres, pas une métrique privée. -->
+        <a href="https://brulis.goatcounter.com" rel="noopener">Fréquentation</a>
       </div>
       <details>
         <summary>Méthode et limites</summary>
@@ -327,6 +330,22 @@ details ul{padding-left:15px;margin:5px 0}
 </div>
 
 <script src="vendor/maplibre-gl.js"></script>
+
+<!-- Mesure d'audience GoatCounter, sans cookie ni donnée personnelle : pas de bandeau de
+     consentement à afficher. Les chiffres sont publics (lien en pied de page) — mesurer
+     l'usage en douce cadrerait mal avec un projet qui publie tout le reste.
+
+     `count.js` est rapatrié dans vendor/ plutôt que chargé depuis gc.zgo.at, comme
+     MapLibre : un `script-src` tiers, c'est du code exécutable qu'un tiers peut changer à
+     tout moment. Ici seul le décompte sort, vers l'endpoint ci-dessous — GoatCounter voit
+     les visites, jamais le pouvoir de modifier la page. L'endpoint est garanti
+     rétro-compatible par l'amont, donc le fichier figé ne cassera pas.
+
+     Le script s'abstient de lui-même sur localhost, 127.0.0.1, les plages privées et
+     file: — `make servir` ne pollue donc pas les statistiques. -->
+<script data-goatcounter="https://brulis.goatcounter.com/count"
+        async src="vendor/count.js"></script>
+
 <script>
 const FEUX = __FEUX__, ISOLEES = __ISOLEES__, CHAUDS = __CHAUDS__,
       JOURNAL = __JOURNAL__, GENERE = "__GENERE__";

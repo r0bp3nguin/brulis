@@ -6,8 +6,14 @@
   # dans les données, il ne pourrait ni s'exécuter ni téléphoner à l'extérieur.
   # 'unsafe-inline' reste nécessaire pour le script et les styles de la page (le site
   # est un fichier unique sans build) ; connect-src et img-src ne laissent passer que
-  # les tuiles IGN.
-  Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-inline' blob:; worker-src 'self' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://data.geopf.fr; connect-src 'self' https://data.geopf.fr; font-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'
+  # les tuiles IGN et le décompte de fréquentation.
+  #
+  # `script-src` reste volontairement sans tiers : GoatCounter est servi depuis vendor/,
+  # donc aucun domaine extérieur ne peut exécuter de code ici. Seul le décompte sort,
+  # vers brulis.goatcounter.com — autorisé dans connect-src (navigator.sendBeacon, la
+  # voie normale) et dans img-src (le repli pixel de count.js, utilisé si le beacon
+  # échoue ; sans lui, la mesure tombe en silence chez une partie des visiteurs).
+  Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-inline' blob:; worker-src 'self' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://data.geopf.fr https://brulis.goatcounter.com; connect-src 'self' https://data.geopf.fr https://brulis.goatcounter.com; font-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'
   X-Content-Type-Options: nosniff
   Referrer-Policy: no-referrer
   Cross-Origin-Opener-Policy: same-origin

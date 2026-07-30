@@ -1,17 +1,29 @@
 {
   "id": "20260725-33-lanton-4479097",
   "feu": "Lanton (33)",
-  "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Lanton",
   "departement": "33",
-  "surface_estimee_ha": 367.0,
-  "surface_min_ha": 239.0,
-  "surface_max_ha": 495.0,
+  "surface_ha": 3206.2,
+  "n_polygones": 19,
   "premier_point_chaud": "2026-07-25",
   "dernier_point_chaud": "2026-07-25",
   "n_points_chauds": 41,
   "frp_total": 164.3,
-  "prochain_passage": "2026-07-25",
-  "calcule_le": "2026-07-25T16:14:34Z"
+  "image_avant": {
+    "id": "S2C_30TXQ_20260721_0_L2A",
+    "date": "2026-07-21",
+    "nuages_pct": 0.336283
+  },
+  "image_apres": {
+    "id": "S2B_30TXQ_20260726_0_L2A",
+    "date": "2026-07-26",
+    "nuages_pct": 30.932769
+  },
+  "tuile": "MGRS-30TXQ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.532,
+  "part_masquee": 0.451,
+  "latence_jours": 1,
+  "calcule_le": "2026-07-30T09:30:56Z"
 }

@@ -31,6 +31,10 @@ jobs:
     # La détection lit des images satellite à distance ; un foyer lent ne doit pas
     # bloquer la journée entière.
     timeout-minutes: 90
+    # Un `if:` d'étape ne sait pas lire le contexte `secrets` ; il lit `env`. Ce report
+    # est ce qui permet à l'étape Cloudflare de s'ignorer tant que le jeton n'existe pas.
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
     steps:
       - uses: actions/checkout@v4
 
@@ -82,6 +86,22 @@ jobs:
             git commit -m "Mise à jour automatique des feux ($(date -u '+%Y-%m-%d %H:%M UTC'))"
             git push
           fi
+
+      # Cloudflare Pages est la cible visée : c'est le seul des deux hébergeurs qui lit
+      # `site/_headers`, donc le seul où la CSP du site s'applique réellement. GitHub
+      # Pages sert les mêmes fichiers en ignorant ce fichier en silence.
+      #
+      # L'étape s'efface tant que le secret est absent, pour que la mise en ligne ne
+      # dépende pas de l'ordre dans lequel les jetons sont créés. Une fois un
+      # déploiement Cloudflare vert, la publication GitHub Pages ci-dessous n'a plus de
+      # raison d'être et peut partir.
+      - name: Publier sur Cloudflare Pages
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy site --project-name=brulis
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

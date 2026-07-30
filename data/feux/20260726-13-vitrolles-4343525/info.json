@@ -1,7 +1,7 @@
 {
   "id": "20260726-13-vitrolles-4343525",
   "feu": "Vitrolles (13)",
-  "statut": "en_attente",
+  "statut": "ecarte",
   "motif_attente": "aucune image satellite depuis le départ du feu",
   "commune": "Vitrolles",
   "departement": "13",
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-07-26",
   "n_points_chauds": 7,
   "frp_total": 43.8,
-  "prochain_passage": "2026-07-28",
-  "calcule_le": "2026-07-27T12:44:25Z"
+  "calcule_le": "2026-07-30T09:32:42Z",
+  "motif_ecarte": "couvert végétal insuffisant avant le feu (NBR 0.00) — chaume, sol nu ou site industriel, pas un feu de végétation"
 }
