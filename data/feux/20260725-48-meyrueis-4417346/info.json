@@ -1,17 +1,29 @@
 {
   "id": "20260725-48-meyrueis-4417346",
   "feu": "Meyrueis (48)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Meyrueis",
   "departement": "48",
-  "surface_estimee_ha": 144.0,
-  "surface_min_ha": 94.0,
-  "surface_max_ha": 194.0,
+  "surface_ha": 109.2,
+  "n_polygones": 1,
   "premier_point_chaud": "2026-07-25",
   "dernier_point_chaud": "2026-07-25",
   "n_points_chauds": 24,
   "frp_total": 80.59,
-  "prochain_passage": "2026-08-01",
-  "calcule_le": "2026-07-30T09:31:56Z"
+  "image_avant": {
+    "id": "S2B_31TEJ_20260720_1_L2A",
+    "date": "2026-07-20",
+    "nuages_pct": 15.991025
+  },
+  "image_apres": {
+    "id": "S2B_31TEJ_20260730_0_L2A",
+    "date": "2026-07-30",
+    "nuages_pct": 11.518492
+  },
+  "tuile": "MGRS-31TEJ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.366,
+  "part_masquee": 0.0,
+  "latence_jours": 5,
+  "calcule_le": "2026-07-30T17:52:48Z"
 }

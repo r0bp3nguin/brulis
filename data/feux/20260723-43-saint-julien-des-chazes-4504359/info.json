@@ -1,17 +1,29 @@
 {
   "id": "20260723-43-saint-julien-des-chazes-4504359",
   "feu": "Saint-Julien-des-Chazes (43)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Saint-Julien-des-Chazes",
   "departement": "43",
-  "surface_estimee_ha": 64.8,
-  "surface_min_ha": 42.0,
-  "surface_max_ha": 87.0,
+  "surface_ha": 37.0,
+  "n_polygones": 11,
   "premier_point_chaud": "2026-07-23",
   "dernier_point_chaud": "2026-07-24",
   "n_points_chauds": 11,
   "frp_total": 129.19,
-  "prochain_passage": "2026-08-01",
-  "calcule_le": "2026-07-30T09:31:09Z"
+  "image_avant": {
+    "id": "S2A_31TEK_20260717_0_L2A",
+    "date": "2026-07-17",
+    "nuages_pct": 5.183556
+  },
+  "image_apres": {
+    "id": "S2B_31TEK_20260730_0_L2A",
+    "date": "2026-07-30",
+    "nuages_pct": 37.309018
+  },
+  "tuile": "MGRS-31TEK",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.414,
+  "part_masquee": 0.229,
+  "latence_jours": 7,
+  "calcule_le": "2026-07-30T17:52:36Z"
 }
