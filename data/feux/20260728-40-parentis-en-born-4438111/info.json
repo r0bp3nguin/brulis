@@ -1,0 +1,17 @@
+{
+  "id": "20260728-40-parentis-en-born-4438111",
+  "feu": "Parentis-en-Born (40)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Parentis-en-Born",
+  "departement": "40",
+  "surface_estimee_ha": 38.5,
+  "surface_min_ha": 25.0,
+  "surface_max_ha": 52.0,
+  "premier_point_chaud": "2026-07-28",
+  "dernier_point_chaud": "2026-07-29",
+  "n_points_chauds": 5,
+  "frp_total": 30.73,
+  "prochain_passage": "2026-07-31",
+  "calcule_le": "2026-07-30T09:05:45Z"
+}

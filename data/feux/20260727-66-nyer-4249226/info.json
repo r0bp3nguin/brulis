@@ -1,0 +1,29 @@
+{
+  "id": "20260727-66-nyer-4249226",
+  "feu": "Nyer (66)",
+  "statut": "mesure",
+  "commune": "Nyer",
+  "departement": "66",
+  "surface_ha": 10.6,
+  "n_polygones": 1,
+  "premier_point_chaud": "2026-07-27",
+  "dernier_point_chaud": "2026-07-29",
+  "n_points_chauds": 19,
+  "frp_total": 110.46,
+  "image_avant": {
+    "id": "S2A_31TDH_20260727_0_L2A",
+    "date": "2026-07-27",
+    "nuages_pct": 13.151865
+  },
+  "image_apres": {
+    "id": "S2C_31TDH_20260728_0_L2A",
+    "date": "2026-07-28",
+    "nuages_pct": 0.432224
+  },
+  "tuile": "MGRS-31TDH",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.467,
+  "part_masquee": 0.0,
+  "latence_jours": 1,
+  "calcule_le": "2026-07-30T09:05:18Z"
+}

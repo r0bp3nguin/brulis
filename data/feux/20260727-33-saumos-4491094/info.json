@@ -1,0 +1,17 @@
+{
+  "id": "20260727-33-saumos-4491094",
+  "feu": "Saumos (33)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Saumos",
+  "departement": "33",
+  "surface_estimee_ha": 141.7,
+  "surface_min_ha": 92.0,
+  "surface_max_ha": 191.0,
+  "premier_point_chaud": "2026-07-27",
+  "dernier_point_chaud": "2026-07-29",
+  "n_points_chauds": 22,
+  "frp_total": 111.91,
+  "prochain_passage": "2026-07-31",
+  "calcule_le": "2026-07-30T09:05:08Z"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "20260728-79-airvault-4681014",
+  "feu": "Airvault (79)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Airvault",
+  "departement": "79",
+  "surface_estimee_ha": 30.9,
+  "surface_min_ha": 20.0,
+  "surface_max_ha": 42.0,
+  "premier_point_chaud": "2026-07-28",
+  "dernier_point_chaud": "2026-07-30",
+  "n_points_chauds": 5,
+  "frp_total": 4.82,
+  "prochain_passage": "2026-07-31",
+  "calcule_le": "2026-07-30T09:07:09Z"
+}

@@ -5,13 +5,13 @@
   "motif_attente": "aucune image satellite depuis le départ du feu",
   "commune": "Saint-Égrève",
   "departement": "38",
-  "surface_estimee_ha": 28.6,
-  "surface_min_ha": 19.0,
-  "surface_max_ha": 39.0,
+  "surface_estimee_ha": 31.7,
+  "surface_min_ha": 21.0,
+  "surface_max_ha": 43.0,
   "premier_point_chaud": "2026-07-28",
-  "dernier_point_chaud": "2026-07-29",
-  "n_points_chauds": 5,
-  "frp_total": 3.7,
+  "dernier_point_chaud": "2026-07-30",
+  "n_points_chauds": 7,
+  "frp_total": 5.09,
   "prochain_passage": "2026-07-30",
-  "calcule_le": "2026-07-29T17:42:27Z"
+  "calcule_le": "2026-07-30T09:07:04Z"
 }

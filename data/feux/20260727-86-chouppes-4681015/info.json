@@ -1,0 +1,17 @@
+{
+  "id": "20260727-86-chouppes-4681015",
+  "feu": "Chouppes (86)",
+  "statut": "en_attente",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "commune": "Chouppes",
+  "departement": "86",
+  "surface_estimee_ha": 79.0,
+  "surface_min_ha": 51.0,
+  "surface_max_ha": 107.0,
+  "premier_point_chaud": "2026-07-27",
+  "dernier_point_chaud": "2026-07-30",
+  "n_points_chauds": 40,
+  "frp_total": 142.85,
+  "prochain_passage": "2026-07-31",
+  "calcule_le": "2026-07-30T09:04:53Z"
+}
