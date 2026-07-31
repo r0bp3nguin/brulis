@@ -2,7 +2,7 @@
   "id": "20260727-33-lacanau-4493110",
   "feu": "Lacanau (33)",
   "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Lacanau",
   "departement": "33",
   "surface_estimee_ha": 79.9,
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-07-29",
   "n_points_chauds": 14,
   "frp_total": 29.76,
-  "prochain_passage": "2026-07-31",
-  "calcule_le": "2026-07-31T09:19:07Z"
+  "prochain_passage": "2026-08-05",
+  "calcule_le": "2026-07-31T17:54:28Z"
 }

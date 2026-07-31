@@ -2,7 +2,7 @@
   "id": "20260727-33-le-temple-4487088",
   "feu": "Le Temple (33)",
   "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Le Temple",
   "departement": "33",
   "surface_estimee_ha": 520.5,
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-07-29",
   "n_points_chauds": 134,
   "frp_total": 4685.27,
-  "prochain_passage": "2026-07-31",
-  "calcule_le": "2026-07-31T09:18:10Z"
+  "prochain_passage": "2026-08-05",
+  "calcule_le": "2026-07-31T17:51:57Z"
 }

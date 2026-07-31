@@ -1,0 +1,17 @@
+{
+  "id": "20260728-33-captieux-4422030",
+  "feu": "Captieux (33)",
+  "statut": "en_attente",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "commune": "Captieux",
+  "departement": "33",
+  "surface_estimee_ha": 156.0,
+  "surface_min_ha": 101.0,
+  "surface_max_ha": 211.0,
+  "premier_point_chaud": "2026-07-28",
+  "dernier_point_chaud": "2026-07-29",
+  "n_points_chauds": 35,
+  "frp_total": 597.64,
+  "prochain_passage": "2026-08-03",
+  "calcule_le": "2026-07-31T17:52:15Z"
+}
