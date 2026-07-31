@@ -2,7 +2,7 @@
   "id": "20260729-62-dainville-5027272",
   "feu": "Dainville (62)",
   "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Dainville",
   "departement": "62",
   "surface_estimee_ha": 35.2,
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-07-29",
   "n_points_chauds": 5,
   "frp_total": 54.71,
-  "prochain_passage": "2026-07-31",
-  "calcule_le": "2026-07-30T17:49:15Z"
+  "prochain_passage": "2026-08-02",
+  "calcule_le": "2026-07-31T09:18:58Z"
 }

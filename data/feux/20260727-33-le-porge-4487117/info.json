@@ -5,13 +5,13 @@
   "motif_attente": "aucune image satellite depuis le départ du feu",
   "commune": "Le Porge",
   "departement": "33",
-  "surface_estimee_ha": 105.4,
-  "surface_min_ha": 69.0,
-  "surface_max_ha": 142.0,
+  "surface_estimee_ha": 93.2,
+  "surface_min_ha": 61.0,
+  "surface_max_ha": 126.0,
   "premier_point_chaud": "2026-07-27",
   "dernier_point_chaud": "2026-07-28",
-  "n_points_chauds": 22,
-  "frp_total": 216.96,
+  "n_points_chauds": 19,
+  "frp_total": 203.09,
   "prochain_passage": "2026-07-31",
-  "calcule_le": "2026-07-30T17:48:28Z"
+  "calcule_le": "2026-07-31T09:18:35Z"
 }

@@ -5,13 +5,13 @@
   "motif_attente": "aucune image satellite depuis le départ du feu",
   "commune": "Cestas",
   "departement": "33",
-  "surface_estimee_ha": 164.8,
-  "surface_min_ha": 107.0,
-  "surface_max_ha": 222.0,
+  "surface_estimee_ha": 63.0,
+  "surface_min_ha": 41.0,
+  "surface_max_ha": 85.0,
   "premier_point_chaud": "2026-07-27",
   "dernier_point_chaud": "2026-07-28",
-  "n_points_chauds": 27,
-  "frp_total": 63.14,
+  "n_points_chauds": 9,
+  "frp_total": 12.08,
   "prochain_passage": "2026-07-31",
-  "calcule_le": "2026-07-30T17:49:13Z"
+  "calcule_le": "2026-07-31T09:19:29Z"
 }

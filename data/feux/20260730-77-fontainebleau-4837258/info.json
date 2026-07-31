@@ -2,7 +2,7 @@
   "id": "20260730-77-fontainebleau-4837258",
   "feu": "Fontainebleau (77)",
   "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Fontainebleau",
   "departement": "77",
   "surface_estimee_ha": 24.7,
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-07-30",
   "n_points_chauds": 5,
   "frp_total": 10.36,
-  "prochain_passage": "2026-08-02",
-  "calcule_le": "2026-07-30T17:50:33Z"
+  "prochain_passage": "2026-08-04",
+  "calcule_le": "2026-07-31T09:19:35Z"
 }

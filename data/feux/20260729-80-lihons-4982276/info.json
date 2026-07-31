@@ -2,7 +2,7 @@
   "id": "20260729-80-lihons-4982276",
   "feu": "Lihons (80)",
   "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Lihons",
   "departement": "80",
   "surface_estimee_ha": 43.6,
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-07-29",
   "n_points_chauds": 5,
   "frp_total": 32.85,
-  "prochain_passage": "2026-07-31",
-  "calcule_le": "2026-07-30T17:49:45Z"
+  "prochain_passage": "2026-08-02",
+  "calcule_le": "2026-07-31T09:19:04Z"
 }
