@@ -1,0 +1,17 @@
+{
+  "id": "20260801-18-arpheuilles-4677255",
+  "feu": "Arpheuilles (18)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Arpheuilles",
+  "departement": "18",
+  "surface_estimee_ha": 56.0,
+  "surface_min_ha": 36.0,
+  "surface_max_ha": 76.0,
+  "premier_point_chaud": "2026-08-01",
+  "dernier_point_chaud": "2026-08-01",
+  "n_points_chauds": 8,
+  "frp_total": 96.8,
+  "prochain_passage": "2026-08-04",
+  "calcule_le": "2026-08-01T17:15:18Z"
+}

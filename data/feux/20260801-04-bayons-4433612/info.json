@@ -1,0 +1,17 @@
+{
+  "id": "20260801-04-bayons-4433612",
+  "feu": "Bayons (04)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Bayons",
+  "departement": "04",
+  "surface_estimee_ha": 68.0,
+  "surface_min_ha": 44.0,
+  "surface_max_ha": 92.0,
+  "premier_point_chaud": "2026-08-01",
+  "dernier_point_chaud": "2026-08-01",
+  "n_points_chauds": 10,
+  "frp_total": 217.06,
+  "prochain_passage": "2026-08-01",
+  "calcule_le": "2026-08-01T17:14:56Z"
+}

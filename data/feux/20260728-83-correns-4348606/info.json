@@ -5,13 +5,13 @@
   "motif_attente": "aucune image satellite depuis le départ du feu",
   "commune": "Correns",
   "departement": "83",
-  "surface_estimee_ha": 1080.9,
-  "surface_min_ha": 703.0,
-  "surface_max_ha": 1459.0,
+  "surface_estimee_ha": 1381.1,
+  "surface_min_ha": 898.0,
+  "surface_max_ha": 1864.0,
   "premier_point_chaud": "2026-07-28",
   "dernier_point_chaud": "2026-08-01",
-  "n_points_chauds": 194,
-  "frp_total": 1420.42,
+  "n_points_chauds": 302,
+  "frp_total": 4549.42,
   "prochain_passage": "2026-08-01",
-  "calcule_le": "2026-08-01T08:35:12Z"
+  "calcule_le": "2026-08-01T17:14:17Z"
 }

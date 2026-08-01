@@ -1,9 +1,9 @@
 {
   "id": "20260729-21-couchey-4727497",
-  "feu": "Couchey (21)",
+  "feu": "Marsannay-la-Côte (21)",
   "statut": "en_attente",
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
-  "commune": "Couchey",
+  "commune": "Marsannay-la-Côte",
   "departement": "21",
   "surface_estimee_ha": 97.4,
   "surface_min_ha": 63.0,
@@ -13,5 +13,5 @@
   "n_points_chauds": 14,
   "frp_total": 618.87,
   "prochain_passage": "2026-08-04",
-  "calcule_le": "2026-08-01T08:36:58Z"
+  "calcule_le": "2026-08-01T17:14:21Z"
 }
