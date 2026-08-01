@@ -5,13 +5,13 @@
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Lanton",
   "departement": "33",
-  "surface_estimee_ha": 395.2,
-  "surface_min_ha": 257.0,
-  "surface_max_ha": 534.0,
+  "surface_estimee_ha": 176.9,
+  "surface_min_ha": 115.0,
+  "surface_max_ha": 239.0,
   "premier_point_chaud": "2026-07-27",
   "dernier_point_chaud": "2026-07-30",
-  "n_points_chauds": 91,
-  "frp_total": 921.24,
+  "n_points_chauds": 34,
+  "frp_total": 249.69,
   "prochain_passage": "2026-08-05",
-  "calcule_le": "2026-07-31T17:51:59Z"
+  "calcule_le": "2026-08-01T08:35:28Z"
 }

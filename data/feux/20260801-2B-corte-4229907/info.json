@@ -1,0 +1,17 @@
+{
+  "id": "20260801-2B-corte-4229907",
+  "feu": "Corte (2B)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Corte",
+  "departement": "2B",
+  "surface_estimee_ha": 30.8,
+  "surface_min_ha": 20.0,
+  "surface_max_ha": 42.0,
+  "premier_point_chaud": "2026-08-01",
+  "dernier_point_chaud": "2026-08-01",
+  "n_points_chauds": 5,
+  "frp_total": 6.16,
+  "prochain_passage": "2026-08-03",
+  "calcule_le": "2026-08-01T08:36:47Z"
+}

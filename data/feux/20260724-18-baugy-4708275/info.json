@@ -1,17 +1,29 @@
 {
   "id": "20260724-18-baugy-4708275",
   "feu": "Baugy (18)",
-  "statut": "ecarte",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Baugy",
   "departement": "18",
-  "surface_estimee_ha": 94.4,
-  "surface_min_ha": 61.0,
-  "surface_max_ha": 127.0,
+  "surface_ha": 28.3,
+  "n_polygones": 7,
   "premier_point_chaud": "2026-07-24",
-  "dernier_point_chaud": "2026-07-28",
-  "n_points_chauds": 27,
-  "frp_total": 108.49,
-  "calcule_le": "2026-07-31T17:54:41Z",
-  "motif_ecarte": "couvert végétal insuffisant avant le feu (NBR 0.18) — chaume, sol nu ou site industriel, pas un feu de végétation"
+  "dernier_point_chaud": "2026-07-29",
+  "n_points_chauds": 6,
+  "frp_total": 10.78,
+  "image_avant": {
+    "id": "S2B_31TDN_20260723_0_L2A",
+    "date": "2026-07-23",
+    "nuages_pct": 4.161104
+  },
+  "image_apres": {
+    "id": "S2C_31TDN_20260728_0_L2A",
+    "date": "2026-07-28",
+    "nuages_pct": 0.002037
+  },
+  "tuile": "MGRS-31TDN",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.207,
+  "part_masquee": 0.0,
+  "latence_jours": 4,
+  "calcule_le": "2026-08-01T08:36:28Z"
 }

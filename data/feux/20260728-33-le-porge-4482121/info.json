@@ -5,13 +5,13 @@
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Le Porge",
   "departement": "33",
-  "surface_estimee_ha": 175.4,
-  "surface_min_ha": 114.0,
-  "surface_max_ha": 237.0,
+  "surface_estimee_ha": 86.5,
+  "surface_min_ha": 56.0,
+  "surface_max_ha": 117.0,
   "premier_point_chaud": "2026-07-28",
   "dernier_point_chaud": "2026-07-30",
-  "n_points_chauds": 39,
-  "frp_total": 214.56,
+  "n_points_chauds": 15,
+  "frp_total": 27.64,
   "prochain_passage": "2026-08-05",
-  "calcule_le": "2026-07-31T17:52:45Z"
+  "calcule_le": "2026-08-01T08:36:05Z"
 }

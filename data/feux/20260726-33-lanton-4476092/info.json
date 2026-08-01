@@ -5,13 +5,13 @@
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Audenge",
   "departement": "33",
-  "surface_estimee_ha": 5823.5,
-  "surface_min_ha": 3785.0,
-  "surface_max_ha": 7862.0,
+  "surface_estimee_ha": 35.2,
+  "surface_min_ha": 23.0,
+  "surface_max_ha": 48.0,
   "premier_point_chaud": "2026-07-26",
-  "dernier_point_chaud": "2026-07-29",
-  "n_points_chauds": 1342,
-  "frp_total": 18328.46,
+  "dernier_point_chaud": "2026-07-30",
+  "n_points_chauds": 8,
+  "frp_total": 26.26,
   "prochain_passage": "2026-08-05",
-  "calcule_le": "2026-07-31T17:56:55Z"
+  "calcule_le": "2026-08-01T08:36:06Z"
 }

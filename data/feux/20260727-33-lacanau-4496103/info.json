@@ -4,12 +4,12 @@
   "statut": "mesure",
   "commune": "Lacanau",
   "departement": "33",
-  "surface_ha": 301.3,
-  "n_polygones": 79,
+  "surface_ha": 295.0,
+  "n_polygones": 78,
   "premier_point_chaud": "2026-07-27",
   "dernier_point_chaud": "2026-07-29",
-  "n_points_chauds": 35,
-  "frp_total": 194.45,
+  "n_points_chauds": 12,
+  "frp_total": 19.53,
   "image_avant": {
     "id": "S2B_30TXQ_20260726_0_L2A",
     "date": "2026-07-26",
@@ -22,8 +22,8 @@
   },
   "tuile": "MGRS-30TXQ",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.564,
-  "part_masquee": 0.355,
+  "nbr_avant_median": 0.566,
+  "part_masquee": 0.336,
   "latence_jours": 4,
-  "calcule_le": "2026-07-31T17:52:56Z"
+  "calcule_le": "2026-08-01T08:36:15Z"
 }

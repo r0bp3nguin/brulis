@@ -1,17 +1,17 @@
 {
   "id": "20260727-33-saumos-4491094",
-  "feu": "Saumos (33)",
+  "feu": "Sainte-Hélène (33)",
   "statut": "en_attente",
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
-  "commune": "Saumos",
+  "commune": "Sainte-Hélène",
   "departement": "33",
-  "surface_estimee_ha": 108.6,
-  "surface_min_ha": 71.0,
-  "surface_max_ha": 147.0,
+  "surface_estimee_ha": 44.5,
+  "surface_min_ha": 29.0,
+  "surface_max_ha": 60.0,
   "premier_point_chaud": "2026-07-27",
   "dernier_point_chaud": "2026-07-29",
-  "n_points_chauds": 17,
-  "frp_total": 78.99,
+  "n_points_chauds": 7,
+  "frp_total": 19.14,
   "prochain_passage": "2026-08-05",
-  "calcule_le": "2026-07-31T17:53:48Z"
+  "calcule_le": "2026-08-01T08:36:16Z"
 }
