@@ -1,17 +1,29 @@
 {
   "id": "20260728-83-correns-4348606",
   "feu": "Correns (83)",
-  "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Correns",
   "departement": "83",
-  "surface_estimee_ha": 1381.1,
-  "surface_min_ha": 898.0,
-  "surface_max_ha": 1864.0,
+  "surface_ha": 1449.3,
+  "n_polygones": 8,
   "premier_point_chaud": "2026-07-28",
-  "dernier_point_chaud": "2026-08-01",
-  "n_points_chauds": 302,
-  "frp_total": 4549.42,
-  "prochain_passage": "2026-08-01",
-  "calcule_le": "2026-08-01T17:14:17Z"
+  "dernier_point_chaud": "2026-08-02",
+  "n_points_chauds": 331,
+  "frp_total": 4628.92,
+  "image_avant": {
+    "id": "S2B_31TGJ_20260727_0_L2A",
+    "date": "2026-07-27",
+    "nuages_pct": 1.091977
+  },
+  "image_apres": {
+    "id": "S2C_31TGJ_20260801_0_L2A",
+    "date": "2026-08-01",
+    "nuages_pct": 0.127269
+  },
+  "tuile": "MGRS-31TGJ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.393,
+  "part_masquee": 0.0,
+  "latence_jours": 4,
+  "calcule_le": "2026-08-02T08:38:08Z"
 }

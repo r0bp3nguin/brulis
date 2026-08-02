@@ -5,13 +5,13 @@
   "motif_attente": "aucune image satellite depuis le départ du feu",
   "commune": "Corte",
   "departement": "2B",
-  "surface_estimee_ha": 30.8,
-  "surface_min_ha": 20.0,
-  "surface_max_ha": 42.0,
+  "surface_estimee_ha": 36.3,
+  "surface_min_ha": 24.0,
+  "surface_max_ha": 49.0,
   "premier_point_chaud": "2026-08-01",
-  "dernier_point_chaud": "2026-08-01",
-  "n_points_chauds": 5,
-  "frp_total": 6.16,
+  "dernier_point_chaud": "2026-08-02",
+  "n_points_chauds": 6,
+  "frp_total": 6.68,
   "prochain_passage": "2026-08-03",
-  "calcule_le": "2026-08-01T17:17:47Z"
+  "calcule_le": "2026-08-02T08:39:37Z"
 }

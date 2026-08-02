@@ -5,13 +5,13 @@
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Montereau-Fault-Yonne",
   "departement": "77",
-  "surface_estimee_ha": 28.9,
-  "surface_min_ha": 19.0,
-  "surface_max_ha": 39.0,
+  "surface_estimee_ha": 26.7,
+  "surface_min_ha": 17.0,
+  "surface_max_ha": 36.0,
   "premier_point_chaud": "2026-07-29",
   "dernier_point_chaud": "2026-07-31",
-  "n_points_chauds": 8,
-  "frp_total": 10.03,
+  "n_points_chauds": 6,
+  "frp_total": 7.71,
   "prochain_passage": "2026-08-04",
-  "calcule_le": "2026-08-01T17:17:08Z"
+  "calcule_le": "2026-08-02T08:39:27Z"
 }

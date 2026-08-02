@@ -1,0 +1,17 @@
+{
+  "id": "20260730-55-sorcy-saint-martin-4872568",
+  "feu": "Sorcy-Saint-Martin (55)",
+  "statut": "en_attente",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "commune": "Sorcy-Saint-Martin",
+  "departement": "55",
+  "surface_estimee_ha": 26.1,
+  "surface_min_ha": 17.0,
+  "surface_max_ha": 35.0,
+  "premier_point_chaud": "2026-07-30",
+  "dernier_point_chaud": "2026-08-02",
+  "n_points_chauds": 7,
+  "frp_total": 5.3,
+  "prochain_passage": "2026-08-04",
+  "calcule_le": "2026-08-02T08:39:49Z"
+}

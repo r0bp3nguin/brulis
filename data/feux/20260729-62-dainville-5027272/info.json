@@ -1,17 +1,29 @@
 {
   "id": "20260729-62-dainville-5027272",
   "feu": "Dainville (62)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Dainville",
   "departement": "62",
-  "surface_estimee_ha": 35.2,
-  "surface_min_ha": 23.0,
-  "surface_max_ha": 47.0,
+  "surface_ha": 8.0,
+  "n_polygones": 2,
   "premier_point_chaud": "2026-07-29",
   "dernier_point_chaud": "2026-07-29",
   "n_points_chauds": 5,
   "frp_total": 54.71,
-  "prochain_passage": "2026-08-03",
-  "calcule_le": "2026-08-01T17:15:40Z"
+  "image_avant": {
+    "id": "S2C_31UDR_20260728_0_L2A",
+    "date": "2026-07-28",
+    "nuages_pct": 0.244482
+  },
+  "image_apres": {
+    "id": "S2C_31UDR_20260731_0_L2A",
+    "date": "2026-07-31",
+    "nuages_pct": 48.110589
+  },
+  "tuile": "MGRS-31UDR",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.651,
+  "part_masquee": 0.348,
+  "latence_jours": 2,
+  "calcule_le": "2026-08-02T08:40:06Z"
 }
