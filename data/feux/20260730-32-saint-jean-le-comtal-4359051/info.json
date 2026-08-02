@@ -1,0 +1,29 @@
+{
+  "id": "20260730-32-saint-jean-le-comtal-4359051",
+  "feu": "Saint-Jean-le-Comtal (32)",
+  "statut": "mesure",
+  "commune": "Saint-Jean-le-Comtal",
+  "departement": "32",
+  "surface_ha": 137.0,
+  "n_polygones": 47,
+  "premier_point_chaud": "2026-07-30",
+  "dernier_point_chaud": "2026-07-31",
+  "n_points_chauds": 7,
+  "frp_total": 22.25,
+  "image_avant": {
+    "id": "S2A_30TYP_20260730_0_L2A",
+    "date": "2026-07-30",
+    "nuages_pct": 70.018899
+  },
+  "image_apres": {
+    "id": "S2B_30TYP_20260802_0_L2A",
+    "date": "2026-08-02",
+    "nuages_pct": 0.174883
+  },
+  "tuile": "MGRS-30TYP",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.216,
+  "part_masquee": 0.28,
+  "latence_jours": 3,
+  "calcule_le": "2026-08-02T17:16:39Z"
+}

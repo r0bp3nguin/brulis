@@ -1,17 +1,29 @@
 {
   "id": "20260801-36-saint-michel-en-brenne-4678119",
   "feu": "Saint-Michel-en-Brenne (36)",
-  "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Saint-Michel-en-Brenne",
   "departement": "36",
-  "surface_estimee_ha": 52.0,
-  "surface_min_ha": 34.0,
-  "surface_max_ha": 70.0,
+  "surface_ha": 34.5,
+  "n_polygones": 5,
   "premier_point_chaud": "2026-08-01",
   "dernier_point_chaud": "2026-08-01",
   "n_points_chauds": 13,
   "frp_total": 389.16,
-  "prochain_passage": "2026-08-03",
-  "calcule_le": "2026-08-02T08:38:19Z"
+  "image_avant": {
+    "id": "S2A_31TCM_20260730_0_L2A",
+    "date": "2026-07-30",
+    "nuages_pct": 0.009967
+  },
+  "image_apres": {
+    "id": "S2B_31TCM_20260802_0_L2A",
+    "date": "2026-08-02",
+    "nuages_pct": 14.056277
+  },
+  "tuile": "MGRS-31TCM",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.263,
+  "part_masquee": 0.047,
+  "latence_jours": 1,
+  "calcule_le": "2026-08-02T17:15:14Z"
 }

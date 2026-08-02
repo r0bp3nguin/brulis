@@ -1,17 +1,29 @@
 {
   "id": "20260728-33-captieux-4422030",
   "feu": "Captieux (33)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Captieux",
   "departement": "33",
-  "surface_estimee_ha": 107.0,
-  "surface_min_ha": 70.0,
-  "surface_max_ha": 144.0,
+  "surface_ha": 70.7,
+  "n_polygones": 3,
   "premier_point_chaud": "2026-07-28",
   "dernier_point_chaud": "2026-07-29",
   "n_points_chauds": 20,
   "frp_total": 43.92,
-  "prochain_passage": "2026-08-03",
-  "calcule_le": "2026-08-02T08:40:13Z"
+  "image_avant": {
+    "id": "S2C_30TYP_20260728_0_L2A",
+    "date": "2026-07-28",
+    "nuages_pct": 0.001367
+  },
+  "image_apres": {
+    "id": "S2B_30TYP_20260802_0_L2A",
+    "date": "2026-08-02",
+    "nuages_pct": 0.174883
+  },
+  "tuile": "MGRS-30TYP",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.457,
+  "part_masquee": 0.0,
+  "latence_jours": 5,
+  "calcule_le": "2026-08-02T17:18:45Z"
 }

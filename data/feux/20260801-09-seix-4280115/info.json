@@ -2,7 +2,7 @@
   "id": "20260801-09-seix-4280115",
   "feu": "Seix (09)",
   "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Seix",
   "departement": "09",
   "surface_estimee_ha": 34.4,
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-08-01",
   "n_points_chauds": 5,
   "frp_total": 55.09,
-  "prochain_passage": "2026-08-04",
-  "calcule_le": "2026-08-02T08:38:36Z"
+  "prochain_passage": "2026-08-07",
+  "calcule_le": "2026-08-02T17:16:00Z"
 }

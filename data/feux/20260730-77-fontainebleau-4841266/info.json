@@ -1,17 +1,29 @@
 {
   "id": "20260730-77-fontainebleau-4841266",
   "feu": "Fontainebleau (77)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Fontainebleau",
   "departement": "77",
-  "surface_estimee_ha": 31.7,
-  "surface_min_ha": 21.0,
-  "surface_max_ha": 43.0,
+  "surface_ha": 5.0,
+  "n_polygones": 1,
   "premier_point_chaud": "2026-07-30",
   "dernier_point_chaud": "2026-07-30",
   "n_points_chauds": 6,
   "frp_total": 20.52,
-  "prochain_passage": "2026-08-04",
-  "calcule_le": "2026-08-02T08:38:57Z"
+  "image_avant": {
+    "id": "S2C_31UDP_20260728_0_L2A",
+    "date": "2026-07-28",
+    "nuages_pct": 0.001327
+  },
+  "image_apres": {
+    "id": "S2B_31UDP_20260802_0_L2A",
+    "date": "2026-08-02",
+    "nuages_pct": 12.897445
+  },
+  "tuile": "MGRS-31UDP",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.57,
+  "part_masquee": 0.0,
+  "latence_jours": 3,
+  "calcule_le": "2026-08-02T17:16:57Z"
 }

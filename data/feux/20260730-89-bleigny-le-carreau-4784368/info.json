@@ -1,17 +1,29 @@
 {
   "id": "20260730-89-bleigny-le-carreau-4784368",
   "feu": "Bleigny-le-Carreau (89)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Bleigny-le-Carreau",
   "departement": "89",
-  "surface_estimee_ha": 37.7,
-  "surface_min_ha": 24.0,
-  "surface_max_ha": 51.0,
+  "surface_ha": 53.3,
+  "n_polygones": 10,
   "premier_point_chaud": "2026-07-30",
   "dernier_point_chaud": "2026-07-30",
   "n_points_chauds": 5,
   "frp_total": 11.67,
-  "prochain_passage": "2026-08-02",
-  "calcule_le": "2026-08-02T08:39:05Z"
+  "image_avant": {
+    "id": "S2C_31TEN_20260728_0_L2A",
+    "date": "2026-07-28",
+    "nuages_pct": 0.001245
+  },
+  "image_apres": {
+    "id": "S2B_31TEN_20260802_0_L2A",
+    "date": "2026-08-02",
+    "nuages_pct": 1.164918
+  },
+  "tuile": "MGRS-31TEN",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.213,
+  "part_masquee": 0.0,
+  "latence_jours": 3,
+  "calcule_le": "2026-08-02T17:17:17Z"
 }

@@ -1,0 +1,29 @@
+{
+  "id": "20260730-87-bussière-galant-4559106",
+  "feu": "Bussière-Galant (87)",
+  "statut": "mesure",
+  "commune": "Bussière-Galant",
+  "departement": "87",
+  "surface_ha": 17.1,
+  "n_polygones": 1,
+  "premier_point_chaud": "2026-07-30",
+  "dernier_point_chaud": "2026-07-31",
+  "n_points_chauds": 7,
+  "frp_total": 33.64,
+  "image_avant": {
+    "id": "S2A_31TCL_20260730_0_L2A",
+    "date": "2026-07-30",
+    "nuages_pct": 6.013152
+  },
+  "image_apres": {
+    "id": "S2B_31TCL_20260802_0_L2A",
+    "date": "2026-08-02",
+    "nuages_pct": 19.810399
+  },
+  "tuile": "MGRS-31TCL",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.704,
+  "part_masquee": 0.002,
+  "latence_jours": 3,
+  "calcule_le": "2026-08-02T17:16:18Z"
+}
