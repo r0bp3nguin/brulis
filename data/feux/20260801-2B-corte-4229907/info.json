@@ -1,17 +1,29 @@
 {
   "id": "20260801-2B-corte-4229907",
   "feu": "Corte (2B)",
-  "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Corte",
   "departement": "2B",
-  "surface_estimee_ha": 36.3,
-  "surface_min_ha": 24.0,
-  "surface_max_ha": 49.0,
+  "surface_ha": 3.0,
+  "n_polygones": 2,
   "premier_point_chaud": "2026-08-01",
   "dernier_point_chaud": "2026-08-02",
   "n_points_chauds": 6,
   "frp_total": 6.68,
-  "prochain_passage": "2026-08-03",
-  "calcule_le": "2026-08-03T10:10:13Z"
+  "image_avant": {
+    "id": "S2A_32TMM_20260731_1_L2A",
+    "date": "2026-07-31",
+    "nuages_pct": 0.001393
+  },
+  "image_apres": {
+    "id": "S2B_32TMM_20260803_0_L2A",
+    "date": "2026-08-03",
+    "nuages_pct": 0.327205
+  },
+  "tuile": "MGRS-32TMM",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.364,
+  "part_masquee": 0.0,
+  "latence_jours": 2,
+  "calcule_le": "2026-08-03T18:06:10Z"
 }
