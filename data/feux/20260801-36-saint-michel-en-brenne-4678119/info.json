@@ -4,8 +4,8 @@
   "statut": "mesure",
   "commune": "Saint-Michel-en-Brenne",
   "departement": "36",
-  "surface_ha": 34.5,
-  "n_polygones": 5,
+  "surface_ha": 22.2,
+  "n_polygones": 1,
   "premier_point_chaud": "2026-08-01",
   "dernier_point_chaud": "2026-08-01",
   "n_points_chauds": 13,
@@ -16,14 +16,14 @@
     "nuages_pct": 0.009967
   },
   "image_apres": {
-    "id": "S2B_31TCM_20260802_0_L2A",
+    "id": "S2A_31TCM_20260802_1_L2A",
     "date": "2026-08-02",
-    "nuages_pct": 14.056277
+    "nuages_pct": 13.223179
   },
   "tuile": "MGRS-31TCM",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.263,
-  "part_masquee": 0.047,
+  "nbr_avant_median": 0.377,
+  "part_masquee": 0.044,
   "latence_jours": 1,
-  "calcule_le": "2026-08-02T17:15:14Z"
+  "calcule_le": "2026-08-03T10:08:03Z"
 }

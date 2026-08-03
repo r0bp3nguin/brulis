@@ -1,17 +1,29 @@
 {
   "id": "20260728-40-parentis-en-born-4438111",
   "feu": "Parentis-en-Born (40)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Parentis-en-Born",
   "departement": "40",
-  "surface_estimee_ha": 38.5,
-  "surface_min_ha": 25.0,
-  "surface_max_ha": 52.0,
+  "surface_ha": 2046.3,
+  "n_polygones": 5,
   "premier_point_chaud": "2026-07-28",
   "dernier_point_chaud": "2026-07-29",
   "n_points_chauds": 5,
   "frp_total": 30.73,
-  "prochain_passage": "2026-08-05",
-  "calcule_le": "2026-08-02T17:18:47Z"
+  "image_avant": {
+    "id": "S2C_30TXQ_20260721_0_L2A",
+    "date": "2026-07-21",
+    "nuages_pct": 0.336283
+  },
+  "image_apres": {
+    "id": "S2A_30TXQ_20260802_1_L2A",
+    "date": "2026-08-02",
+    "nuages_pct": 23.453946
+  },
+  "tuile": "MGRS-30TXQ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.534,
+  "part_masquee": 0.0,
+  "latence_jours": 5,
+  "calcule_le": "2026-08-03T10:11:32Z"
 }

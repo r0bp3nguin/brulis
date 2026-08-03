@@ -1,17 +1,29 @@
 {
   "id": "20260723-40-biscarrosse-4440112",
   "feu": "Biscarrosse (40)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Biscarrosse",
   "departement": "40",
-  "surface_estimee_ha": 4316.1,
-  "surface_min_ha": 2805.0,
-  "surface_max_ha": 5827.0,
+  "surface_ha": 3494.6,
+  "n_polygones": 16,
   "premier_point_chaud": "2026-07-23",
   "dernier_point_chaud": "2026-07-26",
   "n_points_chauds": 1146,
   "frp_total": 22418.25,
-  "prochain_passage": "2026-08-05",
-  "calcule_le": "2026-08-02T17:18:21Z"
+  "image_avant": {
+    "id": "S2C_30TXQ_20260721_0_L2A",
+    "date": "2026-07-21",
+    "nuages_pct": 0.336283
+  },
+  "image_apres": {
+    "id": "S2A_30TXQ_20260802_1_L2A",
+    "date": "2026-08-02",
+    "nuages_pct": 23.453946
+  },
+  "tuile": "MGRS-30TXQ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.551,
+  "part_masquee": 0.007,
+  "latence_jours": 10,
+  "calcule_le": "2026-08-03T10:10:57Z"
 }
