@@ -1,17 +1,29 @@
 {
   "id": "20260731-39-augea-4657537",
   "feu": "Augea (39)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Augea",
   "departement": "39",
-  "surface_estimee_ha": 58.0,
-  "surface_min_ha": 38.0,
-  "surface_max_ha": 78.0,
+  "surface_ha": 88.0,
+  "n_polygones": 25,
   "premier_point_chaud": "2026-07-31",
   "dernier_point_chaud": "2026-08-01",
-  "n_points_chauds": 16,
-  "frp_total": 100.74,
-  "prochain_passage": "2026-08-04",
-  "calcule_le": "2026-08-03T18:05:02Z"
+  "n_points_chauds": 6,
+  "frp_total": 7.84,
+  "image_avant": {
+    "id": "S2B_31TFM_20260730_0_L2A",
+    "date": "2026-07-30",
+    "nuages_pct": 75.909674
+  },
+  "image_apres": {
+    "id": "S2A_31TFM_20260803_0_L2A",
+    "date": "2026-08-03",
+    "nuages_pct": 50.85817
+  },
+  "tuile": "MGRS-31TFM",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.358,
+  "part_masquee": 0.06,
+  "latence_jours": 3,
+  "calcule_le": "2026-08-04T09:11:55Z"
 }

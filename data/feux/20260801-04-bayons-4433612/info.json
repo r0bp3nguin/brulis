@@ -1,17 +1,29 @@
 {
   "id": "20260801-04-bayons-4433612",
   "feu": "Bayons (04)",
-  "statut": "ecarte",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Bayons",
   "departement": "04",
-  "surface_estimee_ha": 68.0,
-  "surface_min_ha": 44.0,
-  "surface_max_ha": 92.0,
+  "surface_ha": 57.9,
+  "n_polygones": 3,
   "premier_point_chaud": "2026-08-01",
-  "dernier_point_chaud": "2026-08-01",
-  "n_points_chauds": 10,
-  "frp_total": 217.06,
-  "calcule_le": "2026-08-03T18:04:43Z",
-  "motif_ecarte": "images exploitables, mais aucune trace de brûlé au seuil retenu"
+  "dernier_point_chaud": "2026-08-03",
+  "n_points_chauds": 13,
+  "frp_total": 225.15,
+  "image_avant": {
+    "id": "S2C_31TGK_20260801_0_L2A",
+    "date": "2026-08-01",
+    "nuages_pct": 2.560599
+  },
+  "image_apres": {
+    "id": "S2A_31TGK_20260803_0_L2A",
+    "date": "2026-08-03",
+    "nuages_pct": 20.767127
+  },
+  "tuile": "MGRS-31TGK",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.38,
+  "part_masquee": 0.0,
+  "latence_jours": 2,
+  "calcule_le": "2026-08-04T09:10:44Z"
 }

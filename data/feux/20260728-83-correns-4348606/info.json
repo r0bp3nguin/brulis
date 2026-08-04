@@ -4,26 +4,26 @@
   "statut": "mesure",
   "commune": "Correns",
   "departement": "83",
-  "surface_ha": 1449.3,
-  "n_polygones": 8,
+  "surface_ha": 1756.6,
+  "n_polygones": 14,
   "premier_point_chaud": "2026-07-28",
   "dernier_point_chaud": "2026-08-02",
-  "n_points_chauds": 343,
-  "frp_total": 4738.77,
+  "n_points_chauds": 311,
+  "frp_total": 3890.56,
   "image_avant": {
     "id": "S2B_31TGJ_20260727_0_L2A",
     "date": "2026-07-27",
     "nuages_pct": 1.091977
   },
   "image_apres": {
-    "id": "S2C_31TGJ_20260801_0_L2A",
-    "date": "2026-08-01",
-    "nuages_pct": 0.127269
+    "id": "S2A_31TGJ_20260803_1_L2A",
+    "date": "2026-08-03",
+    "nuages_pct": 0.453967
   },
   "tuile": "MGRS-31TGJ",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.393,
+  "nbr_avant_median": 0.41,
   "part_masquee": 0.0,
-  "latence_jours": 4,
-  "calcule_le": "2026-08-03T18:04:23Z"
+  "latence_jours": 6,
+  "calcule_le": "2026-08-04T09:10:22Z"
 }
