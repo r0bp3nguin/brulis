@@ -5,13 +5,13 @@
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Seix",
   "departement": "09",
-  "surface_estimee_ha": 34.4,
-  "surface_min_ha": 22.0,
-  "surface_max_ha": 46.0,
+  "surface_estimee_ha": 61.3,
+  "surface_min_ha": 40.0,
+  "surface_max_ha": 83.0,
   "premier_point_chaud": "2026-08-01",
-  "dernier_point_chaud": "2026-08-01",
-  "n_points_chauds": 5,
-  "frp_total": 55.09,
+  "dernier_point_chaud": "2026-08-04",
+  "n_points_chauds": 9,
+  "frp_total": 75.89,
   "prochain_passage": "2026-08-07",
-  "calcule_le": "2026-08-04T09:11:05Z"
+  "calcule_le": "2026-08-04T18:05:11Z"
 }

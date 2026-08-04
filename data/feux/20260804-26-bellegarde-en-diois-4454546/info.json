@@ -1,7 +1,7 @@
 {
   "id": "20260804-26-bellegarde-en-diois-4454546",
   "feu": "Bellegarde-en-Diois (26)",
-  "statut": "en_attente",
+  "statut": "ecarte",
   "motif_attente": "aucune image satellite depuis le départ du feu",
   "commune": "Bellegarde-en-Diois",
   "departement": "26",
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-08-04",
   "n_points_chauds": 22,
   "frp_total": 96.22,
-  "prochain_passage": "2026-08-06",
-  "calcule_le": "2026-08-04T09:11:03Z"
+  "calcule_le": "2026-08-04T18:03:40Z",
+  "motif_ecarte": "images exploitables, mais aucune trace de brûlé au seuil retenu"
 }

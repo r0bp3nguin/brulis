@@ -4,8 +4,8 @@
   "statut": "mesure",
   "commune": "Neuves-Maisons",
   "departement": "54",
-  "surface_ha": 2.2,
-  "n_polygones": 2,
+  "surface_ha": 4.0,
+  "n_polygones": 3,
   "premier_point_chaud": "2026-07-28",
   "dernier_point_chaud": "2026-08-03",
   "n_points_chauds": 18,
@@ -16,14 +16,14 @@
     "nuages_pct": 31.683993
   },
   "image_apres": {
-    "id": "S2A_31UGP_20260803_0_L2A",
-    "date": "2026-08-03",
-    "nuages_pct": 20.027597
+    "id": "S2C_31UGP_20260804_0_L2A",
+    "date": "2026-08-04",
+    "nuages_pct": 55.156231
   },
   "tuile": "MGRS-31UGP",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.345,
-  "part_masquee": 0.028,
-  "latence_jours": 6,
-  "calcule_le": "2026-08-04T09:11:22Z"
+  "nbr_avant_median": 0.655,
+  "part_masquee": 0.149,
+  "latence_jours": 7,
+  "calcule_le": "2026-08-04T18:05:50Z"
 }

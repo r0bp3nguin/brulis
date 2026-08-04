@@ -1,0 +1,29 @@
+{
+  "id": "20260801-39-augea-4658537",
+  "feu": "Augea (39)",
+  "statut": "mesure",
+  "commune": "Augea",
+  "departement": "39",
+  "surface_ha": 101.1,
+  "n_polygones": 22,
+  "premier_point_chaud": "2026-08-01",
+  "dernier_point_chaud": "2026-08-01",
+  "n_points_chauds": 6,
+  "frp_total": 7.84,
+  "image_avant": {
+    "id": "S2B_31TFM_20260730_0_L2A",
+    "date": "2026-07-30",
+    "nuages_pct": 75.909674
+  },
+  "image_apres": {
+    "id": "S2C_31TFM_20260804_0_L2A",
+    "date": "2026-08-04",
+    "nuages_pct": 7.722589
+  },
+  "tuile": "MGRS-31TFM",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.335,
+  "part_masquee": 0.001,
+  "latence_jours": 3,
+  "calcule_le": "2026-08-04T18:07:02Z"
+}
