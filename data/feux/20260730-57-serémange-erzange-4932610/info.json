@@ -5,13 +5,13 @@
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Serémange-Erzange",
   "departement": "57",
-  "surface_estimee_ha": 31.1,
-  "surface_min_ha": 20.0,
-  "surface_max_ha": 42.0,
+  "surface_estimee_ha": 36.6,
+  "surface_min_ha": 24.0,
+  "surface_max_ha": 49.0,
   "premier_point_chaud": "2026-07-30",
-  "dernier_point_chaud": "2026-08-03",
-  "n_points_chauds": 5,
-  "frp_total": 5.91,
+  "dernier_point_chaud": "2026-08-05",
+  "n_points_chauds": 7,
+  "frp_total": 8.08,
   "prochain_passage": "2026-08-07",
-  "calcule_le": "2026-08-04T18:07:23Z"
+  "calcule_le": "2026-08-05T09:09:53Z"
 }

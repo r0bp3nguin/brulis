@@ -1,15 +1,15 @@
 {
   "id": "20260728-83-correns-4348606",
-  "feu": "Correns (83)",
+  "feu": "Le Val (83)",
   "statut": "mesure",
-  "commune": "Correns",
+  "commune": "Le Val",
   "departement": "83",
-  "surface_ha": 1756.6,
-  "n_polygones": 14,
+  "surface_ha": 1754.5,
+  "n_polygones": 12,
   "premier_point_chaud": "2026-07-28",
   "dernier_point_chaud": "2026-08-02",
-  "n_points_chauds": 311,
-  "frp_total": 3890.56,
+  "n_points_chauds": 26,
+  "frp_total": 125.28,
   "image_avant": {
     "id": "S2B_31TGJ_20260727_0_L2A",
     "date": "2026-07-27",
@@ -25,5 +25,5 @@
   "nbr_avant_median": 0.41,
   "part_masquee": 0.0,
   "latence_jours": 6,
-  "calcule_le": "2026-08-04T18:03:31Z"
+  "calcule_le": "2026-08-05T09:08:07Z"
 }
