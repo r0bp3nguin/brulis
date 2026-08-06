@@ -1,0 +1,17 @@
+{
+  "id": "20260805-63-pont-du-château-4579321",
+  "feu": "Pont-du-Château (63)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Pont-du-Château",
+  "departement": "63",
+  "surface_estimee_ha": 44.8,
+  "surface_min_ha": 29.0,
+  "surface_max_ha": 60.0,
+  "premier_point_chaud": "2026-08-05",
+  "dernier_point_chaud": "2026-08-06",
+  "n_points_chauds": 7,
+  "frp_total": 34.14,
+  "prochain_passage": "2026-08-07",
+  "calcule_le": "2026-08-06T09:09:03Z"
+}
