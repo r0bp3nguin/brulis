@@ -1,0 +1,29 @@
+{
+  "id": "20260804-65-arrens-marsous-4294025",
+  "feu": "Arrens-Marsous (65)",
+  "statut": "mesure",
+  "commune": "Arrens-Marsous",
+  "departement": "65",
+  "surface_ha": 88.0,
+  "n_polygones": 23,
+  "premier_point_chaud": "2026-08-04",
+  "dernier_point_chaud": "2026-08-07",
+  "n_points_chauds": 9,
+  "frp_total": 66.23,
+  "image_avant": {
+    "id": "S2A_30TYN_20260802_1_L2A",
+    "date": "2026-08-02",
+    "nuages_pct": 16.484986
+  },
+  "image_apres": {
+    "id": "S2C_30TYN_20260807_0_L2A",
+    "date": "2026-08-07",
+    "nuages_pct": 1.624819
+  },
+  "tuile": "MGRS-30TYN",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.266,
+  "part_masquee": 0.096,
+  "latence_jours": 3,
+  "calcule_le": "2026-08-07T17:08:03Z"
+}

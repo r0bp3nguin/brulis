@@ -4,12 +4,12 @@
   "statut": "mesure",
   "commune": "Héming",
   "departement": "57",
-  "surface_ha": 1.9,
+  "surface_ha": 2.2,
   "n_polygones": 1,
   "premier_point_chaud": "2026-08-05",
-  "dernier_point_chaud": "2026-08-06",
-  "n_points_chauds": 7,
-  "frp_total": 7.92,
+  "dernier_point_chaud": "2026-08-07",
+  "n_points_chauds": 11,
+  "frp_total": 11.66,
   "image_avant": {
     "id": "S2A_31UGP_20260803_0_L2A",
     "date": "2026-08-03",
@@ -22,8 +22,8 @@
   },
   "tuile": "MGRS-31UGP",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.685,
+  "nbr_avant_median": 0.689,
   "part_masquee": 0.001,
   "latence_jours": 1,
-  "calcule_le": "2026-08-07T07:44:39Z"
+  "calcule_le": "2026-08-07T17:09:32Z"
 }

@@ -4,8 +4,8 @@
   "statut": "mesure",
   "commune": "Pont-du-Château",
   "departement": "63",
-  "surface_ha": 21.3,
-  "n_polygones": 9,
+  "surface_ha": 36.4,
+  "n_polygones": 10,
   "premier_point_chaud": "2026-08-05",
   "dernier_point_chaud": "2026-08-06",
   "n_points_chauds": 7,
@@ -16,14 +16,14 @@
     "nuages_pct": 1.167986
   },
   "image_apres": {
-    "id": "S2A_31TEL_20260806_0_L2A",
-    "date": "2026-08-06",
-    "nuages_pct": 8.374063
+    "id": "S2C_31TEL_20260807_0_L2A",
+    "date": "2026-08-07",
+    "nuages_pct": 0.087513
   },
   "tuile": "MGRS-31TEL",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.514,
+  "nbr_avant_median": 0.538,
   "part_masquee": 0.0,
-  "latence_jours": 1,
-  "calcule_le": "2026-08-07T07:44:11Z"
+  "latence_jours": 2,
+  "calcule_le": "2026-08-07T17:08:27Z"
 }

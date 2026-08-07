@@ -1,17 +1,29 @@
 {
   "id": "20260729-18-baugy-4708275",
   "feu": "Baugy (18)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Baugy",
   "departement": "18",
-  "surface_estimee_ha": 36.3,
-  "surface_min_ha": 24.0,
-  "surface_max_ha": 49.0,
+  "surface_ha": 160.0,
+  "n_polygones": 23,
   "premier_point_chaud": "2026-07-29",
   "dernier_point_chaud": "2026-07-29",
   "n_points_chauds": 6,
   "frp_total": 10.78,
-  "prochain_passage": "2026-08-09",
-  "calcule_le": "2026-08-07T07:45:11Z"
+  "image_avant": {
+    "id": "S2C_31TDN_20260728_0_L2A",
+    "date": "2026-07-28",
+    "nuages_pct": 0.002037
+  },
+  "image_apres": {
+    "id": "S2C_31TDN_20260807_0_L2A",
+    "date": "2026-08-07",
+    "nuages_pct": 0.114104
+  },
+  "tuile": "MGRS-31TDN",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.217,
+  "part_masquee": 0.0,
+  "latence_jours": 9,
+  "calcule_le": "2026-08-07T17:10:51Z"
 }

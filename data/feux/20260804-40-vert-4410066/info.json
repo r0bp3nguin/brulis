@@ -1,0 +1,29 @@
+{
+  "id": "20260804-40-vert-4410066",
+  "feu": "Vert (40)",
+  "statut": "mesure",
+  "commune": "Vert",
+  "departement": "40",
+  "surface_ha": 68.3,
+  "n_polygones": 5,
+  "premier_point_chaud": "2026-08-04",
+  "dernier_point_chaud": "2026-08-07",
+  "n_points_chauds": 5,
+  "frp_total": 38.09,
+  "image_avant": {
+    "id": "S2A_30TXP_20260802_1_L2A",
+    "date": "2026-08-02",
+    "nuages_pct": 6.171516
+  },
+  "image_apres": {
+    "id": "S2C_30TXP_20260807_0_L2A",
+    "date": "2026-08-07",
+    "nuages_pct": 0.002785
+  },
+  "tuile": "MGRS-30TXP",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.238,
+  "part_masquee": 0.0,
+  "latence_jours": 3,
+  "calcule_le": "2026-08-07T17:08:15Z"
+}

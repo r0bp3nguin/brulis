@@ -1,7 +1,7 @@
 {
   "id": "20260803-02-athies-sous-laon-4960371",
   "feu": "Athies-sous-Laon (02)",
-  "statut": "en_attente",
+  "statut": "ecarte",
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Athies-sous-Laon",
   "departement": "02",
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-08-03",
   "n_points_chauds": 14,
   "frp_total": 102.62,
-  "prochain_passage": "2026-08-09",
-  "calcule_le": "2026-08-07T07:45:02Z"
+  "calcule_le": "2026-08-07T17:07:54Z",
+  "motif_ecarte": "couvert végétal insuffisant avant le feu (NBR 0.15) — chaume, sol nu ou site industriel, pas un feu de végétation"
 }
