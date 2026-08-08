@@ -5,13 +5,13 @@
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Saint-Pierre-la-Cour",
   "departement": "53",
-  "surface_estimee_ha": 29.2,
-  "surface_min_ha": 19.0,
-  "surface_max_ha": 39.0,
+  "surface_estimee_ha": 28.2,
+  "surface_min_ha": 18.0,
+  "surface_max_ha": 38.0,
   "premier_point_chaud": "2026-07-30",
   "dernier_point_chaud": "2026-08-07",
-  "n_points_chauds": 6,
-  "frp_total": 4.5,
+  "n_points_chauds": 5,
+  "frp_total": 3.18,
   "prochain_passage": "2026-08-08",
-  "calcule_le": "2026-08-07T17:10:07Z"
+  "calcule_le": "2026-08-08T07:20:51Z"
 }

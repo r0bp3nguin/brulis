@@ -1,15 +1,15 @@
 {
   "id": "20260804-26-bellegarde-en-diois-4454546",
-  "feu": "Bellegarde-en-Diois (26)",
+  "feu": "Beaumont-en-Diois (26)",
   "statut": "mesure",
-  "commune": "Bellegarde-en-Diois",
+  "commune": "Beaumont-en-Diois",
   "departement": "26",
-  "surface_ha": 27.9,
-  "n_polygones": 10,
+  "surface_ha": 23.1,
+  "n_polygones": 8,
   "premier_point_chaud": "2026-08-04",
   "dernier_point_chaud": "2026-08-07",
-  "n_points_chauds": 59,
-  "frp_total": 1335.58,
+  "n_points_chauds": 9,
+  "frp_total": 11.85,
   "image_avant": {
     "id": "S2C_31TFK_20260804_0_L2A",
     "date": "2026-08-04",
@@ -22,8 +22,8 @@
   },
   "tuile": "MGRS-31TFK",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.473,
-  "part_masquee": 0.274,
+  "nbr_avant_median": 0.451,
+  "part_masquee": 0.364,
   "latence_jours": 2,
-  "calcule_le": "2026-08-07T17:07:16Z"
+  "calcule_le": "2026-08-08T07:20:03Z"
 }

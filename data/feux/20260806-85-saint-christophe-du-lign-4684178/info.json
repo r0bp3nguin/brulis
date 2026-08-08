@@ -1,0 +1,17 @@
+{
+  "id": "20260806-85-saint-christophe-du-lign-4684178",
+  "feu": "Saint-Christophe-du-Ligneron (85)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Saint-Christophe-du-Ligneron",
+  "departement": "85",
+  "surface_estimee_ha": 51.1,
+  "surface_min_ha": 33.0,
+  "surface_max_ha": 69.0,
+  "premier_point_chaud": "2026-08-06",
+  "dernier_point_chaud": "2026-08-08",
+  "n_points_chauds": 10,
+  "frp_total": 29.17,
+  "prochain_passage": "2026-08-08",
+  "calcule_le": "2026-08-08T07:18:36Z"
+}
