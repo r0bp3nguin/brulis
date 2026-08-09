@@ -5,13 +5,13 @@
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Altkirch",
   "departement": "68",
-  "surface_estimee_ha": 32.0,
-  "surface_min_ha": 21.0,
-  "surface_max_ha": 43.0,
+  "surface_estimee_ha": 37.3,
+  "surface_min_ha": 24.0,
+  "surface_max_ha": 50.0,
   "premier_point_chaud": "2026-08-06",
-  "dernier_point_chaud": "2026-08-08",
-  "n_points_chauds": 8,
-  "frp_total": 6.69,
+  "dernier_point_chaud": "2026-08-09",
+  "n_points_chauds": 11,
+  "frp_total": 8.7,
   "prochain_passage": "2026-08-11",
-  "calcule_le": "2026-08-08T07:20:30Z"
+  "calcule_le": "2026-08-09T07:20:00Z"
 }

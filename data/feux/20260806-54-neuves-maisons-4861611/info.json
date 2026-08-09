@@ -5,13 +5,13 @@
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Neuves-Maisons",
   "departement": "54",
-  "surface_estimee_ha": 69.4,
-  "surface_min_ha": 45.0,
-  "surface_max_ha": 94.0,
+  "surface_estimee_ha": 71.7,
+  "surface_min_ha": 47.0,
+  "surface_max_ha": 97.0,
   "premier_point_chaud": "2026-08-06",
-  "dernier_point_chaud": "2026-08-08",
-  "n_points_chauds": 22,
-  "frp_total": 35.27,
+  "dernier_point_chaud": "2026-08-09",
+  "n_points_chauds": 28,
+  "frp_total": 46.97,
   "prochain_passage": "2026-08-09",
-  "calcule_le": "2026-08-08T07:18:16Z"
+  "calcule_le": "2026-08-09T07:18:54Z"
 }

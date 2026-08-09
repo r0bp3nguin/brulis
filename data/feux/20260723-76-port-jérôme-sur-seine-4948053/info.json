@@ -5,13 +5,13 @@
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Port-Jérôme-sur-Seine",
   "departement": "76",
-  "surface_estimee_ha": 49.9,
-  "surface_min_ha": 32.0,
-  "surface_max_ha": 67.0,
+  "surface_estimee_ha": 45.9,
+  "surface_min_ha": 30.0,
+  "surface_max_ha": 62.0,
   "premier_point_chaud": "2026-07-23",
-  "dernier_point_chaud": "2026-08-07",
+  "dernier_point_chaud": "2026-08-09",
   "n_points_chauds": 11,
-  "frp_total": 13.67,
+  "frp_total": 13.1,
   "prochain_passage": "2026-08-10",
-  "calcule_le": "2026-08-08T07:21:13Z"
+  "calcule_le": "2026-08-09T07:19:48Z"
 }
