@@ -5,13 +5,13 @@
   "motif_attente": "aucune image satellite depuis le départ du feu",
   "commune": "Lucmau",
   "departement": "33",
-  "surface_estimee_ha": 90.5,
+  "surface_estimee_ha": 91.0,
   "surface_min_ha": 59.0,
-  "surface_max_ha": 122.0,
+  "surface_max_ha": 123.0,
   "premier_point_chaud": "2026-08-09",
   "dernier_point_chaud": "2026-08-09",
-  "n_points_chauds": 15,
-  "frp_total": 145.41,
+  "n_points_chauds": 16,
+  "frp_total": 152.05,
   "prochain_passage": "2026-08-10",
-  "calcule_le": "2026-08-09T07:18:33Z"
+  "calcule_le": "2026-08-09T16:54:51Z"
 }
