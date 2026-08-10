@@ -1,17 +1,29 @@
 {
   "id": "20260729-79-val-en-vignes-4700039",
   "feu": "Val en Vignes (79)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Val en Vignes",
   "departement": "79",
-  "surface_estimee_ha": 94.5,
-  "surface_min_ha": 61.0,
-  "surface_max_ha": 128.0,
+  "surface_ha": 102.6,
+  "n_polygones": 27,
   "premier_point_chaud": "2026-07-29",
   "dernier_point_chaud": "2026-07-29",
   "n_points_chauds": 16,
   "frp_total": 305.3,
-  "prochain_passage": "2026-08-10",
-  "calcule_le": "2026-08-10T08:10:03Z"
+  "image_avant": {
+    "id": "S2C_30TXT_20260721_0_L2A",
+    "date": "2026-07-21",
+    "nuages_pct": 0.745392
+  },
+  "image_apres": {
+    "id": "S2C_30TXT_20260810_0_L2A",
+    "date": "2026-08-10",
+    "nuages_pct": 0.001782
+  },
+  "tuile": "MGRS-30TXT",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.22,
+  "part_masquee": 0.0,
+  "latence_jours": 12,
+  "calcule_le": "2026-08-10T17:12:19Z"
 }

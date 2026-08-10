@@ -4,8 +4,8 @@
   "statut": "mesure",
   "commune": "Donges",
   "departement": "44",
-  "surface_ha": 84.0,
-  "n_polygones": 13,
+  "surface_ha": 42.6,
+  "n_polygones": 11,
   "premier_point_chaud": "2026-08-07",
   "dernier_point_chaud": "2026-08-08",
   "n_points_chauds": 6,
@@ -16,14 +16,14 @@
     "nuages_pct": 0.001931
   },
   "image_apres": {
-    "id": "S2B_30TWT_20260808_0_L2A",
-    "date": "2026-08-08",
-    "nuages_pct": 45.010746
+    "id": "S2C_30TWT_20260810_0_L2A",
+    "date": "2026-08-10",
+    "nuages_pct": 0.00385
   },
   "tuile": "MGRS-30TWT",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.45,
-  "part_masquee": 0.004,
-  "latence_jours": 1,
-  "calcule_le": "2026-08-10T08:09:43Z"
+  "nbr_avant_median": 0.495,
+  "part_masquee": 0.003,
+  "latence_jours": 3,
+  "calcule_le": "2026-08-10T17:11:54Z"
 }

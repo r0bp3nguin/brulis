@@ -1,17 +1,29 @@
 {
   "id": "20260727-33-le-temple-4487088",
   "feu": "Saint-Médard-en-Jalles (33)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Saint-Médard-en-Jalles",
   "departement": "33",
-  "surface_estimee_ha": 374.7,
-  "surface_min_ha": 244.0,
-  "surface_max_ha": 506.0,
+  "surface_ha": 820.6,
+  "n_polygones": 81,
   "premier_point_chaud": "2026-07-27",
   "dernier_point_chaud": "2026-08-01",
   "n_points_chauds": 81,
   "frp_total": 415.75,
-  "prochain_passage": "2026-08-10",
-  "calcule_le": "2026-08-10T08:09:52Z"
+  "image_avant": {
+    "id": "S2C_30TXQ_20260721_0_L2A",
+    "date": "2026-07-21",
+    "nuages_pct": 0.336283
+  },
+  "image_apres": {
+    "id": "S2C_30TXQ_20260810_0_L2A",
+    "date": "2026-08-10",
+    "nuages_pct": 51.714867
+  },
+  "tuile": "MGRS-30TXQ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.554,
+  "part_masquee": 0.386,
+  "latence_jours": 14,
+  "calcule_le": "2026-08-10T17:12:09Z"
 }

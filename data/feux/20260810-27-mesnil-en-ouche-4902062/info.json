@@ -1,7 +1,7 @@
 {
   "id": "20260810-27-mesnil-en-ouche-4902062",
   "feu": "Mesnil-en-Ouche (27)",
-  "statut": "en_attente",
+  "statut": "ecarte",
   "motif_attente": "aucune image satellite depuis le départ du feu",
   "commune": "Mesnil-en-Ouche",
   "departement": "27",
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-08-10",
   "n_points_chauds": 17,
   "frp_total": 382.99,
-  "prochain_passage": "2026-08-10",
-  "calcule_le": "2026-08-10T08:06:38Z"
+  "calcule_le": "2026-08-10T17:08:49Z",
+  "motif_ecarte": "images exploitables, mais aucune trace de brûlé au seuil retenu"
 }

@@ -1,17 +1,29 @@
 {
   "id": "20260802-79-nueil-les-aubiers-4692055",
   "feu": "Nueil-les-Aubiers (79)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Nueil-les-Aubiers",
   "departement": "79",
-  "surface_estimee_ha": 22.1,
-  "surface_min_ha": 14.0,
-  "surface_max_ha": 30.0,
+  "surface_ha": 23.0,
+  "n_polygones": 7,
   "premier_point_chaud": "2026-08-02",
   "dernier_point_chaud": "2026-08-02",
   "n_points_chauds": 5,
   "frp_total": 5.76,
-  "prochain_passage": "2026-08-10",
-  "calcule_le": "2026-08-10T08:10:28Z"
+  "image_avant": {
+    "id": "S2C_30TXS_20260721_0_L2A",
+    "date": "2026-07-21",
+    "nuages_pct": 0.010043
+  },
+  "image_apres": {
+    "id": "S2C_30TXS_20260810_0_L2A",
+    "date": "2026-08-10",
+    "nuages_pct": 20.86565
+  },
+  "tuile": "MGRS-30TXS",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.429,
+  "part_masquee": 0.0,
+  "latence_jours": 8,
+  "calcule_le": "2026-08-10T17:13:03Z"
 }
