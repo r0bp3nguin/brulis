@@ -4,8 +4,8 @@
   "statut": "mesure",
   "commune": "Arrens-Marsous",
   "departement": "65",
-  "surface_ha": 94.9,
-  "n_polygones": 25,
+  "surface_ha": 109.7,
+  "n_polygones": 17,
   "premier_point_chaud": "2026-08-04",
   "dernier_point_chaud": "2026-08-08",
   "n_points_chauds": 17,
@@ -16,14 +16,14 @@
     "nuages_pct": 16.484986
   },
   "image_apres": {
-    "id": "S2C_30TYN_20260807_0_L2A",
-    "date": "2026-08-07",
-    "nuages_pct": 1.624819
+    "id": "S2A_30TYN_20260809_0_L2A",
+    "date": "2026-08-09",
+    "nuages_pct": 7.98559
   },
   "tuile": "MGRS-30TYN",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.265,
-  "part_masquee": 0.135,
-  "latence_jours": 3,
-  "calcule_le": "2026-08-09T16:55:10Z"
+  "nbr_avant_median": 0.352,
+  "part_masquee": 0.185,
+  "latence_jours": 5,
+  "calcule_le": "2026-08-10T08:07:30Z"
 }

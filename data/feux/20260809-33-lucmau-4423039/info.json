@@ -1,7 +1,7 @@
 {
   "id": "20260809-33-lucmau-4423039",
   "feu": "Lucmau (33)",
-  "statut": "en_attente",
+  "statut": "ecarte",
   "motif_attente": "aucune image satellite depuis le départ du feu",
   "commune": "Lucmau",
   "departement": "33",
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-08-09",
   "n_points_chauds": 16,
   "frp_total": 152.05,
-  "prochain_passage": "2026-08-10",
-  "calcule_le": "2026-08-09T16:54:51Z"
+  "calcule_le": "2026-08-10T08:06:52Z",
+  "motif_ecarte": "images exploitables, mais aucune trace de brûlé au seuil retenu"
 }

@@ -2,7 +2,7 @@
   "id": "20260808-59-condé-sur-l'escaut-5049361",
   "feu": "Condé-sur-l'Escaut (59)",
   "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Condé-sur-l'Escaut",
   "departement": "59",
   "surface_estimee_ha": 23.6,
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-08-08",
   "n_points_chauds": 5,
   "frp_total": 6.68,
-  "prochain_passage": "2026-08-12",
-  "calcule_le": "2026-08-09T16:56:35Z"
+  "prochain_passage": "2026-08-14",
+  "calcule_le": "2026-08-10T08:09:15Z"
 }

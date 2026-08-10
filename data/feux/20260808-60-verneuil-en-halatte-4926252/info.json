@@ -2,7 +2,7 @@
   "id": "20260808-60-verneuil-en-halatte-4926252",
   "feu": "Verneuil-en-Halatte (60)",
   "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Verneuil-en-Halatte",
   "departement": "60",
   "surface_estimee_ha": 111.9,
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-08-08",
   "n_points_chauds": 16,
   "frp_total": 221.81,
-  "prochain_passage": "2026-08-10",
-  "calcule_le": "2026-08-09T16:54:34Z"
+  "prochain_passage": "2026-08-12",
+  "calcule_le": "2026-08-10T08:06:43Z"
 }

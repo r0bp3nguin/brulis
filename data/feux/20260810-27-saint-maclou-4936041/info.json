@@ -1,0 +1,17 @@
+{
+  "id": "20260810-27-saint-maclou-4936041",
+  "feu": "Saint-Maclou (27)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Saint-Maclou",
+  "departement": "27",
+  "surface_estimee_ha": 61.6,
+  "surface_min_ha": 40.0,
+  "surface_max_ha": 83.0,
+  "premier_point_chaud": "2026-08-10",
+  "dernier_point_chaud": "2026-08-10",
+  "n_points_chauds": 13,
+  "frp_total": 137.46,
+  "prochain_passage": "2026-08-11",
+  "calcule_le": "2026-08-10T08:06:56Z"
+}
