@@ -1,0 +1,29 @@
+{
+  "id": "20260808-85-challans-4684179",
+  "feu": "Challans (85)",
+  "statut": "mesure",
+  "commune": "Challans",
+  "departement": "85",
+  "surface_ha": 159.8,
+  "n_polygones": 38,
+  "premier_point_chaud": "2026-08-08",
+  "dernier_point_chaud": "2026-08-08",
+  "n_points_chauds": 9,
+  "frp_total": 27.25,
+  "image_avant": {
+    "id": "S2A_30TWS_20260805_1_L2A",
+    "date": "2026-08-05",
+    "nuages_pct": 6.19339
+  },
+  "image_apres": {
+    "id": "S2C_30TWS_20260810_0_L2A",
+    "date": "2026-08-10",
+    "nuages_pct": 1.834483
+  },
+  "tuile": "MGRS-30TWS",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.221,
+  "part_masquee": 0.11,
+  "latence_jours": 2,
+  "calcule_le": "2026-08-11T07:41:15Z"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "20260808-13-fos-sur-mer-4345485",
+  "feu": "Fos-sur-Mer (13)",
+  "statut": "mesure",
+  "commune": "Fos-sur-Mer",
+  "departement": "13",
+  "surface_ha": 3.3,
+  "n_polygones": 2,
+  "premier_point_chaud": "2026-08-08",
+  "dernier_point_chaud": "2026-08-11",
+  "n_points_chauds": 10,
+  "frp_total": 8.13,
+  "image_avant": {
+    "id": "S2A_31TFJ_20260806_1_L2A",
+    "date": "2026-08-06",
+    "nuages_pct": 0.014809
+  },
+  "image_apres": {
+    "id": "S2B_31TFJ_20260809_0_L2A",
+    "date": "2026-08-09",
+    "nuages_pct": 40.181369
+  },
+  "tuile": "MGRS-31TFJ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.256,
+  "part_masquee": 0.167,
+  "latence_jours": 1,
+  "calcule_le": "2026-08-11T07:42:24Z"
+}

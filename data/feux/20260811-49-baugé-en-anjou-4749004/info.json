@@ -1,0 +1,17 @@
+{
+  "id": "20260811-49-baugé-en-anjou-4749004",
+  "feu": "Baugé-en-Anjou (49)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Baugé-en-Anjou",
+  "departement": "49",
+  "surface_estimee_ha": 131.3,
+  "surface_min_ha": 85.0,
+  "surface_max_ha": 177.0,
+  "premier_point_chaud": "2026-08-11",
+  "dernier_point_chaud": "2026-08-11",
+  "n_points_chauds": 25,
+  "frp_total": 107.3,
+  "prochain_passage": "2026-08-15",
+  "calcule_le": "2026-08-11T07:40:40Z"
+}

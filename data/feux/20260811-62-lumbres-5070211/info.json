@@ -1,0 +1,17 @@
+{
+  "id": "20260811-62-lumbres-5070211",
+  "feu": "Lumbres (62)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Lumbres",
+  "departement": "62",
+  "surface_estimee_ha": 26.9,
+  "surface_min_ha": 17.0,
+  "surface_max_ha": 36.0,
+  "premier_point_chaud": "2026-08-11",
+  "dernier_point_chaud": "2026-08-11",
+  "n_points_chauds": 5,
+  "frp_total": 3.66,
+  "prochain_passage": "2026-08-13",
+  "calcule_le": "2026-08-11T07:43:06Z"
+}
