@@ -1,0 +1,17 @@
+{
+  "id": "20260812-25-les-fontenelles-4720675",
+  "feu": "Les Fontenelles (25)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Les Fontenelles",
+  "departement": "25",
+  "surface_estimee_ha": 35.3,
+  "surface_min_ha": 23.0,
+  "surface_max_ha": 48.0,
+  "premier_point_chaud": "2026-08-12",
+  "dernier_point_chaud": "2026-08-12",
+  "n_points_chauds": 5,
+  "frp_total": 34.61,
+  "prochain_passage": "2026-08-14",
+  "calcule_le": "2026-08-12T17:14:21Z"
+}

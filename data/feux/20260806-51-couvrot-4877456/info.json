@@ -1,17 +1,29 @@
 {
   "id": "20260806-51-couvrot-4877456",
   "feu": "Couvrot (51)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Couvrot",
   "departement": "51",
-  "surface_estimee_ha": 22.2,
-  "surface_min_ha": 14.0,
-  "surface_max_ha": 30.0,
+  "surface_ha": 380.4,
+  "n_polygones": 61,
   "premier_point_chaud": "2026-08-06",
   "dernier_point_chaud": "2026-08-11",
   "n_points_chauds": 5,
   "frp_total": 3.32,
-  "prochain_passage": "2026-08-12",
-  "calcule_le": "2026-08-12T07:56:20Z"
+  "image_avant": {
+    "id": "S2A_31UFQ_20260806_0_L2A",
+    "date": "2026-08-06",
+    "nuages_pct": 71.125829
+  },
+  "image_apres": {
+    "id": "S2B_31UFQ_20260812_0_L2A",
+    "date": "2026-08-12",
+    "nuages_pct": 0.00886
+  },
+  "tuile": "MGRS-31UFQ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.278,
+  "part_masquee": 0.375,
+  "latence_jours": 6,
+  "calcule_le": "2026-08-12T17:16:50Z"
 }

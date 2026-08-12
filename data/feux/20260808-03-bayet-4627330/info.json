@@ -1,17 +1,29 @@
 {
   "id": "20260808-03-bayet-4627330",
   "feu": "Bayet (03)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Bayet",
   "departement": "03",
-  "surface_estimee_ha": 35.0,
-  "surface_min_ha": 23.0,
-  "surface_max_ha": 47.0,
+  "surface_ha": 36.7,
+  "n_polygones": 10,
   "premier_point_chaud": "2026-08-08",
-  "dernier_point_chaud": "2026-08-08",
-  "n_points_chauds": 5,
-  "frp_total": 81.5,
-  "prochain_passage": "2026-08-12",
-  "calcule_le": "2026-08-12T07:56:24Z"
+  "dernier_point_chaud": "2026-08-12",
+  "n_points_chauds": 8,
+  "frp_total": 46.71,
+  "image_avant": {
+    "id": "S2C_31TEM_20260807_0_L2A",
+    "date": "2026-08-07",
+    "nuages_pct": 0.001659
+  },
+  "image_apres": {
+    "id": "S2B_31TEM_20260812_0_L2A",
+    "date": "2026-08-12",
+    "nuages_pct": 0.235341
+  },
+  "tuile": "MGRS-31TEM",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.28,
+  "part_masquee": 0.0,
+  "latence_jours": 4,
+  "calcule_le": "2026-08-12T17:14:18Z"
 }

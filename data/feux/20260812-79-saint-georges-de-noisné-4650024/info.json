@@ -1,0 +1,17 @@
+{
+  "id": "20260812-79-saint-georges-de-noisné-4650024",
+  "feu": "Saint-Georges-de-Noisné (79)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Saint-Georges-de-Noisné",
+  "departement": "79",
+  "surface_estimee_ha": 100.4,
+  "surface_min_ha": 65.0,
+  "surface_max_ha": 136.0,
+  "premier_point_chaud": "2026-08-12",
+  "dernier_point_chaud": "2026-08-12",
+  "n_points_chauds": 16,
+  "frp_total": 329.92,
+  "prochain_passage": "2026-08-15",
+  "calcule_le": "2026-08-12T17:13:08Z"
+}

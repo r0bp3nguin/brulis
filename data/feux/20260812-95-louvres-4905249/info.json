@@ -1,7 +1,7 @@
 {
   "id": "20260812-95-louvres-4905249",
   "feu": "Louvres (95)",
-  "statut": "en_attente",
+  "statut": "ecarte",
   "motif_attente": "aucune image satellite depuis le départ du feu",
   "commune": "Louvres",
   "departement": "95",
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-08-12",
   "n_points_chauds": 11,
   "frp_total": 13.68,
-  "prochain_passage": "2026-08-13",
-  "calcule_le": "2026-08-12T07:55:41Z"
+  "calcule_le": "2026-08-12T17:15:04Z",
+  "motif_ecarte": "images exploitables, mais aucune trace de brûlé au seuil retenu"
 }

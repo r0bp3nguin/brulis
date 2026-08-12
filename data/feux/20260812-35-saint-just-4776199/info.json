@@ -1,0 +1,17 @@
+{
+  "id": "20260812-35-saint-just-4776199",
+  "feu": "Saint-Just (35)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Saint-Just",
+  "departement": "35",
+  "surface_estimee_ha": 73.1,
+  "surface_min_ha": 48.0,
+  "surface_max_ha": 99.0,
+  "premier_point_chaud": "2026-08-12",
+  "dernier_point_chaud": "2026-08-12",
+  "n_points_chauds": 10,
+  "frp_total": 411.58,
+  "prochain_passage": "2026-08-13",
+  "calcule_le": "2026-08-12T17:12:53Z"
+}
