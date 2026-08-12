@@ -1,0 +1,17 @@
+{
+  "id": "20260812-67-haguenau-4885770",
+  "feu": "Haguenau (67)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Haguenau",
+  "departement": "67",
+  "surface_estimee_ha": 22.6,
+  "surface_min_ha": 15.0,
+  "surface_max_ha": 30.0,
+  "premier_point_chaud": "2026-08-12",
+  "dernier_point_chaud": "2026-08-12",
+  "n_points_chauds": 5,
+  "frp_total": 5.83,
+  "prochain_passage": "2026-08-14",
+  "calcule_le": "2026-08-12T07:56:08Z"
+}

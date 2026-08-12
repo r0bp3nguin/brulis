@@ -1,17 +1,29 @@
 {
   "id": "20260806-68-altkirch-4763724",
   "feu": "Altkirch (68)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Altkirch",
   "departement": "68",
-  "surface_estimee_ha": 31.6,
-  "surface_min_ha": 21.0,
-  "surface_max_ha": 43.0,
+  "surface_ha": 52.1,
+  "n_polygones": 8,
   "premier_point_chaud": "2026-08-06",
-  "dernier_point_chaud": "2026-08-11",
-  "n_points_chauds": 9,
-  "frp_total": 5.88,
-  "prochain_passage": "2026-08-11",
-  "calcule_le": "2026-08-11T17:14:09Z"
+  "dernier_point_chaud": "2026-08-12",
+  "n_points_chauds": 7,
+  "frp_total": 4.29,
+  "image_avant": {
+    "id": "S2A_32TLT_20260803_0_L2A",
+    "date": "2026-08-03",
+    "nuages_pct": 63.722003
+  },
+  "image_apres": {
+    "id": "S2C_32TLT_20260811_0_L2A",
+    "date": "2026-08-11",
+    "nuages_pct": 0.082352
+  },
+  "tuile": "MGRS-32TLT",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.294,
+  "part_masquee": 0.004,
+  "latence_jours": 5,
+  "calcule_le": "2026-08-12T07:56:14Z"
 }

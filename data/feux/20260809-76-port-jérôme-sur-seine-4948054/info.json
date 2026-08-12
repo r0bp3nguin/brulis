@@ -1,0 +1,29 @@
+{
+  "id": "20260809-76-port-jérôme-sur-seine-4948054",
+  "feu": "Port-Jérôme-sur-Seine (76)",
+  "statut": "mesure",
+  "commune": "Port-Jérôme-sur-Seine",
+  "departement": "76",
+  "surface_ha": 765.8,
+  "n_polygones": 123,
+  "premier_point_chaud": "2026-08-09",
+  "dernier_point_chaud": "2026-08-12",
+  "n_points_chauds": 11,
+  "frp_total": 14.39,
+  "image_avant": {
+    "id": "S2A_30UYV_20260713_1_L2A",
+    "date": "2026-07-13",
+    "nuages_pct": 63.296062
+  },
+  "image_apres": {
+    "id": "S2C_30UYV_20260810_0_L2A",
+    "date": "2026-08-10",
+    "nuages_pct": 2.69591
+  },
+  "tuile": "MGRS-30UYV",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.329,
+  "part_masquee": 0.215,
+  "latence_jours": 1,
+  "calcule_le": "2026-08-12T07:55:39Z"
+}

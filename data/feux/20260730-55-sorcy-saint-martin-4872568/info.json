@@ -5,13 +5,13 @@
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Sorcy-Saint-Martin",
   "departement": "55",
-  "surface_estimee_ha": 40.8,
-  "surface_min_ha": 27.0,
-  "surface_max_ha": 55.0,
+  "surface_estimee_ha": 35.8,
+  "surface_min_ha": 23.0,
+  "surface_max_ha": 48.0,
   "premier_point_chaud": "2026-07-30",
-  "dernier_point_chaud": "2026-08-11",
-  "n_points_chauds": 11,
-  "frp_total": 8.18,
+  "dernier_point_chaud": "2026-08-12",
+  "n_points_chauds": 9,
+  "frp_total": 7.33,
   "prochain_passage": "2026-08-14",
-  "calcule_le": "2026-08-11T17:13:54Z"
+  "calcule_le": "2026-08-12T07:56:03Z"
 }

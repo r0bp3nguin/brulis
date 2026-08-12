@@ -1,0 +1,17 @@
+{
+  "id": "20260812-76-grand-couronne-4935098",
+  "feu": "Grand-Couronne (76)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Grand-Couronne",
+  "departement": "76",
+  "surface_estimee_ha": 21.0,
+  "surface_min_ha": 14.0,
+  "surface_max_ha": 28.0,
+  "premier_point_chaud": "2026-08-12",
+  "dernier_point_chaud": "2026-08-12",
+  "n_points_chauds": 5,
+  "frp_total": 12.33,
+  "prochain_passage": "2026-08-15",
+  "calcule_le": "2026-08-12T07:55:43Z"
+}

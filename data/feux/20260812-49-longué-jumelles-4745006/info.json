@@ -1,0 +1,17 @@
+{
+  "id": "20260812-49-longué-jumelles-4745006",
+  "feu": "Longué-Jumelles (49)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Longué-Jumelles",
+  "departement": "49",
+  "surface_estimee_ha": 103.5,
+  "surface_min_ha": 67.0,
+  "surface_max_ha": 140.0,
+  "premier_point_chaud": "2026-08-12",
+  "dernier_point_chaud": "2026-08-12",
+  "n_points_chauds": 20,
+  "frp_total": 136.81,
+  "prochain_passage": "2026-08-15",
+  "calcule_le": "2026-08-12T07:55:02Z"
+}
