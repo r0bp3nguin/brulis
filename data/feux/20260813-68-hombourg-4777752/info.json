@@ -1,0 +1,17 @@
+{
+  "id": "20260813-68-hombourg-4777752",
+  "feu": "Hombourg (68)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Hombourg",
+  "departement": "68",
+  "surface_estimee_ha": 35.0,
+  "surface_min_ha": 23.0,
+  "surface_max_ha": 47.0,
+  "premier_point_chaud": "2026-08-13",
+  "dernier_point_chaud": "2026-08-13",
+  "n_points_chauds": 5,
+  "frp_total": 45.53,
+  "prochain_passage": "2026-08-16",
+  "calcule_le": "2026-08-13T17:14:58Z"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "20260810-53-argentré-4807064",
+  "feu": "Argentré (53)",
+  "statut": "mesure",
+  "commune": "Argentré",
+  "departement": "53",
+  "surface_ha": 91.0,
+  "n_polygones": 17,
+  "premier_point_chaud": "2026-08-10",
+  "dernier_point_chaud": "2026-08-13",
+  "n_points_chauds": 5,
+  "frp_total": 84.55,
+  "image_avant": {
+    "id": "S2C_30UXU_20260810_0_L2A",
+    "date": "2026-08-10",
+    "nuages_pct": 0.001241
+  },
+  "image_apres": {
+    "id": "S2C_30UXU_20260813_0_L2A",
+    "date": "2026-08-13",
+    "nuages_pct": 0.004142
+  },
+  "tuile": "MGRS-30UXU",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.232,
+  "part_masquee": 0.036,
+  "latence_jours": 3,
+  "calcule_le": "2026-08-13T17:14:15Z"
+}

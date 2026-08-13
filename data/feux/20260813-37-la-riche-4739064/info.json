@@ -1,0 +1,17 @@
+{
+  "id": "20260813-37-la-riche-4739064",
+  "feu": "La Riche (37)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "La Riche",
+  "departement": "37",
+  "surface_estimee_ha": 24.0,
+  "surface_min_ha": 16.0,
+  "surface_max_ha": 32.0,
+  "premier_point_chaud": "2026-08-13",
+  "dernier_point_chaud": "2026-08-13",
+  "n_points_chauds": 5,
+  "frp_total": 38.05,
+  "prochain_passage": "2026-08-15",
+  "calcule_le": "2026-08-13T17:15:04Z"
+}

@@ -1,17 +1,29 @@
 {
   "id": "20260811-44-saint-mars-du-désert-4737144",
   "feu": "Saint-Mars-du-Désert (44)",
-  "statut": "ecarte",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Saint-Mars-du-Désert",
   "departement": "44",
-  "surface_estimee_ha": 36.7,
-  "surface_min_ha": 24.0,
-  "surface_max_ha": 50.0,
+  "surface_ha": 19.5,
+  "n_polygones": 9,
   "premier_point_chaud": "2026-08-11",
   "dernier_point_chaud": "2026-08-12",
   "n_points_chauds": 6,
   "frp_total": 18.0,
-  "calcule_le": "2026-08-13T07:59:01Z",
-  "motif_ecarte": "couvert végétal insuffisant avant le feu (NBR 0.17) — chaume, sol nu ou site industriel, pas un feu de végétation"
+  "image_avant": {
+    "id": "S2C_30TXT_20260810_0_L2A",
+    "date": "2026-08-10",
+    "nuages_pct": 0.001782
+  },
+  "image_apres": {
+    "id": "S2C_30TXT_20260813_0_L2A",
+    "date": "2026-08-13",
+    "nuages_pct": 0.007637
+  },
+  "tuile": "MGRS-30TXT",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.281,
+  "part_masquee": 0.003,
+  "latence_jours": 2,
+  "calcule_le": "2026-08-13T17:16:43Z"
 }

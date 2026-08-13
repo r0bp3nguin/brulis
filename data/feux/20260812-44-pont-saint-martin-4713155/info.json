@@ -1,17 +1,29 @@
 {
   "id": "20260812-44-pont-saint-martin-4713155",
   "feu": "Pont-Saint-Martin (44)",
-  "statut": "ecarte",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Pont-Saint-Martin",
   "departement": "44",
-  "surface_estimee_ha": 30.4,
-  "surface_min_ha": 20.0,
-  "surface_max_ha": 41.0,
+  "surface_ha": 3.2,
+  "n_polygones": 1,
   "premier_point_chaud": "2026-08-12",
   "dernier_point_chaud": "2026-08-12",
   "n_points_chauds": 5,
   "frp_total": 28.78,
-  "calcule_le": "2026-08-13T07:58:27Z",
-  "motif_ecarte": "images exploitables, mais aucune trace de brûlé au seuil retenu"
+  "image_avant": {
+    "id": "S2A_30TWT_20260812_0_L2A",
+    "date": "2026-08-12",
+    "nuages_pct": 0.018111
+  },
+  "image_apres": {
+    "id": "S2C_30TWT_20260813_0_L2A",
+    "date": "2026-08-13",
+    "nuages_pct": 0.005053
+  },
+  "tuile": "MGRS-30TWT",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.251,
+  "part_masquee": 0.0,
+  "latence_jours": 1,
+  "calcule_le": "2026-08-13T17:15:47Z"
 }
