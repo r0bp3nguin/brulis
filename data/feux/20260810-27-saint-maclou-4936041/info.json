@@ -1,17 +1,29 @@
 {
   "id": "20260810-27-saint-maclou-4936041",
   "feu": "Saint-Maclou (27)",
-  "statut": "ecarte",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Saint-Maclou",
   "departement": "27",
-  "surface_estimee_ha": 61.6,
-  "surface_min_ha": 40.0,
-  "surface_max_ha": 83.0,
+  "surface_ha": 4.3,
+  "n_polygones": 1,
   "premier_point_chaud": "2026-08-10",
   "dernier_point_chaud": "2026-08-10",
   "n_points_chauds": 13,
   "frp_total": 137.46,
-  "calcule_le": "2026-08-12T17:13:39Z",
-  "motif_ecarte": "images exploitables, mais aucune trace de brûlé au seuil retenu"
+  "image_avant": {
+    "id": "S2C_30UYV_20260810_0_L2A",
+    "date": "2026-08-10",
+    "nuages_pct": 2.69591
+  },
+  "image_apres": {
+    "id": "S2A_30UYV_20260812_1_L2A",
+    "date": "2026-08-12",
+    "nuages_pct": 0.003902
+  },
+  "tuile": "MGRS-30UYV",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.562,
+  "part_masquee": 0.0,
+  "latence_jours": 2,
+  "calcule_le": "2026-08-13T07:57:07Z"
 }

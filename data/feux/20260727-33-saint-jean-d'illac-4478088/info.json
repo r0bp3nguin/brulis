@@ -1,17 +1,29 @@
 {
   "id": "20260727-33-saint-jean-d'illac-4478088",
   "feu": "Saint-Jean-d'Illac (33)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Saint-Jean-d'Illac",
   "departement": "33",
-  "surface_estimee_ha": 58.5,
-  "surface_min_ha": 38.0,
-  "surface_max_ha": 79.0,
+  "surface_ha": 654.0,
+  "n_polygones": 25,
   "premier_point_chaud": "2026-07-27",
   "dernier_point_chaud": "2026-07-29",
   "n_points_chauds": 9,
   "frp_total": 17.91,
-  "prochain_passage": "2026-08-15",
-  "calcule_le": "2026-08-12T17:17:36Z"
+  "image_avant": {
+    "id": "S2B_30TXQ_20260726_0_L2A",
+    "date": "2026-07-26",
+    "nuages_pct": 30.932769
+  },
+  "image_apres": {
+    "id": "S2A_30TXQ_20260812_2_L2A",
+    "date": "2026-08-12",
+    "nuages_pct": 0.140331
+  },
+  "tuile": "MGRS-30TXQ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.402,
+  "part_masquee": 0.0,
+  "latence_jours": 16,
+  "calcule_le": "2026-08-13T08:00:47Z"
 }

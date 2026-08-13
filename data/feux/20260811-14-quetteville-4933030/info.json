@@ -1,17 +1,29 @@
 {
   "id": "20260811-14-quetteville-4933030",
   "feu": "Quetteville (14)",
-  "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Quetteville",
   "departement": "14",
-  "surface_estimee_ha": 38.0,
-  "surface_min_ha": 25.0,
-  "surface_max_ha": 51.0,
+  "surface_ha": 4.6,
+  "n_polygones": 2,
   "premier_point_chaud": "2026-08-11",
   "dernier_point_chaud": "2026-08-11",
   "n_points_chauds": 6,
   "frp_total": 25.51,
-  "prochain_passage": "2026-08-13",
-  "calcule_le": "2026-08-12T17:14:56Z"
+  "image_avant": {
+    "id": "S2C_30UYV_20260810_0_L2A",
+    "date": "2026-08-10",
+    "nuages_pct": 2.69591
+  },
+  "image_apres": {
+    "id": "S2A_30UYV_20260812_1_L2A",
+    "date": "2026-08-12",
+    "nuages_pct": 0.003902
+  },
+  "tuile": "MGRS-30UYV",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.524,
+  "part_masquee": 0.0,
+  "latence_jours": 1,
+  "calcule_le": "2026-08-13T07:58:33Z"
 }

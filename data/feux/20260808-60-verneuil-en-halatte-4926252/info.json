@@ -4,8 +4,8 @@
   "statut": "mesure",
   "commune": "Verneuil-en-Halatte",
   "departement": "60",
-  "surface_ha": 2.0,
-  "n_polygones": 1,
+  "surface_ha": 25.3,
+  "n_polygones": 10,
   "premier_point_chaud": "2026-08-08",
   "dernier_point_chaud": "2026-08-12",
   "n_points_chauds": 9,
@@ -16,14 +16,14 @@
     "nuages_pct": 1.399455
   },
   "image_apres": {
-    "id": "S2B_31UDQ_20260812_0_L2A",
+    "id": "S2A_31UDQ_20260812_1_L2A",
     "date": "2026-08-12",
-    "nuages_pct": 0.001662
+    "nuages_pct": 0.027534
   },
   "tuile": "MGRS-31UDQ",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.327,
-  "part_masquee": 0.0,
+  "nbr_avant_median": 0.332,
+  "part_masquee": 0.229,
   "latence_jours": 4,
-  "calcule_le": "2026-08-12T17:14:33Z"
+  "calcule_le": "2026-08-13T07:58:06Z"
 }

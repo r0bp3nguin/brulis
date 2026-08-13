@@ -1,0 +1,17 @@
+{
+  "id": "20260813-77-isles-les-meldeuses-4900302",
+  "feu": "Isles-les-Meldeuses (77)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Isles-les-Meldeuses",
+  "departement": "77",
+  "surface_estimee_ha": 53.5,
+  "surface_min_ha": 35.0,
+  "surface_max_ha": 72.0,
+  "premier_point_chaud": "2026-08-13",
+  "dernier_point_chaud": "2026-08-13",
+  "n_points_chauds": 9,
+  "frp_total": 27.04,
+  "prochain_passage": "2026-08-17",
+  "calcule_le": "2026-08-13T07:58:29Z"
+}

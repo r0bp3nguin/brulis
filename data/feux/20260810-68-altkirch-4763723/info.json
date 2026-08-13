@@ -1,0 +1,29 @@
+{
+  "id": "20260810-68-altkirch-4763723",
+  "feu": "Altkirch (68)",
+  "statut": "mesure",
+  "commune": "Altkirch",
+  "departement": "68",
+  "surface_ha": 52.1,
+  "n_polygones": 8,
+  "premier_point_chaud": "2026-08-10",
+  "dernier_point_chaud": "2026-08-13",
+  "n_points_chauds": 6,
+  "frp_total": 3.75,
+  "image_avant": {
+    "id": "S2A_32TLT_20260803_0_L2A",
+    "date": "2026-08-03",
+    "nuages_pct": 63.722003
+  },
+  "image_apres": {
+    "id": "S2C_32TLT_20260811_0_L2A",
+    "date": "2026-08-11",
+    "nuages_pct": 0.082352
+  },
+  "tuile": "MGRS-32TLT",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.294,
+  "part_masquee": 0.004,
+  "latence_jours": 1,
+  "calcule_le": "2026-08-13T08:00:15Z"
+}

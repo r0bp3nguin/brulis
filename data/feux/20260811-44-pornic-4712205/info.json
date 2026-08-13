@@ -1,17 +1,29 @@
 {
   "id": "20260811-44-pornic-4712205",
   "feu": "Pornic (44)",
-  "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Pornic",
   "departement": "44",
-  "surface_estimee_ha": 29.9,
-  "surface_min_ha": 19.0,
-  "surface_max_ha": 40.0,
+  "surface_ha": 41.2,
+  "n_polygones": 11,
   "premier_point_chaud": "2026-08-11",
   "dernier_point_chaud": "2026-08-11",
   "n_points_chauds": 6,
   "frp_total": 59.92,
-  "prochain_passage": "2026-08-13",
-  "calcule_le": "2026-08-12T17:13:44Z"
+  "image_avant": {
+    "id": "S2C_30TWT_20260810_0_L2A",
+    "date": "2026-08-10",
+    "nuages_pct": 0.00385
+  },
+  "image_apres": {
+    "id": "S2A_30TWT_20260812_0_L2A",
+    "date": "2026-08-12",
+    "nuages_pct": 0.018111
+  },
+  "tuile": "MGRS-30TWT",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.284,
+  "part_masquee": 0.0,
+  "latence_jours": 1,
+  "calcule_le": "2026-08-13T07:57:22Z"
 }
