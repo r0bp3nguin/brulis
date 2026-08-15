@@ -1,7 +1,7 @@
 {
   "id": "20260810-13-fos-sur-mer-4345485",
   "feu": "Fos-sur-Mer (13)",
-  "statut": "en_attente",
+  "statut": "ecarte",
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Fos-sur-Mer",
   "departement": "13",
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-08-12",
   "n_points_chauds": 6,
   "frp_total": 4.72,
-  "prochain_passage": "2026-08-14",
-  "calcule_le": "2026-08-13T17:17:42Z"
+  "calcule_le": "2026-08-15T16:46:31Z",
+  "motif_ecarte": "images exploitables, mais aucune trace de brûlé au seuil retenu"
 }

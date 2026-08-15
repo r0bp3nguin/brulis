@@ -1,0 +1,17 @@
+{
+  "id": "20260813-40-luglon-4407073",
+  "feu": "Luglon (40)",
+  "statut": "en_attente",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "commune": "Luglon",
+  "departement": "40",
+  "surface_estimee_ha": 2195.7,
+  "surface_min_ha": 1427.0,
+  "surface_max_ha": 2964.0,
+  "premier_point_chaud": "2026-08-13",
+  "dernier_point_chaud": "2026-08-15",
+  "n_points_chauds": 553,
+  "frp_total": 3045.0,
+  "prochain_passage": "2026-08-18",
+  "calcule_le": "2026-08-15T16:41:07Z"
+}

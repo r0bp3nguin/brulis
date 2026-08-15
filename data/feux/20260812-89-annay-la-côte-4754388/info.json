@@ -1,0 +1,29 @@
+{
+  "id": "20260812-89-annay-la-côte-4754388",
+  "feu": "Annay-la-Côte (89)",
+  "statut": "mesure",
+  "commune": "Annay-la-Côte",
+  "departement": "89",
+  "surface_ha": 38.8,
+  "n_polygones": 14,
+  "premier_point_chaud": "2026-08-12",
+  "dernier_point_chaud": "2026-08-12",
+  "n_points_chauds": 7,
+  "frp_total": 56.67,
+  "image_avant": {
+    "id": "S2B_31TEN_20260812_0_L2A",
+    "date": "2026-08-12",
+    "nuages_pct": 0.002503
+  },
+  "image_apres": {
+    "id": "S2C_31TEN_20260814_1_L2A",
+    "date": "2026-08-14",
+    "nuages_pct": 37.614042
+  },
+  "tuile": "MGRS-31TEN",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.602,
+  "part_masquee": 0.006,
+  "latence_jours": 2,
+  "calcule_le": "2026-08-15T16:42:48Z"
+}

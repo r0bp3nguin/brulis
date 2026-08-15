@@ -1,0 +1,17 @@
+{
+  "id": "20260815-18-saint-laurent-4725217",
+  "feu": "Saint-Laurent (18)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Saint-Laurent",
+  "departement": "18",
+  "surface_estimee_ha": 81.3,
+  "surface_min_ha": 53.0,
+  "surface_max_ha": 110.0,
+  "premier_point_chaud": "2026-08-15",
+  "dernier_point_chaud": "2026-08-15",
+  "n_points_chauds": 13,
+  "frp_total": 12.41,
+  "prochain_passage": "2026-08-17",
+  "calcule_le": "2026-08-15T16:44:59Z"
+}

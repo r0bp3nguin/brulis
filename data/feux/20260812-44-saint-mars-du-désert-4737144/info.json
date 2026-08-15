@@ -1,0 +1,29 @@
+{
+  "id": "20260812-44-saint-mars-du-désert-4737144",
+  "feu": "Saint-Mars-du-Désert (44)",
+  "statut": "mesure",
+  "commune": "Saint-Mars-du-Désert",
+  "departement": "44",
+  "surface_ha": 4.1,
+  "n_polygones": 1,
+  "premier_point_chaud": "2026-08-12",
+  "dernier_point_chaud": "2026-08-12",
+  "n_points_chauds": 5,
+  "frp_total": 15.4,
+  "image_avant": {
+    "id": "S2A_30TXT_20260812_0_L2A",
+    "date": "2026-08-12",
+    "nuages_pct": 0.005474
+  },
+  "image_apres": {
+    "id": "S2C_30TXT_20260813_0_L2A",
+    "date": "2026-08-13",
+    "nuages_pct": 0.007637
+  },
+  "tuile": "MGRS-30TXT",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.261,
+  "part_masquee": 0.0,
+  "latence_jours": 1,
+  "calcule_le": "2026-08-15T16:44:39Z"
+}

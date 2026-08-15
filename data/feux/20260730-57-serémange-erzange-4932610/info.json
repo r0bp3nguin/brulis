@@ -1,17 +1,29 @@
 {
   "id": "20260730-57-serémange-erzange-4932610",
   "feu": "Serémange-Erzange (57)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Serémange-Erzange",
   "departement": "57",
-  "surface_estimee_ha": 27.6,
-  "surface_min_ha": 18.0,
-  "surface_max_ha": 37.0,
+  "surface_ha": 77.8,
+  "n_polygones": 8,
   "premier_point_chaud": "2026-07-30",
   "dernier_point_chaud": "2026-08-10",
   "n_points_chauds": 5,
   "frp_total": 3.87,
-  "prochain_passage": "2026-08-14",
-  "calcule_le": "2026-08-13T17:18:31Z"
+  "image_avant": {
+    "id": "S2C_31UGQ_20260725_0_L2A",
+    "date": "2026-07-25",
+    "nuages_pct": 2.55248
+  },
+  "image_apres": {
+    "id": "S2C_31UGQ_20260814_0_L2A",
+    "date": "2026-08-14",
+    "nuages_pct": 0.004433
+  },
+  "tuile": "MGRS-31UGQ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.334,
+  "part_masquee": 0.0,
+  "latence_jours": 15,
+  "calcule_le": "2026-08-15T16:46:43Z"
 }

@@ -1,0 +1,29 @@
+{
+  "id": "20260812-57-héming-4869697",
+  "feu": "Héming (57)",
+  "statut": "mesure",
+  "commune": "Héming",
+  "departement": "57",
+  "surface_ha": 6.0,
+  "n_polygones": 1,
+  "premier_point_chaud": "2026-08-12",
+  "dernier_point_chaud": "2026-08-15",
+  "n_points_chauds": 7,
+  "frp_total": 6.72,
+  "image_avant": {
+    "id": "S2C_31UGP_20260811_0_L2A",
+    "date": "2026-08-11",
+    "nuages_pct": 1.67489
+  },
+  "image_apres": {
+    "id": "S2C_31UGP_20260814_0_L2A",
+    "date": "2026-08-14",
+    "nuages_pct": 2.323128
+  },
+  "tuile": "MGRS-31UGP",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.483,
+  "part_masquee": 0.0,
+  "latence_jours": 2,
+  "calcule_le": "2026-08-15T16:45:20Z"
+}
