@@ -7,9 +7,9 @@
   "surface_ha": 28.7,
   "n_polygones": 5,
   "premier_point_chaud": "2026-08-12",
-  "dernier_point_chaud": "2026-08-14",
-  "n_points_chauds": 7,
-  "frp_total": 6.7,
+  "dernier_point_chaud": "2026-08-16",
+  "n_points_chauds": 6,
+  "frp_total": 5.87,
   "image_avant": {
     "id": "S2A_30UXU_20260812_0_L2A",
     "date": "2026-08-12",
@@ -25,5 +25,5 @@
   "nbr_avant_median": 0.391,
   "part_masquee": 0.0,
   "latence_jours": 1,
-  "calcule_le": "2026-08-15T16:45:29Z"
+  "calcule_le": "2026-08-16T07:04:54Z"
 }

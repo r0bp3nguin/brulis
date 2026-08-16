@@ -4,16 +4,16 @@
   "statut": "mesure",
   "commune": "Saint-Just",
   "departement": "35",
-  "surface_ha": 67.7,
-  "n_polygones": 4,
+  "surface_ha": 194.3,
+  "n_polygones": 18,
   "premier_point_chaud": "2026-08-12",
   "dernier_point_chaud": "2026-08-13",
-  "n_points_chauds": 46,
-  "frp_total": 1060.92,
+  "n_points_chauds": 31,
+  "frp_total": 359.39,
   "image_avant": {
-    "id": "S2A_30TWT_20260812_0_L2A",
-    "date": "2026-08-12",
-    "nuages_pct": 0.018111
+    "id": "S2B_30TWT_20260808_0_L2A",
+    "date": "2026-08-08",
+    "nuages_pct": 45.010746
   },
   "image_apres": {
     "id": "S2C_30TWT_20260813_0_L2A",
@@ -22,8 +22,8 @@
   },
   "tuile": "MGRS-30TWT",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.323,
-  "part_masquee": 0.446,
+  "nbr_avant_median": 0.412,
+  "part_masquee": 0.0,
   "latence_jours": 1,
-  "calcule_le": "2026-08-15T16:41:24Z"
+  "calcule_le": "2026-08-16T07:01:55Z"
 }

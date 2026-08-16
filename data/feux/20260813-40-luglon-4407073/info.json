@@ -5,13 +5,13 @@
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Luglon",
   "departement": "40",
-  "surface_estimee_ha": 2195.7,
-  "surface_min_ha": 1427.0,
-  "surface_max_ha": 2964.0,
+  "surface_estimee_ha": 2231.8,
+  "surface_min_ha": 1451.0,
+  "surface_max_ha": 3013.0,
   "premier_point_chaud": "2026-08-13",
-  "dernier_point_chaud": "2026-08-15",
-  "n_points_chauds": 553,
-  "frp_total": 3045.0,
+  "dernier_point_chaud": "2026-08-16",
+  "n_points_chauds": 584,
+  "frp_total": 3097.71,
   "prochain_passage": "2026-08-18",
-  "calcule_le": "2026-08-15T16:41:07Z"
+  "calcule_le": "2026-08-16T07:00:54Z"
 }
