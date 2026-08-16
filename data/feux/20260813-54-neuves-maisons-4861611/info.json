@@ -1,0 +1,29 @@
+{
+  "id": "20260813-54-neuves-maisons-4861611",
+  "feu": "Neuves-Maisons (54)",
+  "statut": "mesure",
+  "commune": "Neuves-Maisons",
+  "departement": "54",
+  "surface_ha": 208.3,
+  "n_polygones": 38,
+  "premier_point_chaud": "2026-08-13",
+  "dernier_point_chaud": "2026-08-16",
+  "n_points_chauds": 18,
+  "frp_total": 35.0,
+  "image_avant": {
+    "id": "S2A_31UGP_20260813_0_L2A",
+    "date": "2026-08-13",
+    "nuages_pct": 0.001209
+  },
+  "image_apres": {
+    "id": "S2B_31UGP_20260816_0_L2A",
+    "date": "2026-08-16",
+    "nuages_pct": 83.064145
+  },
+  "tuile": "MGRS-31UGP",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.625,
+  "part_masquee": 0.037,
+  "latence_jours": 3,
+  "calcule_le": "2026-08-16T16:42:42Z"
+}

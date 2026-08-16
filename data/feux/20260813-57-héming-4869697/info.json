@@ -4,26 +4,26 @@
   "statut": "mesure",
   "commune": "Héming",
   "departement": "57",
-  "surface_ha": 6.0,
-  "n_polygones": 1,
+  "surface_ha": 48.4,
+  "n_polygones": 25,
   "premier_point_chaud": "2026-08-13",
   "dernier_point_chaud": "2026-08-15",
   "n_points_chauds": 5,
   "frp_total": 5.2,
   "image_avant": {
-    "id": "S2A_31UGP_20260813_0_L2A",
+    "id": "S2A_32ULU_20260813_0_L2A",
     "date": "2026-08-13",
-    "nuages_pct": 0.001209
+    "nuages_pct": 0.001105
   },
   "image_apres": {
-    "id": "S2C_31UGP_20260814_0_L2A",
-    "date": "2026-08-14",
-    "nuages_pct": 2.323128
+    "id": "S2B_32ULU_20260816_0_L2A",
+    "date": "2026-08-16",
+    "nuages_pct": 85.71744
   },
-  "tuile": "MGRS-31UGP",
+  "tuile": "MGRS-32ULU",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.446,
-  "part_masquee": 0.0,
-  "latence_jours": 1,
-  "calcule_le": "2026-08-16T07:05:15Z"
+  "nbr_avant_median": 0.644,
+  "part_masquee": 0.193,
+  "latence_jours": 3,
+  "calcule_le": "2026-08-16T16:43:28Z"
 }

@@ -1,17 +1,29 @@
 {
   "id": "20260813-68-wittelsheim-4780725",
   "feu": "Wittelsheim (68)",
-  "statut": "ecarte",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Wittelsheim",
   "departement": "68",
-  "surface_estimee_ha": 35.0,
-  "surface_min_ha": 23.0,
-  "surface_max_ha": 47.0,
+  "surface_ha": 40.6,
+  "n_polygones": 16,
   "premier_point_chaud": "2026-08-13",
   "dernier_point_chaud": "2026-08-13",
   "n_points_chauds": 5,
   "frp_total": 44.51,
-  "calcule_le": "2026-08-16T07:03:05Z",
-  "motif_ecarte": "images exploitables, mais aucune trace de brûlé au seuil retenu"
+  "image_avant": {
+    "id": "S2A_32TLT_20260813_0_L2A",
+    "date": "2026-08-13",
+    "nuages_pct": 0.001712
+  },
+  "image_apres": {
+    "id": "S2B_32TLT_20260816_0_L2A",
+    "date": "2026-08-16",
+    "nuages_pct": 83.25842
+  },
+  "tuile": "MGRS-32TLT",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.599,
+  "part_masquee": 0.39,
+  "latence_jours": 3,
+  "calcule_le": "2026-08-16T16:42:29Z"
 }
