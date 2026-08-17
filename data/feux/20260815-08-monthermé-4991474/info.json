@@ -1,17 +1,29 @@
 {
   "id": "20260815-08-monthermé-4991474",
   "feu": "Monthermé (08)",
-  "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Monthermé",
   "departement": "08",
-  "surface_estimee_ha": 136.4,
-  "surface_min_ha": 89.0,
-  "surface_max_ha": 184.0,
+  "surface_ha": 31.5,
+  "n_polygones": 3,
   "premier_point_chaud": "2026-08-15",
   "dernier_point_chaud": "2026-08-16",
   "n_points_chauds": 26,
   "frp_total": 110.55,
-  "prochain_passage": "2026-08-17",
-  "calcule_le": "2026-08-16T16:42:07Z"
+  "image_avant": {
+    "id": "S2C_31UFR_20260814_0_L2A",
+    "date": "2026-08-14",
+    "nuages_pct": 0.00076
+  },
+  "image_apres": {
+    "id": "S2A_31UFR_20260816_0_L2A",
+    "date": "2026-08-16",
+    "nuages_pct": 40.390101
+  },
+  "tuile": "MGRS-31UFR",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.59,
+  "part_masquee": 0.291,
+  "latence_jours": 1,
+  "calcule_le": "2026-08-17T16:46:41Z"
 }

@@ -1,0 +1,17 @@
+{
+  "id": "20260817-66-trouillas-4262284",
+  "feu": "Trouillas (66)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Trouillas",
+  "departement": "66",
+  "surface_estimee_ha": 42.0,
+  "surface_min_ha": 27.0,
+  "surface_max_ha": 57.0,
+  "premier_point_chaud": "2026-08-17",
+  "dernier_point_chaud": "2026-08-17",
+  "n_points_chauds": 6,
+  "frp_total": 16.09,
+  "prochain_passage": "2026-08-21",
+  "calcule_le": "2026-08-17T16:47:22Z"
+}

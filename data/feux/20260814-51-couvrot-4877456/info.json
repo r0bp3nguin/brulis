@@ -1,0 +1,17 @@
+{
+  "id": "20260814-51-couvrot-4877456",
+  "feu": "Couvrot (51)",
+  "statut": "en_attente",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "commune": "Couvrot",
+  "departement": "51",
+  "surface_estimee_ha": 26.7,
+  "surface_min_ha": 17.0,
+  "surface_max_ha": 36.0,
+  "premier_point_chaud": "2026-08-14",
+  "dernier_point_chaud": "2026-08-16",
+  "n_points_chauds": 5,
+  "frp_total": 5.15,
+  "prochain_passage": "2026-08-20",
+  "calcule_le": "2026-08-17T16:48:18Z"
+}

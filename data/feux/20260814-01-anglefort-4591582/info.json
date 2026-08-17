@@ -5,13 +5,13 @@
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Anglefort",
   "departement": "01",
-  "surface_estimee_ha": 22.5,
-  "surface_min_ha": 15.0,
-  "surface_max_ha": 30.0,
+  "surface_estimee_ha": 33.7,
+  "surface_min_ha": 22.0,
+  "surface_max_ha": 45.0,
   "premier_point_chaud": "2026-08-14",
-  "dernier_point_chaud": "2026-08-16",
-  "n_points_chauds": 5,
-  "frp_total": 4.85,
+  "dernier_point_chaud": "2026-08-17",
+  "n_points_chauds": 9,
+  "frp_total": 8.07,
   "prochain_passage": "2026-08-19",
-  "calcule_le": "2026-08-16T16:43:32Z"
+  "calcule_le": "2026-08-17T16:47:44Z"
 }

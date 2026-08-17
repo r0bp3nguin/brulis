@@ -8,8 +8,8 @@
   "n_polygones": 2,
   "premier_point_chaud": "2026-08-12",
   "dernier_point_chaud": "2026-08-14",
-  "n_points_chauds": 27,
-  "frp_total": 135.23,
+  "n_points_chauds": 19,
+  "frp_total": 119.93,
   "image_avant": {
     "id": "S2B_31TDK_20260812_0_L2A",
     "date": "2026-08-12",
@@ -23,7 +23,7 @@
   "tuile": "MGRS-31TDK",
   "seuil_dnbr": 0.15,
   "nbr_avant_median": 0.45,
-  "part_masquee": 0.011,
+  "part_masquee": 0.008,
   "latence_jours": 2,
-  "calcule_le": "2026-08-16T16:42:06Z"
+  "calcule_le": "2026-08-17T16:46:29Z"
 }

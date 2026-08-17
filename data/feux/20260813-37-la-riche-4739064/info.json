@@ -1,17 +1,29 @@
 {
   "id": "20260813-37-la-riche-4739064",
   "feu": "La Riche (37)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "La Riche",
   "departement": "37",
-  "surface_estimee_ha": 24.0,
-  "surface_min_ha": 16.0,
-  "surface_max_ha": 32.0,
+  "surface_ha": 5.7,
+  "n_polygones": 3,
   "premier_point_chaud": "2026-08-13",
   "dernier_point_chaud": "2026-08-13",
   "n_points_chauds": 5,
   "frp_total": 38.05,
-  "prochain_passage": "2026-08-18",
-  "calcule_le": "2026-08-16T16:42:33Z"
+  "image_avant": {
+    "id": "S2A_30TYT_20260812_1_L2A",
+    "date": "2026-08-12",
+    "nuages_pct": 0.001204
+  },
+  "image_apres": {
+    "id": "S2C_30TYT_20260817_0_L2A",
+    "date": "2026-08-17",
+    "nuages_pct": 67.650199
+  },
+  "tuile": "MGRS-30TYT",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.499,
+  "part_masquee": 0.0,
+  "latence_jours": 4,
+  "calcule_le": "2026-08-17T16:48:33Z"
 }
