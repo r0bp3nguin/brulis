@@ -1,0 +1,17 @@
+{
+  "id": "20260819-08-grandpré-4935484",
+  "feu": "Grandpré (08)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Grandpré",
+  "departement": "08",
+  "surface_estimee_ha": 43.2,
+  "surface_min_ha": 28.0,
+  "surface_max_ha": 58.0,
+  "premier_point_chaud": "2026-08-19",
+  "dernier_point_chaud": "2026-08-19",
+  "n_points_chauds": 6,
+  "frp_total": 9.26,
+  "prochain_passage": "2026-08-20",
+  "calcule_le": "2026-08-19T07:08:01Z"
+}

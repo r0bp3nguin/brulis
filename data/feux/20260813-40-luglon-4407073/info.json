@@ -1,17 +1,17 @@
 {
   "id": "20260813-40-luglon-4407073",
-  "feu": "Luglon (40)",
+  "feu": "Garein (40)",
   "statut": "en_attente",
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
-  "commune": "Luglon",
+  "commune": "Garein",
   "departement": "40",
-  "surface_estimee_ha": 852.9,
-  "surface_min_ha": 554.0,
-  "surface_max_ha": 1151.0,
+  "surface_estimee_ha": 183.6,
+  "surface_min_ha": 119.0,
+  "surface_max_ha": 248.0,
   "premier_point_chaud": "2026-08-13",
   "dernier_point_chaud": "2026-08-17",
-  "n_points_chauds": 160,
-  "frp_total": 395.11,
+  "n_points_chauds": 30,
+  "frp_total": 52.38,
   "prochain_passage": "2026-08-20",
-  "calcule_le": "2026-08-18T07:06:09Z"
+  "calcule_le": "2026-08-19T07:07:28Z"
 }

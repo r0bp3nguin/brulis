@@ -1,0 +1,17 @@
+{
+  "id": "20260818-26-allan-4449478",
+  "feu": "Allan (26)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Allan",
+  "departement": "26",
+  "surface_estimee_ha": 56.0,
+  "surface_min_ha": 36.0,
+  "surface_max_ha": 76.0,
+  "premier_point_chaud": "2026-08-18",
+  "dernier_point_chaud": "2026-08-18",
+  "n_points_chauds": 9,
+  "frp_total": 89.42,
+  "prochain_passage": "2026-08-19",
+  "calcule_le": "2026-08-19T07:07:24Z"
+}

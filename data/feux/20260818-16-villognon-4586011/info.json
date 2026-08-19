@@ -1,0 +1,17 @@
+{
+  "id": "20260818-16-villognon-4586011",
+  "feu": "Villognon (16)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Villognon",
+  "departement": "16",
+  "surface_estimee_ha": 42.0,
+  "surface_min_ha": 27.0,
+  "surface_max_ha": 57.0,
+  "premier_point_chaud": "2026-08-18",
+  "dernier_point_chaud": "2026-08-18",
+  "n_points_chauds": 6,
+  "frp_total": 27.08,
+  "prochain_passage": "2026-08-20",
+  "calcule_le": "2026-08-19T07:07:45Z"
+}

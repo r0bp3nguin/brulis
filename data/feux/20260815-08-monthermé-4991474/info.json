@@ -8,8 +8,8 @@
   "n_polygones": 3,
   "premier_point_chaud": "2026-08-15",
   "dernier_point_chaud": "2026-08-16",
-  "n_points_chauds": 26,
-  "frp_total": 110.55,
+  "n_points_chauds": 22,
+  "frp_total": 34.78,
   "image_avant": {
     "id": "S2C_31UFR_20260814_0_L2A",
     "date": "2026-08-14",
@@ -23,7 +23,7 @@
   "tuile": "MGRS-31UFR",
   "seuil_dnbr": 0.15,
   "nbr_avant_median": 0.59,
-  "part_masquee": 0.291,
+  "part_masquee": 0.264,
   "latence_jours": 1,
-  "calcule_le": "2026-08-18T07:06:30Z"
+  "calcule_le": "2026-08-19T07:07:37Z"
 }
