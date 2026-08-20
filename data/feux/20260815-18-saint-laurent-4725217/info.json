@@ -1,17 +1,29 @@
 {
   "id": "20260815-18-saint-laurent-4725217",
   "feu": "Saint-Laurent (18)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Saint-Laurent",
   "departement": "18",
-  "surface_estimee_ha": 81.3,
-  "surface_min_ha": 53.0,
-  "surface_max_ha": 110.0,
+  "surface_ha": 81.3,
+  "n_polygones": 6,
   "premier_point_chaud": "2026-08-15",
   "dernier_point_chaud": "2026-08-15",
   "n_points_chauds": 13,
   "frp_total": 12.41,
-  "prochain_passage": "2026-08-22",
-  "calcule_le": "2026-08-19T07:08:47Z"
+  "image_avant": {
+    "id": "S2B_31TDN_20260812_0_L2A",
+    "date": "2026-08-12",
+    "nuages_pct": 0.000879
+  },
+  "image_apres": {
+    "id": "S2A_31TDN_20260819_1_L2A",
+    "date": "2026-08-19",
+    "nuages_pct": 11.393144
+  },
+  "tuile": "MGRS-31TDN",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.619,
+  "part_masquee": 0.0,
+  "latence_jours": 4,
+  "calcule_le": "2026-08-20T16:52:18Z"
 }

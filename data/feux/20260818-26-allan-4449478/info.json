@@ -1,7 +1,7 @@
 {
   "id": "20260818-26-allan-4449478",
   "feu": "Allan (26)",
-  "statut": "en_attente",
+  "statut": "ecarte",
   "motif_attente": "aucune image satellite depuis le départ du feu",
   "commune": "Allan",
   "departement": "26",
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-08-18",
   "n_points_chauds": 9,
   "frp_total": 89.42,
-  "prochain_passage": "2026-08-19",
-  "calcule_le": "2026-08-19T07:07:24Z"
+  "calcule_le": "2026-08-20T16:50:47Z",
+  "motif_ecarte": "couvert végétal insuffisant avant le feu (NBR 0.20) — chaume, sol nu ou site industriel, pas un feu de végétation"
 }

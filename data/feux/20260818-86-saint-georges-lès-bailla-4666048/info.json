@@ -1,0 +1,29 @@
+{
+  "id": "20260818-86-saint-georges-lès-bailla-4666048",
+  "feu": "Saint-Georges-lès-Baillargeaux (86)",
+  "statut": "mesure",
+  "commune": "Saint-Georges-lès-Baillargeaux",
+  "departement": "86",
+  "surface_ha": 106.5,
+  "n_polygones": 15,
+  "premier_point_chaud": "2026-08-18",
+  "dernier_point_chaud": "2026-08-19",
+  "n_points_chauds": 7,
+  "frp_total": 15.22,
+  "image_avant": {
+    "id": "S2C_30TYS_20260817_0_L2A",
+    "date": "2026-08-17",
+    "nuages_pct": 71.853715
+  },
+  "image_apres": {
+    "id": "S2A_30TYS_20260819_0_L2A",
+    "date": "2026-08-19",
+    "nuages_pct": 0.722706
+  },
+  "tuile": "MGRS-30TYS",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.564,
+  "part_masquee": 0.152,
+  "latence_jours": 1,
+  "calcule_le": "2026-08-20T16:51:21Z"
+}
