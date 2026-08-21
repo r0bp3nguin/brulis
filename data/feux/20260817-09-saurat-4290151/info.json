@@ -4,12 +4,12 @@
   "statut": "mesure",
   "commune": "Saurat",
   "departement": "09",
-  "surface_ha": 40.9,
-  "n_polygones": 3,
+  "surface_ha": 39.9,
+  "n_polygones": 2,
   "premier_point_chaud": "2026-08-17",
   "dernier_point_chaud": "2026-08-19",
-  "n_points_chauds": 42,
-  "frp_total": 212.08,
+  "n_points_chauds": 25,
+  "frp_total": 170.29,
   "image_avant": {
     "id": "S2C_31TCH_20260817_0_L2A",
     "date": "2026-08-17",
@@ -22,8 +22,8 @@
   },
   "tuile": "MGRS-31TCH",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.385,
-  "part_masquee": 0.126,
+  "nbr_avant_median": 0.391,
+  "part_masquee": 0.125,
   "latence_jours": 2,
-  "calcule_le": "2026-08-20T16:50:26Z"
+  "calcule_le": "2026-08-21T07:09:32Z"
 }
