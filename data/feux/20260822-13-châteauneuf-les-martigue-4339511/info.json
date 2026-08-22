@@ -1,0 +1,17 @@
+{
+  "id": "20260822-13-châteauneuf-les-martigue-4339511",
+  "feu": "Châteauneuf-les-Martigues (13)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Châteauneuf-les-Martigues",
+  "departement": "13",
+  "surface_estimee_ha": 50.4,
+  "surface_min_ha": 33.0,
+  "surface_max_ha": 68.0,
+  "premier_point_chaud": "2026-08-22",
+  "dernier_point_chaud": "2026-08-22",
+  "n_points_chauds": 7,
+  "frp_total": 7.31,
+  "prochain_passage": "2026-08-24",
+  "calcule_le": "2026-08-22T07:02:00Z"
+}
