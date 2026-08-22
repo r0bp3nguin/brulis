@@ -2,7 +2,7 @@
   "id": "20260822-60-quesmy-4963305",
   "feu": "Quesmy (60)",
   "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Quesmy",
   "departement": "60",
   "surface_estimee_ha": 43.7,
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-08-22",
   "n_points_chauds": 8,
   "frp_total": 10.75,
-  "prochain_passage": "2026-08-23",
-  "calcule_le": "2026-08-22T07:01:48Z"
+  "prochain_passage": "2026-08-25",
+  "calcule_le": "2026-08-22T16:42:24Z"
 }

@@ -1,7 +1,7 @@
 {
   "id": "20260822-78-porcheville-4898176",
   "feu": "Porcheville (78)",
-  "statut": "en_attente",
+  "statut": "ecarte",
   "motif_attente": "aucune image satellite depuis le départ du feu",
   "commune": "Porcheville",
   "departement": "78",
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-08-22",
   "n_points_chauds": 6,
   "frp_total": 7.78,
-  "prochain_passage": "2026-08-23",
-  "calcule_le": "2026-08-22T07:01:54Z"
+  "calcule_le": "2026-08-22T16:42:32Z",
+  "motif_ecarte": "images exploitables, mais aucune trace de brûlé au seuil retenu"
 }

@@ -1,17 +1,29 @@
 {
   "id": "20260812-62-neufchâtel-hardelot-5061158",
   "feu": "Neufchâtel-Hardelot (62)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Neufchâtel-Hardelot",
   "departement": "62",
-  "surface_estimee_ha": 90.6,
-  "surface_min_ha": 59.0,
-  "surface_max_ha": 122.0,
+  "surface_ha": 12.6,
+  "n_polygones": 3,
   "premier_point_chaud": "2026-08-12",
   "dernier_point_chaud": "2026-08-13",
   "n_points_chauds": 15,
   "frp_total": 35.85,
-  "prochain_passage": "2026-08-23",
-  "calcule_le": "2026-08-22T07:02:27Z"
+  "image_avant": {
+    "id": "S2A_31UDS_20260812_1_L2A",
+    "date": "2026-08-12",
+    "nuages_pct": 9.132933
+  },
+  "image_apres": {
+    "id": "S2B_31UDS_20260822_0_L2A",
+    "date": "2026-08-22",
+    "nuages_pct": 42.918539
+  },
+  "tuile": "MGRS-31UDS",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.44,
+  "part_masquee": 0.137,
+  "latence_jours": 10,
+  "calcule_le": "2026-08-22T16:43:42Z"
 }

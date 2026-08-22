@@ -1,7 +1,7 @@
 {
   "id": "20260819-08-grandpré-4935484",
   "feu": "Grandpré (08)",
-  "statut": "en_attente",
+  "statut": "ecarte",
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Grandpré",
   "departement": "08",
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-08-19",
   "n_points_chauds": 6,
   "frp_total": 9.26,
-  "prochain_passage": "2026-08-22",
-  "calcule_le": "2026-08-22T07:01:51Z"
+  "calcule_le": "2026-08-22T16:42:45Z",
+  "motif_ecarte": "couvert végétal insuffisant avant le feu (NBR 0.20) — chaume, sol nu ou site industriel, pas un feu de végétation"
 }

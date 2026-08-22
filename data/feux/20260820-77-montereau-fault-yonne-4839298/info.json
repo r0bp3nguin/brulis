@@ -1,17 +1,29 @@
 {
   "id": "20260820-77-montereau-fault-yonne-4839298",
   "feu": "Montereau-Fault-Yonne (77)",
-  "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Montereau-Fault-Yonne",
   "departement": "77",
-  "surface_estimee_ha": 39.4,
-  "surface_min_ha": 26.0,
-  "surface_max_ha": 53.0,
+  "surface_ha": 1.1,
+  "n_polygones": 1,
   "premier_point_chaud": "2026-08-20",
   "dernier_point_chaud": "2026-08-22",
   "n_points_chauds": 8,
   "frp_total": 11.29,
-  "prochain_passage": "2026-08-24",
-  "calcule_le": "2026-08-22T07:01:45Z"
+  "image_avant": {
+    "id": "S2B_31UDP_20260812_0_L2A",
+    "date": "2026-08-12",
+    "nuages_pct": 0.002867
+  },
+  "image_apres": {
+    "id": "S2B_31UDP_20260822_0_L2A",
+    "date": "2026-08-22",
+    "nuages_pct": 35.112792
+  },
+  "tuile": "MGRS-31UDP",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.674,
+  "part_masquee": 0.188,
+  "latence_jours": 2,
+  "calcule_le": "2026-08-22T16:42:10Z"
 }
