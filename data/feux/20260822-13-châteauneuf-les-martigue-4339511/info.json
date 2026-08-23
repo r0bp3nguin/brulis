@@ -9,9 +9,9 @@
   "surface_min_ha": 34.0,
   "surface_max_ha": 70.0,
   "premier_point_chaud": "2026-08-22",
-  "dernier_point_chaud": "2026-08-22",
-  "n_points_chauds": 8,
-  "frp_total": 11.26,
+  "dernier_point_chaud": "2026-08-23",
+  "n_points_chauds": 9,
+  "frp_total": 15.81,
   "prochain_passage": "2026-08-24",
-  "calcule_le": "2026-08-23T07:03:27Z"
+  "calcule_le": "2026-08-23T16:43:56Z"
 }

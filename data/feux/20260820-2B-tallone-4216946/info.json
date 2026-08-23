@@ -1,0 +1,29 @@
+{
+  "id": "20260820-2B-tallone-4216946",
+  "feu": "Tallone (2B)",
+  "statut": "mesure",
+  "commune": "Tallone",
+  "departement": "2B",
+  "surface_ha": 158.1,
+  "n_polygones": 45,
+  "premier_point_chaud": "2026-08-20",
+  "dernier_point_chaud": "2026-08-20",
+  "n_points_chauds": 8,
+  "frp_total": 401.63,
+  "image_avant": {
+    "id": "S2B_32TNM_20260820_0_L2A",
+    "date": "2026-08-20",
+    "nuages_pct": 9.725522
+  },
+  "image_apres": {
+    "id": "S2B_32TNM_20260823_0_L2A",
+    "date": "2026-08-23",
+    "nuages_pct": 5.869845
+  },
+  "tuile": "MGRS-32TNM",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.241,
+  "part_masquee": 0.405,
+  "latence_jours": 3,
+  "calcule_le": "2026-08-23T16:43:02Z"
+}
