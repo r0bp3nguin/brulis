@@ -5,13 +5,13 @@
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Couvrot",
   "departement": "51",
-  "surface_estimee_ha": 26.7,
-  "surface_min_ha": 17.0,
-  "surface_max_ha": 36.0,
+  "surface_estimee_ha": 32.8,
+  "surface_min_ha": 21.0,
+  "surface_max_ha": 44.0,
   "premier_point_chaud": "2026-08-14",
-  "dernier_point_chaud": "2026-08-16",
+  "dernier_point_chaud": "2026-08-23",
   "n_points_chauds": 5,
-  "frp_total": 5.15,
+  "frp_total": 4.81,
   "prochain_passage": "2026-08-25",
-  "calcule_le": "2026-08-22T16:44:05Z"
+  "calcule_le": "2026-08-23T07:03:55Z"
 }

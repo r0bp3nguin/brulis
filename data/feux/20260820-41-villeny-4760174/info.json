@@ -1,17 +1,29 @@
 {
   "id": "20260820-41-villeny-4760174",
   "feu": "Villeny (41)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Villeny",
   "departement": "41",
-  "surface_estimee_ha": 35.3,
-  "surface_min_ha": 23.0,
-  "surface_max_ha": 48.0,
+  "surface_ha": 43.7,
+  "n_polygones": 8,
   "premier_point_chaud": "2026-08-20",
   "dernier_point_chaud": "2026-08-20",
   "n_points_chauds": 5,
   "frp_total": 7.51,
-  "prochain_passage": "2026-08-25",
-  "calcule_le": "2026-08-22T16:42:54Z"
+  "image_avant": {
+    "id": "S2A_31TDN_20260819_1_L2A",
+    "date": "2026-08-19",
+    "nuages_pct": 11.393144
+  },
+  "image_apres": {
+    "id": "S2A_31TDN_20260822_1_L2A",
+    "date": "2026-08-22",
+    "nuages_pct": 46.1853
+  },
+  "tuile": "MGRS-31TDN",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.283,
+  "part_masquee": 0.367,
+  "latence_jours": 2,
+  "calcule_le": "2026-08-23T07:03:48Z"
 }

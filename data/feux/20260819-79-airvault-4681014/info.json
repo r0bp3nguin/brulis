@@ -5,13 +5,13 @@
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Airvault",
   "departement": "79",
-  "surface_estimee_ha": 30.0,
-  "surface_min_ha": 20.0,
-  "surface_max_ha": 41.0,
+  "surface_estimee_ha": 27.1,
+  "surface_min_ha": 18.0,
+  "surface_max_ha": 37.0,
   "premier_point_chaud": "2026-08-19",
   "dernier_point_chaud": "2026-08-22",
-  "n_points_chauds": 8,
-  "frp_total": 5.83,
-  "prochain_passage": "2026-08-25",
-  "calcule_le": "2026-08-22T16:43:18Z"
+  "n_points_chauds": 6,
+  "frp_total": 4.09,
+  "prochain_passage": "2026-08-27",
+  "calcule_le": "2026-08-23T07:04:05Z"
 }

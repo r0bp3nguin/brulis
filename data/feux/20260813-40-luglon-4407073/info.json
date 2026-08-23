@@ -1,17 +1,29 @@
 {
   "id": "20260813-40-luglon-4407073",
   "feu": "Garein (40)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Garein",
   "departement": "40",
-  "surface_estimee_ha": 183.6,
-  "surface_min_ha": 119.0,
-  "surface_max_ha": 248.0,
+  "surface_ha": 1739.6,
+  "n_polygones": 81,
   "premier_point_chaud": "2026-08-13",
   "dernier_point_chaud": "2026-08-17",
   "n_points_chauds": 30,
   "frp_total": 52.38,
-  "prochain_passage": "2026-08-25",
-  "calcule_le": "2026-08-22T16:43:30Z"
+  "image_avant": {
+    "id": "S2A_30TXP_20260812_2_L2A",
+    "date": "2026-08-12",
+    "nuages_pct": 0.104744
+  },
+  "image_apres": {
+    "id": "S2A_30TXP_20260822_2_L2A",
+    "date": "2026-08-22",
+    "nuages_pct": 28.928941
+  },
+  "tuile": "MGRS-30TXP",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.614,
+  "part_masquee": 0.103,
+  "latence_jours": 9,
+  "calcule_le": "2026-08-23T07:04:10Z"
 }
