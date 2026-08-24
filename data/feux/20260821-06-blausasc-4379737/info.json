@@ -1,0 +1,29 @@
+{
+  "id": "20260821-06-blausasc-4379737",
+  "feu": "Blausasc (06)",
+  "statut": "mesure",
+  "commune": "Blausasc",
+  "departement": "06",
+  "surface_ha": 70.8,
+  "n_polygones": 42,
+  "premier_point_chaud": "2026-08-21",
+  "dernier_point_chaud": "2026-08-24",
+  "n_points_chauds": 11,
+  "frp_total": 10.16,
+  "image_avant": {
+    "id": "S2C_32TLP_20260821_0_L2A",
+    "date": "2026-08-21",
+    "nuages_pct": 38.599977
+  },
+  "image_apres": {
+    "id": "S2A_32TLP_20260823_1_L2A",
+    "date": "2026-08-23",
+    "nuages_pct": 2.819555
+  },
+  "tuile": "MGRS-32TLP",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.42,
+  "part_masquee": 0.366,
+  "latence_jours": 2,
+  "calcule_le": "2026-08-24T07:32:04Z"
+}
