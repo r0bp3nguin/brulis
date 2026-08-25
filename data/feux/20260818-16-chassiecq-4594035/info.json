@@ -1,17 +1,29 @@
 {
   "id": "20260818-16-chassiecq-4594035",
   "feu": "Chassiecq (16)",
-  "statut": "ecarte",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Chassiecq",
   "departement": "16",
-  "surface_estimee_ha": 35.0,
-  "surface_min_ha": 23.0,
-  "surface_max_ha": 47.0,
+  "surface_ha": 143.7,
+  "n_polygones": 42,
   "premier_point_chaud": "2026-08-18",
-  "dernier_point_chaud": "2026-08-18",
+  "dernier_point_chaud": "2026-08-22",
   "n_points_chauds": 5,
-  "frp_total": 32.94,
-  "calcule_le": "2026-08-25T07:10:39Z",
-  "motif_ecarte": "couvert végétal insuffisant avant le feu (NBR 0.17) — chaume, sol nu ou site industriel, pas un feu de végétation"
+  "frp_total": 15.42,
+  "image_avant": {
+    "id": "S2B_30TYR_20260815_0_L2A",
+    "date": "2026-08-15",
+    "nuages_pct": 64.845908
+  },
+  "image_apres": {
+    "id": "S2B_30TYR_20260825_0_L2A",
+    "date": "2026-08-25",
+    "nuages_pct": 61.383039
+  },
+  "tuile": "MGRS-30TYR",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.592,
+  "part_masquee": 0.477,
+  "latence_jours": 7,
+  "calcule_le": "2026-08-25T16:56:47Z"
 }

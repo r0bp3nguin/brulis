@@ -1,17 +1,29 @@
 {
   "id": "20260824-61-boischampré-4867006",
   "feu": "Boischampré (61)",
-  "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Boischampré",
   "departement": "61",
-  "surface_estimee_ha": 25.8,
-  "surface_min_ha": 17.0,
-  "surface_max_ha": 35.0,
+  "surface_ha": 224.8,
+  "n_polygones": 32,
   "premier_point_chaud": "2026-08-24",
   "dernier_point_chaud": "2026-08-24",
   "n_points_chauds": 5,
   "frp_total": 64.06,
-  "prochain_passage": "2026-08-26",
-  "calcule_le": "2026-08-25T07:10:10Z"
+  "image_avant": {
+    "id": "S2C_30UYU_20260820_0_L2A",
+    "date": "2026-08-20",
+    "nuages_pct": 70.844853
+  },
+  "image_apres": {
+    "id": "S2B_30UYU_20260825_0_L2A",
+    "date": "2026-08-25",
+    "nuages_pct": 46.698737
+  },
+  "tuile": "MGRS-30UYU",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.269,
+  "part_masquee": 0.0,
+  "latence_jours": 1,
+  "calcule_le": "2026-08-25T16:55:28Z"
 }
