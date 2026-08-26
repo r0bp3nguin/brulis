@@ -4,12 +4,12 @@
   "statut": "mesure",
   "commune": "Boischampré",
   "departement": "61",
-  "surface_ha": 224.8,
-  "n_polygones": 32,
+  "surface_ha": 227.5,
+  "n_polygones": 33,
   "premier_point_chaud": "2026-08-24",
-  "dernier_point_chaud": "2026-08-24",
-  "n_points_chauds": 5,
-  "frp_total": 64.06,
+  "dernier_point_chaud": "2026-08-26",
+  "n_points_chauds": 6,
+  "frp_total": 64.5,
   "image_avant": {
     "id": "S2C_30UYU_20260820_0_L2A",
     "date": "2026-08-20",
@@ -22,8 +22,8 @@
   },
   "tuile": "MGRS-30UYU",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.269,
+  "nbr_avant_median": 0.268,
   "part_masquee": 0.0,
   "latence_jours": 1,
-  "calcule_le": "2026-08-25T16:55:28Z"
+  "calcule_le": "2026-08-26T07:11:01Z"
 }

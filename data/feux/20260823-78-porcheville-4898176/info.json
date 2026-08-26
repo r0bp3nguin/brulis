@@ -1,0 +1,29 @@
+{
+  "id": "20260823-78-porcheville-4898176",
+  "feu": "Porcheville (78)",
+  "statut": "mesure",
+  "commune": "Porcheville",
+  "departement": "78",
+  "surface_ha": 17.3,
+  "n_polygones": 5,
+  "premier_point_chaud": "2026-08-23",
+  "dernier_point_chaud": "2026-08-26",
+  "n_points_chauds": 10,
+  "frp_total": 25.38,
+  "image_avant": {
+    "id": "S2B_31UCQ_20260822_0_L2A",
+    "date": "2026-08-22",
+    "nuages_pct": 41.77967
+  },
+  "image_apres": {
+    "id": "S2B_31UCQ_20260825_0_L2A",
+    "date": "2026-08-25",
+    "nuages_pct": 19.164661
+  },
+  "tuile": "MGRS-31UCQ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.392,
+  "part_masquee": 0.193,
+  "latence_jours": 2,
+  "calcule_le": "2026-08-26T07:11:23Z"
+}
