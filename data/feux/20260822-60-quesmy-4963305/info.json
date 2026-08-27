@@ -1,17 +1,29 @@
 {
   "id": "20260822-60-quesmy-4963305",
   "feu": "Quesmy (60)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Quesmy",
   "departement": "60",
-  "surface_estimee_ha": 43.7,
-  "surface_min_ha": 28.0,
-  "surface_max_ha": 59.0,
+  "surface_ha": 122.7,
+  "n_polygones": 37,
   "premier_point_chaud": "2026-08-22",
   "dernier_point_chaud": "2026-08-22",
   "n_points_chauds": 8,
   "frp_total": 10.75,
-  "prochain_passage": "2026-08-28",
-  "calcule_le": "2026-08-26T17:00:30Z"
+  "image_avant": {
+    "id": "S2B_31UDQ_20260812_0_L2A",
+    "date": "2026-08-12",
+    "nuages_pct": 0.001662
+  },
+  "image_apres": {
+    "id": "S2C_31UDQ_20260827_0_L2A",
+    "date": "2026-08-27",
+    "nuages_pct": 71.96061
+  },
+  "tuile": "MGRS-31UDQ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.402,
+  "part_masquee": 0.376,
+  "latence_jours": 5,
+  "calcule_le": "2026-08-27T17:40:56Z"
 }
