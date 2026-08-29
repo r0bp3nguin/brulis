@@ -1,0 +1,17 @@
+{
+  "id": "20260829-2B-cagnano-4288946",
+  "feu": "Cagnano (2B)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Cagnano",
+  "departement": "2B",
+  "surface_estimee_ha": 44.9,
+  "surface_min_ha": 29.0,
+  "surface_max_ha": 61.0,
+  "premier_point_chaud": "2026-08-29",
+  "dernier_point_chaud": "2026-08-29",
+  "n_points_chauds": 8,
+  "frp_total": 201.57,
+  "prochain_passage": "2026-08-31",
+  "calcule_le": "2026-08-29T19:24:34Z"
+}
