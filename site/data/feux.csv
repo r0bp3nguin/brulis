@@ -1,10 +1,10 @@
 id,feu,statut,commune,departement,surface_ha,surface_min_ha,surface_max_ha,debut,fin,n_points_chauds,image_avant,image_apres,latence_jours,seuil_dnbr,part_masquee,prochain_passage,calcule_le
-20260810-59-grande-synthe-5104229,Grande-Synthe (59) — est,en_attente,Grande-Synthe,59,302.4,197.0,408.0,2026-08-10,2026-08-28,83,,,,,,2026-08-30,2026-08-28T18:45:25Z
+20260810-59-grande-synthe-5104229,Grande-Synthe (59) — est,en_attente,Grande-Synthe,59,171.6,112.0,232.0,2026-08-10,2026-08-28,34,,,,,,2026-08-30,2026-08-29T00:33:55Z
 20260806-76-saint-étienne-du-rouvray-4936112,Saint-Étienne-du-Rouvray (76),en_attente,Saint-Étienne-du-Rouvray,76,48.6,32.0,66.0,2026-08-06,2026-08-06,10,,,,,,2026-08-30,2026-08-27T17:40:40Z
-20260820-76-port-jérôme-sur-seine-4948053,Port-Jérôme-sur-Seine (76) — sud,en_attente,Port-Jérôme-sur-Seine,76,38.3,25.0,52.0,2026-08-20,2026-08-28,6,,,,,,2026-08-30,2026-08-28T18:45:45Z
-20260823-77-montereau-fault-yonne-4839298,Montereau-Fault-Yonne (77) — ouest,en_attente,Montereau-Fault-Yonne,77,36.4,24.0,49.0,2026-08-23,2026-08-26,9,,,,,,2026-09-01,2026-08-28T18:46:00Z
-20260814-51-couvrot-4877456,Couvrot (51) — sud,en_attente,Couvrot,51,32.8,21.0,44.0,2026-08-14,2026-08-23,5,,,,,,2026-08-30,2026-08-28T18:46:11Z
-20260819-79-airvault-4681014,Airvault (79) — ouest,en_attente,Airvault,79,27.1,18.0,37.0,2026-08-19,2026-08-22,6,,,,,,2026-08-30,2026-08-28T18:46:29Z
+20260820-76-port-jérôme-sur-seine-4948053,Port-Jérôme-sur-Seine (76) — sud,en_attente,Port-Jérôme-sur-Seine,76,38.3,25.0,52.0,2026-08-20,2026-08-28,6,,,,,,2026-08-30,2026-08-29T00:34:06Z
+20260823-77-montereau-fault-yonne-4839298,Montereau-Fault-Yonne (77) — ouest,en_attente,Montereau-Fault-Yonne,77,36.4,24.0,49.0,2026-08-23,2026-08-26,9,,,,,,2026-09-01,2026-08-29T00:34:12Z
+20260814-51-couvrot-4877456,Couvrot (51) — sud,en_attente,Couvrot,51,32.8,21.0,44.0,2026-08-14,2026-08-23,5,,,,,,2026-08-30,2026-08-29T00:34:22Z
+20260819-79-airvault-4681014,Airvault (79) — ouest,en_attente,Airvault,79,27.1,18.0,37.0,2026-08-19,2026-08-22,6,,,,,,2026-08-30,2026-08-29T00:34:29Z
 20260724-33-le-temple-4485103,Le Temple (33) — ouest,mesure,Le Temple,33,23232.0,,,2026-07-22,2026-07-30,20679,2026-07-21,2026-07-26,2,0.15,0.358,,2026-07-27T12:42:41Z
 20260723-40-biscarrosse-4440112,Biscarrosse (40),mesure,Biscarrosse,40,3490.5,,,2026-07-23,2026-07-29,1429,2026-07-21,2026-08-02,10,0.15,0.007,,2026-08-03T10:10:57Z
 20260721-83-pontevès-4353610,Pontevès (83),mesure,Pontevès,83,2413.6,,,2026-07-21,2026-07-26,762,2026-07-17,2026-07-24,3,0.15,0.0,,2026-07-25T16:06:52Z
