@@ -4,8 +4,8 @@
   "statut": "mesure",
   "commune": "Cagnano",
   "departement": "2B",
-  "surface_ha": 160.3,
-  "n_polygones": 17,
+  "surface_ha": 127.6,
+  "n_polygones": 4,
   "premier_point_chaud": "2026-08-29",
   "dernier_point_chaud": "2026-08-29",
   "n_points_chauds": 8,
@@ -16,14 +16,14 @@
     "nuages_pct": 24.835172
   },
   "image_apres": {
-    "id": "S2B_32TNN_20260830_0_L2A",
+    "id": "S2A_32TNN_20260830_1_L2A",
     "date": "2026-08-30",
-    "nuages_pct": 1.826208
+    "nuages_pct": 2.095918
   },
   "tuile": "MGRS-32TNN",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.509,
-  "part_masquee": 0.078,
+  "nbr_avant_median": 0.542,
+  "part_masquee": 0.096,
   "latence_jours": 1,
-  "calcule_le": "2026-08-30T19:19:09Z"
+  "calcule_le": "2026-08-31T13:56:44Z"
 }
