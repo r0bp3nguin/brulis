@@ -5,13 +5,13 @@
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Lillebonne",
   "departement": "76",
-  "surface_estimee_ha": 32.8,
-  "surface_min_ha": 21.0,
-  "surface_max_ha": 44.0,
+  "surface_estimee_ha": 26.2,
+  "surface_min_ha": 17.0,
+  "surface_max_ha": 35.0,
   "premier_point_chaud": "2026-08-28",
   "dernier_point_chaud": "2026-08-31",
-  "n_points_chauds": 7,
-  "frp_total": 7.22,
+  "n_points_chauds": 6,
+  "frp_total": 6.24,
   "prochain_passage": "2026-09-04",
-  "calcule_le": "2026-08-31T21:29:43Z"
+  "calcule_le": "2026-09-01T11:43:38Z"
 }

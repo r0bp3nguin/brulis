@@ -5,13 +5,13 @@
   "motif_attente": "aucune image satellite depuis le départ du feu",
   "commune": "Ennezat",
   "departement": "63",
-  "surface_estimee_ha": 59.6,
-  "surface_min_ha": 39.0,
-  "surface_max_ha": 80.0,
+  "surface_estimee_ha": 58.9,
+  "surface_min_ha": 38.0,
+  "surface_max_ha": 79.0,
   "premier_point_chaud": "2026-08-31",
-  "dernier_point_chaud": "2026-08-31",
-  "n_points_chauds": 11,
-  "frp_total": 37.3,
+  "dernier_point_chaud": "2026-09-01",
+  "n_points_chauds": 14,
+  "frp_total": 40.14,
   "prochain_passage": "2026-09-01",
-  "calcule_le": "2026-08-31T21:28:57Z"
+  "calcule_le": "2026-09-01T11:42:31Z"
 }
