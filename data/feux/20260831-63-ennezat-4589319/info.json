@@ -2,7 +2,7 @@
   "id": "20260831-63-ennezat-4589319",
   "feu": "Ennezat (63)",
   "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Ennezat",
   "departement": "63",
   "surface_estimee_ha": 58.9,
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-09-01",
   "n_points_chauds": 14,
   "frp_total": 40.14,
-  "prochain_passage": "2026-09-01",
-  "calcule_le": "2026-09-01T11:42:31Z"
+  "prochain_passage": "2026-09-04",
+  "calcule_le": "2026-09-01T19:23:54Z"
 }
