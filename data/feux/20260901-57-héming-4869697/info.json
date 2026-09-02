@@ -1,0 +1,17 @@
+{
+  "id": "20260901-57-héming-4869697",
+  "feu": "Héming (57)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Héming",
+  "departement": "57",
+  "surface_estimee_ha": 36.4,
+  "surface_min_ha": 24.0,
+  "surface_max_ha": 49.0,
+  "premier_point_chaud": "2026-09-01",
+  "dernier_point_chaud": "2026-09-02",
+  "n_points_chauds": 7,
+  "frp_total": 5.79,
+  "prochain_passage": "2026-09-03",
+  "calcule_le": "2026-09-02T11:23:26Z"
+}
