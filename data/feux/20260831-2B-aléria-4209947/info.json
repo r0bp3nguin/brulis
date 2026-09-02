@@ -1,17 +1,29 @@
 {
   "id": "20260831-2B-aléria-4209947",
   "feu": "Aléria (2B)",
-  "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Aléria",
   "departement": "2B",
-  "surface_estimee_ha": 81.3,
-  "surface_min_ha": 53.0,
-  "surface_max_ha": 110.0,
+  "surface_ha": 88.5,
+  "n_polygones": 18,
   "premier_point_chaud": "2026-08-31",
   "dernier_point_chaud": "2026-08-31",
   "n_points_chauds": 14,
   "frp_total": 350.43,
-  "prochain_passage": "2026-09-02",
-  "calcule_le": "2026-09-02T11:22:13Z"
+  "image_avant": {
+    "id": "S2A_32TNM_20260830_1_L2A",
+    "date": "2026-08-30",
+    "nuages_pct": 5.17443
+  },
+  "image_apres": {
+    "id": "S2B_32TNM_20260902_0_L2A",
+    "date": "2026-09-02",
+    "nuages_pct": 19.17443
+  },
+  "tuile": "MGRS-32TNM",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.579,
+  "part_masquee": 0.359,
+  "latence_jours": 2,
+  "calcule_le": "2026-09-02T19:23:20Z"
 }

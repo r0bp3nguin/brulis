@@ -1,0 +1,17 @@
+{
+  "id": "20260902-72-aubigné-racan-4768029",
+  "feu": "Aubigné-Racan (72)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Aubigné-Racan",
+  "departement": "72",
+  "surface_estimee_ha": 49.0,
+  "surface_min_ha": 32.0,
+  "surface_max_ha": 66.0,
+  "premier_point_chaud": "2026-09-02",
+  "dernier_point_chaud": "2026-09-02",
+  "n_points_chauds": 7,
+  "frp_total": 26.83,
+  "prochain_passage": "2026-09-06",
+  "calcule_le": "2026-09-02T19:24:01Z"
+}

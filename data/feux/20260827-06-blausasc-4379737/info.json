@@ -1,17 +1,29 @@
 {
   "id": "20260827-06-blausasc-4379737",
   "feu": "Blausasc (06)",
-  "statut": "ecarte",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Blausasc",
   "departement": "06",
-  "surface_estimee_ha": 26.3,
-  "surface_min_ha": 17.0,
-  "surface_max_ha": 35.0,
+  "surface_ha": 53.5,
+  "n_polygones": 10,
   "premier_point_chaud": "2026-08-27",
-  "dernier_point_chaud": "2026-08-30",
-  "n_points_chauds": 7,
-  "frp_total": 7.05,
-  "calcule_le": "2026-09-02T11:22:42Z",
-  "motif_ecarte": "images exploitables, mais aucune trace de brûlé au seuil retenu"
+  "dernier_point_chaud": "2026-09-02",
+  "n_points_chauds": 10,
+  "frp_total": 14.13,
+  "image_avant": {
+    "id": "S2B_32TLP_20260826_0_L2A",
+    "date": "2026-08-26",
+    "nuages_pct": 34.10981
+  },
+  "image_apres": {
+    "id": "S2A_32TLP_20260902_1_L2A",
+    "date": "2026-09-02",
+    "nuages_pct": 15.217404
+  },
+  "tuile": "MGRS-32TLP",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.56,
+  "part_masquee": 0.109,
+  "latence_jours": 6,
+  "calcule_le": "2026-09-02T19:24:12Z"
 }
