@@ -1,17 +1,29 @@
 {
   "id": "20260831-63-ennezat-4589319",
   "feu": "Ennezat (63)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Ennezat",
   "departement": "63",
-  "surface_estimee_ha": 58.9,
-  "surface_min_ha": 38.0,
-  "surface_max_ha": 79.0,
+  "surface_ha": 154.5,
+  "n_polygones": 42,
   "premier_point_chaud": "2026-08-31",
   "dernier_point_chaud": "2026-09-01",
   "n_points_chauds": 14,
   "frp_total": 40.14,
-  "prochain_passage": "2026-09-04",
-  "calcule_le": "2026-09-03T11:19:04Z"
+  "image_avant": {
+    "id": "S2A_31TEL_20260829_1_L2A",
+    "date": "2026-08-29",
+    "nuages_pct": 58.597773
+  },
+  "image_apres": {
+    "id": "S2C_31TEL_20260903_1_L2A",
+    "date": "2026-09-03",
+    "nuages_pct": 0.004665
+  },
+  "tuile": "MGRS-31TEL",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.259,
+  "part_masquee": 0.255,
+  "latence_jours": 3,
+  "calcule_le": "2026-09-03T19:18:45Z"
 }
