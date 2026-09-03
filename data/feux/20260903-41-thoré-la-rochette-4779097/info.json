@@ -1,0 +1,17 @@
+{
+  "id": "20260903-41-thoré-la-rochette-4779097",
+  "feu": "Thoré-la-Rochette (41)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Thoré-la-Rochette",
+  "departement": "41",
+  "surface_estimee_ha": 24.4,
+  "surface_min_ha": 16.0,
+  "surface_max_ha": 33.0,
+  "premier_point_chaud": "2026-09-03",
+  "dernier_point_chaud": "2026-09-03",
+  "n_points_chauds": 5,
+  "frp_total": 3.89,
+  "prochain_passage": "2026-09-04",
+  "calcule_le": "2026-09-03T11:20:54Z"
+}
