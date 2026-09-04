@@ -1,0 +1,17 @@
+{
+  "id": "20260904-07-malbosc-4437409",
+  "feu": "Malbosc (07)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Malbosc",
+  "departement": "07",
+  "surface_estimee_ha": 78.1,
+  "surface_min_ha": 51.0,
+  "surface_max_ha": 105.0,
+  "premier_point_chaud": "2026-09-04",
+  "dernier_point_chaud": "2026-09-04",
+  "n_points_chauds": 18,
+  "frp_total": 61.65,
+  "prochain_passage": "2026-09-08",
+  "calcule_le": "2026-09-04T11:21:57Z"
+}

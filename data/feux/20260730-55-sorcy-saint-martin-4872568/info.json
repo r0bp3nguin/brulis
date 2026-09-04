@@ -4,26 +4,26 @@
   "statut": "mesure",
   "commune": "Sorcy-Saint-Martin",
   "departement": "55",
-  "surface_ha": 248.5,
-  "n_polygones": 35,
+  "surface_ha": 748.7,
+  "n_polygones": 65,
   "premier_point_chaud": "2026-07-30",
-  "dernier_point_chaud": "2026-08-24",
+  "dernier_point_chaud": "2026-09-04",
   "n_points_chauds": 6,
-  "frp_total": 4.9,
+  "frp_total": 3.64,
   "image_avant": {
     "id": "S2B_31UFP_20260720_1_L2A",
     "date": "2026-07-20",
     "nuages_pct": 0.265537
   },
   "image_apres": {
-    "id": "S2A_31UFP_20260816_1_L2A",
-    "date": "2026-08-16",
-    "nuages_pct": 39.963543
+    "id": "S2C_31UFP_20260903_0_L2A",
+    "date": "2026-09-03",
+    "nuages_pct": 45.94532
   },
   "tuile": "MGRS-31UFP",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.238,
-  "part_masquee": 0.0,
-  "latence_jours": 17,
-  "calcule_le": "2026-08-24T16:57:32Z"
+  "nbr_avant_median": 0.213,
+  "part_masquee": 0.11,
+  "latence_jours": 35,
+  "calcule_le": "2026-09-04T11:23:34Z"
 }
