@@ -1,7 +1,7 @@
 {
   "id": "20260819-79-airvault-4681014",
   "feu": "Airvault (79)",
-  "statut": "en_attente",
+  "statut": "ecarte",
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Airvault",
   "departement": "79",
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-08-22",
   "n_points_chauds": 6,
   "frp_total": 4.09,
-  "prochain_passage": "2026-09-06",
-  "calcule_le": "2026-09-04T11:23:59Z"
+  "calcule_le": "2026-09-04T19:02:01Z",
+  "motif_ecarte": "couvert végétal insuffisant avant le feu (NBR 0.13) — chaume, sol nu ou site industriel, pas un feu de végétation"
 }

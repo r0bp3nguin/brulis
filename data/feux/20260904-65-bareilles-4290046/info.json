@@ -1,0 +1,17 @@
+{
+  "id": "20260904-65-bareilles-4290046",
+  "feu": "Bareilles (65)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Bareilles",
+  "departement": "65",
+  "surface_estimee_ha": 55.6,
+  "surface_min_ha": 36.0,
+  "surface_max_ha": 75.0,
+  "premier_point_chaud": "2026-09-04",
+  "dernier_point_chaud": "2026-09-04",
+  "n_points_chauds": 8,
+  "frp_total": 85.0,
+  "prochain_passage": "2026-09-06",
+  "calcule_le": "2026-09-04T18:59:43Z"
+}

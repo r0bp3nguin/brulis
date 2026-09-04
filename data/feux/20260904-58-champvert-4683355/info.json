@@ -1,0 +1,17 @@
+{
+  "id": "20260904-58-champvert-4683355",
+  "feu": "Champvert (58)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Champvert",
+  "departement": "58",
+  "surface_estimee_ha": 42.0,
+  "surface_min_ha": 27.0,
+  "surface_max_ha": 57.0,
+  "premier_point_chaud": "2026-09-04",
+  "dernier_point_chaud": "2026-09-04",
+  "n_points_chauds": 6,
+  "frp_total": 21.34,
+  "prochain_passage": "2026-09-06",
+  "calcule_le": "2026-09-04T19:00:13Z"
+}

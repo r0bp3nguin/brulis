@@ -1,15 +1,15 @@
 {
-  "id": "20260903-64-laruns-4290048",
-  "feu": "Laruns (64)",
+  "id": "20260901-64-etsaut-4293054",
+  "feu": "Etsaut (64)",
   "statut": "mesure",
-  "commune": "Laruns",
+  "commune": "Etsaut",
   "departement": "64",
-  "surface_ha": 21.6,
-  "n_polygones": 11,
-  "premier_point_chaud": "2026-09-03",
+  "surface_ha": 63.4,
+  "n_polygones": 7,
+  "premier_point_chaud": "2026-09-01",
   "dernier_point_chaud": "2026-09-04",
-  "n_points_chauds": 13,
-  "frp_total": 129.07,
+  "n_points_chauds": 48,
+  "frp_total": 395.53,
   "image_avant": {
     "id": "S2A_30TXN_20260901_1_L2A",
     "date": "2026-09-01",
@@ -22,8 +22,8 @@
   },
   "tuile": "MGRS-30TXN",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.347,
-  "part_masquee": 0.444,
-  "latence_jours": 1,
-  "calcule_le": "2026-09-04T18:59:33Z"
+  "nbr_avant_median": 0.381,
+  "part_masquee": 0.0,
+  "latence_jours": 3,
+  "calcule_le": "2026-09-04T18:59:26Z"
 }

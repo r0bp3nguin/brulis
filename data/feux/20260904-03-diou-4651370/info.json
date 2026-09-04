@@ -1,0 +1,17 @@
+{
+  "id": "20260904-03-diou-4651370",
+  "feu": "Diou (03)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Diou",
+  "departement": "03",
+  "surface_estimee_ha": 35.0,
+  "surface_min_ha": 23.0,
+  "surface_max_ha": 47.0,
+  "premier_point_chaud": "2026-09-04",
+  "dernier_point_chaud": "2026-09-04",
+  "n_points_chauds": 5,
+  "frp_total": 24.16,
+  "prochain_passage": "2026-09-06",
+  "calcule_le": "2026-09-04T19:00:10Z"
+}

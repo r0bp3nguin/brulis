@@ -1,0 +1,17 @@
+{
+  "id": "20260904-69-vaugneray-4575464",
+  "feu": "Vaugneray (69)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Vaugneray",
+  "departement": "69",
+  "surface_estimee_ha": 51.4,
+  "surface_min_ha": 33.0,
+  "surface_max_ha": 69.0,
+  "premier_point_chaud": "2026-09-04",
+  "dernier_point_chaud": "2026-09-04",
+  "n_points_chauds": 7,
+  "frp_total": 147.98,
+  "prochain_passage": "2026-09-08",
+  "calcule_le": "2026-09-04T18:59:30Z"
+}
