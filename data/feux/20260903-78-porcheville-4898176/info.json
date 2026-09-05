@@ -4,12 +4,12 @@
   "statut": "mesure",
   "commune": "Porcheville",
   "departement": "78",
-  "surface_ha": 135.4,
-  "n_polygones": 44,
+  "surface_ha": 144.0,
+  "n_polygones": 46,
   "premier_point_chaud": "2026-09-03",
-  "dernier_point_chaud": "2026-09-04",
-  "n_points_chauds": 10,
-  "frp_total": 12.1,
+  "dernier_point_chaud": "2026-09-05",
+  "n_points_chauds": 11,
+  "frp_total": 12.96,
   "image_avant": {
     "id": "S2A_31UDQ_20260901_1_L2A",
     "date": "2026-09-01",
@@ -22,8 +22,8 @@
   },
   "tuile": "MGRS-31UDQ",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.556,
-  "part_masquee": 0.47,
+  "nbr_avant_median": 0.563,
+  "part_masquee": 0.487,
   "latence_jours": 1,
-  "calcule_le": "2026-09-04T19:00:41Z"
+  "calcule_le": "2026-09-05T10:40:54Z"
 }

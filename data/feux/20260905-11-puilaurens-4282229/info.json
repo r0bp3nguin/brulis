@@ -1,0 +1,17 @@
+{
+  "id": "20260905-11-puilaurens-4282229",
+  "feu": "Puilaurens (11)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Puilaurens",
+  "departement": "11",
+  "surface_estimee_ha": 223.3,
+  "surface_min_ha": 145.0,
+  "surface_max_ha": 301.0,
+  "premier_point_chaud": "2026-09-05",
+  "dernier_point_chaud": "2026-09-05",
+  "n_points_chauds": 36,
+  "frp_total": 82.19,
+  "prochain_passage": "2026-09-06",
+  "calcule_le": "2026-09-05T10:39:59Z"
+}
