@@ -1,0 +1,17 @@
+{
+  "id": "20260905-31-vacquiers-4380150",
+  "feu": "Vacquiers (31)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Vacquiers",
+  "departement": "31",
+  "surface_estimee_ha": 44.7,
+  "surface_min_ha": 29.0,
+  "surface_max_ha": 60.0,
+  "premier_point_chaud": "2026-09-05",
+  "dernier_point_chaud": "2026-09-05",
+  "n_points_chauds": 7,
+  "frp_total": 84.11,
+  "prochain_passage": "2026-09-06",
+  "calcule_le": "2026-09-05T18:18:17Z"
+}

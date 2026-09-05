@@ -1,7 +1,7 @@
 {
   "id": "20260904-30-saint-gilles-4368436",
   "feu": "Saint-Gilles (30)",
-  "statut": "en_attente",
+  "statut": "ecarte",
   "motif_attente": "aucune image satellite depuis le départ du feu",
   "commune": "Saint-Gilles",
   "departement": "30",
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-09-05",
   "n_points_chauds": 8,
   "frp_total": 25.18,
-  "prochain_passage": "2026-09-05",
-  "calcule_le": "2026-09-05T10:40:27Z"
+  "calcule_le": "2026-09-05T18:18:52Z",
+  "motif_ecarte": "images exploitables, mais aucune trace de brûlé au seuil retenu"
 }
