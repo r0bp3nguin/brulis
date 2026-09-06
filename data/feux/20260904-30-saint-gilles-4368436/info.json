@@ -1,17 +1,29 @@
 {
   "id": "20260904-30-saint-gilles-4368436",
   "feu": "Saint-Gilles (30)",
-  "statut": "ecarte",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Saint-Gilles",
   "departement": "30",
-  "surface_estimee_ha": 31.3,
-  "surface_min_ha": 20.0,
-  "surface_max_ha": 42.0,
+  "surface_ha": 1.9,
+  "n_polygones": 1,
   "premier_point_chaud": "2026-09-04",
   "dernier_point_chaud": "2026-09-05",
   "n_points_chauds": 8,
   "frp_total": 25.18,
-  "calcule_le": "2026-09-05T18:18:52Z",
-  "motif_ecarte": "images exploitables, mais aucune trace de brûlé au seuil retenu"
+  "image_avant": {
+    "id": "S2A_31TEJ_20260902_0_L2A",
+    "date": "2026-09-02",
+    "nuages_pct": 0.018612
+  },
+  "image_apres": {
+    "id": "S2A_31TEJ_20260905_1_L2A",
+    "date": "2026-09-05",
+    "nuages_pct": 35.625932
+  },
+  "tuile": "MGRS-31TEJ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.692,
+  "part_masquee": 0.055,
+  "latence_jours": 1,
+  "calcule_le": "2026-09-06T11:01:31Z"
 }

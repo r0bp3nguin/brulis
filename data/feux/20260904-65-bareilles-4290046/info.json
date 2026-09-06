@@ -5,13 +5,13 @@
   "motif_attente": "aucune image satellite depuis le départ du feu",
   "commune": "Bareilles",
   "departement": "65",
-  "surface_estimee_ha": 62.2,
-  "surface_min_ha": 40.0,
-  "surface_max_ha": 84.0,
+  "surface_estimee_ha": 68.7,
+  "surface_min_ha": 45.0,
+  "surface_max_ha": 93.0,
   "premier_point_chaud": "2026-09-04",
-  "dernier_point_chaud": "2026-09-05",
-  "n_points_chauds": 12,
-  "frp_total": 89.2,
+  "dernier_point_chaud": "2026-09-06",
+  "n_points_chauds": 15,
+  "frp_total": 103.92,
   "prochain_passage": "2026-09-06",
-  "calcule_le": "2026-09-05T18:18:15Z"
+  "calcule_le": "2026-09-06T11:01:05Z"
 }
