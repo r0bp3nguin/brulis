@@ -1,0 +1,17 @@
+{
+  "id": "20260906-09-erp-4294118",
+  "feu": "Erp (09)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Erp",
+  "departement": "09",
+  "surface_estimee_ha": 64.8,
+  "surface_min_ha": 42.0,
+  "surface_max_ha": 87.0,
+  "premier_point_chaud": "2026-09-06",
+  "dernier_point_chaud": "2026-09-06",
+  "n_points_chauds": 10,
+  "frp_total": 101.62,
+  "prochain_passage": "2026-09-06",
+  "calcule_le": "2026-09-06T18:17:39Z"
+}

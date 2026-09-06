@@ -1,0 +1,17 @@
+{
+  "id": "20260906-09-limbrassac-4302185",
+  "feu": "Limbrassac (09)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Limbrassac",
+  "departement": "09",
+  "surface_estimee_ha": 76.0,
+  "surface_min_ha": 49.0,
+  "surface_max_ha": 103.0,
+  "premier_point_chaud": "2026-09-06",
+  "dernier_point_chaud": "2026-09-06",
+  "n_points_chauds": 11,
+  "frp_total": 262.51,
+  "prochain_passage": "2026-09-08",
+  "calcule_le": "2026-09-06T18:17:20Z"
+}
