@@ -1,17 +1,29 @@
 {
   "id": "20260829-59-trith-saint-léger-5033349",
   "feu": "Trith-Saint-Léger (59)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Trith-Saint-Léger",
   "departement": "59",
-  "surface_estimee_ha": 58.2,
-  "surface_min_ha": 38.0,
-  "surface_max_ha": 79.0,
+  "surface_ha": 36.0,
+  "n_polygones": 8,
   "premier_point_chaud": "2026-08-29",
-  "dernier_point_chaud": "2026-08-30",
-  "n_points_chauds": 9,
-  "frp_total": 5.72,
-  "prochain_passage": "2026-09-06",
-  "calcule_le": "2026-09-06T18:19:15Z"
+  "dernier_point_chaud": "2026-09-07",
+  "n_points_chauds": 6,
+  "frp_total": 5.4,
+  "image_avant": {
+    "id": "S2C_31UER_20260827_0_L2A",
+    "date": "2026-08-27",
+    "nuages_pct": 40.198636
+  },
+  "image_apres": {
+    "id": "S2C_31UER_20260906_0_L2A",
+    "date": "2026-09-06",
+    "nuages_pct": 62.241
+  },
+  "tuile": "MGRS-31UER",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.346,
+  "part_masquee": 0.381,
+  "latence_jours": 8,
+  "calcule_le": "2026-09-07T12:40:36Z"
 }

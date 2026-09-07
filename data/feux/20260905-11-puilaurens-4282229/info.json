@@ -1,17 +1,29 @@
 {
   "id": "20260905-11-puilaurens-4282229",
   "feu": "Puilaurens (11)",
-  "statut": "ecarte",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Puilaurens",
   "departement": "11",
-  "surface_estimee_ha": 232.7,
-  "surface_min_ha": 151.0,
-  "surface_max_ha": 314.0,
+  "surface_ha": 2.6,
+  "n_polygones": 1,
   "premier_point_chaud": "2026-09-05",
   "dernier_point_chaud": "2026-09-05",
   "n_points_chauds": 40,
   "frp_total": 104.39,
-  "calcule_le": "2026-09-06T18:17:36Z",
-  "motif_ecarte": "images exploitables, mais aucune trace de brûlé au seuil retenu"
+  "image_avant": {
+    "id": "S2A_31TDH_20260905_0_L2A",
+    "date": "2026-09-05",
+    "nuages_pct": 12.935455
+  },
+  "image_apres": {
+    "id": "S2C_31TDH_20260906_0_L2A",
+    "date": "2026-09-06",
+    "nuages_pct": 3.792329
+  },
+  "tuile": "MGRS-31TDH",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.602,
+  "part_masquee": 0.0,
+  "latence_jours": 1,
+  "calcule_le": "2026-09-07T12:38:44Z"
 }
