@@ -1,17 +1,29 @@
 {
   "id": "20260904-69-vaugneray-4575464",
   "feu": "Vaugneray (69)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Vaugneray",
   "departement": "69",
-  "surface_estimee_ha": 51.4,
-  "surface_min_ha": 33.0,
-  "surface_max_ha": 69.0,
+  "surface_ha": 35.4,
+  "n_polygones": 7,
   "premier_point_chaud": "2026-09-04",
   "dernier_point_chaud": "2026-09-04",
   "n_points_chauds": 7,
   "frp_total": 147.98,
-  "prochain_passage": "2026-09-10",
-  "calcule_le": "2026-09-08T11:25:05Z"
+  "image_avant": {
+    "id": "S2C_31TFL_20260903_1_L2A",
+    "date": "2026-09-03",
+    "nuages_pct": 0.204118
+  },
+  "image_apres": {
+    "id": "S2B_31TFL_20260908_0_L2A",
+    "date": "2026-09-08",
+    "nuages_pct": 2.760157
+  },
+  "tuile": "MGRS-31TFL",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.45,
+  "part_masquee": 0.0,
+  "latence_jours": 4,
+  "calcule_le": "2026-09-08T19:27:25Z"
 }

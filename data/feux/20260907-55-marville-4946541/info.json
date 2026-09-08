@@ -2,7 +2,7 @@
   "id": "20260907-55-marville-4946541",
   "feu": "Marville (55)",
   "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Marville",
   "departement": "55",
   "surface_estimee_ha": 97.9,
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-09-07",
   "n_points_chauds": 14,
   "frp_total": 111.45,
-  "prochain_passage": "2026-09-09",
-  "calcule_le": "2026-09-08T11:23:12Z"
+  "prochain_passage": "2026-09-11",
+  "calcule_le": "2026-09-08T19:26:05Z"
 }

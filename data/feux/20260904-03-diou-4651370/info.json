@@ -1,17 +1,29 @@
 {
   "id": "20260904-03-diou-4651370",
   "feu": "Diou (03)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Diou",
   "departement": "03",
-  "surface_estimee_ha": 35.0,
-  "surface_min_ha": 23.0,
-  "surface_max_ha": 47.0,
+  "surface_ha": 3.4,
+  "n_polygones": 1,
   "premier_point_chaud": "2026-09-04",
   "dernier_point_chaud": "2026-09-04",
   "n_points_chauds": 5,
   "frp_total": 24.16,
-  "prochain_passage": "2026-09-09",
-  "calcule_le": "2026-09-08T11:25:10Z"
+  "image_avant": {
+    "id": "S2C_31TEM_20260903_0_L2A",
+    "date": "2026-09-03",
+    "nuages_pct": 7.442445
+  },
+  "image_apres": {
+    "id": "S2B_31TEM_20260908_0_L2A",
+    "date": "2026-09-08",
+    "nuages_pct": 3.802877
+  },
+  "tuile": "MGRS-31TEM",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.55,
+  "part_masquee": 0.0,
+  "latence_jours": 4,
+  "calcule_le": "2026-09-08T19:27:29Z"
 }

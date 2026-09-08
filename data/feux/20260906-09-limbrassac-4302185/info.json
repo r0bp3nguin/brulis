@@ -1,17 +1,29 @@
 {
   "id": "20260906-09-limbrassac-4302185",
   "feu": "Limbrassac (09)",
-  "statut": "ecarte",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Limbrassac",
   "departement": "09",
-  "surface_estimee_ha": 76.0,
-  "surface_min_ha": 49.0,
-  "surface_max_ha": 103.0,
+  "surface_ha": 49.3,
+  "n_polygones": 2,
   "premier_point_chaud": "2026-09-06",
   "dernier_point_chaud": "2026-09-06",
   "n_points_chauds": 11,
   "frp_total": 262.51,
-  "calcule_le": "2026-09-08T11:22:48Z",
-  "motif_ecarte": "images exploitables, mais aucune trace de brûlé au seuil retenu"
+  "image_avant": {
+    "id": "S2C_31TCH_20260906_0_L2A",
+    "date": "2026-09-06",
+    "nuages_pct": 11.197169
+  },
+  "image_apres": {
+    "id": "S2B_31TCH_20260908_0_L2A",
+    "date": "2026-09-08",
+    "nuages_pct": 8.939295
+  },
+  "tuile": "MGRS-31TCH",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.279,
+  "part_masquee": 0.0,
+  "latence_jours": 2,
+  "calcule_le": "2026-09-08T19:25:56Z"
 }

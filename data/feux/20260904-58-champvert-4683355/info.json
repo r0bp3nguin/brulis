@@ -1,17 +1,29 @@
 {
   "id": "20260904-58-champvert-4683355",
   "feu": "Champvert (58)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Champvert",
   "departement": "58",
-  "surface_estimee_ha": 42.0,
-  "surface_min_ha": 27.0,
-  "surface_max_ha": 57.0,
+  "surface_ha": 5.3,
+  "n_polygones": 2,
   "premier_point_chaud": "2026-09-04",
   "dernier_point_chaud": "2026-09-04",
   "n_points_chauds": 6,
   "frp_total": 21.34,
-  "prochain_passage": "2026-09-09",
-  "calcule_le": "2026-09-08T11:25:16Z"
+  "image_avant": {
+    "id": "S2C_31TEM_20260903_0_L2A",
+    "date": "2026-09-03",
+    "nuages_pct": 7.442445
+  },
+  "image_apres": {
+    "id": "S2B_31TEM_20260908_0_L2A",
+    "date": "2026-09-08",
+    "nuages_pct": 3.802877
+  },
+  "tuile": "MGRS-31TEM",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.429,
+  "part_masquee": 0.0,
+  "latence_jours": 4,
+  "calcule_le": "2026-09-08T19:27:32Z"
 }
