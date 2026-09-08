@@ -5,13 +5,13 @@
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Bareilles",
   "departement": "65",
-  "surface_estimee_ha": 119.9,
-  "surface_min_ha": 78.0,
-  "surface_max_ha": 162.0,
+  "surface_estimee_ha": 237.4,
+  "surface_min_ha": 154.0,
+  "surface_max_ha": 320.0,
   "premier_point_chaud": "2026-09-04",
-  "dernier_point_chaud": "2026-09-07",
-  "n_points_chauds": 22,
-  "frp_total": 120.3,
+  "dernier_point_chaud": "2026-09-08",
+  "n_points_chauds": 54,
+  "frp_total": 365.88,
   "prochain_passage": "2026-09-11",
-  "calcule_le": "2026-09-07T12:38:38Z"
+  "calcule_le": "2026-09-08T11:22:43Z"
 }

@@ -4,12 +4,12 @@
   "statut": "mesure",
   "commune": "Etsaut",
   "departement": "64",
-  "surface_ha": 63.4,
-  "n_polygones": 7,
+  "surface_ha": 60.7,
+  "n_polygones": 5,
   "premier_point_chaud": "2026-09-01",
   "dernier_point_chaud": "2026-09-07",
-  "n_points_chauds": 40,
-  "frp_total": 195.99,
+  "n_points_chauds": 20,
+  "frp_total": 51.28,
   "image_avant": {
     "id": "S2A_30TXN_20260901_1_L2A",
     "date": "2026-09-01",
@@ -22,8 +22,8 @@
   },
   "tuile": "MGRS-30TXN",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.381,
+  "nbr_avant_median": 0.382,
   "part_masquee": 0.0,
   "latence_jours": 3,
-  "calcule_le": "2026-09-07T12:38:29Z"
+  "calcule_le": "2026-09-08T11:23:50Z"
 }

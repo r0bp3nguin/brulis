@@ -1,0 +1,17 @@
+{
+  "id": "20260907-76-saint-vigor-d'ymonville-4945035",
+  "feu": "Saint-Vigor-d'Ymonville (76)",
+  "statut": "en_attente",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "commune": "Saint-Vigor-d'Ymonville",
+  "departement": "76",
+  "surface_estimee_ha": 37.0,
+  "surface_min_ha": 24.0,
+  "surface_max_ha": 50.0,
+  "premier_point_chaud": "2026-09-07",
+  "dernier_point_chaud": "2026-09-07",
+  "n_points_chauds": 5,
+  "frp_total": 60.65,
+  "prochain_passage": "2026-09-10",
+  "calcule_le": "2026-09-08T11:23:40Z"
+}
