@@ -4,8 +4,8 @@
   "statut": "mesure",
   "commune": "Limbrassac",
   "departement": "09",
-  "surface_ha": 49.3,
-  "n_polygones": 2,
+  "surface_ha": 45.1,
+  "n_polygones": 1,
   "premier_point_chaud": "2026-09-06",
   "dernier_point_chaud": "2026-09-06",
   "n_points_chauds": 11,
@@ -16,14 +16,14 @@
     "nuages_pct": 11.197169
   },
   "image_apres": {
-    "id": "S2B_31TCH_20260908_0_L2A",
+    "id": "S2A_31TCH_20260908_1_L2A",
     "date": "2026-09-08",
-    "nuages_pct": 8.939295
+    "nuages_pct": 21.366455
   },
   "tuile": "MGRS-31TCH",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.279,
+  "nbr_avant_median": 0.267,
   "part_masquee": 0.0,
   "latence_jours": 2,
-  "calcule_le": "2026-09-08T19:25:56Z"
+  "calcule_le": "2026-09-09T11:27:11Z"
 }

@@ -4,26 +4,26 @@
   "statut": "mesure",
   "commune": "Etsaut",
   "departement": "64",
-  "surface_ha": 60.7,
-  "n_polygones": 5,
+  "surface_ha": 246.8,
+  "n_polygones": 22,
   "premier_point_chaud": "2026-09-01",
   "dernier_point_chaud": "2026-09-07",
-  "n_points_chauds": 20,
-  "frp_total": 51.28,
+  "n_points_chauds": 12,
+  "frp_total": 18.42,
   "image_avant": {
     "id": "S2A_30TXN_20260901_1_L2A",
     "date": "2026-09-01",
     "nuages_pct": 23.975389
   },
   "image_apres": {
-    "id": "S2B_30TXN_20260904_0_L2A",
-    "date": "2026-09-04",
-    "nuages_pct": 0.001038
+    "id": "S2A_30TXN_20260908_0_L2A",
+    "date": "2026-09-08",
+    "nuages_pct": 28.938207
   },
   "tuile": "MGRS-30TXN",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.382,
-  "part_masquee": 0.0,
-  "latence_jours": 3,
-  "calcule_le": "2026-09-08T19:26:27Z"
+  "nbr_avant_median": 0.439,
+  "part_masquee": 0.165,
+  "latence_jours": 7,
+  "calcule_le": "2026-09-09T11:28:26Z"
 }

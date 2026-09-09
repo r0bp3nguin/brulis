@@ -1,17 +1,29 @@
 {
   "id": "20260906-09-erp-4294118",
   "feu": "Erp (09)",
-  "statut": "ecarte",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Erp",
   "departement": "09",
-  "surface_estimee_ha": 64.8,
-  "surface_min_ha": 42.0,
-  "surface_max_ha": 87.0,
+  "surface_ha": 482.8,
+  "n_polygones": 50,
   "premier_point_chaud": "2026-09-06",
   "dernier_point_chaud": "2026-09-06",
   "n_points_chauds": 10,
   "frp_total": 101.62,
-  "calcule_le": "2026-09-08T19:26:13Z",
-  "motif_ecarte": "images exploitables, mais aucune trace de brûlé au seuil retenu"
+  "image_avant": {
+    "id": "S2C_31TCH_20260906_0_L2A",
+    "date": "2026-09-06",
+    "nuages_pct": 11.197169
+  },
+  "image_apres": {
+    "id": "S2A_31TCH_20260908_1_L2A",
+    "date": "2026-09-08",
+    "nuages_pct": 21.366455
+  },
+  "tuile": "MGRS-31TCH",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.632,
+  "part_masquee": 0.015,
+  "latence_jours": 2,
+  "calcule_le": "2026-09-09T11:27:46Z"
 }
