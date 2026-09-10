@@ -1,0 +1,17 @@
+{
+  "id": "20260910-33-arsac-4497074",
+  "feu": "Arsac (33)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Arsac",
+  "departement": "33",
+  "surface_estimee_ha": 35.0,
+  "surface_min_ha": 23.0,
+  "surface_max_ha": 47.0,
+  "premier_point_chaud": "2026-09-10",
+  "dernier_point_chaud": "2026-09-10",
+  "n_points_chauds": 5,
+  "frp_total": 25.87,
+  "prochain_passage": "2026-09-14",
+  "calcule_le": "2026-09-10T19:08:07Z"
+}

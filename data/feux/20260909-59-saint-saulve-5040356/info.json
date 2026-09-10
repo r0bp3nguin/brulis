@@ -1,0 +1,17 @@
+{
+  "id": "20260909-59-saint-saulve-5040356",
+  "feu": "Saint-Saulve (59)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Saint-Saulve",
+  "departement": "59",
+  "surface_estimee_ha": 25.1,
+  "surface_min_ha": 16.0,
+  "surface_max_ha": 34.0,
+  "premier_point_chaud": "2026-09-09",
+  "dernier_point_chaud": "2026-09-10",
+  "n_points_chauds": 5,
+  "frp_total": 4.35,
+  "prochain_passage": "2026-09-13",
+  "calcule_le": "2026-09-10T19:08:56Z"
+}

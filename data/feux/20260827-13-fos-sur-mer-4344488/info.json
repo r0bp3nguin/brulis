@@ -4,26 +4,26 @@
   "statut": "mesure",
   "commune": "Fos-sur-Mer",
   "departement": "13",
-  "surface_ha": 3.0,
-  "n_polygones": 2,
+  "surface_ha": 15.9,
+  "n_polygones": 8,
   "premier_point_chaud": "2026-08-27",
-  "dernier_point_chaud": "2026-09-08",
-  "n_points_chauds": 78,
-  "frp_total": 182.98,
+  "dernier_point_chaud": "2026-09-10",
+  "n_points_chauds": 79,
+  "frp_total": 159.44,
   "image_avant": {
     "id": "S2C_31TFJ_20260824_0_L2A",
     "date": "2026-08-24",
     "nuages_pct": 39.233193
   },
   "image_apres": {
-    "id": "S2A_31TFJ_20260905_1_L2A",
-    "date": "2026-09-05",
-    "nuages_pct": 19.762301
+    "id": "S2C_31TFJ_20260910_0_L2A",
+    "date": "2026-09-10",
+    "nuages_pct": 0.018894
   },
   "tuile": "MGRS-31TFJ",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.633,
-  "part_masquee": 0.397,
-  "latence_jours": 9,
-  "calcule_le": "2026-09-09T19:17:06Z"
+  "nbr_avant_median": 0.481,
+  "part_masquee": 0.211,
+  "latence_jours": 14,
+  "calcule_le": "2026-09-10T19:07:38Z"
 }
