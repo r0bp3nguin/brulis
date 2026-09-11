@@ -1,17 +1,29 @@
 {
   "id": "20260910-36-mouhet-4637140",
   "feu": "Mouhet (36)",
-  "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Mouhet",
   "departement": "36",
-  "surface_estimee_ha": 38.2,
-  "surface_min_ha": 25.0,
-  "surface_max_ha": 52.0,
+  "surface_ha": 23.3,
+  "n_polygones": 9,
   "premier_point_chaud": "2026-09-10",
   "dernier_point_chaud": "2026-09-10",
   "n_points_chauds": 7,
   "frp_total": 25.66,
-  "prochain_passage": "2026-09-12",
-  "calcule_le": "2026-09-10T19:08:09Z"
+  "image_avant": {
+    "id": "S2B_31TCM_20260904_0_L2A",
+    "date": "2026-09-04",
+    "nuages_pct": 0.00196
+  },
+  "image_apres": {
+    "id": "S2B_31TCM_20260911_0_L2A",
+    "date": "2026-09-11",
+    "nuages_pct": 11.35406
+  },
+  "tuile": "MGRS-31TCM",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.213,
+  "part_masquee": 0.0,
+  "latence_jours": 1,
+  "calcule_le": "2026-09-11T19:10:16Z"
 }

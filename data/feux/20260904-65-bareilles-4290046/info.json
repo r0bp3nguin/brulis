@@ -4,26 +4,26 @@
   "statut": "mesure",
   "commune": "Bareilles",
   "departement": "65",
-  "surface_ha": 171.2,
-  "n_polygones": 25,
+  "surface_ha": 123.9,
+  "n_polygones": 2,
   "premier_point_chaud": "2026-09-04",
   "dernier_point_chaud": "2026-09-08",
-  "n_points_chauds": 68,
-  "frp_total": 456.99,
+  "n_points_chauds": 36,
+  "frp_total": 141.66,
   "image_avant": {
     "id": "S2B_30TYN_20260901_0_L2A",
     "date": "2026-09-01",
     "nuages_pct": 12.453489
   },
   "image_apres": {
-    "id": "S2A_30TYN_20260908_0_L2A",
-    "date": "2026-09-08",
-    "nuages_pct": 43.127784
+    "id": "S2B_30TYN_20260911_0_L2A",
+    "date": "2026-09-11",
+    "nuages_pct": 3.147189
   },
   "tuile": "MGRS-30TYN",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.401,
-  "part_masquee": 0.2,
-  "latence_jours": 4,
-  "calcule_le": "2026-09-10T19:07:22Z"
+  "nbr_avant_median": 0.313,
+  "part_masquee": 0.064,
+  "latence_jours": 7,
+  "calcule_le": "2026-09-11T19:09:44Z"
 }
