@@ -4,8 +4,8 @@
   "statut": "mesure",
   "commune": "Mouhet",
   "departement": "36",
-  "surface_ha": 23.3,
-  "n_polygones": 9,
+  "surface_ha": 32.5,
+  "n_polygones": 13,
   "premier_point_chaud": "2026-09-10",
   "dernier_point_chaud": "2026-09-10",
   "n_points_chauds": 7,
@@ -16,14 +16,14 @@
     "nuages_pct": 0.00196
   },
   "image_apres": {
-    "id": "S2B_31TCM_20260911_0_L2A",
+    "id": "S2A_31TCM_20260911_1_L2A",
     "date": "2026-09-11",
-    "nuages_pct": 11.35406
+    "nuages_pct": 12.855354
   },
   "tuile": "MGRS-31TCM",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.213,
+  "nbr_avant_median": 0.56,
   "part_masquee": 0.0,
   "latence_jours": 1,
-  "calcule_le": "2026-09-11T19:10:16Z"
+  "calcule_le": "2026-09-12T10:51:22Z"
 }
