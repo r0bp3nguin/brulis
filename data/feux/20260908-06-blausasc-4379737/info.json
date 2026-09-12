@@ -1,7 +1,7 @@
 {
   "id": "20260908-06-blausasc-4379737",
   "feu": "Blausasc (06)",
-  "statut": "en_attente",
+  "statut": "ecarte",
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Blausasc",
   "departement": "06",
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-09-12",
   "n_points_chauds": 7,
   "frp_total": 5.4,
-  "prochain_passage": "2026-09-13",
-  "calcule_le": "2026-09-12T10:52:15Z"
+  "calcule_le": "2026-09-12T18:24:53Z",
+  "motif_ecarte": "images exploitables, mais aucune trace de brûlé au seuil retenu"
 }
