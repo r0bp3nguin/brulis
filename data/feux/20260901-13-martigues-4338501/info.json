@@ -1,17 +1,29 @@
 {
   "id": "20260901-13-martigues-4338501",
   "feu": "Martigues (13)",
-  "statut": "ecarte",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Martigues",
   "departement": "13",
-  "surface_estimee_ha": 62.7,
-  "surface_min_ha": 41.0,
-  "surface_max_ha": 85.0,
+  "surface_ha": 3.7,
+  "n_polygones": 1,
   "premier_point_chaud": "2026-09-01",
-  "dernier_point_chaud": "2026-09-02",
-  "n_points_chauds": 10,
-  "frp_total": 75.92,
-  "calcule_le": "2026-09-05T18:19:03Z",
-  "motif_ecarte": "images exploitables, mais aucune trace de brûlé au seuil retenu"
+  "dernier_point_chaud": "2026-09-13",
+  "n_points_chauds": 8,
+  "frp_total": 11.97,
+  "image_avant": {
+    "id": "S2C_31TFJ_20260831_0_L2A",
+    "date": "2026-08-31",
+    "nuages_pct": 2.54173
+  },
+  "image_apres": {
+    "id": "S2A_31TFJ_20260912_0_L2A",
+    "date": "2026-09-12",
+    "nuages_pct": 0.118323
+  },
+  "tuile": "MGRS-31TFJ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.531,
+  "part_masquee": 0.004,
+  "latence_jours": 11,
+  "calcule_le": "2026-09-13T11:57:18Z"
 }
