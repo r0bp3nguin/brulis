@@ -1,7 +1,7 @@
 {
   "id": "20260913-38-saint-clair-du-rhône-4544476",
   "feu": "Saint-Clair-du-Rhône (38)",
-  "statut": "en_attente",
+  "statut": "ecarte",
   "motif_attente": "aucune image satellite depuis le départ du feu",
   "commune": "Saint-Clair-du-Rhône",
   "departement": "38",
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-09-13",
   "n_points_chauds": 5,
   "frp_total": 4.85,
-  "prochain_passage": "2026-09-15",
-  "calcule_le": "2026-09-13T11:58:04Z"
+  "calcule_le": "2026-09-13T18:49:32Z",
+  "motif_ecarte": "images exploitables, mais aucune trace de brûlé au seuil retenu"
 }
