@@ -1,17 +1,29 @@
 {
   "id": "20260912-40-laluque-4383100",
   "feu": "Laluque (40)",
-  "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Laluque",
   "departement": "40",
-  "surface_estimee_ha": 36.5,
-  "surface_min_ha": 24.0,
-  "surface_max_ha": 49.0,
+  "surface_ha": 62.3,
+  "n_polygones": 12,
   "premier_point_chaud": "2026-09-12",
   "dernier_point_chaud": "2026-09-12",
   "n_points_chauds": 5,
   "frp_total": 27.05,
-  "prochain_passage": "2026-09-16",
-  "calcule_le": "2026-09-13T18:47:26Z"
+  "image_avant": {
+    "id": "S2A_30TXP_20260911_1_L2A",
+    "date": "2026-09-11",
+    "nuages_pct": 14.727771
+  },
+  "image_apres": {
+    "id": "S2B_30TXP_20260914_0_L2A",
+    "date": "2026-09-14",
+    "nuages_pct": 0.00145
+  },
+  "tuile": "MGRS-30TXP",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.244,
+  "part_masquee": 0.31,
+  "latence_jours": 2,
+  "calcule_le": "2026-09-14T20:19:18Z"
 }
