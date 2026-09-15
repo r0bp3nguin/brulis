@@ -5,13 +5,13 @@
   "motif_attente": "aucune image satellite depuis le départ du feu",
   "commune": "Orlu",
   "departement": "09",
-  "surface_estimee_ha": 27.8,
-  "surface_min_ha": 18.0,
-  "surface_max_ha": 38.0,
+  "surface_estimee_ha": 48.0,
+  "surface_min_ha": 31.0,
+  "surface_max_ha": 65.0,
   "premier_point_chaud": "2026-09-14",
-  "dernier_point_chaud": "2026-09-14",
-  "n_points_chauds": 7,
-  "frp_total": 246.21,
+  "dernier_point_chaud": "2026-09-15",
+  "n_points_chauds": 13,
+  "frp_total": 256.38,
   "prochain_passage": "2026-09-16",
-  "calcule_le": "2026-09-14T20:18:16Z"
+  "calcule_le": "2026-09-15T11:47:19Z"
 }
