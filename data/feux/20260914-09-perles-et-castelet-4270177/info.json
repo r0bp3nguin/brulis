@@ -1,17 +1,29 @@
 {
   "id": "20260914-09-perles-et-castelet-4270177",
   "feu": "Perles-et-Castelet (09)",
-  "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Perles-et-Castelet",
   "departement": "09",
-  "surface_estimee_ha": 60.5,
-  "surface_min_ha": 39.0,
-  "surface_max_ha": 82.0,
+  "surface_ha": 22.2,
+  "n_polygones": 2,
   "premier_point_chaud": "2026-09-14",
   "dernier_point_chaud": "2026-09-15",
-  "n_points_chauds": 10,
-  "frp_total": 32.73,
-  "prochain_passage": "2026-09-16",
-  "calcule_le": "2026-09-15T11:47:54Z"
+  "n_points_chauds": 14,
+  "frp_total": 66.42,
+  "image_avant": {
+    "id": "S2C_31TCH_20260913_0_L2A",
+    "date": "2026-09-13",
+    "nuages_pct": 0.000342
+  },
+  "image_apres": {
+    "id": "S2A_31TCH_20260915_0_L2A",
+    "date": "2026-09-15",
+    "nuages_pct": 0.000769
+  },
+  "tuile": "MGRS-31TCH",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.363,
+  "part_masquee": 0.0,
+  "latence_jours": 1,
+  "calcule_le": "2026-09-15T19:42:25Z"
 }

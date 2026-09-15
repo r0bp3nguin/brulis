@@ -1,17 +1,29 @@
 {
   "id": "20260914-09-orlu-4264193",
   "feu": "Orlu (09)",
-  "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Orlu",
   "departement": "09",
-  "surface_estimee_ha": 48.0,
-  "surface_min_ha": 31.0,
-  "surface_max_ha": 65.0,
+  "surface_ha": 18.5,
+  "n_polygones": 2,
   "premier_point_chaud": "2026-09-14",
   "dernier_point_chaud": "2026-09-15",
-  "n_points_chauds": 13,
-  "frp_total": 256.38,
-  "prochain_passage": "2026-09-16",
-  "calcule_le": "2026-09-15T11:47:19Z"
+  "n_points_chauds": 26,
+  "frp_total": 481.83,
+  "image_avant": {
+    "id": "S2C_31TDH_20260913_0_L2A",
+    "date": "2026-09-13",
+    "nuages_pct": 0.48899
+  },
+  "image_apres": {
+    "id": "S2A_31TDH_20260915_0_L2A",
+    "date": "2026-09-15",
+    "nuages_pct": 0.006682
+  },
+  "tuile": "MGRS-31TDH",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.41,
+  "part_masquee": 0.046,
+  "latence_jours": 1,
+  "calcule_le": "2026-09-15T19:41:45Z"
 }
