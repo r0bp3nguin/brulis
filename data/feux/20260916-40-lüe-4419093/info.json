@@ -1,0 +1,17 @@
+{
+  "id": "20260916-40-lüe-4419093",
+  "feu": "Lüe (40)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Lüe",
+  "departement": "40",
+  "surface_estimee_ha": 198.2,
+  "surface_min_ha": 129.0,
+  "surface_max_ha": 268.0,
+  "premier_point_chaud": "2026-09-16",
+  "dernier_point_chaud": "2026-09-16",
+  "n_points_chauds": 30,
+  "frp_total": 1052.05,
+  "prochain_passage": "2026-09-19",
+  "calcule_le": "2026-09-16T19:33:12Z"
+}

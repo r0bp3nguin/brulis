@@ -1,0 +1,29 @@
+{
+  "id": "20260914-37-sonzay-4749046",
+  "feu": "Sonzay (37)",
+  "statut": "mesure",
+  "commune": "Sonzay",
+  "departement": "37",
+  "surface_ha": 8.9,
+  "n_polygones": 6,
+  "premier_point_chaud": "2026-09-14",
+  "dernier_point_chaud": "2026-09-14",
+  "n_points_chauds": 7,
+  "frp_total": 59.79,
+  "image_avant": {
+    "id": "S2B_31TCN_20260914_0_L2A",
+    "date": "2026-09-14",
+    "nuages_pct": 0.017582
+  },
+  "image_apres": {
+    "id": "S2C_31TCN_20260916_0_L2A",
+    "date": "2026-09-16",
+    "nuages_pct": 48.299465
+  },
+  "tuile": "MGRS-31TCN",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.652,
+  "part_masquee": 0.443,
+  "latence_jours": 2,
+  "calcule_le": "2026-09-16T19:34:33Z"
+}
