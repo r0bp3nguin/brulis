@@ -1,0 +1,17 @@
+{
+  "id": "20260916-72-cérans-foulletourte-4782007",
+  "feu": "Cérans-Foulletourte (72)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Cérans-Foulletourte",
+  "departement": "72",
+  "surface_estimee_ha": 31.4,
+  "surface_min_ha": 20.0,
+  "surface_max_ha": 42.0,
+  "premier_point_chaud": "2026-09-16",
+  "dernier_point_chaud": "2026-09-16",
+  "n_points_chauds": 5,
+  "frp_total": 5.42,
+  "prochain_passage": "2026-09-19",
+  "calcule_le": "2026-09-16T11:41:26Z"
+}
