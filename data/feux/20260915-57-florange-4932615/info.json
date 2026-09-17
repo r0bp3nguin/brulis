@@ -1,0 +1,17 @@
+{
+  "id": "20260915-57-florange-4932615",
+  "feu": "Florange (57)",
+  "statut": "en_attente",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "commune": "Florange",
+  "departement": "57",
+  "surface_estimee_ha": 31.3,
+  "surface_min_ha": 20.0,
+  "surface_max_ha": 42.0,
+  "premier_point_chaud": "2026-09-15",
+  "dernier_point_chaud": "2026-09-17",
+  "n_points_chauds": 5,
+  "frp_total": 3.57,
+  "prochain_passage": "2026-09-18",
+  "calcule_le": "2026-09-17T11:48:50Z"
+}

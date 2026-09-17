@@ -1,0 +1,29 @@
+{
+  "id": "20260914-01-anglefort-4591582",
+  "feu": "Anglefort (01)",
+  "statut": "mesure",
+  "commune": "Anglefort",
+  "departement": "01",
+  "surface_ha": 1.2,
+  "n_polygones": 1,
+  "premier_point_chaud": "2026-09-14",
+  "dernier_point_chaud": "2026-09-17",
+  "n_points_chauds": 5,
+  "frp_total": 3.73,
+  "image_avant": {
+    "id": "S2A_31TGL_20260912_0_L2A",
+    "date": "2026-09-12",
+    "nuages_pct": 0.118185
+  },
+  "image_apres": {
+    "id": "S2A_31TGL_20260915_1_L2A",
+    "date": "2026-09-15",
+    "nuages_pct": 0.087674
+  },
+  "tuile": "MGRS-31TGL",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.553,
+  "part_masquee": 0.072,
+  "latence_jours": 1,
+  "calcule_le": "2026-09-17T11:48:42Z"
+}

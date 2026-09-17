@@ -1,17 +1,29 @@
 {
   "id": "20260905-78-porcheville-4898176",
   "feu": "Porcheville (78)",
-  "statut": "ecarte",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Porcheville",
   "departement": "78",
-  "surface_estimee_ha": 43.8,
-  "surface_min_ha": 28.0,
-  "surface_max_ha": 59.0,
+  "surface_ha": 10.2,
+  "n_polygones": 5,
   "premier_point_chaud": "2026-09-05",
-  "dernier_point_chaud": "2026-09-13",
-  "n_points_chauds": 9,
-  "frp_total": 18.77,
-  "calcule_le": "2026-09-16T19:35:56Z",
-  "motif_ecarte": "couvert végétal insuffisant avant le feu (NBR 0.12) — chaume, sol nu ou site industriel, pas un feu de végétation"
+  "dernier_point_chaud": "2026-09-17",
+  "n_points_chauds": 5,
+  "frp_total": 13.86,
+  "image_avant": {
+    "id": "S2A_31UCQ_20260901_1_L2A",
+    "date": "2026-09-01",
+    "nuages_pct": 53.896654
+  },
+  "image_apres": {
+    "id": "S2C_31UCQ_20260916_0_L2A",
+    "date": "2026-09-16",
+    "nuages_pct": 37.521803
+  },
+  "tuile": "MGRS-31UCQ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.289,
+  "part_masquee": 0.486,
+  "latence_jours": 11,
+  "calcule_le": "2026-09-17T11:47:49Z"
 }
