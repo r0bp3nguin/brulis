@@ -1,0 +1,17 @@
+{
+  "id": "20260917-78-porcheville-4898176",
+  "feu": "Porcheville (78)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Porcheville",
+  "departement": "78",
+  "surface_estimee_ha": 40.8,
+  "surface_min_ha": 27.0,
+  "surface_max_ha": 55.0,
+  "premier_point_chaud": "2026-09-17",
+  "dernier_point_chaud": "2026-09-18",
+  "n_points_chauds": 8,
+  "frp_total": 18.71,
+  "prochain_passage": "2026-09-19",
+  "calcule_le": "2026-09-18T11:20:50Z"
+}

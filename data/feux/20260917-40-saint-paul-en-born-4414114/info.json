@@ -1,17 +1,17 @@
 {
   "id": "20260917-40-saint-paul-en-born-4414114",
-  "feu": "Saint-Paul-en-Born (40)",
+  "feu": "Mézos (40)",
   "statut": "en_attente",
   "motif_attente": "aucune image satellite depuis le départ du feu",
-  "commune": "Saint-Paul-en-Born",
+  "commune": "Mézos",
   "departement": "40",
-  "surface_estimee_ha": 49.0,
-  "surface_min_ha": 32.0,
-  "surface_max_ha": 66.0,
+  "surface_estimee_ha": 74.5,
+  "surface_min_ha": 48.0,
+  "surface_max_ha": 101.0,
   "premier_point_chaud": "2026-09-17",
-  "dernier_point_chaud": "2026-09-17",
-  "n_points_chauds": 7,
-  "frp_total": 213.97,
+  "dernier_point_chaud": "2026-09-18",
+  "n_points_chauds": 11,
+  "frp_total": 224.31,
   "prochain_passage": "2026-09-19",
-  "calcule_le": "2026-09-17T19:44:16Z"
+  "calcule_le": "2026-09-18T11:19:38Z"
 }
