@@ -1,0 +1,29 @@
+{
+  "id": "20260915-30-roquemaure-4406476",
+  "feu": "Roquemaure (30)",
+  "statut": "mesure",
+  "commune": "Roquemaure",
+  "departement": "30",
+  "surface_ha": 8.9,
+  "n_polygones": 4,
+  "premier_point_chaud": "2026-09-15",
+  "dernier_point_chaud": "2026-09-15",
+  "n_points_chauds": 5,
+  "frp_total": 24.17,
+  "image_avant": {
+    "id": "S2A_31TFJ_20260915_1_L2A",
+    "date": "2026-09-15",
+    "nuages_pct": 0.010074
+  },
+  "image_apres": {
+    "id": "S2B_31TFJ_20260918_0_L2A",
+    "date": "2026-09-18",
+    "nuages_pct": 10.994218
+  },
+  "tuile": "MGRS-31TFJ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.44,
+  "part_masquee": 0.0,
+  "latence_jours": 3,
+  "calcule_le": "2026-09-18T19:03:29Z"
+}

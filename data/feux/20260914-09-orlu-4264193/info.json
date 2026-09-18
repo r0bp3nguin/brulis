@@ -4,7 +4,7 @@
   "statut": "mesure",
   "commune": "Orlu",
   "departement": "09",
-  "surface_ha": 18.5,
+  "surface_ha": 29.0,
   "n_polygones": 2,
   "premier_point_chaud": "2026-09-14",
   "dernier_point_chaud": "2026-09-16",
@@ -16,14 +16,14 @@
     "nuages_pct": 0.48899
   },
   "image_apres": {
-    "id": "S2A_31TDH_20260915_0_L2A",
-    "date": "2026-09-15",
-    "nuages_pct": 0.006682
+    "id": "S2B_31TDH_20260918_0_L2A",
+    "date": "2026-09-18",
+    "nuages_pct": 35.856444
   },
   "tuile": "MGRS-31TDH",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.41,
+  "nbr_avant_median": 0.428,
   "part_masquee": 0.039,
-  "latence_jours": 1,
-  "calcule_le": "2026-09-18T11:19:35Z"
+  "latence_jours": 4,
+  "calcule_le": "2026-09-18T19:02:23Z"
 }
