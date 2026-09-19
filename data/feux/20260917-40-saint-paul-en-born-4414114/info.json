@@ -5,13 +5,13 @@
   "motif_attente": "aucune image satellite depuis le départ du feu",
   "commune": "Mézos",
   "departement": "40",
-  "surface_estimee_ha": 104.4,
-  "surface_min_ha": 68.0,
-  "surface_max_ha": 141.0,
+  "surface_estimee_ha": 106.3,
+  "surface_min_ha": 69.0,
+  "surface_max_ha": 144.0,
   "premier_point_chaud": "2026-09-17",
-  "dernier_point_chaud": "2026-09-18",
-  "n_points_chauds": 16,
-  "frp_total": 244.2,
+  "dernier_point_chaud": "2026-09-19",
+  "n_points_chauds": 18,
+  "frp_total": 246.56,
   "prochain_passage": "2026-09-19",
-  "calcule_le": "2026-09-18T19:02:07Z"
+  "calcule_le": "2026-09-19T11:03:32Z"
 }

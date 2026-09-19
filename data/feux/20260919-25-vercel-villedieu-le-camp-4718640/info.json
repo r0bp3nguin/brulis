@@ -1,0 +1,17 @@
+{
+  "id": "20260919-25-vercel-villedieu-le-camp-4718640",
+  "feu": "Vercel-Villedieu-le-Camp (25)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Vercel-Villedieu-le-Camp",
+  "departement": "25",
+  "surface_estimee_ha": 33.1,
+  "surface_min_ha": 22.0,
+  "surface_max_ha": 45.0,
+  "premier_point_chaud": "2026-09-19",
+  "dernier_point_chaud": "2026-09-19",
+  "n_points_chauds": 7,
+  "frp_total": 50.96,
+  "prochain_passage": "2026-09-21",
+  "calcule_le": "2026-09-19T11:03:46Z"
+}

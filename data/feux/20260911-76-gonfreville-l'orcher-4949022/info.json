@@ -2,7 +2,7 @@
   "id": "20260911-76-gonfreville-l'orcher-4949022",
   "feu": "Gonfreville-l'Orcher (76)",
   "statut": "en_attente",
-  "motif_attente": "aucune image avant-feu exploitable pour la comparaison",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Gonfreville-l'Orcher",
   "departement": "76",
   "surface_estimee_ha": 66.6,
@@ -13,5 +13,5 @@
   "n_points_chauds": 12,
   "frp_total": 43.58,
   "prochain_passage": "2026-09-20",
-  "calcule_le": "2026-09-18T19:03:20Z"
+  "calcule_le": "2026-09-19T11:04:53Z"
 }
