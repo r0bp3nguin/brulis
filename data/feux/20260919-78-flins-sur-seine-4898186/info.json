@@ -1,7 +1,7 @@
 {
   "id": "20260919-78-flins-sur-seine-4898186",
   "feu": "Flins-sur-Seine (78)",
-  "statut": "en_attente",
+  "statut": "ecarte",
   "motif_attente": "aucune image satellite depuis le départ du feu",
   "commune": "Flins-sur-Seine",
   "departement": "78",
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-09-19",
   "n_points_chauds": 22,
   "frp_total": 513.28,
-  "prochain_passage": "2026-09-21",
-  "calcule_le": "2026-09-19T11:03:19Z"
+  "calcule_le": "2026-09-19T18:36:33Z",
+  "motif_ecarte": "images exploitables, mais aucune trace de brûlé au seuil retenu"
 }

@@ -1,17 +1,29 @@
 {
   "id": "20260917-40-saint-paul-en-born-4414114",
   "feu": "Mézos (40)",
-  "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Mézos",
   "departement": "40",
-  "surface_estimee_ha": 106.3,
-  "surface_min_ha": 69.0,
-  "surface_max_ha": 144.0,
+  "surface_ha": 157.0,
+  "n_polygones": 7,
   "premier_point_chaud": "2026-09-17",
   "dernier_point_chaud": "2026-09-19",
   "n_points_chauds": 18,
   "frp_total": 246.56,
-  "prochain_passage": "2026-09-19",
-  "calcule_le": "2026-09-19T11:03:32Z"
+  "image_avant": {
+    "id": "S2B_30TXP_20260914_0_L2A",
+    "date": "2026-09-14",
+    "nuages_pct": 0.00145
+  },
+  "image_apres": {
+    "id": "S2C_30TXP_20260919_0_L2A",
+    "date": "2026-09-19",
+    "nuages_pct": 0.245633
+  },
+  "tuile": "MGRS-30TXP",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.363,
+  "part_masquee": 0.0,
+  "latence_jours": 2,
+  "calcule_le": "2026-09-19T18:36:45Z"
 }
