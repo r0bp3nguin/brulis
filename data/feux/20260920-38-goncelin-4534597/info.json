@@ -1,7 +1,7 @@
 {
   "id": "20260920-38-goncelin-4534597",
   "feu": "Goncelin (38)",
-  "statut": "en_attente",
+  "statut": "ecarte",
   "motif_attente": "aucune image satellite depuis le départ du feu",
   "commune": "Goncelin",
   "departement": "38",
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-09-20",
   "n_points_chauds": 7,
   "frp_total": 29.36,
-  "prochain_passage": "2026-09-21",
-  "calcule_le": "2026-09-20T11:29:12Z"
+  "calcule_le": "2026-09-20T18:48:49Z",
+  "motif_ecarte": "images exploitables, mais aucune trace de brûlé au seuil retenu"
 }
