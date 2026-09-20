@@ -1,17 +1,29 @@
 {
   "id": "20260916-44-donges-4732206",
   "feu": "Donges (44)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Donges",
   "departement": "44",
-  "surface_estimee_ha": 33.6,
-  "surface_min_ha": 22.0,
-  "surface_max_ha": 45.0,
+  "surface_ha": 19.0,
+  "n_polygones": 8,
   "premier_point_chaud": "2026-09-16",
   "dernier_point_chaud": "2026-09-19",
   "n_points_chauds": 6,
   "frp_total": 4.13,
-  "prochain_passage": "2026-09-22",
-  "calcule_le": "2026-09-19T18:38:02Z"
+  "image_avant": {
+    "id": "S2A_30TWT_20260914_2_L2A",
+    "date": "2026-09-14",
+    "nuages_pct": 19.295149
+  },
+  "image_apres": {
+    "id": "S2C_30TWT_20260919_0_L2A",
+    "date": "2026-09-19",
+    "nuages_pct": 48.517114
+  },
+  "tuile": "MGRS-30TWT",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.428,
+  "part_masquee": 0.669,
+  "latence_jours": 3,
+  "calcule_le": "2026-09-20T11:30:55Z"
 }

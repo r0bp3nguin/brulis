@@ -1,0 +1,17 @@
+{
+  "id": "20260920-54-dieulouard-4884607",
+  "feu": "Dieulouard (54)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Dieulouard",
+  "departement": "54",
+  "surface_estimee_ha": 37.1,
+  "surface_min_ha": 24.0,
+  "surface_max_ha": 50.0,
+  "premier_point_chaud": "2026-09-20",
+  "dernier_point_chaud": "2026-09-20",
+  "n_points_chauds": 8,
+  "frp_total": 35.41,
+  "prochain_passage": "2026-09-21",
+  "calcule_le": "2026-09-20T11:29:00Z"
+}
