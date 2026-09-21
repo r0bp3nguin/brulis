@@ -1,0 +1,29 @@
+{
+  "id": "20260919-47-boussès-4414012",
+  "feu": "Boussès (47)",
+  "statut": "mesure",
+  "commune": "Boussès",
+  "departement": "47",
+  "surface_ha": 3.1,
+  "n_polygones": 2,
+  "premier_point_chaud": "2026-09-19",
+  "dernier_point_chaud": "2026-09-19",
+  "n_points_chauds": 6,
+  "frp_total": 100.49,
+  "image_avant": {
+    "id": "S2C_30TYP_20260919_0_L2A",
+    "date": "2026-09-19",
+    "nuages_pct": 0.014308
+  },
+  "image_apres": {
+    "id": "S2A_30TYP_20260921_1_L2A",
+    "date": "2026-09-21",
+    "nuages_pct": 16.833971
+  },
+  "tuile": "MGRS-30TYP",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.496,
+  "part_masquee": 0.411,
+  "latence_jours": 2,
+  "calcule_le": "2026-09-21T20:25:41Z"
+}

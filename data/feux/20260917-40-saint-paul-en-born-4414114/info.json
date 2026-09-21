@@ -4,8 +4,8 @@
   "statut": "mesure",
   "commune": "Mézos",
   "departement": "40",
-  "surface_ha": 157.0,
-  "n_polygones": 7,
+  "surface_ha": 163.7,
+  "n_polygones": 6,
   "premier_point_chaud": "2026-09-17",
   "dernier_point_chaud": "2026-09-19",
   "n_points_chauds": 11,
@@ -16,14 +16,14 @@
     "nuages_pct": 0.00145
   },
   "image_apres": {
-    "id": "S2C_30TXP_20260919_0_L2A",
-    "date": "2026-09-19",
-    "nuages_pct": 0.245633
+    "id": "S2A_30TXP_20260921_1_L2A",
+    "date": "2026-09-21",
+    "nuages_pct": 9.867618
   },
   "tuile": "MGRS-30TXP",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.363,
+  "nbr_avant_median": 0.358,
   "part_masquee": 0.0,
-  "latence_jours": 2,
-  "calcule_le": "2026-09-21T12:54:04Z"
+  "latence_jours": 4,
+  "calcule_le": "2026-09-21T20:26:08Z"
 }

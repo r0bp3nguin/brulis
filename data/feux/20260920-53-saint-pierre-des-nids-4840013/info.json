@@ -1,17 +1,29 @@
 {
   "id": "20260920-53-saint-pierre-des-nids-4840013",
   "feu": "Saint-Pierre-des-Nids (53)",
-  "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Saint-Pierre-des-Nids",
   "departement": "53",
-  "surface_estimee_ha": 54.7,
-  "surface_min_ha": 36.0,
-  "surface_max_ha": 74.0,
+  "surface_ha": 78.2,
+  "n_polygones": 15,
   "premier_point_chaud": "2026-09-20",
   "dernier_point_chaud": "2026-09-20",
   "n_points_chauds": 10,
   "frp_total": 20.74,
-  "prochain_passage": "2026-09-22",
-  "calcule_le": "2026-09-21T12:54:27Z"
+  "image_avant": {
+    "id": "S2B_30UYU_20260914_0_L2A",
+    "date": "2026-09-14",
+    "nuages_pct": 0.005229
+  },
+  "image_apres": {
+    "id": "S2A_30UYU_20260921_1_L2A",
+    "date": "2026-09-21",
+    "nuages_pct": 59.063262
+  },
+  "tuile": "MGRS-30UYU",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.355,
+  "part_masquee": 0.0,
+  "latence_jours": 1,
+  "calcule_le": "2026-09-21T20:26:28Z"
 }

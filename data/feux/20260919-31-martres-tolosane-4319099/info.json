@@ -1,17 +1,29 @@
 {
   "id": "20260919-31-martres-tolosane-4319099",
   "feu": "Martres-Tolosane (31)",
-  "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Martres-Tolosane",
   "departement": "31",
-  "surface_estimee_ha": 26.1,
-  "surface_min_ha": 17.0,
-  "surface_max_ha": 35.0,
+  "surface_ha": 59.5,
+  "n_polygones": 26,
   "premier_point_chaud": "2026-09-19",
   "dernier_point_chaud": "2026-09-21",
   "n_points_chauds": 6,
   "frp_total": 4.49,
-  "prochain_passage": "2026-09-23",
-  "calcule_le": "2026-09-21T12:54:43Z"
+  "image_avant": {
+    "id": "S2A_31TCH_20260918_1_L2A",
+    "date": "2026-09-18",
+    "nuages_pct": 14.712927
+  },
+  "image_apres": {
+    "id": "S2B_31TCH_20260921_0_L2A",
+    "date": "2026-09-21",
+    "nuages_pct": 15.073577
+  },
+  "tuile": "MGRS-31TCH",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.24,
+  "part_masquee": 0.379,
+  "latence_jours": 2,
+  "calcule_le": "2026-09-21T20:26:47Z"
 }

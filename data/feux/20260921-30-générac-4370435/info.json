@@ -1,0 +1,17 @@
+{
+  "id": "20260921-30-générac-4370435",
+  "feu": "Générac (30)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Générac",
+  "departement": "30",
+  "surface_estimee_ha": 86.8,
+  "surface_min_ha": 56.0,
+  "surface_max_ha": 117.0,
+  "premier_point_chaud": "2026-09-21",
+  "dernier_point_chaud": "2026-09-21",
+  "n_points_chauds": 12,
+  "frp_total": 158.95,
+  "prochain_passage": "2026-09-23",
+  "calcule_le": "2026-09-21T20:25:35Z"
+}
