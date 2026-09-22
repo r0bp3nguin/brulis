@@ -1,17 +1,17 @@
 {
   "id": "20260911-53-saint-pierre-la-cour-4811104",
   "feu": "Saint-Pierre-la-Cour (53)",
-  "statut": "ecarte",
+  "statut": "en_attente",
   "motif_attente": "aucune image avant-feu exploitable pour la comparaison",
   "commune": "Saint-Pierre-la-Cour",
   "departement": "53",
-  "surface_estimee_ha": 32.1,
+  "surface_estimee_ha": 32.2,
   "surface_min_ha": 21.0,
-  "surface_max_ha": 43.0,
+  "surface_max_ha": 44.0,
   "premier_point_chaud": "2026-09-11",
-  "dernier_point_chaud": "2026-09-15",
-  "n_points_chauds": 7,
-  "frp_total": 5.9,
-  "calcule_le": "2026-09-17T11:49:31Z",
-  "motif_ecarte": "couvert végétal insuffisant avant le feu (NBR 0.11) — chaume, sol nu ou site industriel, pas un feu de végétation"
+  "dernier_point_chaud": "2026-09-22",
+  "n_points_chauds": 5,
+  "frp_total": 3.86,
+  "prochain_passage": "2026-09-24",
+  "calcule_le": "2026-09-22T11:45:06Z"
 }

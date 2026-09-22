@@ -4,26 +4,26 @@
   "statut": "mesure",
   "commune": "Perles-et-Castelet",
   "departement": "09",
-  "surface_ha": 39.1,
-  "n_polygones": 8,
+  "surface_ha": 34.0,
+  "n_polygones": 4,
   "premier_point_chaud": "2026-09-14",
-  "dernier_point_chaud": "2026-09-15",
-  "n_points_chauds": 11,
-  "frp_total": 46.96,
+  "dernier_point_chaud": "2026-09-22",
+  "n_points_chauds": 8,
+  "frp_total": 27.19,
   "image_avant": {
     "id": "S2C_31TCH_20260913_0_L2A",
     "date": "2026-09-13",
     "nuages_pct": 0.000342
   },
   "image_apres": {
-    "id": "S2A_31TCH_20260918_1_L2A",
-    "date": "2026-09-18",
-    "nuages_pct": 14.712927
+    "id": "S2B_31TCH_20260921_0_L2A",
+    "date": "2026-09-21",
+    "nuages_pct": 15.073577
   },
   "tuile": "MGRS-31TCH",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.546,
-  "part_masquee": 0.052,
-  "latence_jours": 4,
-  "calcule_le": "2026-09-18T19:02:47Z"
+  "nbr_avant_median": 0.357,
+  "part_masquee": 0.0,
+  "latence_jours": 7,
+  "calcule_le": "2026-09-22T11:43:43Z"
 }
