@@ -1,17 +1,29 @@
 {
   "id": "20260920-38-goncelin-4534597",
   "feu": "Goncelin (38)",
-  "statut": "ecarte",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Goncelin",
   "departement": "38",
-  "surface_estimee_ha": 41.1,
-  "surface_min_ha": 27.0,
-  "surface_max_ha": 55.0,
+  "surface_ha": 4.2,
+  "n_polygones": 2,
   "premier_point_chaud": "2026-09-20",
   "dernier_point_chaud": "2026-09-20",
   "n_points_chauds": 7,
   "frp_total": 29.36,
-  "calcule_le": "2026-09-22T11:43:36Z",
-  "motif_ecarte": "images exploitables, mais aucune trace de brûlé au seuil retenu"
+  "image_avant": {
+    "id": "S2C_31TGL_20260920_0_L2A",
+    "date": "2026-09-20",
+    "nuages_pct": 17.419444
+  },
+  "image_apres": {
+    "id": "S2A_31TGL_20260922_0_L2A",
+    "date": "2026-09-22",
+    "nuages_pct": 0.002439
+  },
+  "tuile": "MGRS-31TGL",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.392,
+  "part_masquee": 0.032,
+  "latence_jours": 2,
+  "calcule_le": "2026-09-22T19:45:49Z"
 }

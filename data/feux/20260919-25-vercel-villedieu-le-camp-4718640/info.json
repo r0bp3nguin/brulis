@@ -4,8 +4,8 @@
   "statut": "mesure",
   "commune": "Vercel-Villedieu-le-Camp",
   "departement": "25",
-  "surface_ha": 17.6,
-  "n_polygones": 8,
+  "surface_ha": 168.5,
+  "n_polygones": 46,
   "premier_point_chaud": "2026-09-19",
   "dernier_point_chaud": "2026-09-19",
   "n_points_chauds": 7,
@@ -16,14 +16,14 @@
     "nuages_pct": 0.303541
   },
   "image_apres": {
-    "id": "S2C_31TGN_20260920_0_L2A",
-    "date": "2026-09-20",
-    "nuages_pct": 88.427037
+    "id": "S2A_31TGN_20260922_0_L2A",
+    "date": "2026-09-22",
+    "nuages_pct": 0.000717
   },
   "tuile": "MGRS-31TGN",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.57,
-  "part_masquee": 0.087,
-  "latence_jours": 1,
-  "calcule_le": "2026-09-22T11:43:18Z"
+  "nbr_avant_median": 0.56,
+  "part_masquee": 0.0,
+  "latence_jours": 3,
+  "calcule_le": "2026-09-22T19:45:15Z"
 }
