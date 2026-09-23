@@ -1,17 +1,29 @@
 {
   "id": "20260921-66-villeneuve-de-la-raho-4265292",
   "feu": "Villeneuve-de-la-Raho (66)",
-  "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Villeneuve-de-la-Raho",
   "departement": "66",
-  "surface_estimee_ha": 35.8,
-  "surface_min_ha": 23.0,
-  "surface_max_ha": 48.0,
+  "surface_ha": 29.6,
+  "n_polygones": 5,
   "premier_point_chaud": "2026-09-21",
   "dernier_point_chaud": "2026-09-21",
   "n_points_chauds": 5,
   "frp_total": 41.36,
-  "prochain_passage": "2026-09-23",
-  "calcule_le": "2026-09-23T11:42:15Z"
+  "image_avant": {
+    "id": "S2A_31TDH_20260915_0_L2A",
+    "date": "2026-09-15",
+    "nuages_pct": 0.006682
+  },
+  "image_apres": {
+    "id": "S2C_31TDH_20260923_0_L2A",
+    "date": "2026-09-23",
+    "nuages_pct": 0.400291
+  },
+  "tuile": "MGRS-31TDH",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.21,
+  "part_masquee": 0.0,
+  "latence_jours": 2,
+  "calcule_le": "2026-09-23T19:41:40Z"
 }

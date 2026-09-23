@@ -4,8 +4,8 @@
   "statut": "mesure",
   "commune": "Vennes",
   "departement": "25",
-  "surface_ha": 213.3,
-  "n_polygones": 54,
+  "surface_ha": 289.5,
+  "n_polygones": 60,
   "premier_point_chaud": "2026-09-20",
   "dernier_point_chaud": "2026-09-20",
   "n_points_chauds": 5,
@@ -16,14 +16,14 @@
     "nuages_pct": 53.320789
   },
   "image_apres": {
-    "id": "S2A_31TGN_20260922_0_L2A",
-    "date": "2026-09-22",
-    "nuages_pct": 0.000717
+    "id": "S2C_31TGN_20260923_0_L2A",
+    "date": "2026-09-23",
+    "nuages_pct": 0.001356
   },
   "tuile": "MGRS-31TGN",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.543,
+  "nbr_avant_median": 0.535,
   "part_masquee": 0.395,
-  "latence_jours": 2,
-  "calcule_le": "2026-09-23T11:43:41Z"
+  "latence_jours": 3,
+  "calcule_le": "2026-09-23T19:42:46Z"
 }

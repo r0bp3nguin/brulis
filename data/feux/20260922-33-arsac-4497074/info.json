@@ -5,13 +5,13 @@
   "motif_attente": "aucune image satellite depuis le départ du feu",
   "commune": "Arsac",
   "departement": "33",
-  "surface_estimee_ha": 35.0,
-  "surface_min_ha": 23.0,
-  "surface_max_ha": 47.0,
+  "surface_estimee_ha": 106.8,
+  "surface_min_ha": 69.0,
+  "surface_max_ha": 144.0,
   "premier_point_chaud": "2026-09-22",
-  "dernier_point_chaud": "2026-09-22",
-  "n_points_chauds": 5,
-  "frp_total": 32.93,
+  "dernier_point_chaud": "2026-09-23",
+  "n_points_chauds": 15,
+  "frp_total": 81.43,
   "prochain_passage": "2026-09-26",
-  "calcule_le": "2026-09-23T11:42:31Z"
+  "calcule_le": "2026-09-23T19:41:21Z"
 }

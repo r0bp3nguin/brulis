@@ -4,8 +4,8 @@
   "statut": "mesure",
   "commune": "Goncelin",
   "departement": "38",
-  "surface_ha": 4.2,
-  "n_polygones": 2,
+  "surface_ha": 10.7,
+  "n_polygones": 6,
   "premier_point_chaud": "2026-09-20",
   "dernier_point_chaud": "2026-09-20",
   "n_points_chauds": 7,
@@ -16,14 +16,14 @@
     "nuages_pct": 17.419444
   },
   "image_apres": {
-    "id": "S2A_31TGL_20260922_0_L2A",
-    "date": "2026-09-22",
-    "nuages_pct": 0.002439
+    "id": "S2C_31TGL_20260923_0_L2A",
+    "date": "2026-09-23",
+    "nuages_pct": 0.002716
   },
   "tuile": "MGRS-31TGL",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.392,
-  "part_masquee": 0.032,
-  "latence_jours": 2,
-  "calcule_le": "2026-09-23T11:42:42Z"
+  "nbr_avant_median": 0.488,
+  "part_masquee": 0.033,
+  "latence_jours": 3,
+  "calcule_le": "2026-09-23T19:41:56Z"
 }

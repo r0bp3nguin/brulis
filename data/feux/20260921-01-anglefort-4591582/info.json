@@ -4,8 +4,8 @@
   "statut": "mesure",
   "commune": "Anglefort",
   "departement": "01",
-  "surface_ha": 22.0,
-  "n_polygones": 5,
+  "surface_ha": 24.6,
+  "n_polygones": 8,
   "premier_point_chaud": "2026-09-21",
   "dernier_point_chaud": "2026-09-23",
   "n_points_chauds": 6,
@@ -16,14 +16,14 @@
     "nuages_pct": 3.529206
   },
   "image_apres": {
-    "id": "S2A_31TGL_20260922_0_L2A",
-    "date": "2026-09-22",
-    "nuages_pct": 0.002439
+    "id": "S2C_31TGL_20260923_0_L2A",
+    "date": "2026-09-23",
+    "nuages_pct": 0.002716
   },
   "tuile": "MGRS-31TGL",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.423,
-  "part_masquee": 0.108,
-  "latence_jours": 1,
-  "calcule_le": "2026-09-23T11:44:28Z"
+  "nbr_avant_median": 0.495,
+  "part_masquee": 0.107,
+  "latence_jours": 2,
+  "calcule_le": "2026-09-23T19:43:18Z"
 }

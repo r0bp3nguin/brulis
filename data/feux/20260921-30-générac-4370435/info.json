@@ -4,8 +4,8 @@
   "statut": "mesure",
   "commune": "Générac",
   "departement": "30",
-  "surface_ha": 29.9,
-  "n_polygones": 1,
+  "surface_ha": 25.1,
+  "n_polygones": 4,
   "premier_point_chaud": "2026-09-21",
   "dernier_point_chaud": "2026-09-21",
   "n_points_chauds": 12,
@@ -16,14 +16,14 @@
     "nuages_pct": 28.393266
   },
   "image_apres": {
-    "id": "S2A_31TEJ_20260922_0_L2A",
-    "date": "2026-09-22",
-    "nuages_pct": 0.0174
+    "id": "S2C_31TEJ_20260923_0_L2A",
+    "date": "2026-09-23",
+    "nuages_pct": 8.520141
   },
   "tuile": "MGRS-31TEJ",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.237,
-  "part_masquee": 0.0,
-  "latence_jours": 1,
-  "calcule_le": "2026-09-23T11:41:43Z"
+  "nbr_avant_median": 0.295,
+  "part_masquee": 0.228,
+  "latence_jours": 2,
+  "calcule_le": "2026-09-23T19:41:06Z"
 }
