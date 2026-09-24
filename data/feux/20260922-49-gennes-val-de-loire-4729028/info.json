@@ -1,17 +1,29 @@
 {
   "id": "20260922-49-gennes-val-de-loire-4729028",
   "feu": "Gennes-Val-de-Loire (49)",
-  "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Gennes-Val-de-Loire",
   "departement": "49",
-  "surface_estimee_ha": 23.6,
-  "surface_min_ha": 15.0,
-  "surface_max_ha": 32.0,
+  "surface_ha": 24.4,
+  "n_polygones": 6,
   "premier_point_chaud": "2026-09-22",
   "dernier_point_chaud": "2026-09-22",
   "n_points_chauds": 6,
   "frp_total": 50.28,
-  "prochain_passage": "2026-09-26",
-  "calcule_le": "2026-09-24T11:50:28Z"
+  "image_avant": {
+    "id": "S2C_30TXT_20260919_0_L2A",
+    "date": "2026-09-19",
+    "nuages_pct": 13.325503
+  },
+  "image_apres": {
+    "id": "S2B_30TXT_20260924_0_L2A",
+    "date": "2026-09-24",
+    "nuages_pct": 38.388574
+  },
+  "tuile": "MGRS-30TXT",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.32,
+  "part_masquee": 0.005,
+  "latence_jours": 2,
+  "calcule_le": "2026-09-24T20:00:46Z"
 }
