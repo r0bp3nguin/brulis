@@ -1,0 +1,29 @@
+{
+  "id": "20260922-33-arsac-4498074",
+  "feu": "Arsac (33)",
+  "statut": "mesure",
+  "commune": "Arsac",
+  "departement": "33",
+  "surface_ha": 1.3,
+  "n_polygones": 1,
+  "premier_point_chaud": "2026-09-22",
+  "dernier_point_chaud": "2026-09-24",
+  "n_points_chauds": 16,
+  "frp_total": 86.28,
+  "image_avant": {
+    "id": "S2A_30TXQ_20260921_1_L2A",
+    "date": "2026-09-21",
+    "nuages_pct": 11.027143
+  },
+  "image_apres": {
+    "id": "S2B_30TXQ_20260924_0_L2A",
+    "date": "2026-09-24",
+    "nuages_pct": 17.671391
+  },
+  "tuile": "MGRS-30TXQ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.44,
+  "part_masquee": 0.366,
+  "latence_jours": 2,
+  "calcule_le": "2026-09-25T11:54:27Z"
+}
