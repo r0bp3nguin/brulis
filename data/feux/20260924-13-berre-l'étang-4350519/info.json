@@ -1,17 +1,29 @@
 {
   "id": "20260924-13-berre-l'étang-4350519",
   "feu": "Berre-l'Étang (13)",
-  "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Berre-l'Étang",
   "departement": "13",
-  "surface_estimee_ha": 40.1,
-  "surface_min_ha": 26.0,
-  "surface_max_ha": 54.0,
+  "surface_ha": 14.3,
+  "n_polygones": 8,
   "premier_point_chaud": "2026-09-24",
   "dernier_point_chaud": "2026-09-25",
   "n_points_chauds": 5,
   "frp_total": 49.83,
-  "prochain_passage": "2026-09-26",
-  "calcule_le": "2026-09-25T11:54:36Z"
+  "image_avant": {
+    "id": "S2C_31TFJ_20260923_0_L2A",
+    "date": "2026-09-23",
+    "nuages_pct": 6.147661
+  },
+  "image_apres": {
+    "id": "S2B_31TFJ_20260925_0_L2A",
+    "date": "2026-09-25",
+    "nuages_pct": 10.351389
+  },
+  "tuile": "MGRS-31TFJ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.446,
+  "part_masquee": 0.361,
+  "latence_jours": 1,
+  "calcule_le": "2026-09-25T20:01:40Z"
 }
