@@ -1,17 +1,29 @@
 {
   "id": "20260914-02-chevresis-monceau-4975355",
   "feu": "Chevresis-Monceau (02)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Chevresis-Monceau",
   "departement": "02",
-  "surface_estimee_ha": 35.0,
-  "surface_min_ha": 23.0,
-  "surface_max_ha": 47.0,
+  "surface_ha": 87.5,
+  "n_polygones": 11,
   "premier_point_chaud": "2026-09-14",
   "dernier_point_chaud": "2026-09-14",
   "n_points_chauds": 6,
   "frp_total": 67.1,
-  "prochain_passage": "2026-09-26",
-  "calcule_le": "2026-09-26T11:31:30Z"
+  "image_avant": {
+    "id": "S2B_31UER_20260911_0_L2A",
+    "date": "2026-09-11",
+    "nuages_pct": 51.191169
+  },
+  "image_apres": {
+    "id": "S2C_31UER_20260926_0_L2A",
+    "date": "2026-09-26",
+    "nuages_pct": 51.982039
+  },
+  "tuile": "MGRS-31UER",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.27,
+  "part_masquee": 0.0,
+  "latence_jours": 12,
+  "calcule_le": "2026-09-26T19:15:33Z"
 }
