@@ -8,8 +8,8 @@
   "n_polygones": 11,
   "premier_point_chaud": "2026-09-24",
   "dernier_point_chaud": "2026-09-27",
-  "n_points_chauds": 32,
-  "frp_total": 212.02,
+  "n_points_chauds": 41,
+  "frp_total": 409.04,
   "image_avant": {
     "id": "S2C_31TDH_20260923_0_L2A",
     "date": "2026-09-23",
@@ -25,5 +25,5 @@
   "nbr_avant_median": 0.604,
   "part_masquee": 0.019,
   "latence_jours": 2,
-  "calcule_le": "2026-09-27T12:06:54Z"
+  "calcule_le": "2026-09-27T19:45:47Z"
 }
