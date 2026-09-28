@@ -2,7 +2,7 @@
   "id": "20260926-69-saint-clément-sur-valson-4593448",
   "feu": "Saint-Clément-sur-Valsonne (69)",
   "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Saint-Clément-sur-Valsonne",
   "departement": "69",
   "surface_estimee_ha": 73.4,
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-09-26",
   "n_points_chauds": 12,
   "frp_total": 200.31,
-  "prochain_passage": "2026-09-30",
-  "calcule_le": "2026-09-27T19:46:44Z"
+  "prochain_passage": "2026-10-03",
+  "calcule_le": "2026-09-28T22:00:27Z"
 }
