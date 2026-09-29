@@ -1,17 +1,29 @@
 {
   "id": "20260911-53-saint-pierre-la-cour-4811104",
   "feu": "Saint-Pierre-la-Cour (53)",
-  "statut": "en_attente",
-  "motif_attente": "aucune image avant-feu exploitable pour la comparaison",
+  "statut": "mesure",
   "commune": "Saint-Pierre-la-Cour",
   "departement": "53",
-  "surface_estimee_ha": 28.9,
-  "surface_min_ha": 19.0,
-  "surface_max_ha": 39.0,
+  "surface_ha": 11.1,
+  "n_polygones": 4,
   "premier_point_chaud": "2026-09-11",
   "dernier_point_chaud": "2026-09-26",
   "n_points_chauds": 5,
   "frp_total": 4.63,
-  "prochain_passage": "2026-09-30",
-  "calcule_le": "2026-09-28T22:01:37Z"
+  "image_avant": {
+    "id": "S2A_30UXU_20260901_0_L2A",
+    "date": "2026-09-01",
+    "nuages_pct": 63.457274
+  },
+  "image_apres": {
+    "id": "S2A_30UXU_20260924_1_L2A",
+    "date": "2026-09-24",
+    "nuages_pct": 37.708679
+  },
+  "tuile": "MGRS-30UXU",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.235,
+  "part_masquee": 0.23,
+  "latence_jours": 13,
+  "calcule_le": "2026-09-29T13:00:33Z"
 }
