@@ -2,7 +2,7 @@
   "id": "20260929-04-moustiers-sainte-marie-4383622",
   "feu": "Moustiers-Sainte-Marie (04)",
   "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Moustiers-Sainte-Marie",
   "departement": "04",
   "surface_estimee_ha": 38.5,
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-09-29",
   "n_points_chauds": 6,
   "frp_total": 13.66,
-  "prochain_passage": "2026-09-30",
-  "calcule_le": "2026-09-30T12:40:44Z"
+  "prochain_passage": "2026-10-05",
+  "calcule_le": "2026-09-30T20:49:33Z"
 }
