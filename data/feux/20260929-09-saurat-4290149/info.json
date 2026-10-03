@@ -1,17 +1,29 @@
 {
   "id": "20260929-09-saurat-4290149",
   "feu": "Saurat (09)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Saurat",
   "departement": "09",
-  "surface_estimee_ha": 86.3,
-  "surface_min_ha": 56.0,
-  "surface_max_ha": 117.0,
+  "surface_ha": 390.7,
+  "n_polygones": 40,
   "premier_point_chaud": "2026-09-29",
   "dernier_point_chaud": "2026-09-30",
   "n_points_chauds": 14,
   "frp_total": 22.81,
-  "prochain_passage": "2026-10-04",
-  "calcule_le": "2026-10-03T11:43:01Z"
+  "image_avant": {
+    "id": "S2C_31TCH_20260926_0_L2A",
+    "date": "2026-09-26",
+    "nuages_pct": 43.924826
+  },
+  "image_apres": {
+    "id": "S2C_31TCH_20261003_0_L2A",
+    "date": "2026-10-03",
+    "nuages_pct": 32.067475
+  },
+  "tuile": "MGRS-31TCH",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.6,
+  "part_masquee": 0.586,
+  "latence_jours": 4,
+  "calcule_le": "2026-10-03T19:14:13Z"
 }

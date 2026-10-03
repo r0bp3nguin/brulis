@@ -2,7 +2,7 @@
   "id": "20260930-69-grandris-4605445",
   "feu": "Grandris (69)",
   "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Grandris",
   "departement": "69",
   "surface_estimee_ha": 36.0,
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-09-30",
   "n_points_chauds": 6,
   "frp_total": 6.06,
-  "prochain_passage": "2026-10-03",
-  "calcule_le": "2026-10-03T11:43:45Z"
+  "prochain_passage": "2026-10-08",
+  "calcule_le": "2026-10-03T19:15:09Z"
 }

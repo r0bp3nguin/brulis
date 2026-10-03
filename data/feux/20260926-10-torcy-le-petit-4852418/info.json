@@ -1,17 +1,29 @@
 {
   "id": "20260926-10-torcy-le-petit-4852418",
   "feu": "Torcy-le-Petit (10)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Torcy-le-Petit",
   "departement": "10",
-  "surface_estimee_ha": 29.0,
-  "surface_min_ha": 19.0,
-  "surface_max_ha": 39.0,
+  "surface_ha": 63.9,
+  "n_polygones": 13,
   "premier_point_chaud": "2026-09-26",
   "dernier_point_chaud": "2026-09-26",
   "n_points_chauds": 6,
   "frp_total": 15.85,
-  "prochain_passage": "2026-10-04",
-  "calcule_le": "2026-10-03T11:44:20Z"
+  "image_avant": {
+    "id": "S2A_31UEP_20260925_0_L2A",
+    "date": "2026-09-25",
+    "nuages_pct": 0.770386
+  },
+  "image_apres": {
+    "id": "S2C_31UEP_20261003_0_L2A",
+    "date": "2026-10-03",
+    "nuages_pct": 11.990153
+  },
+  "tuile": "MGRS-31UEP",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.373,
+  "part_masquee": 0.0,
+  "latence_jours": 7,
+  "calcule_le": "2026-10-03T19:16:04Z"
 }
