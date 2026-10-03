@@ -5,13 +5,13 @@
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Saurat",
   "departement": "09",
-  "surface_estimee_ha": 94.1,
-  "surface_min_ha": 61.0,
-  "surface_max_ha": 127.0,
+  "surface_estimee_ha": 86.3,
+  "surface_min_ha": 56.0,
+  "surface_max_ha": 117.0,
   "premier_point_chaud": "2026-09-29",
   "dernier_point_chaud": "2026-09-30",
-  "n_points_chauds": 17,
-  "frp_total": 53.84,
+  "n_points_chauds": 14,
+  "frp_total": 22.81,
   "prochain_passage": "2026-10-04",
-  "calcule_le": "2026-10-02T20:44:38Z"
+  "calcule_le": "2026-10-03T11:43:01Z"
 }
