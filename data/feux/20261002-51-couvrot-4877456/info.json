@@ -4,12 +4,12 @@
   "statut": "mesure",
   "commune": "Couvrot",
   "departement": "51",
-  "surface_ha": 19.2,
-  "n_polygones": 7,
+  "surface_ha": 21.6,
+  "n_polygones": 8,
   "premier_point_chaud": "2026-10-02",
-  "dernier_point_chaud": "2026-10-04",
-  "n_points_chauds": 6,
-  "frp_total": 4.02,
+  "dernier_point_chaud": "2026-10-05",
+  "n_points_chauds": 8,
+  "frp_total": 5.47,
   "image_avant": {
     "id": "S2C_31UFQ_20260926_0_L2A",
     "date": "2026-09-26",
@@ -22,8 +22,8 @@
   },
   "tuile": "MGRS-31UFQ",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.278,
-  "part_masquee": 0.014,
+  "nbr_avant_median": 0.266,
+  "part_masquee": 0.015,
   "latence_jours": 1,
-  "calcule_le": "2026-10-04T19:38:18Z"
+  "calcule_le": "2026-10-05T14:47:07Z"
 }
