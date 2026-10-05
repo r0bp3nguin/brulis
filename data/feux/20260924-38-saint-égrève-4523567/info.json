@@ -1,17 +1,29 @@
 {
   "id": "20260924-38-saint-égrève-4523567",
   "feu": "Saint-Égrève (38)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Saint-Égrève",
   "departement": "38",
-  "surface_estimee_ha": 24.5,
-  "surface_min_ha": 16.0,
-  "surface_max_ha": 33.0,
+  "surface_ha": 56.9,
+  "n_polygones": 8,
   "premier_point_chaud": "2026-09-24",
   "dernier_point_chaud": "2026-09-27",
   "n_points_chauds": 6,
   "frp_total": 2.99,
-  "prochain_passage": "2026-10-06",
-  "calcule_le": "2026-10-05T14:48:56Z"
+  "image_avant": {
+    "id": "S2C_31TFL_20260923_0_L2A",
+    "date": "2026-09-23",
+    "nuages_pct": 0.003484
+  },
+  "image_apres": {
+    "id": "S2B_31TFL_20261005_0_L2A",
+    "date": "2026-10-05",
+    "nuages_pct": 13.920677
+  },
+  "tuile": "MGRS-31TFL",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.202,
+  "part_masquee": 0.142,
+  "latence_jours": 11,
+  "calcule_le": "2026-10-05T22:40:05Z"
 }

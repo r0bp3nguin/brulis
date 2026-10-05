@@ -1,17 +1,29 @@
 {
   "id": "20260929-04-moustiers-sainte-marie-4383622",
   "feu": "Moustiers-Sainte-Marie (04)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Moustiers-Sainte-Marie",
   "departement": "04",
-  "surface_estimee_ha": 38.5,
-  "surface_min_ha": 25.0,
-  "surface_max_ha": 52.0,
+  "surface_ha": 902.4,
+  "n_polygones": 38,
   "premier_point_chaud": "2026-09-29",
   "dernier_point_chaud": "2026-09-29",
   "n_points_chauds": 6,
   "frp_total": 13.66,
-  "prochain_passage": "2026-10-07",
-  "calcule_le": "2026-10-05T14:48:32Z"
+  "image_avant": {
+    "id": "S2B_31TGJ_20260925_0_L2A",
+    "date": "2026-09-25",
+    "nuages_pct": 28.670409
+  },
+  "image_apres": {
+    "id": "S2B_31TGJ_20261005_0_L2A",
+    "date": "2026-10-05",
+    "nuages_pct": 49.61358
+  },
+  "tuile": "MGRS-31TGJ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.469,
+  "part_masquee": 0.275,
+  "latence_jours": 6,
+  "calcule_le": "2026-10-05T22:39:45Z"
 }
