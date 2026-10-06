@@ -1,0 +1,17 @@
+{
+  "id": "20261006-48-lachamp-ribennes-4459336",
+  "feu": "Lachamp-Ribennes (48)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Lachamp-Ribennes",
+  "departement": "48",
+  "surface_estimee_ha": 23.6,
+  "surface_min_ha": 15.0,
+  "surface_max_ha": 32.0,
+  "premier_point_chaud": "2026-10-06",
+  "dernier_point_chaud": "2026-10-06",
+  "n_points_chauds": 5,
+  "frp_total": 24.28,
+  "prochain_passage": "2026-10-06",
+  "calcule_le": "2026-10-06T21:00:01Z"
+}
