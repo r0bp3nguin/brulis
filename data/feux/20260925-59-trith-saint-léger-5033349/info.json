@@ -5,13 +5,13 @@
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Trith-Saint-Léger",
   "departement": "59",
-  "surface_estimee_ha": 64.8,
-  "surface_min_ha": 42.0,
-  "surface_max_ha": 87.0,
+  "surface_estimee_ha": 53.3,
+  "surface_min_ha": 35.0,
+  "surface_max_ha": 72.0,
   "premier_point_chaud": "2026-09-25",
   "dernier_point_chaud": "2026-10-05",
-  "n_points_chauds": 11,
-  "frp_total": 10.79,
+  "n_points_chauds": 7,
+  "frp_total": 6.14,
   "prochain_passage": "2026-10-06",
-  "calcule_le": "2026-10-05T22:38:16Z"
+  "calcule_le": "2026-10-06T13:23:24Z"
 }
