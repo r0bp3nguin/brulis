@@ -1,0 +1,17 @@
+{
+  "id": "20261005-29-saint-nic-4823428",
+  "feu": "Saint-Nic (29)",
+  "statut": "en_attente",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "commune": "Saint-Nic",
+  "departement": "29",
+  "surface_estimee_ha": 58.4,
+  "surface_min_ha": 38.0,
+  "surface_max_ha": 79.0,
+  "premier_point_chaud": "2026-10-05",
+  "dernier_point_chaud": "2026-10-06",
+  "n_points_chauds": 11,
+  "frp_total": 254.95,
+  "prochain_passage": "2026-10-10",
+  "calcule_le": "2026-10-07T21:18:22Z"
+}
