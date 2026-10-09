@@ -2,7 +2,7 @@
   "id": "20261005-76-port-jérôme-sur-seine-4947054",
   "feu": "Port-Jérôme-sur-Seine (76)",
   "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Port-Jérôme-sur-Seine",
   "departement": "76",
   "surface_estimee_ha": 52.9,
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-10-08",
   "n_points_chauds": 8,
   "frp_total": 8.02,
-  "prochain_passage": "2026-10-09",
-  "calcule_le": "2026-10-09T13:22:34Z"
+  "prochain_passage": "2026-10-14",
+  "calcule_le": "2026-10-09T20:54:48Z"
 }
