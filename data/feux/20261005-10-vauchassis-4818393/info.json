@@ -5,13 +5,13 @@
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Vauchassis",
   "departement": "10",
-  "surface_estimee_ha": 82.6,
-  "surface_min_ha": 54.0,
-  "surface_max_ha": 111.0,
+  "surface_estimee_ha": 44.3,
+  "surface_min_ha": 29.0,
+  "surface_max_ha": 60.0,
   "premier_point_chaud": "2026-10-05",
   "dernier_point_chaud": "2026-10-07",
-  "n_points_chauds": 15,
-  "frp_total": 13.28,
+  "n_points_chauds": 7,
+  "frp_total": 7.9,
   "prochain_passage": "2026-10-11",
-  "calcule_le": "2026-10-09T20:54:30Z"
+  "calcule_le": "2026-10-10T12:36:45Z"
 }

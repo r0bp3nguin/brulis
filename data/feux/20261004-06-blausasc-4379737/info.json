@@ -5,13 +5,13 @@
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Blausasc",
   "departement": "06",
-  "surface_estimee_ha": 41.0,
-  "surface_min_ha": 27.0,
-  "surface_max_ha": 55.0,
+  "surface_estimee_ha": 43.8,
+  "surface_min_ha": 28.0,
+  "surface_max_ha": 59.0,
   "premier_point_chaud": "2026-10-04",
-  "dernier_point_chaud": "2026-10-09",
-  "n_points_chauds": 8,
-  "frp_total": 10.23,
+  "dernier_point_chaud": "2026-10-10",
+  "n_points_chauds": 9,
+  "frp_total": 13.3,
   "prochain_passage": "2026-10-12",
-  "calcule_le": "2026-10-09T20:54:38Z"
+  "calcule_le": "2026-10-10T12:36:36Z"
 }
