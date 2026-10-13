@@ -1,17 +1,29 @@
 {
   "id": "20260927-07-dompnac-4457413",
   "feu": "Dompnac (07)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Dompnac",
   "departement": "07",
-  "surface_estimee_ha": 71.2,
-  "surface_min_ha": 46.0,
-  "surface_max_ha": 96.0,
+  "surface_ha": 724.6,
+  "n_polygones": 37,
   "premier_point_chaud": "2026-09-27",
   "dernier_point_chaud": "2026-09-27",
   "n_points_chauds": 12,
   "frp_total": 47.96,
-  "prochain_passage": "2026-10-13",
-  "calcule_le": "2026-10-13T14:18:06Z"
+  "image_avant": {
+    "id": "S2A_31TEK_20260925_1_L2A",
+    "date": "2026-09-25",
+    "nuages_pct": 3.146273
+  },
+  "image_apres": {
+    "id": "S2C_31TEK_20261013_0_L2A",
+    "date": "2026-10-13",
+    "nuages_pct": 47.378218
+  },
+  "tuile": "MGRS-31TEK",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.626,
+  "part_masquee": 0.253,
+  "latence_jours": 16,
+  "calcule_le": "2026-10-13T21:15:37Z"
 }
