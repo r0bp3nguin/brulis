@@ -1,0 +1,29 @@
+{
+  "id": "20261012-2B-casamaccioli-4225899",
+  "feu": "Casamaccioli (2B)",
+  "statut": "mesure",
+  "commune": "Casamaccioli",
+  "departement": "2B",
+  "surface_ha": 114.4,
+  "n_polygones": 32,
+  "premier_point_chaud": "2026-10-12",
+  "dernier_point_chaud": "2026-10-12",
+  "n_points_chauds": 7,
+  "frp_total": 247.77,
+  "image_avant": {
+    "id": "S2B_32TMM_20261012_0_L2A",
+    "date": "2026-10-12",
+    "nuages_pct": 0.190557
+  },
+  "image_apres": {
+    "id": "S2C_32TMM_20261014_0_L2A",
+    "date": "2026-10-14",
+    "nuages_pct": 37.667644
+  },
+  "tuile": "MGRS-32TMM",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.448,
+  "part_masquee": 0.207,
+  "latence_jours": 2,
+  "calcule_le": "2026-10-14T20:11:50Z"
+}
