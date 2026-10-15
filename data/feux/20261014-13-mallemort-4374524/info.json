@@ -1,17 +1,29 @@
 {
   "id": "20261014-13-mallemort-4374524",
   "feu": "Mallemort (13)",
-  "statut": "en_attente",
-  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "statut": "mesure",
   "commune": "Mallemort",
   "departement": "13",
-  "surface_estimee_ha": 35.3,
-  "surface_min_ha": 23.0,
-  "surface_max_ha": 48.0,
+  "surface_ha": 23.2,
+  "n_polygones": 8,
   "premier_point_chaud": "2026-10-14",
-  "dernier_point_chaud": "2026-10-14",
-  "n_points_chauds": 5,
-  "frp_total": 18.55,
-  "prochain_passage": "2026-10-16",
-  "calcule_le": "2026-10-15T11:34:30Z"
+  "dernier_point_chaud": "2026-10-15",
+  "n_points_chauds": 12,
+  "frp_total": 72.13,
+  "image_avant": {
+    "id": "S2C_31TFJ_20261013_0_L2A",
+    "date": "2026-10-13",
+    "nuages_pct": 0.058888
+  },
+  "image_apres": {
+    "id": "S2A_31TFJ_20261015_1_L2A",
+    "date": "2026-10-15",
+    "nuages_pct": 26.881239
+  },
+  "tuile": "MGRS-31TFJ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.287,
+  "part_masquee": 0.016,
+  "latence_jours": 1,
+  "calcule_le": "2026-10-15T19:53:59Z"
 }

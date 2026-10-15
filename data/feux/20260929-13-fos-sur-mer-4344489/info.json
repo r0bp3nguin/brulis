@@ -1,17 +1,29 @@
 {
   "id": "20260929-13-fos-sur-mer-4344489",
   "feu": "Fos-sur-Mer (13)",
-  "statut": "ecarte",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Fos-sur-Mer",
   "departement": "13",
-  "surface_estimee_ha": 200.5,
-  "surface_min_ha": 130.0,
-  "surface_max_ha": 271.0,
+  "surface_ha": 10.7,
+  "n_polygones": 5,
   "premier_point_chaud": "2026-09-29",
-  "dernier_point_chaud": "2026-10-02",
-  "n_points_chauds": 48,
-  "frp_total": 112.61,
-  "calcule_le": "2026-10-15T11:33:55Z",
-  "motif_ecarte": "couvert végétal insuffisant avant le feu (NBR 0.11) — chaume, sol nu ou site industriel, pas un feu de végétation"
+  "dernier_point_chaud": "2026-10-15",
+  "n_points_chauds": 109,
+  "frp_total": 329.08,
+  "image_avant": {
+    "id": "S2B_31TFJ_20260928_0_L2A",
+    "date": "2026-09-28",
+    "nuages_pct": 50.220525
+  },
+  "image_apres": {
+    "id": "S2A_31TFJ_20261015_1_L2A",
+    "date": "2026-10-15",
+    "nuages_pct": 26.881239
+  },
+  "tuile": "MGRS-31TFJ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.455,
+  "part_masquee": 0.101,
+  "latence_jours": 16,
+  "calcule_le": "2026-10-15T19:53:23Z"
 }

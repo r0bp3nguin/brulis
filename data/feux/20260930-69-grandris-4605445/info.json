@@ -1,17 +1,29 @@
 {
   "id": "20260930-69-grandris-4605445",
   "feu": "Grandris (69)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Grandris",
   "departement": "69",
-  "surface_estimee_ha": 36.0,
-  "surface_min_ha": 23.0,
-  "surface_max_ha": 49.0,
+  "surface_ha": 7.6,
+  "n_polygones": 3,
   "premier_point_chaud": "2026-09-30",
   "dernier_point_chaud": "2026-09-30",
   "n_points_chauds": 6,
   "frp_total": 6.06,
-  "prochain_passage": "2026-10-18",
-  "calcule_le": "2026-10-15T11:36:06Z"
+  "image_avant": {
+    "id": "S2A_31TFM_20260925_1_L2A",
+    "date": "2026-09-25",
+    "nuages_pct": 12.665814
+  },
+  "image_apres": {
+    "id": "S2A_31TFM_20261015_1_L2A",
+    "date": "2026-10-15",
+    "nuages_pct": 47.315544
+  },
+  "tuile": "MGRS-31TFM",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.259,
+  "part_masquee": 0.0,
+  "latence_jours": 15,
+  "calcule_le": "2026-10-15T19:55:47Z"
 }
