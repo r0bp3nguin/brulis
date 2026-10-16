@@ -1,0 +1,29 @@
+{
+  "id": "20261014-2B-venaco-4220908",
+  "feu": "Venaco (2B)",
+  "statut": "mesure",
+  "commune": "Venaco",
+  "departement": "2B",
+  "surface_ha": 219.7,
+  "n_polygones": 42,
+  "premier_point_chaud": "2026-10-14",
+  "dernier_point_chaud": "2026-10-16",
+  "n_points_chauds": 16,
+  "frp_total": 369.18,
+  "image_avant": {
+    "id": "S2C_32TMM_20261014_0_L2A",
+    "date": "2026-10-14",
+    "nuages_pct": 37.667644
+  },
+  "image_apres": {
+    "id": "S2A_32TMM_20261016_0_L2A",
+    "date": "2026-10-16",
+    "nuages_pct": 40.541473
+  },
+  "tuile": "MGRS-32TMM",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.366,
+  "part_masquee": 0.124,
+  "latence_jours": 2,
+  "calcule_le": "2026-10-16T19:33:17Z"
+}

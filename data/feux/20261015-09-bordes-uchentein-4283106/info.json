@@ -1,7 +1,7 @@
 {
   "id": "20261015-09-bordes-uchentein-4283106",
   "feu": "Bordes-Uchentein (09)",
-  "statut": "en_attente",
+  "statut": "ecarte",
   "motif_attente": "aucune image satellite depuis le départ du feu",
   "commune": "Bordes-Uchentein",
   "departement": "09",
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-10-16",
   "n_points_chauds": 15,
   "frp_total": 85.01,
-  "prochain_passage": "2026-10-16",
-  "calcule_le": "2026-10-16T11:28:51Z"
+  "calcule_le": "2026-10-16T19:34:22Z",
+  "motif_ecarte": "couvert végétal insuffisant avant le feu (NBR 0.09) — chaume, sol nu ou site industriel, pas un feu de végétation"
 }

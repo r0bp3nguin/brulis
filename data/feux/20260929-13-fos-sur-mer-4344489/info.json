@@ -7,9 +7,9 @@
   "surface_ha": 10.7,
   "n_polygones": 5,
   "premier_point_chaud": "2026-09-29",
-  "dernier_point_chaud": "2026-10-15",
-  "n_points_chauds": 100,
-  "frp_total": 308.85,
+  "dernier_point_chaud": "2026-10-16",
+  "n_points_chauds": 111,
+  "frp_total": 354.9,
   "image_avant": {
     "id": "S2B_31TFJ_20260928_0_L2A",
     "date": "2026-09-28",
@@ -25,5 +25,5 @@
   "nbr_avant_median": 0.455,
   "part_masquee": 0.101,
   "latence_jours": 16,
-  "calcule_le": "2026-10-16T11:28:11Z"
+  "calcule_le": "2026-10-16T19:33:26Z"
 }

@@ -1,7 +1,7 @@
 {
   "id": "20261005-10-vauchassis-4818393",
   "feu": "Vauchassis (10)",
-  "statut": "en_attente",
+  "statut": "ecarte",
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Vauchassis",
   "departement": "10",
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-10-07",
   "n_points_chauds": 7,
   "frp_total": 7.9,
-  "prochain_passage": "2026-10-18",
-  "calcule_le": "2026-10-16T11:31:05Z"
+  "calcule_le": "2026-10-16T19:36:29Z",
+  "motif_ecarte": "couvert végétal insuffisant avant le feu (NBR 0.18) — chaume, sol nu ou site industriel, pas un feu de végétation"
 }
