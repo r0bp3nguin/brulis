@@ -1,0 +1,29 @@
+{
+  "id": "20261014-13-mallemort-4374523",
+  "feu": "Mallemort (13)",
+  "statut": "mesure",
+  "commune": "Mallemort",
+  "departement": "13",
+  "surface_ha": 23.2,
+  "n_polygones": 8,
+  "premier_point_chaud": "2026-10-14",
+  "dernier_point_chaud": "2026-10-15",
+  "n_points_chauds": 12,
+  "frp_total": 72.13,
+  "image_avant": {
+    "id": "S2C_31TFJ_20261013_0_L2A",
+    "date": "2026-10-13",
+    "nuages_pct": 0.058888
+  },
+  "image_apres": {
+    "id": "S2A_31TFJ_20261015_1_L2A",
+    "date": "2026-10-15",
+    "nuages_pct": 26.881239
+  },
+  "tuile": "MGRS-31TFJ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.287,
+  "part_masquee": 0.016,
+  "latence_jours": 1,
+  "calcule_le": "2026-10-16T11:28:55Z"
+}
