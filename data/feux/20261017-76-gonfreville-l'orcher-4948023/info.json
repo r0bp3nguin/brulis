@@ -1,0 +1,17 @@
+{
+  "id": "20261017-76-gonfreville-l'orcher-4948023",
+  "feu": "Gonfreville-l'Orcher (76)",
+  "statut": "en_attente",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "commune": "Gonfreville-l'Orcher",
+  "departement": "76",
+  "surface_estimee_ha": 70.0,
+  "surface_min_ha": 45.0,
+  "surface_max_ha": 94.0,
+  "premier_point_chaud": "2026-10-17",
+  "dernier_point_chaud": "2026-10-17",
+  "n_points_chauds": 12,
+  "frp_total": 26.07,
+  "prochain_passage": "2026-10-20",
+  "calcule_le": "2026-10-17T18:32:25Z"
+}

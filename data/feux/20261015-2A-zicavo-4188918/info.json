@@ -4,8 +4,8 @@
   "statut": "mesure",
   "commune": "Zicavo",
   "departement": "2A",
-  "surface_ha": 470.1,
-  "n_polygones": 23,
+  "surface_ha": 214.2,
+  "n_polygones": 55,
   "premier_point_chaud": "2026-10-15",
   "dernier_point_chaud": "2026-10-16",
   "n_points_chauds": 19,
@@ -16,14 +16,14 @@
     "nuages_pct": 40.196863
   },
   "image_apres": {
-    "id": "S2A_32TNM_20261016_0_L2A",
-    "date": "2026-10-16",
-    "nuages_pct": 44.817236
+    "id": "S2C_32TNM_20261017_0_L2A",
+    "date": "2026-10-17",
+    "nuages_pct": 48.353177
   },
   "tuile": "MGRS-32TNM",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.558,
-  "part_masquee": 0.072,
-  "latence_jours": 1,
-  "calcule_le": "2026-10-17T10:48:38Z"
+  "nbr_avant_median": 0.457,
+  "part_masquee": 0.217,
+  "latence_jours": 2,
+  "calcule_le": "2026-10-17T18:31:04Z"
 }
