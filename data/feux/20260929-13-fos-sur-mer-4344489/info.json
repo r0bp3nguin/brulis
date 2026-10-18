@@ -7,9 +7,9 @@
   "surface_ha": 10.7,
   "n_polygones": 5,
   "premier_point_chaud": "2026-09-29",
-  "dernier_point_chaud": "2026-10-17",
-  "n_points_chauds": 129,
-  "frp_total": 383.83,
+  "dernier_point_chaud": "2026-10-18",
+  "n_points_chauds": 86,
+  "frp_total": 244.09,
   "image_avant": {
     "id": "S2B_31TFJ_20260928_0_L2A",
     "date": "2026-09-28",
@@ -23,7 +23,7 @@
   "tuile": "MGRS-31TFJ",
   "seuil_dnbr": 0.15,
   "nbr_avant_median": 0.455,
-  "part_masquee": 0.112,
+  "part_masquee": 0.108,
   "latence_jours": 16,
-  "calcule_le": "2026-10-17T18:30:17Z"
+  "calcule_le": "2026-10-18T11:10:58Z"
 }
