@@ -5,13 +5,13 @@
   "motif_attente": "aucune image satellite depuis le départ du feu",
   "commune": "Sauveterre-de-Guyenne",
   "departement": "33",
-  "surface_estimee_ha": 48.1,
-  "surface_min_ha": 31.0,
-  "surface_max_ha": 65.0,
+  "surface_estimee_ha": 52.6,
+  "surface_min_ha": 34.0,
+  "surface_max_ha": 71.0,
   "premier_point_chaud": "2026-10-18",
   "dernier_point_chaud": "2026-10-18",
-  "n_points_chauds": 8,
-  "frp_total": 12.36,
+  "n_points_chauds": 12,
+  "frp_total": 19.92,
   "prochain_passage": "2026-10-19",
-  "calcule_le": "2026-10-18T11:12:33Z"
+  "calcule_le": "2026-10-18T18:39:33Z"
 }
