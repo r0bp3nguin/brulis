@@ -1,0 +1,29 @@
+{
+  "id": "20261016-2A-zicavo-4188918",
+  "feu": "Zicavo (2A)",
+  "statut": "mesure",
+  "commune": "Zicavo",
+  "departement": "2A",
+  "surface_ha": 160.6,
+  "n_polygones": 51,
+  "premier_point_chaud": "2026-10-16",
+  "dernier_point_chaud": "2026-10-16",
+  "n_points_chauds": 8,
+  "frp_total": 15.8,
+  "image_avant": {
+    "id": "S2A_32TNM_20261016_0_L2A",
+    "date": "2026-10-16",
+    "nuages_pct": 44.817236
+  },
+  "image_apres": {
+    "id": "S2C_32TNM_20261017_0_L2A",
+    "date": "2026-10-17",
+    "nuages_pct": 48.353177
+  },
+  "tuile": "MGRS-32TNM",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.507,
+  "part_masquee": 0.161,
+  "latence_jours": 1,
+  "calcule_le": "2026-10-19T13:23:12Z"
+}

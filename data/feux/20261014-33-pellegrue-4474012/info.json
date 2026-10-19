@@ -1,7 +1,7 @@
 {
   "id": "20261014-33-pellegrue-4474012",
   "feu": "Pellegrue (33)",
-  "statut": "en_attente",
+  "statut": "ecarte",
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Pellegrue",
   "departement": "33",
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-10-14",
   "n_points_chauds": 6,
   "frp_total": 35.06,
-  "prochain_passage": "2026-10-19",
-  "calcule_le": "2026-10-18T18:40:47Z"
+  "calcule_le": "2026-10-19T13:23:59Z",
+  "motif_ecarte": "couvert végétal insuffisant avant le feu (NBR 0.19) — chaume, sol nu ou site industriel, pas un feu de végétation"
 }
