@@ -5,13 +5,13 @@
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Fos-sur-Mer",
   "departement": "13",
-  "surface_estimee_ha": 231.0,
-  "surface_min_ha": 150.0,
-  "surface_max_ha": 312.0,
+  "surface_estimee_ha": 188.3,
+  "surface_min_ha": 122.0,
+  "surface_max_ha": 254.0,
   "premier_point_chaud": "2026-10-16",
   "dernier_point_chaud": "2026-10-19",
-  "n_points_chauds": 48,
-  "frp_total": 143.29,
+  "n_points_chauds": 37,
+  "frp_total": 97.24,
   "prochain_passage": "2026-10-21",
-  "calcule_le": "2026-10-19T21:02:41Z"
+  "calcule_le": "2026-10-20T11:42:26Z"
 }
