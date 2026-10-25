@@ -1,20 +1,20 @@
 id,feu,statut,commune,departement,surface_ha,surface_min_ha,surface_max_ha,debut,fin,n_points_chauds,image_avant,image_apres,latence_jours,seuil_dnbr,part_masquee,prochain_passage,calcule_le
-20260810-59-grande-synthe-5104229,Grande-Synthe (59) — est,en_attente,Grande-Synthe,59,226.0,147.0,305.0,2026-08-10,2026-10-24,55,,,,,,2026-10-27,2026-10-24T18:47:14Z
+20260810-59-grande-synthe-5104229,Grande-Synthe (59) — est,en_attente,Grande-Synthe,59,243.9,159.0,329.0,2026-08-10,2026-10-25,50,,,,,,2026-10-27,2026-10-25T11:35:19Z
 20260907-55-marville-4946541,Marville (55),en_attente,Marville,55,97.9,64.0,132.0,2026-09-07,2026-09-07,14,,,,,,2026-10-01,2026-09-28T22:01:43Z
 20260926-69-saint-clément-sur-valson-4593448,Saint-Clément-sur-Valsonne (69),en_attente,Saint-Clément-sur-Valsonne,69,73.4,48.0,99.0,2026-09-26,2026-09-26,12,,,,,,2026-10-20,2026-10-17T18:34:17Z
-20261011-59-trith-saint-léger-5033349,Trith-Saint-Léger (59) — nord,en_attente,Trith-Saint-Léger,59,48.9,28.0,58.0,2026-09-07,2026-10-19,12,,,,,,2026-10-26,2026-10-24T18:48:27Z
+20261011-59-trith-saint-léger-5033349,Trith-Saint-Léger (59) — nord,en_attente,Trith-Saint-Léger,59,48.9,28.0,58.0,2026-09-07,2026-10-19,12,,,,,,2026-10-26,2026-10-25T11:36:48Z
 20260806-76-saint-étienne-du-rouvray-4936112,Saint-Étienne-du-Rouvray (76),en_attente,Saint-Étienne-du-Rouvray,76,48.6,32.0,66.0,2026-08-06,2026-08-06,10,,,,,,2026-08-30,2026-08-27T17:40:40Z
-20261014-48-banassac-canilhac-4441315,Banassac-Canilhac (48),en_attente,Banassac-Canilhac,48,44.8,29.0,60.0,2026-10-14,2026-10-15,7,,,,,,2026-10-26,2026-10-24T18:48:24Z
-20261018-54-neuves-maisons-4861611,Neuves-Maisons (54) — sud,en_attente,Neuves-Maisons,54,43.1,28.0,58.0,2026-10-18,2026-10-24,6,,,,,,2026-10-26,2026-10-24T18:47:46Z
+20261014-48-banassac-canilhac-4441315,Banassac-Canilhac (48),en_attente,Banassac-Canilhac,48,44.8,29.0,60.0,2026-10-14,2026-10-15,7,,,,,,2026-10-26,2026-10-25T11:36:39Z
+20261018-54-neuves-maisons-4861611,Neuves-Maisons (54) — sud,en_attente,Neuves-Maisons,54,43.1,28.0,58.0,2026-10-18,2026-10-24,6,,,,,,2026-10-26,2026-10-25T11:35:52Z
 20260913-03-domérat-4638253,Domérat (03),en_attente,Domérat,03,42.8,28.0,58.0,2026-09-13,2026-09-14,6,,,,,,2026-10-06,2026-10-05T22:39:38Z
-20261007-77-montereau-fault-yonne-4839298,Montereau-Fault-Yonne (77) — ouest,en_attente,Montereau-Fault-Yonne,77,42.7,28.0,58.0,2026-10-07,2026-10-18,7,,,,,,2026-10-26,2026-10-24T18:48:15Z
-20261016-13-mallemort-4374522,Mallemort (13) — nord,en_attente,Mallemort,13,39.6,26.0,53.0,2026-10-16,2026-10-16,9,,,,,,2026-10-26,2026-10-24T18:48:02Z
-20261011-59-saint-saulve-5040356,Saint-Saulve (59) — ouest,en_attente,Saint-Saulve,59,35.0,23.0,47.0,2026-10-11,2026-10-24,5,,,,,,2026-10-26,2026-10-24T18:47:28Z
-20261011-06-blausasc-4379737,Blausasc (06) — nord,en_attente,Blausasc,06,32.4,21.0,44.0,2026-10-11,2026-10-23,5,,,,,,2026-10-25,2026-10-24T18:47:58Z
-20261002-57-serémange-erzange-4932610,Serémange-Erzange (57) — est,en_attente,Serémange-Erzange,57,29.6,19.0,40.0,2026-10-02,2026-10-05,5,,,,,,2026-10-26,2026-10-24T18:48:32Z
-20261005-33-saint-seurin-de-cadourne-4528078,Saint-Seurin-de-Cadourne (33),en_attente,Saint-Seurin-de-Cadourne,33,26.0,17.0,35.0,2026-10-05,2026-10-08,5,,,,,,2026-10-29,2026-10-24T18:48:08Z
+20261007-77-montereau-fault-yonne-4839298,Montereau-Fault-Yonne (77) — ouest,en_attente,Montereau-Fault-Yonne,77,42.7,28.0,58.0,2026-10-07,2026-10-18,7,,,,,,2026-10-26,2026-10-25T11:36:28Z
+20261016-13-mallemort-4374522,Mallemort (13) — nord,en_attente,Mallemort,13,39.6,26.0,53.0,2026-10-16,2026-10-16,9,,,,,,2026-10-26,2026-10-25T11:36:11Z
+20261011-59-saint-saulve-5040356,Saint-Saulve (59) — ouest,en_attente,Saint-Saulve,59,35.0,23.0,47.0,2026-10-11,2026-10-24,5,,,,,,2026-10-26,2026-10-25T11:36:46Z
+20261011-06-blausasc-4379737,Blausasc (06) — nord,en_attente,Blausasc,06,32.4,21.0,44.0,2026-10-11,2026-10-23,5,,,,,,2026-10-25,2026-10-25T11:36:08Z
+20261002-57-serémange-erzange-4932610,Serémange-Erzange (57) — est,en_attente,Serémange-Erzange,57,29.6,19.0,40.0,2026-10-02,2026-10-05,5,,,,,,2026-10-26,2026-10-25T11:36:55Z
+20261005-33-saint-seurin-de-cadourne-4528078,Saint-Seurin-de-Cadourne (33),en_attente,Saint-Seurin-de-Cadourne,33,26.0,17.0,35.0,2026-10-05,2026-10-08,5,,,,,,2026-10-29,2026-10-25T11:36:19Z
 20260903-41-thoré-la-rochette-4779097,Thoré-la-Rochette (41),en_attente,Thoré-la-Rochette,41,24.4,16.0,33.0,2026-09-03,2026-09-03,5,,,,,,2026-09-27,2026-09-24T20:03:36Z
-20261002-78-porcheville-4898176,Porcheville (78) — nord,en_attente,Porcheville,78,22.6,15.0,31.0,2026-10-02,2026-10-22,5,,,,,,2026-10-27,2026-10-24T18:47:38Z
+20261002-78-porcheville-4898176,Porcheville (78) — nord,en_attente,Porcheville,78,22.6,15.0,31.0,2026-10-02,2026-10-22,5,,,,,,2026-10-27,2026-10-25T11:35:41Z
 20260724-33-le-temple-4485103,Le Temple (33) — ouest,mesure,Le Temple,33,23232.0,,,2026-07-22,2026-07-30,20679,2026-07-21,2026-07-26,2,0.15,0.358,,2026-07-27T12:42:41Z
 20260723-40-biscarrosse-4440112,Biscarrosse (40),mesure,Biscarrosse,40,3490.5,,,2026-07-23,2026-07-29,1429,2026-07-21,2026-08-02,10,0.15,0.007,,2026-08-03T10:10:57Z
 20260721-83-pontevès-4353610,Pontevès (83),mesure,Pontevès,83,2413.6,,,2026-07-21,2026-07-26,762,2026-07-17,2026-07-24,3,0.15,0.0,,2026-07-25T16:06:52Z
