@@ -1,0 +1,17 @@
+{
+  "id": "20261025-2B-meria-4292947",
+  "feu": "Meria (2B)",
+  "statut": "en_attente",
+  "motif_attente": "aucune image satellite depuis le départ du feu",
+  "commune": "Meria",
+  "departement": "2B",
+  "surface_estimee_ha": 44.5,
+  "surface_min_ha": 29.0,
+  "surface_max_ha": 60.0,
+  "premier_point_chaud": "2026-10-25",
+  "dernier_point_chaud": "2026-10-25",
+  "n_points_chauds": 6,
+  "frp_total": 87.69,
+  "prochain_passage": "2026-10-27",
+  "calcule_le": "2026-10-25T19:02:52Z"
+}
