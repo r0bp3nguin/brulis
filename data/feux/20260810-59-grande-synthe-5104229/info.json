@@ -5,13 +5,13 @@
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Grande-Synthe",
   "departement": "59",
-  "surface_estimee_ha": 252.6,
-  "surface_min_ha": 164.0,
-  "surface_max_ha": 341.0,
+  "surface_estimee_ha": 264.3,
+  "surface_min_ha": 172.0,
+  "surface_max_ha": 357.0,
   "premier_point_chaud": "2026-08-10",
-  "dernier_point_chaud": "2026-10-25",
-  "n_points_chauds": 57,
-  "frp_total": 308.04,
+  "dernier_point_chaud": "2026-10-26",
+  "n_points_chauds": 54,
+  "frp_total": 178.99999999999997,
   "prochain_passage": "2026-10-27",
-  "calcule_le": "2026-10-25T19:02:49Z"
+  "calcule_le": "2026-10-26T13:08:20Z"
 }
