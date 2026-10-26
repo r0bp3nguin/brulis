@@ -2,7 +2,7 @@
   "id": "20261014-48-banassac-canilhac-4441315",
   "feu": "Banassac-Canilhac (48)",
   "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "motif_attente": "aucune image avant-feu exploitable pour la comparaison",
   "commune": "Banassac-Canilhac",
   "departement": "48",
   "surface_estimee_ha": 44.8,
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-10-15",
   "n_points_chauds": 7,
   "frp_total": 7.88,
-  "prochain_passage": "2026-10-28",
-  "calcule_le": "2026-10-26T13:09:27Z"
+  "prochain_passage": "2026-10-29",
+  "calcule_le": "2026-10-26T21:02:24Z"
 }
