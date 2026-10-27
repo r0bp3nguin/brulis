@@ -4,8 +4,8 @@
   "statut": "mesure",
   "commune": "Meria",
   "departement": "2B",
-  "surface_ha": 296.8,
-  "n_polygones": 38,
+  "surface_ha": 98.3,
+  "n_polygones": 13,
   "premier_point_chaud": "2026-10-25",
   "dernier_point_chaud": "2026-10-25",
   "n_points_chauds": 6,
@@ -16,14 +16,14 @@
     "nuages_pct": 27.354276
   },
   "image_apres": {
-    "id": "S2A_32TNN_20261026_0_L2A",
-    "date": "2026-10-26",
-    "nuages_pct": 33.880535
+    "id": "S2C_32TNN_20261027_0_L2A",
+    "date": "2026-10-27",
+    "nuages_pct": 11.931103
   },
   "tuile": "MGRS-32TNN",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.658,
-  "part_masquee": 0.417,
-  "latence_jours": 1,
-  "calcule_le": "2026-10-27T12:17:07Z"
+  "nbr_avant_median": 0.58,
+  "part_masquee": 0.374,
+  "latence_jours": 2,
+  "calcule_le": "2026-10-27T20:42:12Z"
 }

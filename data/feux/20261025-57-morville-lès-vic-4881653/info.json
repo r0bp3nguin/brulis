@@ -5,13 +5,13 @@
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Morville-lès-Vic",
   "departement": "57",
-  "surface_estimee_ha": 48.0,
-  "surface_min_ha": 31.0,
-  "surface_max_ha": 65.0,
+  "surface_estimee_ha": 52.8,
+  "surface_min_ha": 34.0,
+  "surface_max_ha": 71.0,
   "premier_point_chaud": "2026-10-25",
-  "dernier_point_chaud": "2026-10-26",
-  "n_points_chauds": 8,
-  "frp_total": 121.72,
+  "dernier_point_chaud": "2026-10-27",
+  "n_points_chauds": 9,
+  "frp_total": 125.29,
   "prochain_passage": "2026-10-28",
-  "calcule_le": "2026-10-27T12:16:55Z"
+  "calcule_le": "2026-10-27T20:42:02Z"
 }
