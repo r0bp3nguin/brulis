@@ -1,7 +1,7 @@
 {
   "id": "20261026-11-pennautier-4323230",
   "feu": "Pennautier (11)",
-  "statut": "en_attente",
+  "statut": "ecarte",
   "motif_attente": "images trop couvertes par les nuages ou la fumée",
   "commune": "Pennautier",
   "departement": "11",
@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-10-27",
   "n_points_chauds": 12,
   "frp_total": 88.79,
-  "prochain_passage": "2026-10-29",
-  "calcule_le": "2026-10-28T13:00:02Z"
+  "calcule_le": "2026-10-28T21:03:52Z",
+  "motif_ecarte": "couvert végétal insuffisant avant le feu (NBR 0.20) — chaume, sol nu ou site industriel, pas un feu de végétation"
 }
