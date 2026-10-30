@@ -4,8 +4,8 @@
   "statut": "mesure",
   "commune": "Saint-Martin-de-Crau",
   "departement": "13",
-  "surface_ha": 87.7,
-  "n_polygones": 18,
+  "surface_ha": 271.3,
+  "n_polygones": 42,
   "premier_point_chaud": "2026-10-27",
   "dernier_point_chaud": "2026-10-28",
   "n_points_chauds": 7,
@@ -16,14 +16,14 @@
     "nuages_pct": 26.881239
   },
   "image_apres": {
-    "id": "S2B_31TFJ_20261028_0_L2A",
-    "date": "2026-10-28",
-    "nuages_pct": 0.341999
+    "id": "S2C_31TFJ_20261030_0_L2A",
+    "date": "2026-10-30",
+    "nuages_pct": 27.484962
   },
   "tuile": "MGRS-31TFJ",
   "seuil_dnbr": 0.15,
-  "nbr_avant_median": 0.441,
-  "part_masquee": 0.221,
-  "latence_jours": 1,
-  "calcule_le": "2026-10-30T13:00:27Z"
+  "nbr_avant_median": 0.489,
+  "part_masquee": 0.32,
+  "latence_jours": 3,
+  "calcule_le": "2026-10-30T20:48:16Z"
 }
