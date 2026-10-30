@@ -5,13 +5,13 @@
   "motif_attente": "aucune image avant-feu exploitable pour la comparaison",
   "commune": "Porcheville",
   "departement": "78",
-  "surface_estimee_ha": 22.6,
-  "surface_min_ha": 15.0,
-  "surface_max_ha": 31.0,
+  "surface_estimee_ha": 30.7,
+  "surface_min_ha": 20.0,
+  "surface_max_ha": 41.0,
   "premier_point_chaud": "2026-10-02",
-  "dernier_point_chaud": "2026-10-22",
-  "n_points_chauds": 5,
-  "frp_total": 5.7,
+  "dernier_point_chaud": "2026-10-30",
+  "n_points_chauds": 6,
+  "frp_total": 9.11,
   "prochain_passage": "2026-11-01",
-  "calcule_le": "2026-10-29T21:09:04Z"
+  "calcule_le": "2026-10-30T13:01:17Z"
 }
