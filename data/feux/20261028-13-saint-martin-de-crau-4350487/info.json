@@ -1,0 +1,29 @@
+{
+  "id": "20261028-13-saint-martin-de-crau-4350487",
+  "feu": "Saint-Martin-de-Crau (13)",
+  "statut": "mesure",
+  "commune": "Saint-Martin-de-Crau",
+  "departement": "13",
+  "surface_ha": 250.1,
+  "n_polygones": 48,
+  "premier_point_chaud": "2026-10-28",
+  "dernier_point_chaud": "2026-10-28",
+  "n_points_chauds": 5,
+  "frp_total": 17.21,
+  "image_avant": {
+    "id": "S2B_31TFJ_20261028_0_L2A",
+    "date": "2026-10-28",
+    "nuages_pct": 0.341999
+  },
+  "image_apres": {
+    "id": "S2C_31TFJ_20261030_0_L2A",
+    "date": "2026-10-30",
+    "nuages_pct": 27.484962
+  },
+  "tuile": "MGRS-31TFJ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.464,
+  "part_masquee": 0.187,
+  "latence_jours": 2,
+  "calcule_le": "2026-10-31T12:38:15Z"
+}
