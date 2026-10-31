@@ -1,17 +1,29 @@
 {
   "id": "20261011-59-saint-saulve-5040356",
   "feu": "Saint-Saulve (59)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Saint-Saulve",
   "departement": "59",
-  "surface_estimee_ha": 35.0,
-  "surface_min_ha": 23.0,
-  "surface_max_ha": 47.0,
+  "surface_ha": 84.5,
+  "n_polygones": 28,
   "premier_point_chaud": "2026-10-11",
   "dernier_point_chaud": "2026-10-24",
   "n_points_chauds": 5,
   "frp_total": 7.14,
-  "prochain_passage": "2026-10-31",
-  "calcule_le": "2026-10-31T12:39:31Z"
+  "image_avant": {
+    "id": "S2C_31UER_20261006_0_L2A",
+    "date": "2026-10-06",
+    "nuages_pct": 1.190404
+  },
+  "image_apres": {
+    "id": "S2B_31UER_20261031_1_L2A",
+    "date": "2026-10-31",
+    "nuages_pct": 0.008102
+  },
+  "tuile": "MGRS-31UER",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.658,
+  "part_masquee": 0.075,
+  "latence_jours": 20,
+  "calcule_le": "2026-10-31T20:01:21Z"
 }

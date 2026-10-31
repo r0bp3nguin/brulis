@@ -1,0 +1,29 @@
+{
+  "id": "20261029-76-angerville-l'orcher-4958027",
+  "feu": "Angerville-l'Orcher (76)",
+  "statut": "mesure",
+  "commune": "Angerville-l'Orcher",
+  "departement": "76",
+  "surface_ha": 81.8,
+  "n_polygones": 22,
+  "premier_point_chaud": "2026-10-29",
+  "dernier_point_chaud": "2026-10-30",
+  "n_points_chauds": 5,
+  "frp_total": 56.56,
+  "image_avant": {
+    "id": "S2C_30UYV_20261029_0_L2A",
+    "date": "2026-10-29",
+    "nuages_pct": 11.675875
+  },
+  "image_apres": {
+    "id": "S2A_30UYV_20261031_1_L2A",
+    "date": "2026-10-31",
+    "nuages_pct": 7.598316
+  },
+  "tuile": "MGRS-30UYV",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.232,
+  "part_masquee": 0.0,
+  "latence_jours": 2,
+  "calcule_le": "2026-10-31T19:59:00Z"
+}
