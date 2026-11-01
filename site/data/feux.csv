@@ -1,14 +1,14 @@
 id,feu,statut,commune,departement,surface_ha,surface_min_ha,surface_max_ha,debut,fin,n_points_chauds,image_avant,image_apres,latence_jours,seuil_dnbr,part_masquee,prochain_passage,calcule_le
-20260810-59-grande-synthe-5104229,Grande-Synthe (59) — est,en_attente,Grande-Synthe,59,325.6,212.0,440.0,2026-08-10,2026-10-31,92,,,,,,2026-11-03,2026-10-31T19:58:32Z
+20260810-59-grande-synthe-5104229,Grande-Synthe (59) — est,en_attente,Grande-Synthe,59,197.3,128.0,266.0,2026-08-10,2026-11-01,46,,,,,,2026-11-03,2026-11-01T13:29:16Z
 20260907-55-marville-4946541,Marville (55),en_attente,Marville,55,97.9,64.0,132.0,2026-09-07,2026-09-07,14,,,,,,2026-10-01,2026-09-28T22:01:43Z
 20260926-69-saint-clément-sur-valson-4593448,Saint-Clément-sur-Valsonne (69),en_attente,Saint-Clément-sur-Valsonne,69,73.4,48.0,99.0,2026-09-26,2026-09-26,12,,,,,,2026-10-20,2026-10-17T18:34:17Z
-20261002-78-porcheville-4898176,Porcheville (78) — nord,en_attente,Porcheville,78,51.9,34.0,70.0,2026-10-02,2026-10-31,13,,,,,,2026-11-03,2026-10-31T19:59:26Z
-20261030-57-serémange-erzange-4932610,Serémange-Erzange (57) — est,en_attente,Serémange-Erzange,57,50.3,33.0,68.0,2026-10-30,2026-10-31,7,,,,,,2026-11-02,2026-10-31T20:00:17Z
+20261002-78-porcheville-4898176,Porcheville (78) — nord,en_attente,Porcheville,78,54.2,35.0,73.0,2026-10-02,2026-11-01,15,,,,,,2026-11-03,2026-11-01T13:29:48Z
+20261030-57-serémange-erzange-4932610,Serémange-Erzange (57) — est,en_attente,Serémange-Erzange,57,50.3,33.0,68.0,2026-10-30,2026-10-31,7,,,,,,2026-11-02,2026-11-01T13:30:44Z
 20260806-76-saint-étienne-du-rouvray-4936112,Saint-Étienne-du-Rouvray (76),en_attente,Saint-Étienne-du-Rouvray,76,48.6,32.0,66.0,2026-08-06,2026-08-06,10,,,,,,2026-08-30,2026-08-27T17:40:40Z
-20261014-48-banassac-canilhac-4441315,Banassac-Canilhac (48),en_attente,Banassac-Canilhac,48,44.8,29.0,60.0,2026-10-14,2026-10-15,7,,,,,,2026-11-03,2026-10-31T20:01:09Z
+20261014-48-banassac-canilhac-4441315,Banassac-Canilhac (48),en_attente,Banassac-Canilhac,48,44.8,29.0,60.0,2026-10-14,2026-10-15,7,,,,,,2026-11-03,2026-11-01T13:31:06Z
 20260913-03-domérat-4638253,Domérat (03),en_attente,Domérat,03,42.8,28.0,58.0,2026-09-13,2026-09-14,6,,,,,,2026-10-06,2026-10-05T22:39:38Z
 20260907-59-trith-saint-léger-5033349,Trith-Saint-Léger (59) — nord,en_attente,Trith-Saint-Léger,59,34.5,22.0,47.0,2026-09-07,2026-09-12,5,,,,,,2026-10-06,2026-10-03T19:16:17Z
-20261031-68-orschwihr-4793724,Orschwihr (68),en_attente,Orschwihr,68,26.2,17.0,35.0,2026-10-31,2026-10-31,6,,,,,,2026-11-02,2026-10-31T20:00:34Z
+20261031-68-orschwihr-4793724,Orschwihr (68),en_attente,Orschwihr,68,26.2,17.0,35.0,2026-10-31,2026-10-31,6,,,,,,2026-11-02,2026-11-01T13:30:51Z
 20261005-33-saint-seurin-de-cadourne-4528078,Saint-Seurin-de-Cadourne (33),en_attente,Saint-Seurin-de-Cadourne,33,26.0,17.0,35.0,2026-10-05,2026-10-08,5,,,,,,2026-11-03,2026-10-29T21:08:20Z
 20260903-41-thoré-la-rochette-4779097,Thoré-la-Rochette (41),en_attente,Thoré-la-Rochette,41,24.4,16.0,33.0,2026-09-03,2026-09-03,5,,,,,,2026-09-27,2026-09-24T20:03:36Z
 20260724-33-le-temple-4485103,Le Temple (33) — ouest,mesure,Le Temple,33,23232.0,,,2026-07-22,2026-07-30,20679,2026-07-21,2026-07-26,2,0.15,0.358,,2026-07-27T12:42:41Z
@@ -27,7 +27,7 @@ id,feu,statut,commune,departement,surface_ha,surface_min_ha,surface_max_ha,debut
 20260727-33-cestas-4473080,Cestas (33),mesure,Cestas,33,457.1,,,2026-07-27,2026-07-28,9,2026-07-21,2026-08-10,14,0.15,0.384,,2026-08-10T17:12:49Z
 20261013-2B-corte-4227906,Corte (2B) — ouest,mesure,Corte,2B,396.0,,,2026-10-13,2026-10-15,5,2026-10-12,2026-10-16,3,0.15,0.124,,2026-10-16T19:34:04Z
 20260814-51-couvrot-4877456,Couvrot (51) — est,mesure,Couvrot,51,386.5,,,2026-08-14,2026-09-06,5,2026-08-14,2026-09-11,28,0.15,0.062,,2026-09-11T19:11:40Z
-20260817-54-neuves-maisons-4861611,Neuves-Maisons (54) — sud,mesure,Neuves-Maisons,54,386.3,,,2026-07-28,2026-10-31,152,2026-08-16,2026-08-23,6,0.15,0.228,,2026-08-24T07:30:56Z
+20260817-54-neuves-maisons-4861611,Neuves-Maisons (54) — sud,mesure,Neuves-Maisons,54,386.3,,,2026-07-28,2026-11-01,155,2026-08-16,2026-08-23,6,0.15,0.228,,2026-08-24T07:30:56Z
 20260721-76-port-jérôme-sur-seine-4948054,Port-Jérôme-sur-Seine (76) — est,mesure,Port-Jérôme-sur-Seine,76,357.4,,,2026-07-21,2026-08-12,44,2026-07-13,2026-08-10,20,0.15,0.187,,2026-08-10T17:11:09Z
 20260813-36-azay-le-ferron-4687103,Azay-le-Ferron (36),mesure,Azay-le-Ferron,36,333.8,,,2026-08-13,2026-08-13,7,2026-08-12,2026-08-15,2,0.15,0.372,,2026-08-16T16:42:01Z
 20260721-2B-corte-4227907,Corte (2B) — sud,mesure,Corte,2B,298.2,,,2026-07-21,2026-07-25,220,2026-07-21,2026-07-24,3,0.15,0.27,,2026-07-26T07:56:57Z
@@ -113,6 +113,7 @@ id,feu,statut,commune,departement,surface_ha,surface_min_ha,surface_max_ha,debut
 20260906-09-limbrassac-4302185,Limbrassac (09),mesure,Limbrassac,09,45.1,,,2026-09-06,2026-09-06,11,2026-09-06,2026-09-08,2,0.15,0.0,,2026-09-09T19:16:49Z
 20260729-79-val-en-vignes-4700039,Val en Vignes (79),mesure,Val en Vignes,79,43.5,,,2026-07-29,2026-07-29,16,2026-07-21,2026-08-10,12,0.15,0.0,,2026-08-10T17:12:19Z
 20261012-2B-casamaccioli-4225899,Casamaccioli (2B),mesure,Casamaccioli,2B,43.3,,,2026-10-12,2026-10-12,7,2026-10-12,2026-10-14,2,0.15,0.207,,2026-10-15T19:53:28Z
+20261030-76-port-jérôme-sur-seine-4948055,Port-Jérôme-sur-Seine (76) — sud,mesure,Port-Jérôme-sur-Seine,76,42.0,,,2026-10-30,2026-11-01,7,2026-10-29,2026-10-31,1,0.15,0.134,,2026-11-01T13:30:31Z
 20260807-48-naussac-fontanes-4476379,Naussac-Fontanes (48),mesure,Naussac-Fontanes,48,41.9,,,2026-08-07,2026-08-07,10,2026-08-06,2026-08-14,7,0.15,0.278,,2026-08-15T16:46:12Z
 20260923-16-bors-(canton-de-tude-et--4534012,Bors (Canton de Tude-et-Lavalette) (16),mesure,Bors (Canton de Tude-et-Lavalette),16,41.7,,,2026-09-23,2026-09-23,5,2026-09-21,2026-09-26,3,0.15,0.4,,2026-09-26T19:14:22Z
 20260820-41-villeny-4760174,Villeny (41),mesure,Villeny,41,41.2,,,2026-08-20,2026-08-20,5,2026-08-19,2026-08-22,2,0.15,0.367,,2026-08-23T16:45:16Z
@@ -132,7 +133,7 @@ id,feu,statut,commune,departement,surface_ha,surface_min_ha,surface_max_ha,debut
 20260812-33-le-temple-4485096,Le Temple (33) — est,mesure,Le Temple,33,34.2,,,2026-08-12,2026-08-13,5,2026-08-12,2026-08-15,3,0.15,0.003,,2026-08-15T16:44:26Z
 20260925-09-saurat-4290151,Saurat (09) — est,mesure,Saurat,09,34.0,,,2026-09-25,2026-09-30,51,2026-09-25,2026-09-26,1,0.15,0.358,,2026-10-01T21:01:28Z
 20260723-77-montereau-fault-yonne-4839298,Montereau-Fault-Yonne (77) — est,mesure,Montereau-Fault-Yonne,77,33.9,,,2026-07-23,2026-07-30,25,2026-07-20,2026-07-28,5,0.15,0.096,,2026-07-30T09:06:07Z
-20261029-76-angerville-l'orcher-4958027,Angerville-l'Orcher (76),mesure,Angerville-l'Orcher,76,32.5,,,2026-10-29,2026-10-30,5,2026-10-29,2026-10-31,2,0.15,0.0,,2026-10-31T19:59:00Z
+20261029-76-angerville-l'orcher-4958027,Angerville-l'Orcher (76),mesure,Angerville-l'Orcher,76,32.5,,,2026-10-29,2026-10-30,5,2026-10-29,2026-10-31,2,0.15,0.0,,2026-11-01T13:29:31Z
 20260802-57-héming-4869697,Héming (57) — ouest,mesure,Héming,57,32.4,,,2026-08-02,2026-08-15,44,2026-07-27,2026-08-03,1,0.15,0.0,,2026-08-05T09:10:32Z
 20260729-80-lihons-4982276,Lihons (80),mesure,Lihons,80,32.1,,,2026-07-29,2026-07-29,5,2026-07-28,2026-07-31,2,0.15,0.44,,2026-08-01T17:16:17Z
 20260804-26-bellegarde-en-diois-4454546,Beaumont-en-Diois (26),mesure,Beaumont-en-Diois,26,32.1,,,2026-08-04,2026-08-12,35,2026-08-04,2026-08-09,5,0.15,0.248,,2026-08-13T17:13:51Z
@@ -220,6 +221,7 @@ id,feu,statut,commune,departement,surface_ha,surface_min_ha,surface_max_ha,debut
 20260722-30-fontarèches-4412441,Fontarèches (30),mesure,Fontarèches,30,11.3,,,2026-07-22,2026-07-22,19,2026-07-20,2026-07-24,2,0.15,0.0,,2026-07-25T16:14:22Z
 20261016-13-fos-sur-mer-4344489,Fos-sur-Mer (13) — nord,mesure,Fos-sur-Mer,13,11.1,,,2026-10-16,2026-10-30,214,2026-10-15,2026-10-28,12,0.15,0.102,,2026-10-28T21:03:30Z
 20260911-53-saint-pierre-la-cour-4811104,Saint-Pierre-la-Cour (53) — nord,mesure,Saint-Pierre-la-Cour,53,11.1,,,2026-09-11,2026-09-26,5,2026-09-01,2026-09-24,13,0.15,0.23,,2026-09-29T13:00:33Z
+20261029-57-héming-4869697,Héming (57) — ouest,mesure,Héming,57,11.0,,,2026-10-29,2026-11-01,5,2026-10-28,2026-10-30,1,0.15,0.098,,2026-11-01T13:30:39Z
 20261014-13-mallemort-4374523,Mallemort (13) — sud,mesure,Mallemort,13,10.3,,,2026-10-14,2026-10-16,33,2026-10-13,2026-10-15,1,0.15,0.014,,2026-10-17T18:31:11Z
 20260905-78-porcheville-4898176,Porcheville (78) — sud,mesure,Porcheville,78,10.2,,,2026-09-05,2026-09-17,5,2026-09-01,2026-09-16,11,0.15,0.486,,2026-09-17T11:47:49Z
 20260903-64-laruns-4290048,Laruns (64),mesure,Laruns,64,9.6,,,2026-09-03,2026-09-04,13,2026-09-01,2026-09-04,1,0.15,0.444,,2026-09-06T18:17:32Z
