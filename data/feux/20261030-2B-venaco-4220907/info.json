@@ -1,0 +1,17 @@
+{
+  "id": "20261030-2B-venaco-4220907",
+  "feu": "Venaco (2B)",
+  "statut": "en_attente",
+  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "commune": "Venaco",
+  "departement": "2B",
+  "surface_estimee_ha": 61.2,
+  "surface_min_ha": 40.0,
+  "surface_max_ha": 83.0,
+  "premier_point_chaud": "2026-10-30",
+  "dernier_point_chaud": "2026-10-30",
+  "n_points_chauds": 10,
+  "frp_total": 77.44,
+  "prochain_passage": "2026-11-04",
+  "calcule_le": "2026-11-02T16:00:36Z"
+}
