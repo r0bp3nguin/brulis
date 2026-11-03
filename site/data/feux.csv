@@ -1,12 +1,11 @@
 id,feu,statut,commune,departement,surface_ha,surface_min_ha,surface_max_ha,debut,fin,n_points_chauds,image_avant,image_apres,latence_jours,seuil_dnbr,part_masquee,prochain_passage,calcule_le
-20260810-59-grande-synthe-5104229,Grande-Synthe (59) — est,en_attente,Grande-Synthe,59,185.9,121.0,251.0,2026-08-10,2026-11-03,42,,,,,,2026-11-03,2026-11-03T14:20:42Z
+20260810-59-grande-synthe-5104229,Grande-Synthe (59) — est,en_attente,Grande-Synthe,59,185.9,121.0,251.0,2026-08-10,2026-11-03,42,,,,,,2026-11-03,2026-11-03T21:46:46Z
 20260907-55-marville-4946541,Marville (55),en_attente,Marville,55,97.9,64.0,132.0,2026-09-07,2026-09-07,14,,,,,,2026-10-01,2026-09-28T22:01:43Z
 20260926-69-saint-clément-sur-valson-4593448,Saint-Clément-sur-Valsonne (69),en_attente,Saint-Clément-sur-Valsonne,69,73.4,48.0,99.0,2026-09-26,2026-09-26,12,,,,,,2026-10-20,2026-10-17T18:34:17Z
-20261030-2B-venaco-4220907,Venaco (2B) — nord,en_attente,Venaco,2B,61.2,40.0,83.0,2026-10-30,2026-10-30,10,,,,,,2026-11-04,2026-11-03T14:24:51Z
-20261002-78-porcheville-4898176,Porcheville (78) — nord,en_attente,Porcheville,78,54.2,35.0,73.0,2026-10-02,2026-11-01,11,,,,,,2026-11-03,2026-11-03T14:22:17Z
+20261002-78-porcheville-4898176,Porcheville (78) — nord,en_attente,Porcheville,78,54.2,35.0,73.0,2026-10-02,2026-11-01,11,,,,,,2026-11-03,2026-11-03T21:47:11Z
 20260806-76-saint-étienne-du-rouvray-4936112,Saint-Étienne-du-Rouvray (76),en_attente,Saint-Étienne-du-Rouvray,76,48.6,32.0,66.0,2026-08-06,2026-08-06,10,,,,,,2026-08-30,2026-08-27T17:40:40Z
-20261014-48-banassac-canilhac-4441315,Banassac-Canilhac (48),en_attente,Banassac-Canilhac,48,44.8,29.0,60.0,2026-10-14,2026-10-15,7,,,,,,2026-11-05,2026-11-03T14:25:12Z
-20261030-57-serémange-erzange-4932610,Serémange-Erzange (57) — est,en_attente,Serémange-Erzange,57,43.3,28.0,59.0,2026-10-30,2026-10-31,6,,,,,,2026-11-05,2026-11-03T14:24:11Z
+20261014-48-banassac-canilhac-4441315,Banassac-Canilhac (48),en_attente,Banassac-Canilhac,48,44.8,29.0,60.0,2026-10-14,2026-10-15,7,,,,,,2026-11-05,2026-11-03T21:48:22Z
+20261030-57-serémange-erzange-4932610,Serémange-Erzange (57) — est,en_attente,Serémange-Erzange,57,43.3,28.0,59.0,2026-10-30,2026-10-31,6,,,,,,2026-11-05,2026-11-03T21:47:39Z
 20260913-03-domérat-4638253,Domérat (03),en_attente,Domérat,03,42.8,28.0,58.0,2026-09-13,2026-09-14,6,,,,,,2026-10-06,2026-10-05T22:39:38Z
 20260907-59-trith-saint-léger-5033349,Trith-Saint-Léger (59) — nord,en_attente,Trith-Saint-Léger,59,34.5,22.0,47.0,2026-09-07,2026-09-12,5,,,,,,2026-10-06,2026-10-03T19:16:17Z
 20261005-33-saint-seurin-de-cadourne-4528078,Saint-Seurin-de-Cadourne (33),en_attente,Saint-Seurin-de-Cadourne,33,26.0,17.0,35.0,2026-10-05,2026-10-08,5,,,,,,2026-11-03,2026-10-29T21:08:20Z
@@ -124,7 +123,7 @@ id,feu,statut,commune,departement,surface_ha,surface_min_ha,surface_max_ha,debut
 20260806-68-altkirch-4763724,Altkirch (68),mesure,Altkirch,68,37.9,,,2026-08-06,2026-08-13,20,2026-08-03,2026-08-11,5,0.15,0.004,,2026-08-12T07:56:14Z
 20260818-86-saint-georges-lès-bailla-4666048,Saint-Georges-lès-Baillargeaux (86),mesure,Saint-Georges-lès-Baillargeaux,86,37.7,,,2026-08-18,2026-08-19,7,2026-08-17,2026-08-19,1,0.15,0.152,,2026-08-21T16:52:08Z
 20260920-43-saint-georges-lagricol-4533389,Saint-Georges-Lagricol (43),mesure,Saint-Georges-Lagricol,43,37.3,,,2026-09-20,2026-09-20,6,2026-09-18,2026-09-23,3,0.15,0.386,,2026-09-23T19:42:24Z
-20261031-68-orschwihr-4793724,Orschwihr (68),mesure,Orschwihr,68,36.5,,,2026-10-31,2026-10-31,6,2026-10-30,2026-11-01,1,0.15,0.0,,2026-11-03T14:24:33Z
+20261031-68-orschwihr-4793724,Orschwihr (68),mesure,Orschwihr,68,36.5,,,2026-10-31,2026-10-31,6,2026-10-30,2026-11-01,1,0.15,0.0,,2026-11-03T21:47:50Z
 20261011-59-trith-saint-léger-5033349,Trith-Saint-Léger (59) — est,mesure,Trith-Saint-Léger,59,36.1,,,2026-10-11,2026-10-19,7,2026-10-06,2026-10-31,20,0.15,0.019,,2026-10-31T20:01:25Z
 20261017-73-beaufort-4568657,Beaufort (73),mesure,Beaufort,73,36.0,,,2026-10-17,2026-10-17,5,2026-10-15,2026-10-22,5,0.15,0.0,,2026-10-22T20:07:44Z
 20261005-76-port-jérôme-sur-seine-4947054,Port-Jérôme-sur-Seine (76) — nord,mesure,Port-Jérôme-sur-Seine,76,35.6,,,2026-10-05,2026-10-08,8,2026-10-04,2026-10-14,9,0.15,0.414,,2026-10-14T20:13:08Z
@@ -147,9 +146,10 @@ id,feu,statut,commune,departement,surface_ha,surface_min_ha,surface_max_ha,debut
 20260725-44-donges-4732205,Donges (44) — sud,mesure,Donges,44,29.5,,,2026-07-25,2026-07-28,12,2026-07-24,2026-07-29,4,0.15,0.003,,2026-07-30T09:06:34Z
 20261014-13-saint-martin-de-crau-4354484,Saint-Martin-de-Crau (13) — nord,mesure,Saint-Martin-de-Crau,13,29.2,,,2026-10-14,2026-10-15,18,2026-10-13,2026-10-15,1,0.15,0.0,,2026-10-15T19:54:03Z
 20260812-53-saint-pierre-la-cour-4811104,Saint-Pierre-la-Cour (53) — ouest,mesure,Saint-Pierre-la-Cour,53,28.7,,,2026-08-12,2026-08-16,6,2026-08-12,2026-08-13,1,0.15,0.0,,2026-08-16T16:43:18Z
+20261030-2B-venaco-4220907,Venaco (2B) — nord,mesure,Venaco,2B,28.2,,,2026-10-30,2026-10-30,10,2026-10-29,2026-11-03,4,0.15,0.228,,2026-11-03T21:48:00Z
 20261014-31-artigue-4282063,Artigue (31),mesure,Artigue,31,28.2,,,2026-10-14,2026-10-14,8,2026-10-11,2026-10-16,2,0.15,0.422,,2026-10-17T18:31:21Z
 20260914-09-orlu-4264193,Orlu (09),mesure,Orlu,09,27.9,,,2026-09-14,2026-09-16,22,2026-09-13,2026-09-18,4,0.15,0.039,,2026-09-18T19:02:23Z
-20261029-13-fos-sur-mer-4344489,Fos-sur-Mer (13) — est,mesure,Fos-sur-Mer,13,27.5,,,2026-10-29,2026-11-02,170,2026-10-28,2026-11-01,3,0.15,0.148,,2026-11-01T20:29:55Z
+20261029-13-fos-sur-mer-4344489,Fos-sur-Mer (13) — est,mesure,Fos-sur-Mer,13,27.5,,,2026-10-29,2026-11-03,263,2026-10-28,2026-11-01,3,0.15,0.148,,2026-11-01T20:29:55Z
 20260822-06-blausasc-4379737,Blausasc (06) — ouest,mesure,Blausasc,06,27.3,,,2026-08-21,2026-08-25,24,2026-08-21,2026-08-23,1,0.15,0.346,,2026-08-25T16:57:12Z
 20260810-53-argentré-4807064,Argentré (53),mesure,Argentré,53,26.8,,,2026-08-10,2026-08-13,5,2026-08-10,2026-08-13,3,0.15,0.036,,2026-08-13T17:14:15Z
 20260721-57-serémange-erzange-4932610,Serémange-Erzange (57) — ouest,mesure,Serémange-Erzange,57,26.3,,,2026-07-21,2026-07-26,9,2026-07-20,2026-07-25,4,0.15,0.283,,2026-07-27T12:45:51Z
