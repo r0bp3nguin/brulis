@@ -3,10 +3,10 @@ id,feu,statut,commune,departement,surface_ha,surface_min_ha,surface_max_ha,debut
 20260926-69-saint-clément-sur-valson-4593448,Saint-Clément-sur-Valsonne (69),en_attente,Saint-Clément-sur-Valsonne,69,73.4,48.0,99.0,2026-09-26,2026-09-26,12,,,,,,2026-10-20,2026-10-17T18:34:17Z
 20260806-76-saint-étienne-du-rouvray-4936112,Saint-Étienne-du-Rouvray (76),en_attente,Saint-Étienne-du-Rouvray,76,48.6,32.0,66.0,2026-08-06,2026-08-06,10,,,,,,2026-08-30,2026-08-27T17:40:40Z
 20261014-48-banassac-canilhac-4441315,Banassac-Canilhac (48),en_attente,Banassac-Canilhac,48,44.8,29.0,60.0,2026-10-14,2026-10-15,7,,,,,,2026-11-08,2026-11-05T22:00:01Z
-20261030-57-serémange-erzange-4932610,Serémange-Erzange (57) — est,en_attente,Serémange-Erzange,57,43.3,28.0,59.0,2026-10-30,2026-10-31,6,,,,,,2026-11-10,2026-11-08T20:29:47Z
+20261030-57-serémange-erzange-4932610,Serémange-Erzange (57) — est,en_attente,Serémange-Erzange,57,43.3,28.0,59.0,2026-10-30,2026-10-31,6,,,,,,2026-11-12,2026-11-09T16:26:41Z
 20260913-03-domérat-4638253,Domérat (03),en_attente,Domérat,03,42.8,28.0,58.0,2026-09-13,2026-09-14,6,,,,,,2026-10-06,2026-10-05T22:39:38Z
-20260810-59-grande-synthe-5104229,Grande-Synthe (59) — est,en_attente,Grande-Synthe,59,39.1,25.0,53.0,2026-08-10,2026-11-08,6,,,,,,2026-11-13,2026-11-08T20:29:07Z
-20261002-78-porcheville-4898176,Porcheville (78) — nord,en_attente,Porcheville,78,38.9,25.0,53.0,2026-10-02,2026-11-07,7,,,,,,2026-11-13,2026-11-08T20:29:21Z
+20260810-59-grande-synthe-5104229,Grande-Synthe (59) — est,en_attente,Grande-Synthe,59,39.1,25.0,53.0,2026-08-10,2026-11-08,6,,,,,,2026-11-13,2026-11-09T16:26:24Z
+20261002-78-porcheville-4898176,Porcheville (78) — nord,en_attente,Porcheville,78,38.9,25.0,53.0,2026-10-02,2026-11-07,7,,,,,,2026-11-13,2026-11-09T16:26:34Z
 20260907-59-trith-saint-léger-5033349,Trith-Saint-Léger (59) — nord,en_attente,Trith-Saint-Léger,59,34.5,22.0,47.0,2026-09-07,2026-09-12,5,,,,,,2026-10-06,2026-10-03T19:16:17Z
 20261005-33-saint-seurin-de-cadourne-4528078,Saint-Seurin-de-Cadourne (33),en_attente,Saint-Seurin-de-Cadourne,33,26.0,17.0,35.0,2026-10-05,2026-10-08,5,,,,,,2026-11-03,2026-10-29T21:08:20Z
 20260903-41-thoré-la-rochette-4779097,Thoré-la-Rochette (41),en_attente,Thoré-la-Rochette,41,24.4,16.0,33.0,2026-09-03,2026-09-03,5,,,,,,2026-09-27,2026-09-24T20:03:36Z
@@ -273,7 +273,7 @@ id,feu,statut,commune,departement,surface_ha,surface_min_ha,surface_max_ha,debut
 20260721-31-martres-tolosane-4319099,Martres-Tolosane (31) — ouest,mesure,Martres-Tolosane,31,3.4,,,2026-07-21,2026-07-28,7,2026-07-20,2026-07-23,2,0.15,0.11,,2026-07-25T16:38:54Z
 20260727-01-anglefort-4591582,Anglefort (01) — sud,mesure,Anglefort,01,3.4,,,2026-07-27,2026-07-31,11,2026-07-24,2026-07-30,3,0.15,0.084,,2026-07-30T17:51:58Z
 20260904-03-diou-4651370,Diou (03),mesure,Diou,03,3.4,,,2026-09-04,2026-09-04,5,2026-09-03,2026-09-08,4,0.15,0.0,,2026-09-08T19:27:29Z
-20261106-76-gonfreville-l'orcher-4948022,Gonfreville-l'Orcher (76) — nord,mesure,Gonfreville-l'Orcher,76,3.2,,,2026-11-06,2026-11-07,7,2026-11-06,2026-11-08,2,0.15,0.371,,2026-11-08T20:29:35Z
+20261106-76-gonfreville-l'orcher-4948022,Gonfreville-l'Orcher (76) — nord,mesure,Gonfreville-l'Orcher,76,3.2,,,2026-11-06,2026-11-07,7,2026-11-06,2026-11-08,2,0.15,0.371,,2026-11-09T16:26:09Z
 20260812-44-pont-saint-martin-4713155,Pont-Saint-Martin (44),mesure,Pont-Saint-Martin,44,3.2,,,2026-08-12,2026-08-12,5,2026-08-12,2026-08-13,1,0.15,0.0,,2026-08-15T16:44:12Z
 20260919-47-boussès-4414012,Boussès (47) — est,mesure,Boussès,47,3.1,,,2026-09-19,2026-09-19,6,2026-09-19,2026-09-21,2,0.15,0.411,,2026-09-22T19:45:01Z
 20260802-54-neuves-maisons-4861611,Neuves-Maisons (54) — ouest,mesure,Neuves-Maisons,54,2.8,,,2026-08-02,2026-08-03,12,2026-07-25,2026-08-04,2,0.15,0.151,,2026-08-05T09:09:12Z
