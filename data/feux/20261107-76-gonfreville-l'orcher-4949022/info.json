@@ -1,0 +1,29 @@
+{
+  "id": "20261107-76-gonfreville-l'orcher-4949022",
+  "feu": "Gonfreville-l'Orcher (76)",
+  "statut": "mesure",
+  "commune": "Gonfreville-l'Orcher",
+  "departement": "76",
+  "surface_ha": 3.2,
+  "n_polygones": 2,
+  "premier_point_chaud": "2026-11-07",
+  "dernier_point_chaud": "2026-11-07",
+  "n_points_chauds": 5,
+  "frp_total": 6.06,
+  "image_avant": {
+    "id": "S2B_30UYV_20261106_0_L2A",
+    "date": "2026-11-06",
+    "nuages_pct": 30.966911
+  },
+  "image_apres": {
+    "id": "S2C_30UYV_20261108_0_L2A",
+    "date": "2026-11-08",
+    "nuages_pct": 35.117623
+  },
+  "tuile": "MGRS-30UYV",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.304,
+  "part_masquee": 0.327,
+  "latence_jours": 1,
+  "calcule_le": "2026-11-10T00:15:04Z"
+}
