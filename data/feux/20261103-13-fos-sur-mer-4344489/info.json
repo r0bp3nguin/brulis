@@ -12,6 +12,6 @@
   "dernier_point_chaud": "2026-11-07",
   "n_points_chauds": 28,
   "frp_total": 117.89,
-  "calcule_le": "2026-11-13T21:59:08Z",
-  "motif_ecarte": "images exploitables, mais aucune trace de brûlé au seuil retenu"
+  "calcule_le": "2026-11-14T13:35:30Z",
+  "motif_ecarte": "traces de brûlé sur l'image, mais aucune près des points chauds"
 }
