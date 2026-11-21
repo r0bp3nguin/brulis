@@ -1,17 +1,29 @@
 {
   "id": "20261103-13-fos-sur-mer-4344489",
   "feu": "Fos-sur-Mer (13)",
-  "statut": "en_attente",
-  "motif_attente": "images trop couvertes par les nuages ou la fumée",
+  "statut": "mesure",
   "commune": "Fos-sur-Mer",
   "departement": "13",
-  "surface_estimee_ha": 193.7,
-  "surface_min_ha": 126.0,
-  "surface_max_ha": 262.0,
+  "surface_ha": 12.8,
+  "n_polygones": 2,
   "premier_point_chaud": "2026-11-03",
   "dernier_point_chaud": "2026-11-21",
-  "n_points_chauds": 39,
-  "frp_total": 134.34,
-  "prochain_passage": "2026-11-23",
-  "calcule_le": "2026-11-21T14:41:59Z"
+  "n_points_chauds": 44,
+  "frp_total": 176.91,
+  "image_avant": {
+    "id": "S2C_31TFJ_20261102_0_L2A",
+    "date": "2026-11-02",
+    "nuages_pct": 4.041256
+  },
+  "image_apres": {
+    "id": "S2A_31TFJ_20261121_0_L2A",
+    "date": "2026-11-21",
+    "nuages_pct": 30.766559
+  },
+  "tuile": "MGRS-31TFJ",
+  "seuil_dnbr": 0.15,
+  "nbr_avant_median": 0.265,
+  "part_masquee": 0.151,
+  "latence_jours": 18,
+  "calcule_le": "2026-11-21T21:38:42Z"
 }
